@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  barrelrLR00  -multisrs  C:\Users\braya\Downloads\06-proyectDiamond-1erParc\23-barrelrLR00\barrelrLR0\synwork\barrelrLR00_barrelrLR0_comp.srs  -osyn  C:\Users\braya\Downloads\06-proyectDiamond-1erParc\23-barrelrLR00\barrelrLR0\synwork\barrelrLR00_barrelrLR0_mult.srs  -log  C:\Users\braya\Downloads\06-proyectDiamond-1erParc\23-barrelrLR00\barrelrLR0\synlog\barrelrLR00_barrelrLR0_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top barrelrLR00 -multisrs ..\synwork\barrelrLR00_barrelrLR0_comp.srs -osyn ..\synwork\barrelrLR00_barrelrLR0_mult.srs -log ..\synlog\barrelrLR00_barrelrLR0_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\barrelrLR00_barrelrLR0_comp.srs|io:i|time:1648140766|size:7621|exec:0|csum:747D920C25E5A03DB7B52AA86D2D8DBE
+file:..\synwork\barrelrLR00_barrelrLR0_mult.srs|io:o|time:1648140768|size:2543|exec:0|csum:
+file:..\synlog\barrelrLR00_barrelrLR0_multi_srs_gen.srr|io:o|time:1648140768|size:1191|exec:0|csum:
+file:..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1603988322|size:8875008|exec:1|csum:43373AFF0ED6BCEB26CB4B4947B972DD

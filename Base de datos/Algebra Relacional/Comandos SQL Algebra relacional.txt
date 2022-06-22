@@ -1,0 +1,24 @@
+- Proyeccion
+
+
+- 
+
+
+- Producto cruz
+	* R X S
+	* SELECT * FROM tabla1, tabla2;
+
+- Union
+	* R U S
+	* SELECT * from tabla1
+	 Union
+	 SELECT * from tabla2;
+        * SELECT * from tabla1 //regresa todo
+	 Union all
+	 SELECT * from tabla2;
+
+- Diferencia
+	* R - S
+	* SELECT * from tabla1 where
+	  not exists
+	  (SELECT * from tabla2 where tabla1.at1=tabla2.at1 and tabla1.at2=tabla2.at2);

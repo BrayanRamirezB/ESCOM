@@ -1,0 +1,8 @@
+@W: CG296 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl":20:9:20:15|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl":22:11:22:20|Referenced variable scontrollc is not in sensitivity list.
+@W: CL113 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl":22:6:22:9|Feedback mux created for signal out32lc[31:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CG296 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl":19:13:19:19|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl":25:8:25:10|Referenced variable enc is not in sensitivity list.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@W: CL246 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder7seg00.vhdl":9:2:9:8|Input port bits 31 to 16 of in32cr7(31 downto 0) are unused. Assign logic for all port bits or change the input port size.
+

@@ -1,0 +1,82 @@
+
+CREATE TABLE autor (
+	-> IDA int(3) not null,
+	-> nombre varchar(15) not null,
+	-> Apellido_Paterno varchar(15) not null,
+	-> Nacionalidad varchar(15) not null);
+
+CREATE TABLE receta (
+    -> IDR int(3) not null,
+    -> IDA int(3) not null,
+    -> Nombre_R varchar(15) not null,
+    -> Porciones int(3) not null,
+    -> Presentacion blob not null,
+    -> Tipo varchar(15) not null);
+
+CREATE TABLE Dificultad_Receta(
+    -> IDR int(3) not null,
+    -> IDA int(3) not null,
+    -> Dificultad varchar(15));
+
+CREATE TABLE Pasos(
+    -> IDP int(3) not null,
+    -> IDR int(3) not null,
+    -> Descripcion blob not null,
+    -> Tiempo_Elaboracion int(4) not null);
+
+CREATE TABLE utensilios(
+    -> IDU int(3) not null,
+    -> IDP int(3) not null,
+    -> IDR int(3) not null,
+    -> Nombre varchar(15) not null,
+    -> Tamaño varchar(20) not null,
+    -> Material varchar(20) not null);
+
+CREATE TABLE ingredientes(
+    -> Nombre_Ingrediente varchar(15) not null,
+    -> IDR int(3) not null,
+    -> IDA int(3) not null,
+    -> Unidad_Medida varchar(10) not null,
+    -> Cantidad int(3) not null);
+
+CREATE TABLE Tipo_I_Ingredientes(
+    -> IDR int(3) not null,
+    -> IDA int(3) not null,
+    -> Nombre_Ingredientes varchar(15) not null,
+    -> Tipo_I varchar(20));
+
+ALTER TABLE autor ADD CONSTRAINT pk1 PRIMARY KEY(IDA);
+
+ALTER TABLE receta ADD CONSTRAINT pk2 PRIMARY KEY(IDR,IDA);
+
+ALTER TABLE dificultad_receta ADD CONSTRAINT pk3 PRIMARY KEY(IDR,IDA,Dificultad);
+
+ALTER TABLE pasos ADD CONSTRAINT pk4 PRIMARY KEY(IDP,IDR);
+
+ALTER TABLE utensilios ADD CONSTRAINT pk5 PRIMARY KEY(IDU,IDP,IDR);
+
+ALTER TABLE ingredientes ADD CONSTRAINT pk6 PRIMARY KEY(Nombre_Ingrediente,IDR,IDA);
+
+ALTER TABLE tipo_i_ingredientes ADD CONSTRAINT pk6 PRIMARY KEY(IDR,IDA,Nombre_Ingredientes,Tipo_I);
+
+ALTER TABLE receta ADD CONSTRAINT fk1 FOREIGN KEY(IDA) REFERENCES autor(IDA);
+
+ALTER TABLE dificultad_receta ADD CONSTRAINT fk2 FOREIGN KEY(IDR) REFERENCES receta(IDR);
+
+ALTER TABLE dificultad_receta ADD CONSTRAINT fk3 FOREIGN KEY(IDA) REFERENCES receta(IDA);
+
+ALTER TABLE pasos ADD CONSTRAINT fk4 FOREIGN KEY(IDR) REFERENCES recetas(IDR);
+
+ALTER TABLE utensilios ADD CONSTRAINT fk5 FOREIGN KEY(IDP) REFERENCES pasos(IDP);
+
+ALTER TABLE utensilios ADD CONSTRAINT fk6 FOREIGN KEY(IDR) REFERENCES pasos(IDR);
+
+ALTER TABLE ingredientes ADD CONSTRAINT fk7 FOREIGN KEY(IDR) REFERENCES receta(IDR);
+
+ALTER TABLE ingredientes ADD CONSTRAINT fk8 FOREIGN KEY(IDA) REFERENCES receta(IDA);
+
+ALTER TABLE tipo_i_ingredientes ADD CONSTRAINT fk9 FOREIGN KEY(IDR) REFERENCES ingredientes(IDR);
+
+ALTER TABLE tipo_i_ingredientes ADD CONSTRAINT fk10 FOREIGN KEY(IDA) REFERENCES ingredientes(IDA);
+
+ALTER TABLE tipo_i_ingredientes ADD CONSTRAINT fk11 FOREIGN KEY(Nombre_Ingredientes) REFERENCES ingredientes(Nombre_Ingredientes);

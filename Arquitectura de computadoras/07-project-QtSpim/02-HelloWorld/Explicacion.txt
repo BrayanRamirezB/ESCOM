@@ -1,0 +1,24 @@
+todas las memorias son arreglos de byte.
+Texto
+syscall la llamada al sistema 
+
+
+
+Primero se hace la carga del registro 29 en 4
+se hace una suma inmediata 
+luego se hace otra suma inmediata 
+se hace un dezplazamiento logico hacia la izquierda 
+se hace otra suma 
+se hace la llamada de la memoria principal
+se carga en la direccion del registro para que regrese cuando se termine la impresion
+se hace la llamada para imprimir el mensaje
+luego se imprime mediante
+y vuelve al ciclo
+
+
+
+
+
+
+
+

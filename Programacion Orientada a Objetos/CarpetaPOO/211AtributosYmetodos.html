@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Atributos y métodos</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 2</header>
+ <nav>
+    <!--<div class="contenedor">-->
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+
+      <p class="derecha"><a href="TemarioPOO.html">Classroom</a></p>
+      <p><a href="TemarioPOO.html">Temario</a></p>
+      <p><a href="41EnlacesPrac.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="41EnlacesHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">ATRIBUTOS Y MÉTODOS</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>Atributos</h1>
+       <hr>
+       <p><strong>Definición de atributos.</strong> Un atributo es una propiedad que se asocia con un objeto: esto sirve para describir al objeto y mantener algún valor que es requerido para el procesamiento.</p>
+       <br>
+       <p><strong>Definición de campo de datos.</strong> Un campo es una variable definida directamente dentro de una clase y corresponde a
+un atributo. Cada instancia del objeto tendrá almacenamiento para el campo.</p>
+       <br>
+    <h3>Ejemplo de código de atributos</h3>
+        <hr>
+       <br>
+       <p><strong>Como ejemplo</strong>, es difícil imaginar a un banco interesado
+en si un cliente es diestro; por lo tanto, el sistema de software no tendrá este atributo.</p>
+       <br>
+       <br>
+      <p>El mecanismo de clases en los lenguajes orientados a objetos proporciona una forma de crear tales objetos.
+Una clase es un diseño que puede reutilizarse tantas veces como desee para crear objetos. Por ejemplo,
+considere un sistema orientado a objetos para una universidad. Hay objetos de estudiantes, objetos de instructor, objetos de miembros del personal, etc. Antes de que se creen tales objetos, creamos clases
+que sirven como planos para estudiantes, instructores, miembros del personal y cursos de la siguiente manera:</p>
+    <br>
+    <br>
+    <p><strong>Código en java.</strong> El siguiente código es un ejemplo del uso de atributos:</p>
+    <br>
+     <pre>
+ public class Estudiante {
+   // codigo para implemtar un estudiante
+ }
+ public class Instructor {
+   // codigo para implementar un instructor
+ }
+ public class MiembroPersonal {
+   // codigo para implementar un miembro del personal
+ }
+ public class Curso {
+   // codigo para implementar un curso
+ }
+ </pre>
+   <br>
+   <br>
+   <p>Antes de ver cómo poner los detalles de la clase, veamos cómo crear objetos.
+usando estas clases. El proceso de creación de un objeto también se denomina <strong>instanciación</strong>. Cada
+class introduce un nuevo nombre de tipo. Por lo tanto, estudiante, instructor, miembro del personal y los cursos son los tipos que hemos introducido.</p>
+   <br>
+   <br>
+   <p><strong>Código en java.</strong> El siguiente código <strong>instancia</strong> un nuevo objeto del tipo Estudiante:</p>
+  <br>
+    <pre>
+ new Estudiante();
+   </pre>
+   <br>
+<p><strong>Código en java.</strong> El siguiente código crea una variable del tipo Estudiante:</p>
+  <br>
+    <pre>
+ Estudiante Jorge;
+   </pre>
+   <br>
+<p class="cita"><cite>Object-Oriented Analysis
+and Design, Sarnath Ramnath and Brahma Dathan, Pág. 13-14</cite></p>
+     <br>
+     <p><strong>Código en java.</strong> El siguiente código crea una asignación de atributos a una variable del tipo Estudiante:</p>
+  <br>
+      <pre>
+ Jorge = new Estudiante();
+   </pre>
+   <br>
+     <br>
+       <hr>
+       <h1>Métodos</h1>
+       <hr>
+       <p><strong>Definición de método.</strong> El término función se ha utilizado para describir una subrutina con nombre. El término que se ha usado más frecuentemente en Java es método, al ser "una manera de hacer algo". Si se
+desea, es posible seguir pensando en funciones. Verdaderamente sólo hay una diferencia sintáctica,
+pero de ahora en adelante se usará el término "método" en lugar del término "función".
+Los métodos en Java determinan los mensajes que puede recibir un objeto. En esta sección se
+aprenderá lo simple que es definir un método.
+Las partes fundamentales de un método son su nombre, sus parámetros, el tipo de retorno y el cuerpo. Hay dos tipos básicos de métodos, métodos de instancia y métodos de clase.</p>
+   <br>
+   <p><strong>Código en java.</strong> Su forma básica, es:</p>
+   <br>
+  <pre>
+     tipoRetorno nombreMetodo(lista de parámetros) {
+       / * Cuerpo del método * /
+     }
+  </pre>
+  <br>
+  <p class="cita"><cite>Piensa en Java, Bruce Eckel, Pág. 64</cite></p>
+  <br>
+  <p><strong>Definición de métodos de instancia.</strong> Son aquellos métodos que están asociados con una instancia particular
+de una clase. Por ejemplo, para llamar al método <strong>length</strong> de la clase <strong>String</strong>, debe asociarlo con una cadena en particular.</p>
+       <br>
+      <p><strong>Código en java.</strong> En el siguiente ejemplo, observe cómo la cadena <strong>primerNombre</strong> está asociada con el método <strong>length</strong>:</p>
+       <br>
+       <pre>
+     tamanioPrimerNombre = primerNombre.length();
+       </pre>
+       <br>
+  <p><strong>Definición de método de clase.</strong> Los métodos de clase son métodos que están asociados con una clase completa, no con una instancia particular de un
+clase. Por ejemplo, hay una clase Math que contiene muchos métodos de clase. Sus métodos están asociados con
+matemáticas en general, no con una instancia particular de matemáticas (una instancia particular de matemáticas ni siquiera hace
+sentido). Para llamar a un método de clase, prefije el nombre del método con el nombre de la clase que lo define. Por ejemplo, la clase <strong>Math</strong> contiene un método <strong>round</strong> que devuelve la versión redondeada de un valor dado. Llamar
+el método <strong>round</strong>, lo prefijas con <strong>Math</strong> así:</p>
+  <br>
+   <pre>
+     paymentInDollars = Math.round(calcularGanancias);
+   </pre>
+<p class="cita"><cite>Introduction to programming with Java: A problem solving Approach, John Dean and Raymond Dean, Pág. 152</cite></p>
+       <br>
+        <h3>Ejemplo de código de métodos</h3>
+        <hr>
+         <p><strong>Código en java.</strong> Los siguientes códigos son clases. Es un ejemplo del vínculo entre el método y la definición del mismo:</p>
+       <br>
+       <p>La clase A.</p>
+      <br>
+       <pre>
+ public class A {
+    public void metodo1() {
+      System.out.println("Metodo 1");
+    }
+    public void metodo2() {
+      System.out.println("Metodo 2");
+    }
+    public static void main(String[] args) {
+      A obj = new A();
+      obj.metodo1 ();
+      obj.metodo2 ();
+    }
+  }
+         </pre>
+       <br>
+       <p>La clase C.</p>
+       <br>
+      <pre>
+      public class C {
+        pulic void m() {
+        // Se refiere al objecto on el que m es invocado
+        }
+      }
+      public class C2 {
+        public void m2(C aC) {
+        // codigo
+        }
+      }
+      </pre>
+      <p>Supongamos que creamos una instancia de C desde el exterior e invocamos m como se muestra a continuación.</p>
+       <br>
+       <pre>
+       C c1 = new C();
+       c1.m();
+       </pre>
+   <p><strong>Código en java.</strong> El siguiente código es un forma de sumar números sin usar métodos:</p>
+      <br>
+     <pre>
+ int sum = 0;
+ for (int i = 1; i <= 10; i++)
+ sum += i;
+ System.out.println("Sum from 1 to 10 is " + sum);
+ sum = 0;
+ for (int i = 20; i <= 30; i++)
+ sum += i;
+ System.out.println("Sum from 20 to 30 is " + sum);
+ sum = 0;
+ for (int i = 35; i <= 45; i++)
+ sum += i;
+ System.out.println("Sum from 35 to 45 is " + sum);
+     </pre>
+     <br>
+    <p><strong>Código en java.</strong> El siguiente código es la forma de sumar números usando métodos:</p>
+    <br>
+   <pre>
+ public static int sum(int i1, int i2) {
+   int sum = 0;
+   for (int i = i1; i <= i2; i++)
+   sum += i;
+   return sum;
+ }
+
+ public static void main(String[] args) {
+   System.out.println("Sum from 1 to 10 is " + sum(1, 10));
+   System.out.println("Sum from 20 to 30 is " + sum(20, 30));
+   System.out.println("Sum from 35 to 45 is " + sum(35, 45));
+ }
+   </pre>
+<p class="cita"><cite>Introduction to Java programing, Y. Daniel Liang, Pág. 156</cite></p>
+       <br>
+      <p><strong>Código en java.</strong> El siguiente código es la clase Estudiante:</p>
+    <br>
+      <pre>
+       public class Estudiante {
+         private String nombre;
+         public void setNombre(String nombreEstudiante) {
+           nombre = nombreEstudiante;
+         }
+         public String getNombre() {
+           return nombre;
+         }
+       }
+      </pre>
+      <br>
+      <p><strong>Código en java.</strong> El siguiente código crea el objeto aEstudiante con el uso de la clase Estudiante:</p>
+    <br>
+      <pre>
+      Estudiante aEstudiante = new Estudiante();
+      aEstudiante.setNombre("Roberto");
+      </pre>
+      <br>
+      <p><strong>Código en java.</strong> El siguiente código es el método principal de la clase Estudiante:</p>
+    <br>
+     <pre>
+      public static void main(String[] s) {
+        Estudiante estudiante1 = new Estudiante();
+        Estudiante estudiante2 = new Estudiante();
+        estudiante1.setNombre("Juan");
+        estudiante2.setNombre("Maria");
+        System.out.println(estudiante1.getNombre());
+        System.out.println(estudiante2.getNombre());
+      }
+     </pre>
+     <br>
+       </article>
+    </section>
+
+      <aside>
+       <h1>Ejercicios de código de atributos y métodos</h1>
+        <hr>
+        <br>
+        <p><strong>Ejercicio 1. Atributos.</strong> Construir las clases Estudiante, Instructor, miembroPersonal, Curso. Instancia objetos de cada una de las clases y crea variables de cada objeto.</p>
+     <br>
+      <hr>
+       <p><strong>Ejercicio 2. Métodos.</strong> Construir un programa basado en el ejemplo de métodos. El programa debe contener una clase con dos o tres métodos, que después deben ser invocados.</p>
+       <br>
+       <p><a href="212Multiclases.html">Enlace de la continuación.</a> Del tema atributos y métodos (tema 2.1.1).</p>
+       
+       <br>
+       
+ <!--    <hr>
+     <h1>Práctica 4 (la correspondiente)</h1>
+        <hr>
+        <br>
+        <p>Realizar la siguiente prácticas presentarlas en un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p>
+      
+      <br>
+     <hr>
+     <h1>Realizar el proyecto (parcial 1)</h1>
+        <hr>
+        <br>
+        <p>Presentar el proyecto por medio de un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p> -->
+        </aside>
+
+      <footer><p>Clases y objetos: Tema 2.1.1</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

@@ -1,0 +1,20 @@
+#Start recording tcl command: 3/20/2022 12:58:05
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00; Project name: barrelrLR00
+prj_project new -name "barrelrLR00" -impl "barrelrLR0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/div00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/osc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/oscint00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/packageosc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/barrelrLR0/source"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/barrelrLR0/source/div00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/barrelrLR0/source/osc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/barrelrLR0/source/oscint00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/barrelrLR0/source/packageosc00.vhdl"
+prj_project save
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/barrelrLR.vhdl"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/packagebarrelrLR00.vhdl"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/barrelrLR00.vhdl"
+prj_run Export -impl barrelrLR0 -task Jedecgen
+prj_run Export -impl barrelrLR0 -task Jedecgen
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/barrelrLR0/barrelrLR0.xcf"
+prj_src add -exclude "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/barrelrLR0/barrelrLR0.xcf"
+prj_src enable "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/barrelrLR0/barrelrLR0.xcf"
+pgr_program run
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/23-barrelrLR00/barrelrLR0/barrelrLR0.xcf"
+pgr_project close
+prj_project save
+prj_project close
+#Stop recording: 3/20/2022 13:06:20

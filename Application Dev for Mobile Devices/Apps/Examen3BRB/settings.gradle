@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Examen3BRB"
+include ':app'
+
+//this will add sceneformsrc folder into your project
+include ':sceneform'
+project(':sceneform').projectDir=new File('sceneformsrc/sceneform')
+
+//this will add sceneformux folder into your project
+include ':sceneformux'
+project(':sceneformux').projectDir=new File('sceneformux/ux')

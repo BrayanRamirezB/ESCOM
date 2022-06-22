@@ -1,0 +1,12 @@
+@N: CD630 :"C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\07oscint00\oscint00.vhdl":6:7:6:14|Synthesizing work.oscint00.oscint0.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.oscint00.oscint0
+Running optimization stage 1 on oscint00 .......
+Running optimization stage 2 on oscint00 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\07oscint00\oscint0\synwork\layer0.rt.csv
+

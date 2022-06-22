@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Programas de Programación orientada a objetos</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 1 y 2</header>
+ <nav>
+   <!-- <div class="contenedor">--> 
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+      <p class="derecha"><a href="TemarioPOO.html">Temario</a></p>
+      
+      <p><a href="21ClasObjPra.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="21ClasObjHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">PROGRAMAS PARA EVALUACIÓN DE LOS CAPÍTULOS UNO (UNA PARTE) Y DOS</h1>
+    
+    
+    <section class="izquierda">
+        <h1>Preguntas</h1>
+        <hr>
+        <p><strong>Tema y preguntas:</strong></p>
+        <hr>
+        <br>
+        
+        <h3>1.1 Antecedentes.</h3>
+        <br>
+        <p><strong>Pregunta 1.</strong> El paradigma estructurado tiene una desventaja pricipal con respecto al paradigma orientado a objetos. ¿Cuál es la desventaja?</p>
+        <br>
+         <p><strong>Pregunta 2.</strong> ¿Cómo influye el costo en veneficio del paradigma orientado a objetos? </p>
+         <br>
+         <p>Considerar los siguientes códigos.</p>
+         <br>
+         <p><strong>Programa a</strong></p>
+         <br>
+          <pre>
+       class Animal {
+         static String a1;
+           void comer() {
+             System.out.println("El " + a1 + " come croquetas");
+           }
+             
+           public static void main(String args[]) {
+             Animal perro = new Animal();
+             a1 = "perro";
+               
+             perro.comer();
+           }
+       }
+     </pre>
+     <br>
+     <p><strong>Programa b</strong></p>
+         <br>
+     <pre>
+     #include &lang;stdio&rang;
+     
+     using namespace;
+     
+     string a1 = "perro";
+     string a2 = "gato";
+     string a3 = "caballo";
+     
+     int main() {
+       string a;
+       cin >> a >> ;
+       
+       if (a == a1)
+         cout << El perro << come croquetas << ;
+       else if (a == a2)
+         cout << El gato << come whiskas << 
+       else
+         cout << El caballo << come avena << ;
+     }
+      
+     </pre>
+       <br>
+       
+     <h3>1.2 Método orientado a objetos.</h3>
+        <br>
+        <p><strong>Pregunta 1.</strong>  Los tres principios de la programación orientada a objetos, es: encapsulado, herencia y polimorfismo.</p>
+        <br>
+     <p><strong>Pregunta 2.</strong> Explica en que consiste el paradigma estructurado y el paradigma orientado a objetos.</p>
+        <br>
+       <p><strong>Pregunta 3.</strong> Explica porque es importante el objeto en este paradigma orientado a objetos.</p>
+    <br>
+    <br>
+    <h3>2.1 Clases y objetos.</h3>
+    <br>
+    <p><strong>Pregunta 1.</strong> Describir los métodos set, get y booleanos.</p>
+       <br>
+       <p><strong>Pregunta 2.</strong> Describa cómo se crea el objeto y de que manera se accesa a el campo de datos y al método.</p>
+     <br>
+     <br>
+     <br>
+     <h3>2.1.1 Atributos y métodos.</h3>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h3>2.1.2 Constructores y destructores.</h3>
+       <br>
+       <br>
+       <p>El constructor inicializa las características del objeto. Cuando se crea el objeto de la siguiente manera, se puede llamar al constructor cuando se aplica la sobrecarga:</p>
+      <br>
+      <pre>
+      NombreDeLaClase objeto = new 
+       NombreDelConstructor(ArgumentosDelConstructor);
+      </pre>
+      <br>
+      <br>
+      <h3>2.1.3 Variables y métodos de clase.</h3>
+      <br>
+      <br>
+      <br>
+      <h3>2.2 Sobrecarga.</h3>
+      <br>
+      <br>
+      <br>
+      <h3>2.2.1 Sobrecarga de funciones.</h3>
+      <br>
+      <p>Las funciones se refieren a los métodos de las clases. La sobrecarga es cuando se usa el método con el mismo nombre, pero con diferentes argumentos</p>
+      <br>
+      <h3>2.2.2 Sobrecarga de operadores.</h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        
+
+    </section>
+
+    
+    <section class="derecha">
+        <h1>Tema</h1>
+        <hr>
+        
+        <p><strong>Tema y ejercicios:</strong></p>
+        <hr>
+        <br>
+    
+        <h3>1.1 Antecedentes.</h3>
+        <br>
+        <p><strong>Ejercicio 1. Código en java.</strong> El código para plantear los objetos en la programación orientada a objetos, es el siguiente:</p>
+         <br>
+         <pre>
+         public class Animal {
+           String a1;
+         }
+         </pre>
+     <p>Se presenta el código que incluye un método:</p>
+     <br>
+     <pre>
+         class Animal {
+           String a1;
+             void comer() {
+               System.out.println("El " + a1 + "come croquetas");
+             }
+         }
+     </pre>
+     <br>
+     <p>Use el código anterior para hacer comer whiskas a un gato.</p>
+     <br>
+        <p><strong>Ejercicio 2.</strong> Investigar sobre los lenguajes de programación que utilizan el paradigma orientado a objetos.</p>
+        <br>
+        <p><strong>Ejercicio 3.</strong> La sintaxis de las declaraciones de las clases que se presentan a continuación. ¿A que lenguaje pertenecen?</p>
+        <br>
+        <br>
+        <pre>
+        class NombreDeClase {
+          miembros de la clase
+        }
+        </pre>
+        <br>
+        <br>
+        <pre>
+        class cualquierNombreDeClase {
+          miembros de la clase
+        };
+        </pre>
+        <br>
+        <br>
+        <h3>1.2 Modelo orientado a objetos.</h3>
+        <br>
+        
+        <p><strong>Ejercicio 1.</strong> Construir dos clases con sus objetos.</p>
+        <br>
+        <p><strong>Ejercicio 2.</strong> De acuerdo a la reseña presentada con respecto a la historia de los lenguajes orientados a objetos. Argumentar porque el lenguaje Phyton es el que cumple mejor con el paradigma orientado a objetos.</p>
+      <br>
+       <p><strong>Ejercicio 3.</strong> Será que el paradigma orientado a objetos es perdurable por mucho tiempo. Ya que las características de encapsulamiento, herencia y polimorfismo, son importantes para la reutilización del código. ¿Habrá otra característica que surja de acuerdo con la utilidad?</p>
+        <br>
+        <br>
+        <br>
+        <h3>2.1 Clases y objetos.</h3>
+        <br>
+        <p><strong>Ejercicio 1.</strong> Realizar la clase <strong>Estudiante</strong> con boleta, nombre y calificación.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>2.1.1 Atributos y métodos.</h3>
+        <br>
+        <p><strong>Ejercicio 1. Atributos.</strong> Construir las clases Estudiante, Instructor, miembroPersonal, Curso. Instancia objetos de cada una de las clases y crea variables de cada objeto.</p>
+     <br>
+     <p><strong>Ejercicio 2. Métodos.</strong> Construir un programa basado en el ejemplo de métodos. El programa debe contener una clase con dos o tres métodos, que después deben ser invocados.</p>
+        <br>
+        <br>
+        <h3>2.1.2 Constructores y destructores.</h3>
+        <br>
+        <p><strong>Ejercicio.</strong> Utilizar la clase <strong>Circulo</strong> con su constructor para inicializar los objetos:</p>
+       <br>
+       <pre>
+  class Circulo {
+    double radio = 1.0;
+    
+    Circulo() {
+    }
+    
+    Circulo(double radioNuevo) {
+      radio = radioNuevo;
+    }
+    
+    double getArea() {
+      return radio * radio * Math.PI;
+    }
+  }
+  
+  public class AreaCirculoDriver {
+    public static void main(String[] args) {
+      Circulo c = new Circulo(2.2);
+      
+      System.out.println("El area del circulo, es: " + 
+      c.getArea());
+    }
+  }
+       </pre>
+        <br>
+        <p>Inializar un circulo c1 con radio de 5.5 y calcular su area.</p>
+        <br>
+        <h3>2.1.3 Variables y métodos de clase.</h3>
+        <br>
+        <p><strong>Ejercicio 1.</strong> Comentar los programas del 1 al 3 de la página 222SobrecargaOperadores.html.</p>
+     <br>
+      
+       <p><strong>Ejercicio 2.</strong> Comentar los programas 4 y 5 de la página 222SobrecargaOperadores.html.</p>
+      <p><a href="222SobrecargaOperadores.html">Sobrecarga de operadores.</a></p>
+      <br>
+      <br>
+        <p><strong>Ejercicio 1.</strong> Comentar los programas del 1 al 4 de la página 222MasProgramas.html.</p>
+      <p><a href="222MasProgramas.html">Más programas.</a></p>
+      <br>
+      <br>
+      <p><strong>Ejercicio 1.</strong> Comentar los programas del 1 al 4 de la página 222MasProgramas1.html.</p>
+      <p><a href="222MasProgramas1.html">Más programas.</a></p>
+        <br>
+        <br>
+        <h3>2.2 Sobrecarga.</h3>
+        <br>
+        <br>
+        <h3>2.2.1 Sobrecarga de funciones.</h3>
+        <br>
+        <br>
+        <h3>2.2.2 Sobrecarga de operadores.</h3>
+        
+              
+    </section>
+
+    
+    <aside class="largo">
+        <h1>Programas</h1>
+        <hr>
+        
+        <p><strong>Tema y programas:</strong></p>
+        <hr>
+        <br>
+        <h3>1.1 Antecedentes.</h3>
+        <br>
+        <p><strong>Programa 1. En java.</strong> Escriba un programa, donde un caballo come avena y bebe agua.</p>
+        <br>
+        <p>Considere el siguiente método:</p>
+        <br>
+        <pre>
+        void beber() {
+          System.out.println("Beber agua");
+        }
+        </pre>
+        <br>
+        <br>
+        <h3>1.2 Modelo orientado a objetos.</h3>
+     <br>
+     <br>
+     <p><strong>Programa 1.</strong> En el modelo orientado a objetos el elemento principal es el objeto.</p>
+     <br>
+     <p><strong>Código en java.</strong> Se pueden construir las clases Animal, Instrumento, Luz, Robot, Estudiante, Trabajador, FiguraGeometrica, etc.</p>
+        <br>
+        <pre>
+         public class Instrumento {
+           String nota;
+         }
+         </pre>
+     <p>Se presenta el código que incluye métodos:</p>
+    <br>
+     <pre>
+         public class Instrumento {
+           public void tocar() {
+             System.out.println("Instrumento.tocar()");
+           }
+           
+           public String queInstrumento() {
+             return "Instrumento";
+           }
+           
+           public void afinar() {
+               System.out.println("tocar()");
+           }
+         }
+     </pre>
+     <br>
+     <p>Basado en la clase Instrumento con sus métodos. Construya un programa que toque la guitarra. <strong>Recomendación: Construya el objeto guitarra.</strong> </p>
+     <br>
+     <h3>2.1 Clases y objetos.</h3>
+     <br>
+     <br>
+     <p><strong>Programa 1.</strong> La clase SerVivo representa a los seres vivos animales y vegetales.</p>
+     <br>
+     <pre>
+     class SerVivo {
+       boolean venado;
+       boolean lechuga;
+       
+       boolean esAnimal() {
+         return venado;
+       }
+       
+       boolean esVegetal() {
+        return lechuga;
+       }
+     }
+     </pre>
+     <br>
+     <p>Construya un programa que indique que tipo de ser vivo es un <strong>venado. Que diga: "El venado es un animal"</strong>.</p>
+     <br>
+     <pre>
+     if(!ser.esAnimal())
+       System.out.println("El venado es un animal");
+     else
+       System.out.println("La lechuga es un vegetal");
+     </pre>
+     <br>
+     <h3>2.1.1 Atributos y métodos.</h3>
+      <br>
+      <br>
+      <br>
+      <h3>2.1.2 Constructores y destructores.</h3>
+       <br>
+       <p><strong>Programa.</strong> El programa ArbolDriver.java contiene sobrecarga para constructores y sobrecarga para métodos.</p>
+       <br>
+       <pre>
+class Arbol {
+  int altura;
+  Arbol() {
+    visualizar ("Plantando un retoño");
+    altura = 0;
+  }
+  Arbol(int i) {
+    visualizar("Creando un nuevo arbol que tiene "
+    + i + " metros de alto");
+    altura = i;
+  }
+  void info() {
+    visualizar("E1 arbol tiene " + altura
+    + " metros de alto");
+  }
+  void info(String s) {
+    visualizar(s + " : El arbol tiene "
+     + altura + " metros de alto");
+  }
+  static void visualizar(String s) {
+    System.out.println(s);
+  }
+}
+
+public class ArbolDriver {
+    public static void main(String[] args) {
+
+      for(int i = 0; i < 5; i++) {
+        Arbol t = new Arbol(i);
+        t.info();
+        t.info("metodo sobrecargado");
+      } // Constructor sobrecargado:
+      
+    }
+}
+       </pre>
+      <br>
+      <p>Construya un programa que indique: <strong>"El árbol tiene 10 metros de alto cuando comienza a dar duraznos"</strong>.</p>
+      <br>
+      <h3>2.1.3 Variables y métodos de clase.</h3>
+      <br>
+      <br>
+      <br>
+      <h3>2.2 Sobrecarga.</h3>
+      <br>
+      <br>
+      <br>
+      <h3>2.2.1 Sobrecarga de funciones.</h3>
+      <br>
+      <p><strong>Programa.</strong> El programa PruebaMetodosSobrecargados.java contiene sobrecarga para métodos.</p>
+       <br>
+      <pre>
+public class PruebaMetodoSobrecargado {
+         /** Metodo principal */
+  public static void main(String[] args) {
+    // Invoca el metodo max con paramatros enteros
+    System.out.println("El maximo entre 3 y 4 es " + max(3,4));
+    // Invoca el metodo max con paramatros double
+    System.out.println("El maximo entre 3.0 y 5.4 es " + 
+    max(3.0, 5.4));
+    // Invoca el metodo max con tres paramatros double
+    System.out.println("El maximo entre 3.0, 5.4, y 10.14 es " +
+     max(3.0, 5.4, 10.14));
+  }
+         
+  /** Regresa el max entre dos valores enteros */
+  public static int max(int num1, int num2) {
+    if (num1 > num2)
+       return num1;
+     else
+       return num2;
+  }
+         
+    /** Encuentra el max entre dos valores double */
+   public static double max(double num1, double num2) {
+       if (num1 > num2)
+          return num1;
+       else
+          return num2;
+   }
+     
+     /** Regresa la cantidad max de tres valores double */
+   public static double max(double num1, double num2, double num3) {
+       return max(max(num1, num2), num3);
+   }
+}
+      </pre>
+      <br>
+      <p>Construya un programa que calcule: <strong>El número mínimo de dos y tres números enteros, también para dos y tres números doubles.</strong>.</p>
+      <br>
+      <h3>2.2.2 Sobrecarga de operadores.</h3>
+      
+        <hr>
+        <h1>Estudien y que tengan buen desempeño.</h1>
+        <hr>
+    </aside>
+      <footer><p>Evaluación de programación orientada a objetos: Programas de los capítulos 1 y 2</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

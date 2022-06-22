@@ -1,0 +1,204 @@
+
+           Lattice Mapping Report File for Design Module 'divOsc00'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Industrial
+     divOsc00_divOsc00.ngd -o divOsc00_divOsc00_map.ncd -pr
+     divOsc00_divOsc00.prf -mp divOsc00_divOsc00.mrp -lpf
+     C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1er
+     Parc/12_13_divOsc00/divOsc00/divOsc00_divOsc00_synplify.lpf -lpf
+     C:/Users/braya/Downloads/Arquitectura de
+     computadoras/06-projectDiamond-1erParc/12_13_divOsc00/divOsc00.lpf -c 0
+     -gui -msgset C:/Users/braya/Downloads/Arquitectura de
+     computadoras/06-projectDiamond-1erParc/12_13_divOsc00/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  03/16/22  09:04:42
+
+Design Summary
+--------------
+
+   Number of registers:     23 out of  7209 (0%)
+      PFU registers:           23 out of  6864 (0%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:        34 out of  3432 (1%)
+      SLICEs as Logic/ROM:     34 out of  3432 (1%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         12 out of  3432 (0%)
+   Number of LUT4s:         68 out of  6864 (1%)
+      Number used as logic LUTs:         44
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       24
+      Number used as shift registers:     0
+   Number of PIO sites used: 6 + 4(JTAG) out of 115 (9%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+                                    Page 1
+
+
+
+
+Design:  divOsc00                                      Date:  03/16/22  09:04:42
+
+Design Summary (cont)
+---------------------
+   Number of clocks:  1
+     Net clkaux: 13 loads, 13 rising, 0 falling (Driver: C00/OSCInst0 )
+   Number of Clock Enables:  0
+   Number of LSRs:  1
+     Net C01/oscOut_0_sqmuxa_1_0_i_a3_RNIRP1HD: 12 loads, 12 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net C01/oscOut_0_sqmuxa_1_0_i_a3_RNIRP1HD: 13 loads
+     Net cdiv_c[0]: 9 loads
+     Net cdiv_c[1]: 9 loads
+     Net cdiv_c[2]: 9 loads
+     Net C01/N_75: 6 loads
+     Net C01/sdiv[15]: 6 loads
+     Net C01/sdiv[21]: 6 loads
+     Net C01/N_79: 5 loads
+     Net C01/sdiv[13]: 5 loads
+     Net C01/sdiv[18]: 5 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| oscOut0             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv[0]             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv[4]             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv[3]             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv[2]             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv[1]             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block VCC undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Block GND undriven or does not drive anything - clipped.
+
+                                    Page 2
+
+
+
+
+Design:  divOsc00                                      Date:  03/16/22  09:04:42
+
+Removed logic (cont)
+--------------------
+Block C01/VCC undriven or does not drive anything - clipped.
+Signal C00/GND undriven or does not drive anything - clipped.
+Signal C01/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal C00/OSCInst0_SEDSTDBY undriven or does not drive anything - clipped.
+Signal C01/un1_sdiv_s_21_0_S1 undriven or does not drive anything - clipped.
+Signal C01/un1_sdiv_s_21_0_COUT undriven or does not drive anything - clipped.
+Signal C01/un1_sdiv_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal C01/N_1 undriven or does not drive anything - clipped.
+Block C00/GND was optimized away.
+Block C01/GND was optimized away.
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                C00/OSCInst0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     clkaux
+  OSC Nominal Frequency (MHz):                      2.08
+
+ASIC Components
+---------------
+
+Instance Name: C00/OSCInst0
+         Type: OSCH
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 57 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 3
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.

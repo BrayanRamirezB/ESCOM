@@ -1,0 +1,27 @@
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Mar 19 23:06:27 2022
+
+C:/lscc/diamond/3.12/ispfpga\bin\nt64\par -f shiftrRL00_shiftrRL0.p2t
+shiftrRL00_shiftrRL0_map.ncd shiftrRL00_shiftrRL0.dir shiftrRL00_shiftrRL0.prf
+-gui
+
+
+Preference file: shiftrRL00_shiftrRL0.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            466.653      0            0.379        0            06           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 6 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.

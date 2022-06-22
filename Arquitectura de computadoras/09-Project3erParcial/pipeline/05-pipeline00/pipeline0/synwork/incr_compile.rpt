@@ -1,0 +1,57 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: UNKNOWN
+
+Implementation : pipeline0
+Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+Modified Files: 1
+FID:  path (prevtimestamp, timestamp)
+33       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\memEBR00.vhd (2022-06-09 20:53:52, 2022-06-09 21:21:40)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 26
+FID:  path (timestamp)
+27       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\co00.vhdl (2022-06-06 12:02:18)
+28       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\di00.vhdl (2022-06-06 12:00:41)
+29       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\eo00.vhdl (2022-06-06 12:03:43)
+30       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl (2022-06-06 12:01:25)
+31       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fo00.vhdl (2022-06-06 12:03:04)
+32       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fsmpipe02.vhdl (2022-06-06 12:06:43)
+34       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\packagepipeline00.vhdl (2022-06-09 18:02:43)
+35       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pc00.vhdl (2022-06-06 11:11:08)
+36       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline00.vhdl (2022-06-09 18:02:09)
+37       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\div00.vhd (2021-11-23 21:14:12)
+38       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\osc00.vhd (2022-03-14 06:49:20)
+39       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\oscint00.vhd (2021-11-23 21:14:12)
+40       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\packageOsc00.vhd (2021-11-23 21:14:12)
+41       C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\wr00.vhdl (2022-06-06 12:04:25)
+15       C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd (2018-11-14 23:32:12)
+16       C:\lscc\diamond\3.12\synpbase\lib\cpld\lattice.vhd (2020-10-29 09:20:44)
+17       C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo2.vhd (2020-10-29 09:20:54)
+18       C:\lscc\diamond\3.12\synpbase\lib\vhd\arith.vhd (2020-10-29 09:23:10)
+19       C:\lscc\diamond\3.12\synpbase\lib\vhd\hyperents.vhd (2020-10-29 09:23:10)
+20       C:\lscc\diamond\3.12\synpbase\lib\vhd\location.map (2020-11-02 16:26:20)
+21       C:\lscc\diamond\3.12\synpbase\lib\vhd\numeric.vhd (2020-10-29 09:23:10)
+22       C:\lscc\diamond\3.12\synpbase\lib\vhd\snps_haps_pkg.vhd (2020-10-29 09:23:10)
+23       C:\lscc\diamond\3.12\synpbase\lib\vhd\std.vhd (2020-10-29 09:23:10)
+24       C:\lscc\diamond\3.12\synpbase\lib\vhd\std1164.vhd (2020-10-29 09:23:10)
+25       C:\lscc\diamond\3.12\synpbase\lib\vhd\umr_capim.vhd (2020-10-29 09:23:10)
+26       C:\lscc\diamond\3.12\synpbase\lib\vhd\unsigned.vhd (2020-10-29 09:23:10)
+
+*******************************************************************
+Unchanged modules: 0
+MID:  lib.cell.view

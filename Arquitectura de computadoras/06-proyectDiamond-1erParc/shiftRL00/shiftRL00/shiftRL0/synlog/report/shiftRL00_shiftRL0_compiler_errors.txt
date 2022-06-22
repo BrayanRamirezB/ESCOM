@@ -1,0 +1,2 @@
+@E: CD345 :"C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\shiftRL00.vhdl":51:10:51:22|'event is only supported for single bit signals
+

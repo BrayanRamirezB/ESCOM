@@ -1,0 +1,66 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\Pruebas\\GELACIO_ARQUITECTURA\\Practicas 2do Parcial\\PRACTICAS 2DO PARCIAL\\key00B\\key0\\synwork\\key00_key0_comp.srs|-top|key00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\bin64\\c_vhdl.exe":1603988322
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\location.map":1604359580
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std1164.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\numeric.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\umr_capim.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\arith.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\unsigned.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\hyperents.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1542263532
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\Pruebas\\GELACIO_ARQUITECTURA\\Practicas 2do Parcial\\PRACTICAS 2DO PARCIAL\\key00B\\oscint00.vhdl":1635213374
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\Pruebas\\GELACIO_ARQUITECTURA\\Practicas 2do Parcial\\PRACTICAS 2DO PARCIAL\\key00B\\div00.vhdl":1635213556
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\Pruebas\\GELACIO_ARQUITECTURA\\Practicas 2do Parcial\\PRACTICAS 2DO PARCIAL\\key00B\\packageosc00.vhdl":1635213402
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\Pruebas\\GELACIO_ARQUITECTURA\\Practicas 2do Parcial\\PRACTICAS 2DO PARCIAL\\key00B\\contring00.vhdl":1635303306
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\Pruebas\\GELACIO_ARQUITECTURA\\Practicas 2do Parcial\\PRACTICAS 2DO PARCIAL\\key00B\\coder00.vhdl":1650934485
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\Pruebas\\GELACIO_ARQUITECTURA\\Practicas 2do Parcial\\PRACTICAS 2DO PARCIAL\\key00B\\packagekey00.vhdl":1635333024
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\Pruebas\\GELACIO_ARQUITECTURA\\Practicas 2do Parcial\\PRACTICAS 2DO PARCIAL\\key00B\\osc00.vhdl":1635213344
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\Pruebas\\GELACIO_ARQUITECTURA\\Practicas 2do Parcial\\PRACTICAS 2DO PARCIAL\\key00B\\key00.vhdl":1635333094
+0 "C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\oscint00.vhdl" vhdl
+2 "C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\div00.vhdl" vhdl
+3 "C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\packageosc00.vhdl" vhdl
+4 "C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\contring00.vhdl" vhdl
+5 "C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\coder00.vhdl" vhdl
+6 "C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\packagekey00.vhdl" vhdl
+7 "C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\osc00.vhdl" vhdl
+8 "C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\key00.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 1 2 3 
+8 7 4 5 6 
+
+# Dependency Lists (Users Of)
+0 -1
+1 7 
+2 7 
+3 7 
+4 8 
+5 8 
+6 8 
+7 8 
+8 -1
+
+# Design Unit to File Association
+arch work oscint00 oscint0 1
+module work oscint00 1
+arch work div00 div0 2
+module work div00 2
+arch work contring00 contring0 4
+module work contring00 4
+arch work coder00 coder0 5
+module work coder00 5
+arch work osc00 osc0 7
+module work osc00 7
+arch work key00 key0 8
+module work key00 8

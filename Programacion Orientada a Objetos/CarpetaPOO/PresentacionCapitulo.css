@@ -1,0 +1,186 @@
+* {
+  margin: 3px 0px 5px 5px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+header {
+  width: 90%;
+  height: 95px;
+  margin: 50px;
+  font-size: 35px;
+  text-align: center;
+  background: #366E41;
+  border-radius: 5px;
+  padding: 10px 0px 10px 0px;
+  color: #fff;
+}
+
+nav {
+  width: 90%;
+  height: 100px;
+  background: #3Ba940;
+  margin: 50px;
+  border-radius: 5px;
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: no-wrap;
+  justify-content: flex-end;
+  align-items: flex-end:
+
+}
+
+section.envoltura {
+  width: 90%;
+  height: 96%;
+  margin: 50px 10px 10px 50px;
+  background: #fff;
+}
+
+section.interna {
+  width: 68%;
+  height: 96%;
+  background: #1D64A6;
+  border-radius: 5px;
+  padding: 30px;
+  color: #fff;
+  float: left;
+}
+
+aside {
+  width: 30%;
+  height: auto;
+  background: #7A0523;
+  border-radius: 5px;
+  float: left;
+  padding: 10px;
+  color: #fff;
+  
+}
+
+section.derecha {
+  width: 33%;
+  height: 96%;
+  background: #1D64A6;
+  border-radius: 5px;
+  padding: 30px;
+  color: #fff;
+  float: left;
+}
+
+section.izquierda {
+  width: 32%;
+  height: 96%;
+  background: #1D64A6;
+  border-radius: 5px;
+  padding: 30px;
+  color: #fff;
+  float: left;
+}
+
+aside.largo {
+  width: 34%;
+  height: auto;
+  background: #7A0523;
+  border-radius: 5px;
+  float: left;
+  padding: 10px;
+  color: #fff;
+  
+}
+
+nav p {
+  background: #1D64A6;
+  width: 90px;
+  height: 80px;
+  color: #fff;
+  margin: 10px;
+  padding: 0px 5px 5px 5px;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: lime;
+}
+
+footer {
+  background: #044716;
+  color: #fff;
+  clear: both;
+  width: 99%;
+  /* height: auto; */
+  border-radius: 5px;
+  padding: 10px 0px 10px 0px;
+  /*text-align: center;*/
+  margin: 5px;
+  font-size: 20px;
+  display: flex;
+  /*flex-direction: row;*/
+  flex-wrap: wrap;
+}
+
+footer p {
+  flex-grow: 1;
+  /*border: black 1px solid;*/
+  margin: 4px:
+}
+
+p.derecha {
+  margin-left: auto;
+  text-align: right;
+}
+
+cite {
+  text-align: center;
+  
+}
+
+h1.titulo {
+  text-align: center;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+p {
+  text-align: justify;
+}
+
+p.cita {
+  text-align: right;
+  color: #000;
+  padding: 10px;
+}
+
+@media screen and (max.width: 800px) {
+  .contenedor {
+    flex-direction: column;
+  }    
+
+  header {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  header.logo {
+    margin: 20px 0;
+  }
+
+  header nav {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PracticaSE</string>
+    <string-array name="sp1">
+        <item>Ratz Club</item>
+        <item>F1</item>
+        <item>Mitología mexica</item>
+    </string-array>
+
+    <string-array name="sp2">
+        <item>4x4</item>
+        <item>4x5</item>
+    </string-array>
+</resources>

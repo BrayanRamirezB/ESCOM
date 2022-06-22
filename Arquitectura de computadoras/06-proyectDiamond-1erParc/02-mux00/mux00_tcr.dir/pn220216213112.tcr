@@ -1,0 +1,9 @@
+#Start recording tcl command: 2/16/2022 21:04:26
+#Project Location: C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/02-mux00; Project name: mux00
+prj_project open "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/02-mux00/mux00.ldf"
+prj_run Export -impl mux0 -task Jedecgen
+pgr_project open "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/02-mux00/mux0/mux0.xcf"
+pgr_program run
+pgr_project save "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/02-mux00/mux0/mux0.xcf"
+pgr_project close
+#Stop recording: 2/16/2022 21:31:12

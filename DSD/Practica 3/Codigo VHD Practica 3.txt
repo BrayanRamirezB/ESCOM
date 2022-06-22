@@ -1,0 +1,37 @@
+LIBRARY IEEE;
+
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY PRACT3 IS
+
+	PORT( clk, clear, SEL : IN STD_LOGIC;
+		Q : OUT STD_LOGIC_VECTOR(7 downto 0));
+
+END PRACT3;
+
+ARCHITECTURE BEHAVIOR OF PRACT3 IS
+
+	SIGNAL Q_aux :  STD_LOGIC_VECTOR(7 downto 0);
+
+BEGIN
+	PROCESS (clk, clear, SEL)
+		BEGIN
+			IF (clear = '1') THEN
+				Q_aux <= "10000000";
+			ELSIF ((clk'EVENT) AND (clk = '1')) THEN
+				IF (SEL = '0') THEN
+					Q_aux <= Not(Q_aux(0))&Q_aux(7 downto 1);
+				ELSIF (SEL = '1') THEN
+					Q_aux(6) <= Q_aux(7);
+					Q_aux(5) <= Q_aux(6);
+					Q_aux(4) <= Q_aux(5);
+					Q_aux(3) <= Q_aux(4);
+					Q_aux(2) <= Q_aux(3);
+					Q_aux(1) <= Q_aux(2);
+					Q_aux(0) <= Q_aux(1);
+					Q_aux(7) <= Q_aux(0);
+				END IF;
+			END IF;
+	END PROCESS;
+	Q <= Q_aux;
+END BEHAVIOR;

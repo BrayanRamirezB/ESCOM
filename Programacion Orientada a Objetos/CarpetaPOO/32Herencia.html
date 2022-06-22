@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Herencia</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 3</header>
+ <nav>
+    <!--<div class="contenedor">-->
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+
+      <p class="derecha"><a href="TemarioPOO.html">Classroom</a></p>
+      <p><a href="TemarioPOO.html">Temario</a></p>
+      <p><a href="41EnlacesPrac.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="41EnlacesHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">HERENCIA</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>Diagramas de clase</h1>
+       <hr>
+       <p><strong>Definición de diagrama.</strong> La clase se representa por un rectángulo, que se divide en tres rectángulos. El nombre de la clase se da en el rectángulo superior. los atributos se muestran con sus nombres y sus tipos en el segundo cuadro. La tercera caja muestra los métodos con sus tipos de retorno y parámetros (nombres y tipos). El acceso especificador para cada campo y método se proporciona justo delante del nombre del campo o del método. El signo - indica acceso privado, el signo + significa acceso público y el signo # se utiliza para el acceso protegido.</p>
+       <br>
+       <p><strong>La clase Circulo.</strong> </p>
+       <br>
+       <pre>
+       public class Circulo {
+         double radio;
+         Circulo() {
+           radio = 1.0;
+         }
+         Circulo(double nuevoRadio) {
+           radio = nuevoRadio;
+         }
+         double getArea() {
+          return radio * radio * Math.PI;
+         }
+       }
+       </pre>
+       <br>
+       <p><strong>Diagrama de clase de Circulo.</strong></p>
+       <br>
+       <img src="DiClaseCirculo.svg" align=center width=55% border=5></image>
+       <br>
+       <br>
+       <p><strong>La clase Television.</strong></p>
+       <br>
+       <pre>
+       public class Television {
+         int canal = 1;
+         int nivelVolumen = 1;
+         boolean on = false;
+
+         public Television() {
+         }
+         public void ponerOn() {
+           on = true;
+         }
+         public void ponerOff() {
+           on = false;
+         }
+         public void setCanal(int nuevoCanal) {
+           if(on && nuevoCanal >= 1 && nuevoCanal <= 120)
+             canal = nuevoCanal;
+         }
+         public void setVolumen(int nuevoNivelVolumen) {
+           if(on && nuevoNivelVolumen >= 1 && nuevoNivelVolumen <= 7)
+             nivelVolumen = nuevoNivelVolumen;
+         }
+         public void siguienteCanal() {
+           if(on && canal < 120)
+             canal++;
+         }
+         public void anteriorCanal() {
+           if(on && canal > 1)
+             canal--;
+         }
+         public void masVolumen() {
+           if(on && nivelVolumen < 7)
+             nivelVolumen++;
+         }
+         public void menosVolumen() {
+           if(on && nivelVolumen > 1)
+             nivelVolumen--;
+         }
+       }
+       </pre>
+       <br>
+       <p><strong>Diagrama de clase de Television.</strong></p>
+       <br>
+       <img src="DiClaseTelevision.svg" align=center width=55% border=5></image>
+       <br>
+       <br>
+       
+       <hr>
+       <h1>Herencia</h1>
+       <hr>
+       <br>
+       <p><strong>Definición de herencia.</strong> La programación orientada a objetos le permite derivar nuevas clases a partir de clases existentes. Esto es
+llamado herencia. La herencia es una característica importante y poderosa en Java para reutilizar software. Suponga que debe definir clases para modelar círculos, rectángulos y triángulos. Estas clases tienen muchas características comunes. ¿Cuál es la mejor manera de diseñar estas clases para evitar
+redundancia y hacer que el sistema sea fácil de comprender y de mantener? La respuesta es
+utilizar la herencia.</p>
+       <br>
+       <p><strong>Superclase y subclase.</strong> Utiliza una clase para modelar objetos del mismo tipo. Las diferentes clases pueden tener algunos
+propiedades y comportamientos, que pueden generalizarse en una clase que pueden ser compartidos por otras
+clases. La herencia le permite definir una clase general y luego extenderla a clases más especializadas. Las clases especializadas heredan las propiedades y métodos de la clase general.
+Considere los objetos geométricos. Suponga que desea diseñar las clases para modelar formas geométricas. Objetos como círculos y rectángulos. Los objetos geométricos tienen muchas propiedades comunes y comportamientos. Se pueden dibujar en un color determinado, rellenos o sin rellenar. Por lo tanto, se puede usar una clase general <strong>FiguraGeometrica</strong> para modelar todos los objetos geométricos. Esta clase contiene las propiedades color y relleno y sus métodos get y set apropiados. Suponga que esta clase también contiene la propiedad datoCreado() y los métodos getDatoCreado() y toString().
+El método toString() devuelve una representación de cadena para el objeto. Dado que un círculo es un tipo especial de objeto geométrico, comparte propiedades y métodos comunes con otros objetos geométricos.
+Por tanto, tiene sentido definir la clase <strong>Circulo</strong> que amplía la clase <strong>FiguraGeometrica</strong>. Asimismo, <strong>Rectangulo</strong> también se puede declarar como una subclase de <strong>FiguraGeometrica</strong>. El diagrama de clases muestra la relación entre estas clases. Se usa una flecha que apunta a la superclase para denotar la relación de herencia entre las dos clases involucradas.
+En terminología de Java, una clase C1 extendida de otra clase C2 se llama subclase y C2 se llama superclase. Una superclase también se conoce como clase padre o clase base, y subclase como una clase secundaria, una clase extendida o una clase derivada. Una subclase hereda campos de datos y métodos de su superclase y también pueden agregar nuevos campos de datos y métodos.
+La clase <strong>Circulo</strong> hereda todos los campos y métodos de datos accesibles de la clase <strong>FormaGeometrica</strong>. Además, tiene un nuevo campo de datos, radio y los métodos get y set asociados. También contiene los métodos getArea(), getPerimetro() y getDiametro() para devolver el área, perímetro y diámetro del círculo.
+La clase <strong>Rectangulo</strong> hereda todos los campos y métodos de datos accesibles de la Clase <strong>FiguraGeometrica</strong>. Además, tiene los campos de datos ancho y alto y los métodos get y set asociados. También contiene los métodos getArea() y getPerimetro() para devolver el área y el perímetro del rectángulo.
+Las clases <strong>FiguraGeometrica</strong>, <strong>Circulo</strong> y <strong>Rectangulo</strong>, estan descritas por su código y presentadas en el diagrama de clases.</p>
+       <br>
+       <p><strong>La clase FiguraGeometrica.</strong></p>
+        <br>
+       <pre>
+       public class FiguraGeometrica {
+         private String color = "blanco";
+         private boolean rellenado;
+         private java.util.Date datoCreado;
+         /** Constructor */
+         public FiguraGeometrica() {
+           datoCreado = new java.util.Date();
+         }
+        /** Constructor con un color especifico * y valor rellenado */
+         public FiguraGeometrica(String Color, boolean rellenado) {
+           datoCreado = new java.util.Date();
+           this.color = color;
+           this.rellenado = rellenado;
+         }
+         /** Color retornado */
+         public String getColor() {
+           return color;
+         }
+         /** Poner un nuevo color */
+         public void setColor(String color) {
+           this.color = color;
+         }
+         /** Rellenado regresado. De un rellenado boolean,
+           su metodo get es nombrado esRellenado */
+         public boolean esRellenado() {
+           return rellenado;
+         }
+         /** Poner un nuevo rellenado */
+         public void setRellenado(boolean rellenado) {
+           this.rellenado = rellenado;
+         }
+         /** Conseguir datoCreado */
+         public java.util.Date getDatoCreado() {
+           return datoCreado;
+         }
+         /** Regresa una cadena que representa a este objeto */
+         public String toString() {
+           return "creatdo en " + datoCreado + "\ncolor: " + color +
+             " y rellenado: " + rellenado;
+         }
+       }
+      </pre>
+       <br>
+       <p><strong>Diagrama de clases.</strong></p>
+        <br>
+       <img src="HeClaseFiguraGeometrica.svg" align=center width=100% border=5></image>
+       <br>
+       <p>
+</p>
+        <br>
+        <p><strong>La clase Circulo.</strong></p>
+        <br>
+        <pre>
+        public class Circulo extends FiguraGeometrica {
+          private double radio;
+          
+          public Circulo() {
+          }
+          public Circulo(double radio) {
+            this.radio = radio;
+          }
+         public Circulo(double radio, String color, boolean rellenado) {
+           this.radio = radio;
+           setColor(color);
+           setRellenado(rellenado);
+         }
+         public double getRadio() {
+           return radio;
+         }
+         public String setRadio(double radio) {
+           this.radio = radio;
+         }
+         public double getArea() {
+           return radio * radio * Math.PI;
+         }
+         public double getPerimetro() {
+           return  2 * radio * Math.PI;
+         }
+         public getDiametro() {
+           return 2 * radio;
+         ]
+         public void imprimirCirculo() {
+           System.out.println("El circulo es creado " + getDatoCreado() +
+" y el radio es " + radio);
+         }
+         
+       }
+
+      </pre>
+        <br>
+        <p><strong>La clase Rectangulo.</strong></p>
+        <br>
+        <pre>
+        public class Rectangulo extends FiguraGeometrica {
+          private double ancho;
+          private double alto;
+          
+          public Rectangulo() {
+            
+          }
+
+          public Rectangulo(double ancho, double alto) {
+            this.ancho = ancho;
+            this.alto = alto;
+          }
+
+          public Rectangulo(double ancho, double alto, String color, boolean rellenado) {
+            this.ancho = ancho;
+            this.alto = alto;
+            setColor(color);
+            setRellenado(rellenado);
+          }
+          
+          public double getAncho() {
+            return ancho;
+          }
+
+          public void setAncho(double ancho) {
+            this.ancho = ancho;
+          }
+
+          public double getAlto() {
+            return alto;
+          }
+
+          public setAlto(double alto) {
+            this.alto = alto;
+          }
+
+          public double getArea() {
+            return ancho * alto;
+          }
+
+          public double getPerimetro() {
+            return 2 * (ancho + alto);
+          }
+
+        } 
+         
+        </pre>
+        <br>
+        <p><strong>La clase principal.</strong></p>
+        <br>
+        <pre>
+        public class RectanguloDriver {
+          public static void main(String[] args) {
+            Circulo circulo = new Circulo(1);
+            System.out.println("Un circulo " + circulo.toString());
+            System.out.println("El radio es " + circulo.getRadio());
+            System.out.println("El area es " + circle.getArea());
+            System.out.println("El diametro es " + circulo.getDiametro());
+            Rectangulo rectangulo = new Rectangulo1(2, 4);
+            System.out.println("\nUn rectangulo " + rectangulo.toString());
+            System.out.println("El area es " + rectangulo.getArea());
+            System.out.println("El perimetro es " +
+               rectangulo.getPerimetro());
+          }
+        }
+        </pre>
+        <br>
+        <p>El siguiente programa:</p>
+        <br>
+        <pre>
+        class CadenaDriver {
+          public static void main(String args[]) {
+            String cadenaOb1 = "Primera cadena";
+            String cadenaOb2 = "Segunda cadena";
+            String cadenaOb3 = cadenaOb1 + " Y " + cadenaOb2;
+            
+            System.out.println(cadenaOb1);
+            System.out.println(cadenaOb2);
+            System.out.println(cadenaOb3);
+          }
+        }
+        </pre>
+        <br>
+        <p>Otro programa:</p>
+        <br>
+        <pre>
+        class CadenaDriver1 {
+          public static void main(String args[]) {
+            String cadenaOb1 = "Primera cadena";
+            String cadenaOb2 = "Segunda cadena";
+            String cadenaOb3 = cadenaOb1;
+            
+            System.out.println("La longitud de cadenaOb1 es: " + cadenaOb1.length());
+            System.out.println("El caracter de la posición 3 de cadenaOb1 es: " + cadenaOb1.charAt(3));
+            
+            if(cadenaOb1.equals(cadenaOb2))
+              System.out.println(" cadenaOb1 == cadenaOb2 " );
+            else
+              System.out.println(" cadenaOb1 != cadenaOb2 " );
+              
+            if(cadenaOb1.equals(cadenaOb3))
+              System.out.println(" cadenaOb1 == cadenaOb3 " );
+            else
+              System.out.println(" cadenaOb1 != cadenaOb3 " );
+          }
+        }
+        </pre>
+        <br>
+        <p><strong>Otro ejemplo de herencia:</strong></p>
+        <pre>
+        class A {
+          int i, j;
+          
+          void mostrarij() {
+            System.out.println(" i y j: " + i + " " + j);
+          }
+        }
+        
+        class B extends A {
+          ink k;
+          
+          mostrark() {
+            System.out.println(" k: " + k);
+          }
+          
+          void suma() {
+            System.out.println("i + j + k : " + (i + j + k));
+          }
+        }
+        
+        class HerenciaDriver {
+          public static void main(String args[]) {
+            A superO = new A();
+            B subO = new B();
+            
+            superO.i = 10;
+            superO.j = 20;
+            System.out.println(" Contenido de superO: ");
+            superO.mostrarij();
+            System.out.println();
+            
+            subO.i = 7;
+            subO.j = 8;
+            subO.k = 9;
+            System.out.println(" Contenido de subO: ");
+            subO.mostrarij();
+            subO.mostrark();
+            System.out.println();
+            
+            System.out.println(" La suma de i, j y k en sub=: ");
+            subO.suma();
+          }
+        }
+        </pre>
+        <br>
+        <p><strong>La salida es:</strong></p>
+        <p>Contenido de superO: <br>
+        i y j : 10 20 <br>
+        Contenido de subO: <br>
+        i y j: 7 8 <br>
+        suma de i, j y k en subO: <br>
+        i+j+k: 24
+        
+        <br>
+       </article>
+    </section>
+      <aside>
+      
+      <h1>Preguntas</h1>
+        <hr>
+        <br>
+        <p><strong>Pregunta 1.</strong> ¿Cuáles son las partes en las que se divide una cuadro de clase en un diagrama de clases?</p>
+        <br>
+        <p><strong>Pregunta 2.</strong> ¿Cómo se indica la herencia en un diagrama de clases?</p>
+        <br>
+        <hr>
+      <h1>Ejercicios</h1>
+        <hr>
+        <br>
+        <p><strong>Ejercicio 1.</strong> Crear la clase Triángulo usando la herencia.</p>
+     <br>
+      <hr>
+       <p><strong>Ejercicio 2.</strong> Agregar la clase Triangulo al diagrama de clases de FiguraGeometrica.</p>
+       <br>
+       
+      <br>
+ <!--    <hr>
+     <h1>Práctica 4 (la correspondiente)</h1>
+        <hr>
+        <br>
+        <p>Realizar la siguiente prácticas presentarlas en un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p>
+      
+      <br>
+     <hr>
+     <h1>Realizar el proyecto (parcial 1)</h1>
+        <hr>
+        <br>
+        <p>Presentar el proyecto por medio de un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p> -->
+        </aside>
+      <footer><p>Relación de objetos: Tema 3.2</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

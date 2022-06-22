@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void main(){
+	char a = 'a',b = 'b';
+	
+	printf("%c",a);
+	printf("%c",b);
+}

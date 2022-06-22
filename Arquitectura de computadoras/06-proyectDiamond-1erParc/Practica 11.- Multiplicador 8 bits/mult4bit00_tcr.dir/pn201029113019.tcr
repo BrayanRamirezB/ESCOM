@@ -1,0 +1,8 @@
+#Start recording tcl command: 10/29/2020 10:32:53
+#Project Location: C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/mult4bit00; Project name: mult4bit00
+prj_project open "C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/mult4bit00/mult4bit00.ldf"
+prj_run Export -impl mult4bit000 -task Jedecgen
+prj_run Export -impl mult4bit000 -task Jedecgen
+prj_project save
+prj_project close
+#Stop recording: 10/29/2020 11:30:19

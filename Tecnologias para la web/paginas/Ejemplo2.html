@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta http-equiv = "Content-Type" content = "text/html; charset 0 utf-8">
+<meta name = "Description" content = "Pagina de ejemplo 2">
+
+<title>Ejemplo 2</title>
+	<style >
+		*{ border-color: #03c; }
+			.encabezado{
+				height:  400px;
+				margin-bottom: 50px;
+				border-top-width: 3px;border-bottom-width:5px ;
+				border-left-width: 9px; border-right-width: 8px;
+				border-top-style: dashed; border-bottom-style: groove;
+				border-left-style: outset; border-right-style: ridge;
+				border-top-color: red;	border-bottom-color: green;
+				border-left-color: purple; border-right-color: yellow;
+				background-color: #CF6;
+				background-image: url("sl.jpg");
+				background-size: 200px 200px;
+				background-repeat: repeat;
+				background-position: bottom left;
+				background-position: 50% 50%;	
+			}
+
+		a{border-width: medium; border-style: solid inset double hidden;
+								border-color: red blue yellow purple;}
+
+		.texto { width: 300px; border-width: 3px 5px 10px 7px; border-style: solid;					margin-top: 40px; margin-left: 30px; margin-right: 50px;	
+				padding-top: 30px; padding-left: 15px; padding-right: 10px;
+				padding-bottom: 10px;}
+
+		span{margin: 50px;}
+
+		.clasep {border-width: 10px 5px; border-style: inset;
+				border-color: red; margin: 10px 20px 30px 15px;
+				padding: 10px;}	
+		table{border-color: yellow;}		
+	</style>
+</head>
+<body>
+	<h1>PAGINA CON ESTILOS Y SELECTORES DE CLASE</h1>
+	<h1 class="encabezado"> ENCABEZADO CON varios<br/> estilos<br/> <br/> <br/> <br/> <br/> </h1>
+	<p class="encabezado"> Este parrafo tiene un estilo Encabezado</p>
+	<p class="texto">Este parrafo tiene un estilo texto</p>
+	<p class="clasep"> Estilo de direccion <span class="encabezado">otro texto</span> mas estilo direccion</p>
+	<a href="http://www.ipn.mx">Ir ala pagina del IPN</a>
+	<table border="3"><tr><td>uno</td></tr></table>	
+</body>
+</html>	

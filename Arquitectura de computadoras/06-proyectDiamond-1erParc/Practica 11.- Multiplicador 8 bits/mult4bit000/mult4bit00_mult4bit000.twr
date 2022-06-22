@@ -1,0 +1,768 @@
+
+Loading design for application trce from file mult4bit00_mult4bit000.ncd.
+Design name: mult4bit00
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Sat Mar 12 21:51:33 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o mult4bit00_mult4bit000.twr -gui -msgset C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/Practica 11.- Multiplicador 8 bits/promote.xml mult4bit00_mult4bit000.ncd mult4bit00_mult4bit000.prf 
+Design file:     mult4bit00_mult4bit000.ncd
+Preference file: mult4bit00_mult4bit000.prf
+Device,speed:    LCMXO2-7000HE,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: Default path enumeration
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:   37.074ns delay Am[0] to Rm[14]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         14.PAD to       14.PADDI Am[0]
+ROUTE        15     4.051       14.PADDI to      R17C7C.A1 Am_c[0]
+CTOF_DEL    ---     0.452      R17C7C.A1 to      R17C7C.F1 SLICE_41
+ROUTE         2     0.862      R17C7C.F1 to      R17C7A.A1 sc00[0]
+CTOF_DEL    ---     0.452      R17C7A.A1 to      R17C7A.F1 SLICE_40
+ROUTE         2     0.549      R17C7A.F1 to      R16C7A.D1 sc00[1]
+CTOF_DEL    ---     0.452      R16C7A.D1 to      R16C7A.F1 SLICE_39
+ROUTE         2     0.890      R16C7A.F1 to      R16C6A.B1 sc00[2]
+CTOF_DEL    ---     0.452      R16C6A.B1 to      R16C6A.F1 SLICE_38
+ROUTE         2     0.392      R16C6A.F1 to      R16C6B.C0 sc00[3]
+CTOF_DEL    ---     0.452      R16C6B.C0 to      R16C6B.F0 SLICE_51
+ROUTE         2     0.896      R16C6B.F0 to      R16C7C.B0 ss00[3]
+CTOF_DEL    ---     0.452      R16C7C.B0 to      R16C7C.F0 SLICE_34
+ROUTE         2     0.893      R16C7C.F0 to      R16C7B.B0 ss01[2]
+CTOF_DEL    ---     0.452      R16C7B.B0 to      R16C7B.F0 SLICE_58
+ROUTE         2     1.669      R16C7B.F0 to      R17C8B.B0 MU050.Sint1
+CTOF_DEL    ---     0.452      R17C8B.B0 to      R17C8B.F0 SLICE_23
+ROUTE         2     0.911      R17C8B.F0 to      R17C9B.B1 MU065.Sint1
+CTOF_DEL    ---     0.452      R17C9B.B1 to      R17C9B.F1 SLICE_18
+ROUTE         2     0.912      R17C9B.F1 to      R16C9C.B1 sc04[0]
+CTOF_DEL    ---     0.452      R16C9C.B1 to      R16C9C.F1 SLICE_17
+ROUTE         2     0.392      R16C9C.F1 to      R16C9C.C0 sc04[1]
+CTOF_DEL    ---     0.452      R16C9C.C0 to      R16C9C.F0 SLICE_17
+ROUTE         3     1.026      R16C9C.F0 to      R14C9D.C1 sc04[2]
+CTOF_DEL    ---     0.452      R14C9D.C1 to      R14C9D.F1 SLICE_16
+ROUTE         2     0.893      R14C9D.F1 to      R14C9D.B0 sc04[3]
+CTOF_DEL    ---     0.452      R14C9D.B0 to      R14C9D.F0 SLICE_16
+ROUTE         2     1.156      R14C9D.F0 to     R15C10A.A1 ss04[3]
+CTOF_DEL    ---     0.452     R15C10A.A1 to     R15C10A.F1 SLICE_11
+ROUTE         2     0.859     R15C10A.F1 to      R15C9B.A1 sc05[3]
+CTOF_DEL    ---     0.452      R15C9B.A1 to      R15C9B.F1 SLICE_10
+ROUTE         2     0.549      R15C9B.F1 to      R15C8D.D1 sc05[4]
+CTOF_DEL    ---     0.452      R15C8D.D1 to      R15C8D.F1 SLICE_9
+ROUTE         2     0.618      R15C8D.F1 to      R15C8C.B0 sc05[5]
+CTOF_DEL    ---     0.452      R15C8C.B0 to      R15C8C.F0 SLICE_53
+ROUTE         2     0.896      R15C8C.F0 to      R15C9C.B1 ss05[5]
+CTOF_DEL    ---     0.452      R15C9C.B1 to      R15C9C.F1 SLICE_2
+ROUTE         2     0.862      R15C9C.F1 to      R15C9A.A1 sc06[5]
+CTOF_DEL    ---     0.452      R15C9A.A1 to      R15C9A.F1 SLICE_1
+ROUTE         2     0.618      R15C9A.F1 to      R15C9A.B0 sc06[6]
+CTOF_DEL    ---     0.452      R15C9A.B0 to      R15C9A.F0 SLICE_1
+ROUTE         1     3.320      R15C9A.F0 to       57.PADDO Rm_c[14]
+DOPAD_DEL   ---     3.448       57.PADDO to         57.PAD Rm[14]
+                  --------
+                   37.074   (37.4% logic, 62.6% route), 22 logic levels.
+
+Report:   37.068ns delay Am[0] to Rm[14]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         14.PAD to       14.PADDI Am[0]
+ROUTE        15     4.051       14.PADDI to      R17C7C.A1 Am_c[0]
+CTOF_DEL    ---     0.452      R17C7C.A1 to      R17C7C.F1 SLICE_41
+ROUTE         2     0.862      R17C7C.F1 to      R17C7A.A1 sc00[0]
+CTOF_DEL    ---     0.452      R17C7A.A1 to      R17C7A.F1 SLICE_40
+ROUTE         2     0.549      R17C7A.F1 to      R16C7A.D1 sc00[1]
+CTOF_DEL    ---     0.452      R16C7A.D1 to      R16C7A.F1 SLICE_39
+ROUTE         2     0.890      R16C7A.F1 to      R16C6A.B1 sc00[2]
+CTOF_DEL    ---     0.452      R16C6A.B1 to      R16C6A.F1 SLICE_38
+ROUTE         2     0.392      R16C6A.F1 to      R16C6B.C0 sc00[3]
+CTOF_DEL    ---     0.452      R16C6B.C0 to      R16C6B.F0 SLICE_51
+ROUTE         2     0.896      R16C6B.F0 to      R16C7C.B0 ss00[3]
+CTOF_DEL    ---     0.452      R16C7C.B0 to      R16C7C.F0 SLICE_34
+ROUTE         2     0.893      R16C7C.F0 to      R16C7B.B0 ss01[2]
+CTOF_DEL    ---     0.452      R16C7B.B0 to      R16C7B.F0 SLICE_58
+ROUTE         2     1.669      R16C7B.F0 to      R17C8B.B0 MU050.Sint1
+CTOF_DEL    ---     0.452      R17C8B.B0 to      R17C8B.F0 SLICE_23
+ROUTE         2     0.911      R17C8B.F0 to      R17C9B.B1 MU065.Sint1
+CTOF_DEL    ---     0.452      R17C9B.B1 to      R17C9B.F1 SLICE_18
+ROUTE         2     0.912      R17C9B.F1 to      R16C9C.B1 sc04[0]
+CTOF_DEL    ---     0.452      R16C9C.B1 to      R16C9C.F1 SLICE_17
+ROUTE         2     0.392      R16C9C.F1 to      R16C9C.C0 sc04[1]
+CTOF_DEL    ---     0.452      R16C9C.C0 to      R16C9C.F0 SLICE_17
+ROUTE         3     1.026      R16C9C.F0 to      R14C9D.C1 sc04[2]
+CTOF_DEL    ---     0.452      R14C9D.C1 to      R14C9D.F1 SLICE_16
+ROUTE         2     0.893      R14C9D.F1 to      R14C9D.B0 sc04[3]
+CTOF_DEL    ---     0.452      R14C9D.B0 to      R14C9D.F0 SLICE_16
+ROUTE         2     1.156      R14C9D.F0 to     R15C10A.A1 ss04[3]
+CTOF_DEL    ---     0.452     R15C10A.A1 to     R15C10A.F1 SLICE_11
+ROUTE         2     0.618     R15C10A.F1 to     R15C10A.B0 sc05[3]
+CTOF_DEL    ---     0.452     R15C10A.B0 to     R15C10A.F0 SLICE_11
+ROUTE         2     0.859     R15C10A.F0 to     R16C10C.A1 ss05[3]
+CTOF_DEL    ---     0.452     R16C10C.A1 to     R16C10C.F1 SLICE_5
+ROUTE         2     0.890     R16C10C.F1 to      R16C9A.B1 sc06[3]
+CTOF_DEL    ---     0.452      R16C9A.B1 to      R16C9A.F1 SLICE_4
+ROUTE         2     0.549      R16C9A.F1 to      R15C9C.D1 sc06[4]
+CTOF_DEL    ---     0.452      R15C9C.D1 to      R15C9C.F1 SLICE_2
+ROUTE         2     0.862      R15C9C.F1 to      R15C9A.A1 sc06[5]
+CTOF_DEL    ---     0.452      R15C9A.A1 to      R15C9A.F1 SLICE_1
+ROUTE         2     0.618      R15C9A.F1 to      R15C9A.B0 sc06[6]
+CTOF_DEL    ---     0.452      R15C9A.B0 to      R15C9A.F0 SLICE_1
+ROUTE         1     3.320      R15C9A.F0 to       57.PADDO Rm_c[14]
+DOPAD_DEL   ---     3.448       57.PADDO to         57.PAD Rm[14]
+                  --------
+                   37.068   (37.4% logic, 62.6% route), 22 logic levels.
+
+Report:   36.999ns delay Am[0] to Rm[15]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         14.PAD to       14.PADDI Am[0]
+ROUTE        15     4.051       14.PADDI to      R17C7C.A1 Am_c[0]
+CTOF_DEL    ---     0.452      R17C7C.A1 to      R17C7C.F1 SLICE_41
+ROUTE         2     0.862      R17C7C.F1 to      R17C7A.A1 sc00[0]
+CTOF_DEL    ---     0.452      R17C7A.A1 to      R17C7A.F1 SLICE_40
+ROUTE         2     0.549      R17C7A.F1 to      R16C7A.D1 sc00[1]
+CTOF_DEL    ---     0.452      R16C7A.D1 to      R16C7A.F1 SLICE_39
+ROUTE         2     0.890      R16C7A.F1 to      R16C6A.B1 sc00[2]
+CTOF_DEL    ---     0.452      R16C6A.B1 to      R16C6A.F1 SLICE_38
+ROUTE         2     0.392      R16C6A.F1 to      R16C6B.C0 sc00[3]
+CTOF_DEL    ---     0.452      R16C6B.C0 to      R16C6B.F0 SLICE_51
+ROUTE         2     0.896      R16C6B.F0 to      R16C7C.B0 ss00[3]
+CTOF_DEL    ---     0.452      R16C7C.B0 to      R16C7C.F0 SLICE_34
+ROUTE         2     0.893      R16C7C.F0 to      R16C7B.B0 ss01[2]
+CTOF_DEL    ---     0.452      R16C7B.B0 to      R16C7B.F0 SLICE_58
+ROUTE         2     1.669      R16C7B.F0 to      R17C8B.B0 MU050.Sint1
+CTOF_DEL    ---     0.452      R17C8B.B0 to      R17C8B.F0 SLICE_23
+ROUTE         2     0.911      R17C8B.F0 to      R17C9B.B1 MU065.Sint1
+CTOF_DEL    ---     0.452      R17C9B.B1 to      R17C9B.F1 SLICE_18
+ROUTE         2     0.912      R17C9B.F1 to      R16C9C.B1 sc04[0]
+CTOF_DEL    ---     0.452      R16C9C.B1 to      R16C9C.F1 SLICE_17
+ROUTE         2     0.392      R16C9C.F1 to      R16C9C.C0 sc04[1]
+CTOF_DEL    ---     0.452      R16C9C.C0 to      R16C9C.F0 SLICE_17
+ROUTE         3     1.026      R16C9C.F0 to      R14C9D.C1 sc04[2]
+CTOF_DEL    ---     0.452      R14C9D.C1 to      R14C9D.F1 SLICE_16
+ROUTE         2     0.893      R14C9D.F1 to      R14C9D.B0 sc04[3]
+CTOF_DEL    ---     0.452      R14C9D.B0 to      R14C9D.F0 SLICE_16
+ROUTE         2     1.156      R14C9D.F0 to     R15C10A.A1 ss04[3]
+CTOF_DEL    ---     0.452     R15C10A.A1 to     R15C10A.F1 SLICE_11
+ROUTE         2     0.859     R15C10A.F1 to      R15C9B.A1 sc05[3]
+CTOF_DEL    ---     0.452      R15C9B.A1 to      R15C9B.F1 SLICE_10
+ROUTE         2     0.549      R15C9B.F1 to      R15C8D.D1 sc05[4]
+CTOF_DEL    ---     0.452      R15C8D.D1 to      R15C8D.F1 SLICE_9
+ROUTE         2     0.618      R15C8D.F1 to      R15C8C.B0 sc05[5]
+CTOF_DEL    ---     0.452      R15C8C.B0 to      R15C8C.F0 SLICE_53
+ROUTE         2     0.896      R15C8C.F0 to      R15C9C.B1 ss05[5]
+CTOF_DEL    ---     0.452      R15C9C.B1 to      R15C9C.F1 SLICE_2
+ROUTE         2     0.862      R15C9C.F1 to      R15C9A.A1 sc06[5]
+CTOF_DEL    ---     0.452      R15C9A.A1 to      R15C9A.F1 SLICE_1
+ROUTE         2     0.893      R15C9A.F1 to      R15C9D.B0 sc06[6]
+CTOF_DEL    ---     0.452      R15C9D.B0 to      R15C9D.F0 SLICE_0
+ROUTE         1     2.970      R15C9D.F0 to       59.PADDO Rm_c[15]
+DOPAD_DEL   ---     3.448       59.PADDO to         59.PAD Rm[15]
+                  --------
+                   36.999   (37.5% logic, 62.5% route), 22 logic levels.
+
+Report:   36.993ns delay Am[0] to Rm[15]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         14.PAD to       14.PADDI Am[0]
+ROUTE        15     4.051       14.PADDI to      R17C7C.A1 Am_c[0]
+CTOF_DEL    ---     0.452      R17C7C.A1 to      R17C7C.F1 SLICE_41
+ROUTE         2     0.862      R17C7C.F1 to      R17C7A.A1 sc00[0]
+CTOF_DEL    ---     0.452      R17C7A.A1 to      R17C7A.F1 SLICE_40
+ROUTE         2     0.549      R17C7A.F1 to      R16C7A.D1 sc00[1]
+CTOF_DEL    ---     0.452      R16C7A.D1 to      R16C7A.F1 SLICE_39
+ROUTE         2     0.890      R16C7A.F1 to      R16C6A.B1 sc00[2]
+CTOF_DEL    ---     0.452      R16C6A.B1 to      R16C6A.F1 SLICE_38
+ROUTE         2     0.392      R16C6A.F1 to      R16C6B.C0 sc00[3]
+CTOF_DEL    ---     0.452      R16C6B.C0 to      R16C6B.F0 SLICE_51
+ROUTE         2     0.896      R16C6B.F0 to      R16C7C.B0 ss00[3]
+CTOF_DEL    ---     0.452      R16C7C.B0 to      R16C7C.F0 SLICE_34
+ROUTE         2     0.893      R16C7C.F0 to      R16C7B.B0 ss01[2]
+CTOF_DEL    ---     0.452      R16C7B.B0 to      R16C7B.F0 SLICE_58
+ROUTE         2     1.669      R16C7B.F0 to      R17C8B.B0 MU050.Sint1
+CTOF_DEL    ---     0.452      R17C8B.B0 to      R17C8B.F0 SLICE_23
+ROUTE         2     0.911      R17C8B.F0 to      R17C9B.B1 MU065.Sint1
+CTOF_DEL    ---     0.452      R17C9B.B1 to      R17C9B.F1 SLICE_18
+ROUTE         2     0.912      R17C9B.F1 to      R16C9C.B1 sc04[0]
+CTOF_DEL    ---     0.452      R16C9C.B1 to      R16C9C.F1 SLICE_17
+ROUTE         2     0.392      R16C9C.F1 to      R16C9C.C0 sc04[1]
+CTOF_DEL    ---     0.452      R16C9C.C0 to      R16C9C.F0 SLICE_17
+ROUTE         3     1.026      R16C9C.F0 to      R14C9D.C1 sc04[2]
+CTOF_DEL    ---     0.452      R14C9D.C1 to      R14C9D.F1 SLICE_16
+ROUTE         2     0.893      R14C9D.F1 to      R14C9D.B0 sc04[3]
+CTOF_DEL    ---     0.452      R14C9D.B0 to      R14C9D.F0 SLICE_16
+ROUTE         2     1.156      R14C9D.F0 to     R15C10A.A1 ss04[3]
+CTOF_DEL    ---     0.452     R15C10A.A1 to     R15C10A.F1 SLICE_11
+ROUTE         2     0.618     R15C10A.F1 to     R15C10A.B0 sc05[3]
+CTOF_DEL    ---     0.452     R15C10A.B0 to     R15C10A.F0 SLICE_11
+ROUTE         2     0.859     R15C10A.F0 to     R16C10C.A1 ss05[3]
+CTOF_DEL    ---     0.452     R16C10C.A1 to     R16C10C.F1 SLICE_5
+ROUTE         2     0.890     R16C10C.F1 to      R16C9A.B1 sc06[3]
+CTOF_DEL    ---     0.452      R16C9A.B1 to      R16C9A.F1 SLICE_4
+ROUTE         2     0.549      R16C9A.F1 to      R15C9C.D1 sc06[4]
+CTOF_DEL    ---     0.452      R15C9C.D1 to      R15C9C.F1 SLICE_2
+ROUTE         2     0.862      R15C9C.F1 to      R15C9A.A1 sc06[5]
+CTOF_DEL    ---     0.452      R15C9A.A1 to      R15C9A.F1 SLICE_1
+ROUTE         2     0.893      R15C9A.F1 to      R15C9D.B0 sc06[6]
+CTOF_DEL    ---     0.452      R15C9D.B0 to      R15C9D.F0 SLICE_0
+ROUTE         1     2.970      R15C9D.F0 to       59.PADDO Rm_c[15]
+DOPAD_DEL   ---     3.448       59.PADDO to         59.PAD Rm[15]
+                  --------
+                   36.993   (37.5% logic, 62.5% route), 22 logic levels.
+
+Report:   36.887ns delay Am[0] to Rm[14]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         14.PAD to       14.PADDI Am[0]
+ROUTE        15     4.051       14.PADDI to      R17C7C.A1 Am_c[0]
+CTOF_DEL    ---     0.452      R17C7C.A1 to      R17C7C.F1 SLICE_41
+ROUTE         2     0.862      R17C7C.F1 to      R17C7A.A1 sc00[0]
+CTOF_DEL    ---     0.452      R17C7A.A1 to      R17C7A.F1 SLICE_40
+ROUTE         2     0.618      R17C7A.F1 to      R17C7A.B0 sc00[1]
+CTOF_DEL    ---     0.452      R17C7A.B0 to      R17C7A.F0 SLICE_40
+ROUTE         2     0.618      R17C7A.F0 to      R17C7B.B1 ss00[1]
+CTOF_DEL    ---     0.452      R17C7B.B1 to      R17C7B.F1 SLICE_35
+ROUTE         2     0.912      R17C7B.F1 to      R16C7C.B1 sc01[1]
+CTOF_DEL    ---     0.452      R16C7C.B1 to      R16C7C.F1 SLICE_34
+ROUTE         2     0.392      R16C7C.F1 to      R16C7C.C0 sc01[2]
+CTOF_DEL    ---     0.452      R16C7C.C0 to      R16C7C.F0 SLICE_34
+ROUTE         2     0.893      R16C7C.F0 to      R16C7B.B0 ss01[2]
+CTOF_DEL    ---     0.452      R16C7B.B0 to      R16C7B.F0 SLICE_58
+ROUTE         2     1.669      R16C7B.F0 to      R17C8B.B0 MU050.Sint1
+CTOF_DEL    ---     0.452      R17C8B.B0 to      R17C8B.F0 SLICE_23
+ROUTE         2     0.911      R17C8B.F0 to      R17C9B.B1 MU065.Sint1
+CTOF_DEL    ---     0.452      R17C9B.B1 to      R17C9B.F1 SLICE_18
+ROUTE         2     0.912      R17C9B.F1 to      R16C9C.B1 sc04[0]
+CTOF_DEL    ---     0.452      R16C9C.B1 to      R16C9C.F1 SLICE_17
+ROUTE         2     0.392      R16C9C.F1 to      R16C9C.C0 sc04[1]
+CTOF_DEL    ---     0.452      R16C9C.C0 to      R16C9C.F0 SLICE_17
+ROUTE         3     1.026      R16C9C.F0 to      R14C9D.C1 sc04[2]
+CTOF_DEL    ---     0.452      R14C9D.C1 to      R14C9D.F1 SLICE_16
+ROUTE         2     0.893      R14C9D.F1 to      R14C9D.B0 sc04[3]
+CTOF_DEL    ---     0.452      R14C9D.B0 to      R14C9D.F0 SLICE_16
+ROUTE         2     1.156      R14C9D.F0 to     R15C10A.A1 ss04[3]
+CTOF_DEL    ---     0.452     R15C10A.A1 to     R15C10A.F1 SLICE_11
+ROUTE         2     0.859     R15C10A.F1 to      R15C9B.A1 sc05[3]
+CTOF_DEL    ---     0.452      R15C9B.A1 to      R15C9B.F1 SLICE_10
+ROUTE         2     0.549      R15C9B.F1 to      R15C8D.D1 sc05[4]
+CTOF_DEL    ---     0.452      R15C8D.D1 to      R15C8D.F1 SLICE_9
+ROUTE         2     0.618      R15C8D.F1 to      R15C8C.B0 sc05[5]
+CTOF_DEL    ---     0.452      R15C8C.B0 to      R15C8C.F0 SLICE_53
+ROUTE         2     0.896      R15C8C.F0 to      R15C9C.B1 ss05[5]
+CTOF_DEL    ---     0.452      R15C9C.B1 to      R15C9C.F1 SLICE_2
+ROUTE         2     0.862      R15C9C.F1 to      R15C9A.A1 sc06[5]
+CTOF_DEL    ---     0.452      R15C9A.A1 to      R15C9A.F1 SLICE_1
+ROUTE         2     0.618      R15C9A.F1 to      R15C9A.B0 sc06[6]
+CTOF_DEL    ---     0.452      R15C9A.B0 to      R15C9A.F0 SLICE_1
+ROUTE         1     3.320      R15C9A.F0 to       57.PADDO Rm_c[14]
+DOPAD_DEL   ---     3.448       57.PADDO to         57.PAD Rm[14]
+                  --------
+                   36.887   (37.6% logic, 62.4% route), 22 logic levels.
+
+Report:   36.881ns delay Am[0] to Rm[14]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         14.PAD to       14.PADDI Am[0]
+ROUTE        15     4.051       14.PADDI to      R17C7C.A1 Am_c[0]
+CTOF_DEL    ---     0.452      R17C7C.A1 to      R17C7C.F1 SLICE_41
+ROUTE         2     0.862      R17C7C.F1 to      R17C7A.A1 sc00[0]
+CTOF_DEL    ---     0.452      R17C7A.A1 to      R17C7A.F1 SLICE_40
+ROUTE         2     0.618      R17C7A.F1 to      R17C7A.B0 sc00[1]
+CTOF_DEL    ---     0.452      R17C7A.B0 to      R17C7A.F0 SLICE_40
+ROUTE         2     0.618      R17C7A.F0 to      R17C7B.B1 ss00[1]
+CTOF_DEL    ---     0.452      R17C7B.B1 to      R17C7B.F1 SLICE_35
+ROUTE         2     0.912      R17C7B.F1 to      R16C7C.B1 sc01[1]
+CTOF_DEL    ---     0.452      R16C7C.B1 to      R16C7C.F1 SLICE_34
+ROUTE         2     0.392      R16C7C.F1 to      R16C7C.C0 sc01[2]
+CTOF_DEL    ---     0.452      R16C7C.C0 to      R16C7C.F0 SLICE_34
+ROUTE         2     0.893      R16C7C.F0 to      R16C7B.B0 ss01[2]
+CTOF_DEL    ---     0.452      R16C7B.B0 to      R16C7B.F0 SLICE_58
+ROUTE         2     1.669      R16C7B.F0 to      R17C8B.B0 MU050.Sint1
+CTOF_DEL    ---     0.452      R17C8B.B0 to      R17C8B.F0 SLICE_23
+ROUTE         2     0.911      R17C8B.F0 to      R17C9B.B1 MU065.Sint1
+CTOF_DEL    ---     0.452      R17C9B.B1 to      R17C9B.F1 SLICE_18
+ROUTE         2     0.912      R17C9B.F1 to      R16C9C.B1 sc04[0]
+CTOF_DEL    ---     0.452      R16C9C.B1 to      R16C9C.F1 SLICE_17
+ROUTE         2     0.392      R16C9C.F1 to      R16C9C.C0 sc04[1]
+CTOF_DEL    ---     0.452      R16C9C.C0 to      R16C9C.F0 SLICE_17
+ROUTE         3     1.026      R16C9C.F0 to      R14C9D.C1 sc04[2]
+CTOF_DEL    ---     0.452      R14C9D.C1 to      R14C9D.F1 SLICE_16
+ROUTE         2     0.893      R14C9D.F1 to      R14C9D.B0 sc04[3]
+CTOF_DEL    ---     0.452      R14C9D.B0 to      R14C9D.F0 SLICE_16
+ROUTE         2     1.156      R14C9D.F0 to     R15C10A.A1 ss04[3]
+CTOF_DEL    ---     0.452     R15C10A.A1 to     R15C10A.F1 SLICE_11
+ROUTE         2     0.618     R15C10A.F1 to     R15C10A.B0 sc05[3]
+CTOF_DEL    ---     0.452     R15C10A.B0 to     R15C10A.F0 SLICE_11
+ROUTE         2     0.859     R15C10A.F0 to     R16C10C.A1 ss05[3]
+CTOF_DEL    ---     0.452     R16C10C.A1 to     R16C10C.F1 SLICE_5
+ROUTE         2     0.890     R16C10C.F1 to      R16C9A.B1 sc06[3]
+CTOF_DEL    ---     0.452      R16C9A.B1 to      R16C9A.F1 SLICE_4
+ROUTE         2     0.549      R16C9A.F1 to      R15C9C.D1 sc06[4]
+CTOF_DEL    ---     0.452      R15C9C.D1 to      R15C9C.F1 SLICE_2
+ROUTE         2     0.862      R15C9C.F1 to      R15C9A.A1 sc06[5]
+CTOF_DEL    ---     0.452      R15C9A.A1 to      R15C9A.F1 SLICE_1
+ROUTE         2     0.618      R15C9A.F1 to      R15C9A.B0 sc06[6]
+CTOF_DEL    ---     0.452      R15C9A.B0 to      R15C9A.F0 SLICE_1
+ROUTE         1     3.320      R15C9A.F0 to       57.PADDO Rm_c[14]
+DOPAD_DEL   ---     3.448       57.PADDO to         57.PAD Rm[14]
+                  --------
+                   36.881   (37.6% logic, 62.4% route), 22 logic levels.
+
+Report:   36.830ns delay Am[0] to Rm[14]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         14.PAD to       14.PADDI Am[0]
+ROUTE        15     4.051       14.PADDI to      R17C7C.A1 Am_c[0]
+CTOF_DEL    ---     0.452      R17C7C.A1 to      R17C7C.F1 SLICE_41
+ROUTE         2     0.862      R17C7C.F1 to      R17C7A.A1 sc00[0]
+CTOF_DEL    ---     0.452      R17C7A.A1 to      R17C7A.F1 SLICE_40
+ROUTE         2     0.549      R17C7A.F1 to      R16C7A.D1 sc00[1]
+CTOF_DEL    ---     0.452      R16C7A.D1 to      R16C7A.F1 SLICE_39
+ROUTE         2     0.890      R16C7A.F1 to      R16C6A.B1 sc00[2]
+CTOF_DEL    ---     0.452      R16C6A.B1 to      R16C6A.F1 SLICE_38
+ROUTE         2     0.392      R16C6A.F1 to      R16C6B.C0 sc00[3]
+CTOF_DEL    ---     0.452      R16C6B.C0 to      R16C6B.F0 SLICE_51
+ROUTE         2     0.896      R16C6B.F0 to      R16C7C.B0 ss00[3]
+CTOF_DEL    ---     0.452      R16C7C.B0 to      R16C7C.F0 SLICE_34
+ROUTE         2     0.893      R16C7C.F0 to      R16C7B.B0 ss01[2]
+CTOF_DEL    ---     0.452      R16C7B.B0 to      R16C7B.F0 SLICE_58
+ROUTE         2     1.669      R16C7B.F0 to      R17C8B.B0 MU050.Sint1
+CTOF_DEL    ---     0.452      R17C8B.B0 to      R17C8B.F0 SLICE_23
+ROUTE         2     0.911      R17C8B.F0 to      R17C9B.B1 MU065.Sint1
+CTOF_DEL    ---     0.452      R17C9B.B1 to      R17C9B.F1 SLICE_18
+ROUTE         2     0.912      R17C9B.F1 to      R16C9C.B1 sc04[0]
+CTOF_DEL    ---     0.452      R16C9C.B1 to      R16C9C.F1 SLICE_17
+ROUTE         2     0.392      R16C9C.F1 to      R16C9C.C0 sc04[1]
+CTOF_DEL    ---     0.452      R16C9C.C0 to      R16C9C.F0 SLICE_17
+ROUTE         3     1.026      R16C9C.F0 to      R14C9D.C1 sc04[2]
+CTOF_DEL    ---     0.452      R14C9D.C1 to      R14C9D.F1 SLICE_16
+ROUTE         2     0.277      R14C9D.F1 to      R14C9C.D1 sc04[3]
+CTOF_DEL    ---     0.452      R14C9C.D1 to      R14C9C.F1 SLICE_15
+ROUTE         2     0.893      R14C9C.F1 to      R14C9C.B0 sc04[4]
+CTOF_DEL    ---     0.452      R14C9C.B0 to      R14C9C.F0 SLICE_15
+ROUTE         2     1.259      R14C9C.F0 to     R15C10A.A0 ss04[4]
+CTOF_DEL    ---     0.452     R15C10A.A0 to     R15C10A.F0 SLICE_11
+ROUTE         2     0.859     R15C10A.F0 to     R16C10C.A1 ss05[3]
+CTOF_DEL    ---     0.452     R16C10C.A1 to     R16C10C.F1 SLICE_5
+ROUTE         2     0.890     R16C10C.F1 to      R16C9A.B1 sc06[3]
+CTOF_DEL    ---     0.452      R16C9A.B1 to      R16C9A.F1 SLICE_4
+ROUTE         2     0.549      R16C9A.F1 to      R15C9C.D1 sc06[4]
+CTOF_DEL    ---     0.452      R15C9C.D1 to      R15C9C.F1 SLICE_2
+ROUTE         2     0.862      R15C9C.F1 to      R15C9A.A1 sc06[5]
+CTOF_DEL    ---     0.452      R15C9A.A1 to      R15C9A.F1 SLICE_1
+ROUTE         2     0.618      R15C9A.F1 to      R15C9A.B0 sc06[6]
+CTOF_DEL    ---     0.452      R15C9A.B0 to      R15C9A.F0 SLICE_1
+ROUTE         1     3.320      R15C9A.F0 to       57.PADDO Rm_c[14]
+DOPAD_DEL   ---     3.448       57.PADDO to         57.PAD Rm[14]
+                  --------
+                   36.830   (37.6% logic, 62.4% route), 22 logic levels.
+
+Report:   36.812ns delay Am[0] to Rm[15]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         14.PAD to       14.PADDI Am[0]
+ROUTE        15     4.051       14.PADDI to      R17C7C.A1 Am_c[0]
+CTOF_DEL    ---     0.452      R17C7C.A1 to      R17C7C.F1 SLICE_41
+ROUTE         2     0.862      R17C7C.F1 to      R17C7A.A1 sc00[0]
+CTOF_DEL    ---     0.452      R17C7A.A1 to      R17C7A.F1 SLICE_40
+ROUTE         2     0.618      R17C7A.F1 to      R17C7A.B0 sc00[1]
+CTOF_DEL    ---     0.452      R17C7A.B0 to      R17C7A.F0 SLICE_40
+ROUTE         2     0.618      R17C7A.F0 to      R17C7B.B1 ss00[1]
+CTOF_DEL    ---     0.452      R17C7B.B1 to      R17C7B.F1 SLICE_35
+ROUTE         2     0.912      R17C7B.F1 to      R16C7C.B1 sc01[1]
+CTOF_DEL    ---     0.452      R16C7C.B1 to      R16C7C.F1 SLICE_34
+ROUTE         2     0.392      R16C7C.F1 to      R16C7C.C0 sc01[2]
+CTOF_DEL    ---     0.452      R16C7C.C0 to      R16C7C.F0 SLICE_34
+ROUTE         2     0.893      R16C7C.F0 to      R16C7B.B0 ss01[2]
+CTOF_DEL    ---     0.452      R16C7B.B0 to      R16C7B.F0 SLICE_58
+ROUTE         2     1.669      R16C7B.F0 to      R17C8B.B0 MU050.Sint1
+CTOF_DEL    ---     0.452      R17C8B.B0 to      R17C8B.F0 SLICE_23
+ROUTE         2     0.911      R17C8B.F0 to      R17C9B.B1 MU065.Sint1
+CTOF_DEL    ---     0.452      R17C9B.B1 to      R17C9B.F1 SLICE_18
+ROUTE         2     0.912      R17C9B.F1 to      R16C9C.B1 sc04[0]
+CTOF_DEL    ---     0.452      R16C9C.B1 to      R16C9C.F1 SLICE_17
+ROUTE         2     0.392      R16C9C.F1 to      R16C9C.C0 sc04[1]
+CTOF_DEL    ---     0.452      R16C9C.C0 to      R16C9C.F0 SLICE_17
+ROUTE         3     1.026      R16C9C.F0 to      R14C9D.C1 sc04[2]
+CTOF_DEL    ---     0.452      R14C9D.C1 to      R14C9D.F1 SLICE_16
+ROUTE         2     0.893      R14C9D.F1 to      R14C9D.B0 sc04[3]
+CTOF_DEL    ---     0.452      R14C9D.B0 to      R14C9D.F0 SLICE_16
+ROUTE         2     1.156      R14C9D.F0 to     R15C10A.A1 ss04[3]
+CTOF_DEL    ---     0.452     R15C10A.A1 to     R15C10A.F1 SLICE_11
+ROUTE         2     0.859     R15C10A.F1 to      R15C9B.A1 sc05[3]
+CTOF_DEL    ---     0.452      R15C9B.A1 to      R15C9B.F1 SLICE_10
+ROUTE         2     0.549      R15C9B.F1 to      R15C8D.D1 sc05[4]
+CTOF_DEL    ---     0.452      R15C8D.D1 to      R15C8D.F1 SLICE_9
+ROUTE         2     0.618      R15C8D.F1 to      R15C8C.B0 sc05[5]
+CTOF_DEL    ---     0.452      R15C8C.B0 to      R15C8C.F0 SLICE_53
+ROUTE         2     0.896      R15C8C.F0 to      R15C9C.B1 ss05[5]
+CTOF_DEL    ---     0.452      R15C9C.B1 to      R15C9C.F1 SLICE_2
+ROUTE         2     0.862      R15C9C.F1 to      R15C9A.A1 sc06[5]
+CTOF_DEL    ---     0.452      R15C9A.A1 to      R15C9A.F1 SLICE_1
+ROUTE         2     0.893      R15C9A.F1 to      R15C9D.B0 sc06[6]
+CTOF_DEL    ---     0.452      R15C9D.B0 to      R15C9D.F0 SLICE_0
+ROUTE         1     2.970      R15C9D.F0 to       59.PADDO Rm_c[15]
+DOPAD_DEL   ---     3.448       59.PADDO to         59.PAD Rm[15]
+                  --------
+                   36.812   (37.7% logic, 62.3% route), 22 logic levels.
+
+Report:   36.811ns delay Am[0] to Rm[14]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         14.PAD to       14.PADDI Am[0]
+ROUTE        15     4.051       14.PADDI to      R17C7C.A1 Am_c[0]
+CTOF_DEL    ---     0.452      R17C7C.A1 to      R17C7C.F1 SLICE_41
+ROUTE         2     0.862      R17C7C.F1 to      R17C7A.A1 sc00[0]
+CTOF_DEL    ---     0.452      R17C7A.A1 to      R17C7A.F1 SLICE_40
+ROUTE         2     0.549      R17C7A.F1 to      R16C7A.D1 sc00[1]
+CTOF_DEL    ---     0.452      R16C7A.D1 to      R16C7A.F1 SLICE_39
+ROUTE         2     0.890      R16C7A.F1 to      R16C6A.B1 sc00[2]
+CTOF_DEL    ---     0.452      R16C6A.B1 to      R16C6A.F1 SLICE_38
+ROUTE         2     0.392      R16C6A.F1 to      R16C6B.C0 sc00[3]
+CTOF_DEL    ---     0.452      R16C6B.C0 to      R16C6B.F0 SLICE_51
+ROUTE         2     0.896      R16C6B.F0 to      R16C7C.B0 ss00[3]
+CTOF_DEL    ---     0.452      R16C7C.B0 to      R16C7C.F0 SLICE_34
+ROUTE         2     0.893      R16C7C.F0 to      R16C7B.B0 ss01[2]
+CTOF_DEL    ---     0.452      R16C7B.B0 to      R16C7B.F0 SLICE_58
+ROUTE         2     1.669      R16C7B.F0 to      R17C8B.B0 MU050.Sint1
+CTOF_DEL    ---     0.452      R17C8B.B0 to      R17C8B.F0 SLICE_23
+ROUTE         2     0.911      R17C8B.F0 to      R17C9B.B1 MU065.Sint1
+CTOF_DEL    ---     0.452      R17C9B.B1 to      R17C9B.F1 SLICE_18
+ROUTE         2     0.912      R17C9B.F1 to      R16C9C.B1 sc04[0]
+CTOF_DEL    ---     0.452      R16C9C.B1 to      R16C9C.F1 SLICE_17
+ROUTE         2     0.392      R16C9C.F1 to      R16C9C.C0 sc04[1]
+CTOF_DEL    ---     0.452      R16C9C.C0 to      R16C9C.F0 SLICE_17
+ROUTE         3     1.026      R16C9C.F0 to      R14C9D.C1 sc04[2]
+CTOF_DEL    ---     0.452      R14C9D.C1 to      R14C9D.F1 SLICE_16
+ROUTE         2     0.893      R14C9D.F1 to      R14C9D.B0 sc04[3]
+CTOF_DEL    ---     0.452      R14C9D.B0 to      R14C9D.F0 SLICE_16
+ROUTE         2     1.156      R14C9D.F0 to     R15C10A.A1 ss04[3]
+CTOF_DEL    ---     0.452     R15C10A.A1 to     R15C10A.F1 SLICE_11
+ROUTE         2     0.859     R15C10A.F1 to      R15C9B.A1 sc05[3]
+CTOF_DEL    ---     0.452      R15C9B.A1 to      R15C9B.F1 SLICE_10
+ROUTE         2     0.392      R15C9B.F1 to      R15C9B.C0 sc05[4]
+CTOF_DEL    ---     0.452      R15C9B.C0 to      R15C9B.F0 SLICE_10
+ROUTE         2     0.859      R15C9B.F0 to      R16C9A.A1 ss05[4]
+CTOF_DEL    ---     0.452      R16C9A.A1 to      R16C9A.F1 SLICE_4
+ROUTE         2     0.549      R16C9A.F1 to      R15C9C.D1 sc06[4]
+CTOF_DEL    ---     0.452      R15C9C.D1 to      R15C9C.F1 SLICE_2
+ROUTE         2     0.862      R15C9C.F1 to      R15C9A.A1 sc06[5]
+CTOF_DEL    ---     0.452      R15C9A.A1 to      R15C9A.F1 SLICE_1
+ROUTE         2     0.618      R15C9A.F1 to      R15C9A.B0 sc06[6]
+CTOF_DEL    ---     0.452      R15C9A.B0 to      R15C9A.F0 SLICE_1
+ROUTE         1     3.320      R15C9A.F0 to       57.PADDO Rm_c[14]
+DOPAD_DEL   ---     3.448       57.PADDO to         57.PAD Rm[14]
+                  --------
+                   36.811   (37.7% logic, 62.3% route), 22 logic levels.
+
+Report:   36.806ns delay Am[0] to Rm[15]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         14.PAD to       14.PADDI Am[0]
+ROUTE        15     4.051       14.PADDI to      R17C7C.A1 Am_c[0]
+CTOF_DEL    ---     0.452      R17C7C.A1 to      R17C7C.F1 SLICE_41
+ROUTE         2     0.862      R17C7C.F1 to      R17C7A.A1 sc00[0]
+CTOF_DEL    ---     0.452      R17C7A.A1 to      R17C7A.F1 SLICE_40
+ROUTE         2     0.618      R17C7A.F1 to      R17C7A.B0 sc00[1]
+CTOF_DEL    ---     0.452      R17C7A.B0 to      R17C7A.F0 SLICE_40
+ROUTE         2     0.618      R17C7A.F0 to      R17C7B.B1 ss00[1]
+CTOF_DEL    ---     0.452      R17C7B.B1 to      R17C7B.F1 SLICE_35
+ROUTE         2     0.912      R17C7B.F1 to      R16C7C.B1 sc01[1]
+CTOF_DEL    ---     0.452      R16C7C.B1 to      R16C7C.F1 SLICE_34
+ROUTE         2     0.392      R16C7C.F1 to      R16C7C.C0 sc01[2]
+CTOF_DEL    ---     0.452      R16C7C.C0 to      R16C7C.F0 SLICE_34
+ROUTE         2     0.893      R16C7C.F0 to      R16C7B.B0 ss01[2]
+CTOF_DEL    ---     0.452      R16C7B.B0 to      R16C7B.F0 SLICE_58
+ROUTE         2     1.669      R16C7B.F0 to      R17C8B.B0 MU050.Sint1
+CTOF_DEL    ---     0.452      R17C8B.B0 to      R17C8B.F0 SLICE_23
+ROUTE         2     0.911      R17C8B.F0 to      R17C9B.B1 MU065.Sint1
+CTOF_DEL    ---     0.452      R17C9B.B1 to      R17C9B.F1 SLICE_18
+ROUTE         2     0.912      R17C9B.F1 to      R16C9C.B1 sc04[0]
+CTOF_DEL    ---     0.452      R16C9C.B1 to      R16C9C.F1 SLICE_17
+ROUTE         2     0.392      R16C9C.F1 to      R16C9C.C0 sc04[1]
+CTOF_DEL    ---     0.452      R16C9C.C0 to      R16C9C.F0 SLICE_17
+ROUTE         3     1.026      R16C9C.F0 to      R14C9D.C1 sc04[2]
+CTOF_DEL    ---     0.452      R14C9D.C1 to      R14C9D.F1 SLICE_16
+ROUTE         2     0.893      R14C9D.F1 to      R14C9D.B0 sc04[3]
+CTOF_DEL    ---     0.452      R14C9D.B0 to      R14C9D.F0 SLICE_16
+ROUTE         2     1.156      R14C9D.F0 to     R15C10A.A1 ss04[3]
+CTOF_DEL    ---     0.452     R15C10A.A1 to     R15C10A.F1 SLICE_11
+ROUTE         2     0.618     R15C10A.F1 to     R15C10A.B0 sc05[3]
+CTOF_DEL    ---     0.452     R15C10A.B0 to     R15C10A.F0 SLICE_11
+ROUTE         2     0.859     R15C10A.F0 to     R16C10C.A1 ss05[3]
+CTOF_DEL    ---     0.452     R16C10C.A1 to     R16C10C.F1 SLICE_5
+ROUTE         2     0.890     R16C10C.F1 to      R16C9A.B1 sc06[3]
+CTOF_DEL    ---     0.452      R16C9A.B1 to      R16C9A.F1 SLICE_4
+ROUTE         2     0.549      R16C9A.F1 to      R15C9C.D1 sc06[4]
+CTOF_DEL    ---     0.452      R15C9C.D1 to      R15C9C.F1 SLICE_2
+ROUTE         2     0.862      R15C9C.F1 to      R15C9A.A1 sc06[5]
+CTOF_DEL    ---     0.452      R15C9A.A1 to      R15C9A.F1 SLICE_1
+ROUTE         2     0.893      R15C9A.F1 to      R15C9D.B0 sc06[6]
+CTOF_DEL    ---     0.452      R15C9D.B0 to      R15C9D.F0 SLICE_0
+ROUTE         1     2.970      R15C9D.F0 to       59.PADDO Rm_c[15]
+DOPAD_DEL   ---     3.448       59.PADDO to         59.PAD Rm[15]
+                  --------
+                   36.806   (37.7% logic, 62.3% route), 22 logic levels.
+
+Report:   37.074ns is the maximum delay for this preference.
+
+
+================================================================================
+Preference: Default net enumeration
+            138 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    4.577ns maximum delay on Am_c[2]
+
+           Delays             Connection(s)
+           3.836ns         12.PADDI to R16C7B.C1       
+           3.836ns         12.PADDI to R16C7B.C0       
+           3.322ns         12.PADDI to R16C8C.D0       
+           3.649ns         12.PADDI to R16C8D.B0       
+           3.637ns         12.PADDI to R16C9D.B0       
+           2.566ns         12.PADDI to R16C10A.D1      
+           4.577ns         12.PADDI to R17C7C.A0       
+           3.730ns         12.PADDI to R17C7A.D1       
+           3.495ns         12.PADDI to R17C7B.D0       
+           3.836ns         12.PADDI to R16C7C.C1       
+           3.632ns         12.PADDI to R16C8B.A1       
+           3.296ns         12.PADDI to R16C9C.D0       
+           2.907ns         12.PADDI to R17C10C.B0      
+           2.681ns         12.PADDI to R16C10B.C1      
+
+Report:    4.437ns maximum delay on Am_c[0]
+
+           Delays             Connection(s)
+           3.238ns         14.PADDI to R17C9A.D0       
+           3.430ns         14.PADDI to R17C9D.D1       
+           3.565ns         14.PADDI to R17C9D.B0       
+           4.437ns         14.PADDI to R17C6B.A1       
+           4.437ns         14.PADDI to R17C6B.A0       
+           2.817ns         14.PADDI to R17C10B.B0      
+           4.051ns         14.PADDI to R17C7C.A1       
+           2.989ns         14.PADDI to R17C8D.C1       
+           3.565ns         14.PADDI to R17C8D.B0       
+           4.051ns         14.PADDI to R17C8A.A1       
+           3.771ns         14.PADDI to R17C9C.B1       
+           3.238ns         14.PADDI to R17C9C.D0       
+           3.430ns         14.PADDI to R17C9B.D1       
+           3.194ns         14.PADDI to R17C10D.B1      
+           3.163ns         14.PADDI to R17C10A.A1      
+
+Report:    4.415ns maximum delay on Bm_c[3]
+
+           Delays             Connection(s)
+           3.544ns        132.PADDI to R16C7B.D0       
+           3.520ns        132.PADDI to R14C7A.D1       
+           3.544ns        132.PADDI to R16C8D.D1       
+           3.450ns        132.PADDI to R16C9B.A1       
+           4.286ns        132.PADDI to R17C8D.D0       
+           4.277ns        132.PADDI to R17C8A.B1       
+           4.300ns        132.PADDI to R17C8A.D0       
+           4.009ns        132.PADDI to R16C8B.C1       
+           3.544ns        132.PADDI to R16C8B.D0       
+           3.520ns        132.PADDI to R14C8C.D1       
+           3.511ns        132.PADDI to R14C8C.B0       
+           3.511ns        132.PADDI to R14C7B.B1       
+           3.511ns        132.PADDI to R14C7B.B0       
+           3.511ns        132.PADDI to R14C7C.B0       
+           4.415ns        132.PADDI to R17C8B.C1       
+           3.511ns        132.PADDI to R14C8D.B1       
+
+Report:    4.372ns maximum delay on Bm_c[7]
+
+           Delays             Connection(s)
+           4.075ns         19.PADDI to R17C10B.D0      
+           4.075ns         19.PADDI to R17C10A.D1      
+           4.372ns         19.PADDI to R17C10A.A0      
+           4.075ns         19.PADDI to R17C10C.D1      
+           4.372ns         19.PADDI to R17C10C.A0      
+           3.607ns         19.PADDI to R16C10B.A1      
+           3.607ns         19.PADDI to R16C10B.A0      
+           3.274ns         19.PADDI to R16C10C.B1      
+           3.283ns         19.PADDI to R16C10C.D0      
+           2.535ns         19.PADDI to R16C9A.D1       
+           2.535ns         19.PADDI to R16C9A.D0       
+           3.014ns         19.PADDI to R15C9C.C1       
+           2.899ns         19.PADDI to R15C9C.D0       
+           3.240ns         19.PADDI to R15C9A.B1       
+           3.209ns         19.PADDI to R15C9A.A0       
+           2.845ns         19.PADDI to R15C9D.A0       
+
+Report:    4.335ns maximum delay on Bm_c[4]
+
+           Delays             Connection(s)
+           4.040ns         22.PADDI to R16C6D.D1       
+           3.230ns         22.PADDI to R17C9A.B1       
+           3.230ns         22.PADDI to R17C9A.B0       
+           1.702ns         22.PADDI to R14C7A.D0       
+           4.335ns         22.PADDI to R16C8C.A0       
+           4.025ns         22.PADDI to R16C8D.D0       
+           2.577ns         22.PADDI to R14C9A.C1       
+           3.275ns         22.PADDI to R17C8B.D0       
+           2.453ns         22.PADDI to R14C9B.B1       
+           2.453ns         22.PADDI to R14C9B.B0       
+           2.012ns         22.PADDI to R14C7D.A1       
+           2.012ns         22.PADDI to R14C7D.A0       
+           2.453ns         22.PADDI to R14C8D.B0       
+           2.889ns         22.PADDI to R17C9C.D1       
+           2.453ns         22.PADDI to R14C8A.B1       
+
+Report:    4.318ns maximum delay on Am_c[3]
+
+           Delays             Connection(s)
+           3.392ns         11.PADDI to R16C6D.C1       
+           3.596ns         11.PADDI to R16C8D.B1       
+           4.318ns         11.PADDI to R14C9A.A0       
+           3.539ns         11.PADDI to R16C10D.A0      
+           4.309ns         11.PADDI to R17C7A.A0       
+           3.582ns         11.PADDI to R16C7A.B1       
+           3.565ns         11.PADDI to R16C7A.A0       
+           3.627ns         11.PADDI to R16C6A.D1       
+           3.565ns         11.PADDI to R16C7C.A0       
+           3.006ns         11.PADDI to R16C7D.C1       
+           3.596ns         11.PADDI to R16C8B.B0       
+           4.318ns         11.PADDI to R14C9D.A1       
+           3.380ns         11.PADDI to R15C10A.C1      
+           3.229ns         11.PADDI to R16C10B.D0      
+           2.994ns         11.PADDI to R16C10C.C1      
+
+Report:    4.310ns maximum delay on Am_c[6]
+
+           Delays             Connection(s)
+           3.386ns          6.PADDI to R14C7A.A1       
+           3.386ns          6.PADDI to R14C7A.A0       
+           2.701ns          6.PADDI to R15C8B.C1       
+           4.310ns          6.PADDI to R15C8B.D0       
+           3.260ns          6.PADDI to R15C8C.A1       
+           4.310ns          6.PADDI to R15C8C.D0       
+           2.676ns          6.PADDI to R15C6A.C0       
+           4.033ns          6.PADDI to R15C6D.C1       
+           4.310ns          6.PADDI to R15C7C.D0       
+           3.076ns          6.PADDI to R14C7B.D0       
+           2.686ns          6.PADDI to R14C7D.D0       
+           3.416ns          6.PADDI to R14C8B.B0       
+           3.260ns          6.PADDI to R15C8D.A0       
+           3.246ns          6.PADDI to R15C9C.A0       
+           2.936ns          6.PADDI to R15C9A.D1       
+
+Report:    4.304ns maximum delay on Bm_c[2]
+
+           Delays             Connection(s)
+           3.887ns        133.PADDI to R17C7D.A0       
+           3.881ns        133.PADDI to R15C8B.B1       
+           4.304ns        133.PADDI to R17C9D.B1       
+           3.692ns        133.PADDI to R17C7B.C1       
+           4.237ns        133.PADDI to R17C7B.A0       
+           3.941ns        133.PADDI to R16C7C.D1       
+           3.941ns        133.PADDI to R16C7C.D0       
+           3.887ns        133.PADDI to R16C7D.A1       
+           3.887ns        133.PADDI to R16C7D.A0       
+           3.276ns        133.PADDI to R15C7B.C1       
+           3.821ns        133.PADDI to R15C7B.A0       
+           3.626ns        133.PADDI to R15C7C.C1       
+           3.502ns        133.PADDI to R15C7C.B0       
+           3.471ns        133.PADDI to R15C7D.A0       
+           4.304ns        133.PADDI to R17C8D.B1       
+           3.502ns        133.PADDI to R14C7C.B1       
+
+Report:    4.055ns maximum delay on Am_c[7]
+
+           Delays             Connection(s)
+           3.685ns          5.PADDI to R15C6D.A0       
+           4.055ns          5.PADDI to R15C7A.A1       
+           4.055ns          5.PADDI to R15C7A.A0       
+           3.381ns          5.PADDI to R15C7D.D1       
+           3.381ns          5.PADDI to R15C7D.D0       
+           3.461ns          5.PADDI to R14C7C.C1       
+           2.517ns          5.PADDI to R14C7C.A0       
+           3.075ns          5.PADDI to R14C8D.C1       
+           2.920ns          5.PADDI to R14C8D.A0       
+           3.270ns          5.PADDI to R14C8A.A1       
+           2.610ns          5.PADDI to R14C8A.D0       
+           3.381ns          5.PADDI to R15C8A.D1       
+           3.381ns          5.PADDI to R15C8A.D0       
+           3.341ns          5.PADDI to R15C9A.D0       
+           3.651ns          5.PADDI to R15C9D.A1       
+           3.327ns          5.PADDI to R15C9D.D0       
+
+Report:    3.987ns maximum delay on Am_c[4]
+
+           Delays             Connection(s)
+           3.585ns         10.PADDI to R16C6D.B0       
+           3.244ns         10.PADDI to R16C6B.D0       
+           3.204ns         10.PADDI to R16C9B.B1       
+           3.987ns         10.PADDI to R14C9A.A1       
+           2.995ns         10.PADDI to R16C6A.C0       
+           2.806ns         10.PADDI to R16C7D.B0       
+           3.640ns         10.PADDI to R15C7B.D1       
+           3.987ns         10.PADDI to R14C8C.A1       
+           3.987ns         10.PADDI to R14C9B.A1       
+           3.571ns         10.PADDI to R14C9D.A0       
+           3.221ns         10.PADDI to R14C9C.A1       
+           3.750ns         10.PADDI to R15C10A.C0      
+           3.252ns         10.PADDI to R15C9B.B1       
+           3.209ns         10.PADDI to R16C10C.A0      
+           2.628ns         10.PADDI to R16C9A.C1       
+
+Report:    4.577ns is the maximum delay for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|    37.074 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     4.577 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 0 clocks:
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 840810 paths, 138 nets, and 470 connections (100.00% coverage)
+
+--------------------------------------------------------------------------------
+

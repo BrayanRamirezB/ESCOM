@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Botones</string>
+    <string name="btn_text">Reproducir sonido</string>
+</resources>

@@ -1,0 +1,11 @@
+#Start recording tcl command: 2/16/2022 20:10:44
+#Project Location: C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/01-and00; Project name: and00
+prj_project open "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/01-and00/and00.ldf"
+pgr_project save "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/01-and00/and0/and0.xcf"
+prj_src add -exclude "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/01-and00/and0/and0.xcf"
+prj_src enable "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/01-and00/and0/and0.xcf"
+pgr_project close
+pgr_project open "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/01-and00/and0/and0.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 2/16/2022 20:16:52

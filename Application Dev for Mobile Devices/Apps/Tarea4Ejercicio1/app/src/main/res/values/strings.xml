@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tarea4Ejercicio1</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidop">Apellido Paterno</string>
+    <string name="apellidom">Apellido Materno</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="tema">Ejercicio 1</string>
+    <string name="hint1">Ingresa tu nombre</string>
+    <string name="hint2">Ingresa tu apellido paterno</string>
+    <string name="hint3">Ingresa tu apellido materno</string>
+    <string name="textresul">El nombre completo es:</string>
+</resources>

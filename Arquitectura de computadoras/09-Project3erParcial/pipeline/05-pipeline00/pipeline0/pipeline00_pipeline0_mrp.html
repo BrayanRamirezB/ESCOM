@@ -1,0 +1,431 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+          Lattice Mapping Report File for Design Module 'pipeline00'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 5 -oc Commercial
+     pipeline00_pipeline0.ngd -o pipeline00_pipeline0_map.ncd -pr
+     pipeline00_pipeline0.prf -mp pipeline00_pipeline0.mrp -lpf C:/Users/braya/D
+     ownloads/pipeline/05-pipeline00/pipeline0/pipeline00_pipeline0_synplify.lpf
+     -lpf C:/Users/braya/Downloads/pipeline/05-pipeline00/pipeline00.lpf -c 0
+     -gui -msgset C:/Users/braya/Downloads/pipeline/05-pipeline00/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   5
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  06/15/22  22:19:41
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    156 out of  7209 (2%)
+      PFU registers:          144 out of  6864 (2%)
+      PIO registers:           12 out of   345 (3%)
+   Number of SLICEs:       109 out of  3432 (3%)
+      SLICEs as Logic/ROM:    109 out of  3432 (3%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         12 out of  3432 (0%)
+   Number of LUT4s:        201 out of  6864 (3%)
+      Number used as logic LUTs:        177
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       24
+      Number used as shift registers:     0
+   Number of PIO sites used: 38 + 4(JTAG) out of 115 (37%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  10
+     Net clk0_c: 82 loads, 82 rising, 0 falling (Driver: FSM00/C01/oscOut )
+     Net FSM01/N_37_i: 1 loads, 1 rising, 0 falling (Driver:
+
+     FSM01/un1_inr0s_24_i_a3_RNIUPQQ )
+     Net FSM01/N_50_i: 1 loads, 1 rising, 0 falling (Driver:
+     FSM01/un1_inr0s_24_i_a3_RNIRMQQ )
+     Net FSM01/N_44_i: 1 loads, 1 rising, 0 falling (Driver:
+     FSM01/un1_inr0s_24_i_a3_RNISNQQ )
+     Net FSM01/N_52_i: 1 loads, 1 rising, 0 falling (Driver:
+     FSM01/un1_inr0s_24_i_a3_RNITOQQ )
+     Net FSM01/N_42_i: 1 loads, 1 rising, 0 falling (Driver:
+     FSM01/un1_inr0s_24_i_a3_RNINIQQ )
+     Net FSM01/N_40_i: 1 loads, 1 rising, 0 falling (Driver:
+     FSM01/un1_inr0s_24_i_a3_RNIOJQQ )
+     Net FSM01/N_35_i: 1 loads, 1 rising, 0 falling (Driver:
+     FSM01/un1_inr0s_24_i_a3_RNIPKQQ )
+     Net FSM01/N_33_i: 1 loads, 1 rising, 0 falling (Driver:
+     FSM01/un1_inr0s_24_i_a3_RNIQLQQ )
+     Net FSM00/clkaux: 13 loads, 13 rising, 0 falling (Driver:
+     FSM00/C00/OSCInst0 )
+   Number of Clock Enables:  11
+     Net FSM07/un1_outzz_1_sqmuxa_0: 2 loads, 2 LSLICEs
+     Net FSM06/un2_instate5s: 5 loads, 5 LSLICEs
+     Net FSM05/un2_instate4s: 4 loads, 4 LSLICEs
+     Net FSM05/un1_instate4s: 4 loads, 4 LSLICEs
+     Net FSM04/un2_instate3s: 4 loads, 4 LSLICEs
+     Net FSM04/un1_instate3s: 4 loads, 4 LSLICEs
+     Net FSM03/un2_instate2s: 4 loads, 4 LSLICEs
+     Net FSM03/un1_instate2s: 4 loads, 4 LSLICEs
+     Net FSM02/un1_instate1s: 4 loads, 4 LSLICEs
+     Net FSM02/un2_instate1s: 4 loads, 4 LSLICEs
+     Net FSM01/un7_en0s: 4 loads, 4 LSLICEs
+   Number of local set/reset loads for net N_39_i merged into GSR:  10
+   Number of LSRs:  25
+     Net outFlag00_c: 5 loads, 4 LSLICEs
+     Net outFlag30_c: 5 loads, 4 LSLICEs
+     Net outFlag20_c: 5 loads, 4 LSLICEs
+     Net outFlag10_c: 5 loads, 4 LSLICEs
+     Net statezz0_c[1]: 2 loads, 2 LSLICEs
+     Net statezz0_c[2]: 2 loads, 2 LSLICEs
+     Net outr5s_18: 8 loads, 1 LSLICEs
+     Net FSM06/outFlag5sc_i: 1 loads, 1 LSLICEs
+     Net FSM01/N_37_i: 1 loads, 1 LSLICEs
+     Net FSM01/N_50_i: 1 loads, 1 LSLICEs
+     Net FSM01/N_49_i: 2 loads, 2 LSLICEs
+     Net FSM01/N_44_i: 1 loads, 1 LSLICEs
+     Net FSM01/N_45_i: 2 loads, 2 LSLICEs
+     Net FSM01/N_52_i: 1 loads, 1 LSLICEs
+     Net FSM01/N_51_i: 2 loads, 2 LSLICEs
+     Net FSM01/N_38_i: 2 loads, 2 LSLICEs
+     Net FSM01/N_42_i: 1 loads, 1 LSLICEs
+     Net FSM01/N_41_i: 2 loads, 2 LSLICEs
+     Net FSM01/N_40_i: 1 loads, 1 LSLICEs
+     Net FSM01/N_43_i: 2 loads, 2 LSLICEs
+     Net FSM01/N_35_i: 1 loads, 1 LSLICEs
+     Net FSM01/N_34_i: 2 loads, 2 LSLICEs
+     Net FSM01/N_33_i: 1 loads, 1 LSLICEs
+     Net FSM01/N_36_i: 2 loads, 2 LSLICEs
+     Net FSM00/C01/oscOut_0_sqmuxa_1_0_i_a3_RNIN2NQA: 12 loads, 12 LSLICEs
+
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net statezz0_c[1]: 30 loads
+     Net statezz0_c[2]: 30 loads
+     Net outFlag10_c: 24 loads
+     Net outFlag20_c: 24 loads
+     Net outFlag30_c: 24 loads
+     Net outFlag40_c: 22 loads
+     Net statezz0_c[0]: 22 loads
+     Net outFlag00_c: 21 loads
+     Net FSM01/un1_inr0s_24_i_a3: 16 loads
+     Net FSM00/C01/oscOut_0_sqmuxa_1_0_i_a3_RNIN2NQA: 13 loads
+
+
+
+
+   Number of warnings:  1
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: Using local reset signal 'N_39_i' to infer global GSR net.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| clk0                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[0]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| statezz0[2]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| statezz0[1]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| statezz0[0]         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outr50              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outr40              | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outr30              | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outr20              | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outr10              | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outr00              | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| outFlag50           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+| outFlag40           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outFlag30           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outFlag20           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outFlag10           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| outFlag00           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out0[7]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| out0[6]             | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| out0[5]             | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| out0[4]             | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| out0[3]             | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| out0[2]             | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| out0[1]             | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| out0[0]             | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| in0[7]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[6]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[5]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[4]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[3]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[2]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[1]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| in0[0]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| en0                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[4]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[3]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[2]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| cdiv0[1]            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block VCC undriven or does not drive anything - clipped.
+Block GND undriven or does not drive anything - clipped.
+Block FSM00/C01/VCC undriven or does not drive anything - clipped.
+Block FSM01/GND undriven or does not drive anything - clipped.
+Block FSM02/GND undriven or does not drive anything - clipped.
+Block FSM02/VCC undriven or does not drive anything - clipped.
+Block FSM03/GND undriven or does not drive anything - clipped.
+Block FSM03/VCC undriven or does not drive anything - clipped.
+Block FSM04/GND undriven or does not drive anything - clipped.
+Block FSM04/VCC undriven or does not drive anything - clipped.
+Block FSM05/GND undriven or does not drive anything - clipped.
+Block FSM05/VCC undriven or does not drive anything - clipped.
+Block FSM06/GND undriven or does not drive anything - clipped.
+Block FSM06/VCC undriven or does not drive anything - clipped.
+Block FSM07/GND undriven or does not drive anything - clipped.
+Block FSM07/VCC undriven or does not drive anything - clipped.
+Signal FSM00/C00/GND undriven or does not drive anything - clipped.
+Signal FSM00/C01/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal FSM00/C00/OSCInst0_SEDSTDBY undriven or does not drive anything -
+     clipped.
+Signal FSM00/C01/un1_sdiv_s_21_0_S1 undriven or does not drive anything -
+     clipped.
+Signal FSM00/C01/un1_sdiv_s_21_0_COUT undriven or does not drive anything -
+     clipped.
+Signal FSM00/C01/un1_sdiv_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal FSM00/C01/N_1 undriven or does not drive anything - clipped.
+Block FSM00/C00/GND was optimized away.
+Block FSM00/C01/GND was optimized away.
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                FSM00/C00/OSCInst0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     FSM00/clkaux
+  OSC Nominal Frequency (MHz):                      2.08
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: FSM00/C00/OSCInst0
+         Type: OSCH
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The local reset signal 'N_39_i' of the design has been inferred as Global Set
+        Reset (GSR). The reset signal used for GSR control is 'N_39_i'.
+
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 60 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

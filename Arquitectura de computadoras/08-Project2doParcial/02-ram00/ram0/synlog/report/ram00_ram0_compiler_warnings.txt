@@ -1,0 +1,7 @@
+@W: CG296 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":23:13:23:19|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":29:7:29:15|Referenced variable scontrolc is not in sensitivity list.
+@W: CL113 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":29:2:29:5|Feedback mux created for signal outcoderc[6:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":29:2:29:5|Feedback mux created for signal outcontwritec[5:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":29:2:29:5|Feedback mux created for signal aux0. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+

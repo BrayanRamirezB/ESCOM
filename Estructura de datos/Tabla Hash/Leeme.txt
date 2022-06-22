@@ -1,0 +1,22 @@
+Notas:
+
+-Solo contiene 100 elementos, asi puede ingresar los 18 elementos restantes sin ningun problema.
+
+-Todos los nombres de los elementos estan en mayusculas.
+
+-Hay un problema con la "LLave" puesto que en algunos casos la suma de los caracteres es igual,
+se puede solucionar, sin embargo modificaria la estructura propuesta inicialmente de las 
+funciones contenidas en "TablaH".
+
+Llave = Suma de caracteres del nombre perteneciente al elemento.
+num = 53.
+Indice = Llave modulo 53. 
+
+Funciones
+
+int EstanenL(int,Lista) Determina si la llave de un elemento se encuentra en una lista de la tabla Hash
+
+Elem copElem(int,Lista) Copia un elemento tal que la llave sea la misma en una lista de la tabla hash
+
+Lista borraElem(int, Lista) Elimina un elemento tal que la llave sea la misma en una lista de la tabla hash.
+

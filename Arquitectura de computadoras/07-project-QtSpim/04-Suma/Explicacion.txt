@@ -1,0 +1,15 @@
+Se carga el registro 29 en el registro 4
+se hace una suma inmediata de la constante 4 con el registro 29 y se guarda en el registro 5
+se hace otra suma inmediata de la constante 4 con el registro 5 y se guarda en el registro 6
+se hace dezplazamiento hacia la izquierda
+se hace una suma inmediata
+posteriormente se hace la llamada al metodo principal
+
+
+En esta parte empieza el programa
+Hacemos una suma del registro 0 con la constante 25 y el resultado se guarda en t0           (El registro $0 no varia siempre es 0 )
+Hacemos una suma del registro 0 con la constante 30 y el resultado se guarda en t1
+Se hace una multiplicacion del regitro t0 con t1 y se guarda en a0
+Se hace una solicitud para imprimir un entero
+llamamos al sitema para imprimir el entero
+Finalmente se hace la impresion y podemos observar el numero en consola

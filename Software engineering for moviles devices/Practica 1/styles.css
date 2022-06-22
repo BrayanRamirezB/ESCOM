@@ -1,0 +1,223 @@
+
+/* Desktop, fixed  */
+
+/* quitar márgenes */
+* {
+	margin: 0;
+	padding: 0;
+}
+/**
+ * 
+ * Colors:
+ * - #ffffff ->  white (background)
+ * - #594846 -> Dark brown (body text, rules)
+ * - #42628F -> Dark blue (link text)
+ * - #EF4023 -> Rojo (navigation and footer background)
+ */
+
+body {
+	background: #FFFFFF;
+	color: #594846;
+	font: "Adobe Caslon Pro", Georgia, "Times New Roman", serif;
+}
+a, a:visited {
+	color: #42628F;
+}
+p {
+	margin: 0.5em 0.25em;
+}
+h1 {
+	font-size: 1.75em;
+	border: solid #D4D6D7;
+	border-width: 2px 0;
+	padding: 0.25em;
+	text-align: center;
+	font-variant: small-caps;
+}
+h2 {
+	text-align: center;
+	font-variant: small-caps;
+}
+dl {
+	margin: 0 0.5em;
+}
+dt {
+	font-weight: bold;
+	margin: 0.5em 1em 0.5em 0;
+	border-bottom: 1px dashed #EF4023;
+}
+.intro {
+	font-size: 1.15em;
+	line-height: 1.3em;
+	text-align: justify;
+	margin: 0.5em;
+	font-weight: bold;
+}
+.navigation {
+	background-color:#EF4023;
+	border-bottom: 2px solid #B5B5B5;
+}
+.navigation ul li {
+	text-align: center;
+	display: block;
+	float: left;
+	padding: 0.25em 0;
+}
+.navigation li a {
+	color: #ffffff;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+.header p {
+	margin-left: -1000px;
+}
+#points ul {
+	list-style-image: url('images/point.png');
+	margin: 0.5em 0 1em 0.5em;
+	padding-left: 1em;
+}
+#points ul li {
+	margin: 0.5em 1em;
+}
+.footer {
+	background-color: #EF4023;
+	color: #ffffff;
+	text-align: center;
+	padding: .5em 0;
+	font-style: italic;
+}
+.img{
+	width: 250px;
+}
+
+/* Structure */
+body, .header, .navigation, .footer {
+	width: 960px;
+}
+.header, .navigation, .footer {
+	clear: both;
+}
+.column {
+	margin: 10px 10px 0 0;
+}
+.navigation {
+	min-height: 25px;
+}
+.navigation ul li {
+	width: 320px; /* 960/3 */
+}
+
+.header {
+	background: url(images/img1.png) no-repeat;
+	height: 200px;
+}
+
+
+#visit {
+	width: 240px;
+	/*float: left;*/
+}
+#points {
+	width: 240px;
+	/*float: right;*/
+}
+#main {
+	/*margin: 10px 260px 0 250px;*/
+	width: 460px;
+}
+
+
+
+@media screen and (min-width: 140px) {
+	body{
+		width: 100%;
+	}
+	.header{
+		width: 100%;
+		height: 100px;
+		background-size: 100%;
+	}
+	.footer{
+		width: 100%
+	}
+	.navigation{
+		width: 100%;
+	}
+	.navigation ul a{
+		width: 100%;
+	}
+	#visit{
+		width: 100%;
+	}
+	#points{
+		width: 100%;
+	}
+	#main{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 490px) {
+	body{
+		width: 100%;
+	}
+	.header{
+		width: 100%;
+		height: 100px;
+		background-size: 490px;
+	}
+	.footer{
+		width: 100%
+	}
+	.navigation{
+		width: 100%;
+	}
+	.navigation ul a{
+		width: 50%;
+	}
+	#visit{
+		width: 50%;
+		float: left;
+	}
+	#points{
+		width: 50%;
+		float: right;
+	}
+	#main{
+		width: 50%;
+		float: right;
+	}
+}  
+
+@media screen and (min-width: 770px) {
+	body{
+		width: 100%;
+	}
+	.header{
+		width: 100%;
+		height: 160px;
+		background-size: 770px;
+	}
+	.footer{
+		width: 100%
+	}
+	.navigation{
+		width: 100%;
+	}
+	.navigation ul a{
+		width: 50%;
+	}
+	#visit{
+		width: 33.3%;
+		float: left;
+	}
+	#points{
+		width: 33.3%;
+		float: right;
+	}
+	#main{
+		width: 33.3%;
+		float: right;
+	}
+
+} 

@@ -1,0 +1,18 @@
+
+fsm_encoding {21214211} onehot
+
+fsm_state_encoding {21214211} 000 {0000001}
+
+fsm_state_encoding {21214211} 001 {0000010}
+
+fsm_state_encoding {21214211} 010 {0000100}
+
+fsm_state_encoding {21214211} 011 {0001000}
+
+fsm_state_encoding {21214211} 100 {0010000}
+
+fsm_state_encoding {21214211} 101 {0100000}
+
+fsm_state_encoding {21214211} 110 {1000000}
+
+fsm_registers {21214211} {aux01[0]}  {aux01[1]}  {aux01[2]}  {aux01[3]}  {aux01[4]}  {aux01[5]}  {aux01[6]} 

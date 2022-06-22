@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/xtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo de envío de correo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/xtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESCOM" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xib"
+        android:src="@drawable/cap" />
+    <Button
+        android:id="@+id/xbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/compose_email"/>
+</LinearLayout>

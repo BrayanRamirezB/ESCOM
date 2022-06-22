@@ -1,0 +1,9 @@
+@W: CL177 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\wr00.vhdl":22:3:22:4|Sharing sequential element out5s. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CG296 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":20:7:20:13|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":23:14:23:18|Referenced variable inr0s is not in sensitivity list.
+@W: CG290 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":22:7:22:15|Referenced variable instate0s is not in sensitivity list.
+@W: CG290 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":22:28:22:31|Referenced variable en0s is not in sensitivity list.
+@W: CL113 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":22:3:22:4|Feedback mux created for signal soutr0s[7:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":22:3:22:4|Feedback mux created for signal outr0s[7:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+

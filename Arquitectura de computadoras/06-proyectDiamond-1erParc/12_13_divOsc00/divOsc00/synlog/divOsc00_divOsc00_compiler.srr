@@ -1,0 +1,120 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : divOsc00
+Synopsys HDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : divOsc00
+Synopsys VHDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+@N:"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\divOsc00.vhd":10:7:10:14|Top entity is set to divOsc00.
+Options changed - recompiling
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\divOsc00.vhd":10:7:10:14|Synthesizing work.divosc00.divosc0.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":9:7:9:11|Synthesizing work.div00.div0.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":30:6:30:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":39:6:39:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":48:6:48:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":57:6:57:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":66:6:66:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":75:6:75:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":84:6:84:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":93:6:93:11|Removing redundant assignment.
+Post processing for work.div00.div0
+Running optimization stage 1 on div00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\osc00.vhd":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Running optimization stage 1 on osc00 .......
+Post processing for work.divosc00.divosc0
+Running optimization stage 1 on divOsc00 .......
+Running optimization stage 2 on osc00 .......
+Running optimization stage 2 on div00 .......
+Running optimization stage 2 on divOsc00 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\divOsc00\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 97MB peak: 100MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Mar 16 09:04:30 2022
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : divOsc00
+Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+File C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe changed - recompiling
+File C:\Users\Natalia\Desktop\Practicas_Arqui_Comp-main (2)\Practicas_Arqui_Comp-main\Parcial01\12_13_divOsc00\divOsc00\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 90MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Mar 16 09:04:30 2022
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\divOsc00\synwork\divOsc00_divOsc00_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 29MB peak: 29MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Mar 16 09:04:30 2022
+
+###########################################################]

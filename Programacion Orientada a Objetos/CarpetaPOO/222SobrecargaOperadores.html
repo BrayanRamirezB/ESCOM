@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Sobrecarga de operadorse</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 2</header>
+ <nav>
+    <!--<div class="contenedor">-->
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+
+      <p class="derecha"><a href="TemarioPOO.html">Classroom</a></p>
+      <p><a href="TemarioPOO.html">Temario</a></p>
+      <p><a href="41EnlacesPrac.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="41EnlacesHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">SOBRECARGA DE OPERADORES</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>Sobrecarga</h1>
+       <hr>
+       <p><strong>Definición de sobrecarga.</strong> En Java es posible definir dos o más métodos dentro de la misma clase que tengan el mismo nombre, pero con sus listas de parámetros distintas. Cuando ocurre esto, se dice que los modos están sobrecargados y a este proceso se le denomina sobrecarga de modo.</p>
+       <br>
+       <p><strong>Como hace la selección.</strong>  Cuando se invoca un método sobrecargado, Java utiliza el tipo y/o el número de argumentos como guía para determinar la versión del método sobrecargado que realmente debe llamar.</p>
+        <br>
+        <p><strong>Programa 1.</strong></p>
+        <br>
+        <pre>
+        class Arbol {
+          int altura;
+          Arbol() {
+            visualizar ("Plantando un retoño");
+            altura = 0;
+          }
+          Arbol(int i) {
+            visualizar("Creando un nuevo arbol que tiene "
+              + i + " metros de alto");
+            altura = i;
+          }
+          void info() {
+            visualizar("E1 arbol tiene " + altura
+              + " metros de alto");
+          }
+          void info(String s) {
+            visualizar(s + " : El arbol tiene "
+              + altura + " metros de alto");
+          }
+          static void visualizar(String s) {
+            System.out.println(s);
+          }
+       }
+
+       public class ArbolDriver {
+         public static void main(String[] args) {
+
+           for(int i = 0; i < 5; i++) {
+             Arbol t = new Arbol(i);
+               t.info();
+               t.info("metodo sobrecargado");
+           } // Constructor sobrecargado:
+           new Arbol();
+         }
+      }
+        </pre>
+        <br>
+        <p><strong>Programa 2.</strong></p>
+        <br>
+        <pre>
+        public class OrdenSobrecarga {
+          static void imprimir(String s, int i) {
+             System.out.println("Cadena: " + s +
+               ", entero: " + i);
+          }
+
+          static void imprimir(int i, String s) {
+            System.out.println("Entero: " + i +
+              ", cadena: " + s);
+          }
+
+          public static void main(String[] args) {
+            imprimir("Primero cadena", 11);
+            imprimir(99, "Primero entero");
+          }
+        }
+        </pre>
+        <br>
+        <p><strong>Programa 3.</strong></p>
+        <br>
+        <pre>
+        public class Hoja1 {
+          int i = 0;
+          Hoja1 incrementar() {
+            i++;
+            return this;
+          }
+
+          void imprimir() {
+            System.out.println("i = " + i);
+          }
+          public static void main (String[] args) {
+            Hoja1 x = new Hoja1();
+            x.incrementar().incrementar().incrementar().imprimir();
+          }
+        }
+        </pre>
+        <br>
+        <p><strong>Programa 4.</strong></p>
+        <br>
+        <pre>
+        public class Flor1 {
+          int numeroPetalos = 0;
+          String s = new String("null");
+          Flor1(int petalos) {
+            numeroPetalos = petalos;
+            System.out.println("Constructor w/ parametro entero solo , Numero de petalos " + numeroPetalos);
+          }
+          Flor1(String ss) {
+            System.out.println("Constructor w/ parametro cadera solo, s = " + ss);
+            s = ss;
+          }
+          Flor1(String s, int petalos) {
+            this(petalos);
+            //this(s); // ¡No se puede invocar dos constructores!
+            this.s = s; // Otro uso de "this"
+            System.out.println("cadena y entero Parámetros");
+          }
+          Flor1() {
+            this("Hola", 47) ;
+            System.out.println("constructor por defecto (sin parametros) " );
+          }
+          void imprimir() {
+            //this(11); // ;No hacer dentro de un no-constructor!
+            System.out.println("Numero de petalos = " + numeroPetalos + " petalos ");
+          }
+          public static void main (String[] args) {
+            Flor1 x = new Flor1();
+            x.imprimir();
+          }
+        }
+        </pre>
+        <br>
+        <p><strong>Programa 5.</strong></p>
+        <br>
+        <pre>
+        class Pajaro {
+          int i;
+        }
+
+        public class ConstructorPorDefecto {
+          public static void main(String[] args) {
+            Pajaro nc = new Pajaro(); // ¡por defecto!
+            System.out.println(nc.i);
+          }
+        }
+        </pre>
+        <br>
+       </article>
+    </section>
+      <aside>
+            
+      <h1>Ejercicios</h1>
+        <hr>
+        <br>
+        <p><strong>Ejercicio 1.</strong> Comentar los programas del 1 al 3.</p>
+     <br>
+      <hr>
+       <p><strong>Ejercicio 2.</strong> Comentar los programas 4 y 5.</p>
+      <br>
+       <p><a href="222MasProgramas.html">Más programas.</a></p>
+      <br>
+ <!--    <hr>
+     <h1>Práctica 4 (la correspondiente)</h1>
+        <hr>
+        <br>
+        <p>Realizar la siguiente prácticas presentarlas en un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p>
+      
+      <br>
+     <hr>
+     <h1>Realizar el proyecto (parcial 1)</h1>
+        <hr>
+        <br>
+        <p>Presentar el proyecto por medio de un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p> -->
+        </aside>
+      <footer><p>Clases y objetos: Tema 2.2.2</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

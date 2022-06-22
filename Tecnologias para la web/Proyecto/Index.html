@@ -1,0 +1,1220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!--
+  Integrantes: 
+    Montoya Rodriguez Admin Jacob
+    Ramirez Benitez Brayan
+-->
+<html>
+<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <canvas width="1300" height="900" id="lienzo"></canvas>
+  <aside id="panel">
+    <button id="bt1" onclick="agregarInicio()">Inicio</button>
+    <button id="bt2" onclick="agregarVar()">Variables</button>
+    <button id="bt3" onclick="agregarEntrada()">Entrada de datos</button>
+    <button id="bt4" onclick="agregarSalida()">Salida de datos</button>
+    <button id="bt5" onclick="agregarSSimple()">Sentencia simple</button>
+    <button id="bt6" onclick="agregarSCondicional()">Sentencia condicional</button>
+    <button id="bt7" onclick="agregarSRepet()">Sentencia de repetición</button>
+    <button id="bt8" onclick="agregarFin()">Fin</button>
+    <button id="bt9" onclick="agregarLinea()">Linea</button>
+    <button id="bt10" onclick="moverInicio()">Mover inicio</button>
+    <button id="bt15" onclick="dejarInicio()">Dejar de mover</button>
+    <button id="bt11" onclick="deleteObj()">Borrar objeto</button>
+    <button id="bt12" onclick="deleteAll()">Borrar Todo</button>
+    <input type="color" id="figcolor" onclick="cambiarColor()"></input>
+    <button id = "bt13" onclick="tamañoLetra()">Tamaño de Letra</button>
+    <button id = "bt14" onclick="generaCodigo()">Generar Código</button>
+    <button id = "bt16" onclick="guardarDiagrama()">Guardar Diagrama</button>
+    <button id = "bt17" onclick="cargarDiagrama()">Cargar Diagrama</button>
+  </aside>
+  <aside id="codigo">
+    <div id = "div1"><h2>Código generado.</h2></div>
+    <canvas width="510" height="800" id= "div2"></canvas>
+  </aside>
+
+  <script>
+    var cv, cx, cx2, cv2, codigo, objetos, objetoActual = null;
+    var inicioX = 0, inicioY = 0, figcolor, tamLetra = "15";
+
+    objetos = [];
+    codigo = [];
+
+    cv = document.getElementById('lienzo');//canvas para el diagrama
+    cx = cv.getContext('2d');//contexto para el diagrama
+    cv2 = document.getElementById('div2');//canvas para el codigo
+    cx2 = cv2.getContext('2d');//contexto para el codigo
+
+    cx2.fillStyle = '#154360';//Coloreamos el canvas para el codigo
+    cx2.fillRect(10, 10, 510, 850);
+
+    objetos.push({//agregamos un elemento inicio
+        x: 600, y: 10,
+        color: '#00B3FF', texto: "Inicio", //texto
+        figura: "Inicio"//tipo de figura
+    });
+    codigo.push({
+      x: 30, y: 60, figura: "Inicio"
+    });
+    actualizar();
+
+    function actualizar(){
+      cx.fillStyle = '#f0f0f0';
+      cx.fillRect(0, 0, 1300, 900);
+      cx.font = "bold "+tamLetra+"px sans-serif";
+
+      for(var i = 0; i < objetos.length; i++){
+        if(objetos[i].figura == "Inicio"){
+          drawInicio(objetos[i].x, objetos[i].y, objetos[i].color, objetos[i].texto);
+        }
+        else if(objetos[i].figura == "Variable"){
+          drawVar(objetos[i].x, objetos[i].y, objetos[i].color, objetos[i].texto);
+        }
+        else if(objetos[i].figura == "Entrada"){
+          drawEntrada(objetos[i].x, objetos[i].y, objetos[i].color, objetos[i].texto);
+        }
+        else if(objetos[i].figura == "Salida"){
+          drawSalida(objetos[i].x, objetos[i].y, objetos[i].color, objetos[i].texto);
+        }
+        else if(objetos[i].figura == "SSimple"){
+          drawSSimple(objetos[i].x, objetos[i].y, objetos[i].color, objetos[i].texto);
+        }
+        else if(objetos[i].figura == "SCondicional"){
+          drawSCondi(objetos[i].x, objetos[i].y, objetos[i].color, objetos[i].texto, objetos[i].texto2, objetos[i].texto3);
+        }
+        else if(objetos[i].figura == "SRepeat"){
+          drawSRepeat(objetos[i].x, objetos[i].y, objetos[i].color, objetos[i].texto, objetos[i].texto2, objetos[i].texto3, objetos[i].texto4, objetos[i].texto5);
+        }
+        else if(objetos[i].figura == "Fin"){
+          drawFin(objetos[i].x, objetos[i].y, objetos[i].color, objetos[i].texto);
+        }
+        else if(objetos[i].figura == "Linea"){
+          drawLinea(objetos[i].x, objetos[i].y, objetos[i].color);
+        }
+      }
+    }
+
+//-----------funciones para dibujar elementos----------------
+
+    function drawInicio(X, Y, color, texto){
+      cx.fillStyle = color;
+      cx.beginPath();
+      cx.moveTo(X,Y);
+      cx.lineTo(X + 150, Y);
+      cx.arc(X + 150, Y+25, 25, 270*Math.PI/180, 90*Math.PI/180);
+      cx.lineTo(X, Y + 50);
+      cx.arc(X, Y+25, 25, 90*Math.PI/180, 270*Math.PI/180);
+      cx.stroke();
+      cx.fill();
+
+      cx.fillStyle = "Black";
+      cx.fillText(texto, X + 50, Y + 30);
+      cx.closePath();
+    }
+
+    function drawVar(X, Y, color, texto){
+      cx.fillStyle = color;
+      cx.beginPath();
+      cx.moveTo(X,Y);
+      cx.lineTo(X + 150, Y);
+      cx.lineTo(X + 150,Y + 50);
+      cx.lineTo(X ,Y + 50);
+      cx.lineTo(X, Y);
+      cx.fill();
+      cx.moveTo(X, Y + 5);
+      cx.lineTo(X + 150, Y + 5);
+      cx.moveTo(X, Y + 45);
+      cx.lineTo(X + 150, Y + 45);
+      cx.stroke();
+
+      cx.fillStyle = "Black";
+      cx.fillText(texto, X + 50, Y + 30);
+      cx.closePath();
+    }
+
+    function drawEntrada(X, Y, color, texto){
+      cx.fillStyle = color;
+      cx.beginPath();
+      cx.moveTo(X, Y + 50);
+      cx.quadraticCurveTo(X + 100, Y + 30, X + 150, Y + 50);
+      cx.lineTo(X + 150, Y);
+      cx.lineTo(X, Y);
+      cx.lineTo(X, Y + 50);
+      cx.stroke();
+      cx.fill();
+
+      cx.fillStyle = "Black";
+      cx.fillText(texto, X + 10, Y + 30);
+      cx.closePath();
+    }
+
+    function drawSalida(X, Y, color, texto){
+      cx.fillStyle = color;
+      cx.beginPath();
+      cx.moveTo(X, Y);
+      cx.lineTo(X + 150, Y);
+      cx.lineTo(X + 150, Y + 50);
+      cx.lineTo(X - 30, Y + 50);
+      cx.lineTo(X - 30, Y + 20);
+      cx.lineTo(X, Y);
+      cx.stroke();
+      cx.fill();
+
+      cx.fillStyle = "Black";
+      cx.fillText(texto, X + 10, Y + 30);
+      cx.closePath();
+    }
+
+    function drawSSimple(X, Y, color, texto){
+      cx.fillStyle = color;
+      cx.beginPath();
+      cx.moveTo(X,Y);
+      cx.lineTo(X + 170, Y);
+      cx.lineTo(X + 170,Y + 50);
+      cx.lineTo(X ,Y + 50);
+      cx.lineTo(X, Y);
+      cx.stroke();
+      cx.fill();
+
+      cx.fillStyle = "Black";
+      cx.fillText(texto, X + 50, Y + 30);
+      cx.closePath();
+    }
+
+    function drawSCondi(X, Y, color, cnd, ins1, ins2){
+      //Condicion
+      cx.fillStyle = color;
+      cx.beginPath();
+      cx.moveTo(X, Y);
+      cx.lineTo(X + 60, Y + 50);
+      cx.lineTo(X , Y + 100);
+      cx.lineTo(X - 60, Y + 50);
+      cx.lineTo(X, Y);
+      cx.fill();
+
+      //Instrucción 1
+      cx.moveTo(X + 180,Y + 90);
+      cx.lineTo(X + 255, Y + 90);
+      cx.lineTo(X + 255,Y + 140);
+      cx.lineTo(X + 105,Y + 140);
+      cx.lineTo(X + 105, Y + 90);
+      cx.lineTo(X + 180, Y + 90);
+      cx.fill();
+
+      //Instrucción 2
+      cx.moveTo(X, Y + 140);
+      cx.lineTo(X + 75, Y + 140);
+      cx.lineTo(X + 75, Y + 190);
+      cx.lineTo(X - 75, Y + 190);
+      cx.lineTo(X - 75, Y + 140);
+      cx.lineTo(X, Y + 140);
+      cx.fill();
+
+      //Linea ins 2
+      cx.moveTo(X, Y + 100);
+      cx.lineTo(X, Y + 140);
+      
+      //linea ins 1
+      cx.moveTo(X + 60, Y + 50);
+      cx.lineTo(X + 180, Y + 50);
+      cx.moveTo(X + 180, Y + 50);
+      cx.lineTo(X + 180, Y + 90);
+
+      //Seg linea ins 1
+      cx.moveTo(X + 180, Y + 140);
+      cx.lineTo(X + 180, Y + 220);
+      cx.lineTo(X , Y + 220);
+
+      //Seg linea ins 2
+      cx.moveTo(X, Y + 190);
+      cx.lineTo(X, Y + 250);
+      cx.stroke();
+      cx.closePath();
+          
+      //triangulos 
+      cx.fillStyle = "Black";
+      cx.beginPath();
+      //triangulo condicional si
+      cx.moveTo(X, Y + 130);
+      cx.lineTo(X + 10, Y + 130);
+      cx.lineTo(X, Y + 140);
+      cx.lineTo(X - 10, Y + 130);
+      cx.lineTo(X, Y + 130);
+      
+      //triangulo condicional si 2
+      cx.moveTo(X, Y + 240);
+      cx.lineTo(X + 10, Y + 240);
+      cx.lineTo(X , Y + 250);
+      cx.lineTo(X - 10, Y + 240);
+      cx.lineTo(X, Y + 240);
+
+      //triangulo condicional no
+      cx.moveTo(X + 180, Y + 80);
+      cx.lineTo(X + 190, Y + 80);
+      cx.lineTo(X + 180, Y + 90);
+      cx.lineTo(X + 170, Y + 80);
+      cx.lineTo(X + 180, Y + 80);
+      //cx.stroke();
+      cx.fill();
+
+      cx.fillStyle = "Black";
+      cx.fillText(cnd, X - 55, Y + 55);
+      cx.fillText(ins1, X + 105, Y + 120);
+      cx.fillText(ins2, X - 70, Y + 170);
+      cx.fillText("Si", X + 10, Y + 105);
+      cx.fillText("No", X + 65, Y + 50);
+      cx.closePath();
+    }
+
+    function drawSRepeat(X, Y, color, cnd, ini, ins1, ins2, ins3){
+      //Sentencia de repetición
+      cx.fillStyle = color;
+
+      //inicialización
+      cx.beginPath();
+      cx.moveTo(X, Y);
+      cx.lineTo(X + 150, Y);
+      cx.lineTo(X + 150,Y + 50);
+      cx.lineTo(X, Y + 50);
+      cx.lineTo(X, Y);
+
+      //Instruccion 1
+      cx.moveTo(X + 75, Y + 210);
+      cx.lineTo(X + 150, Y + 210);
+      cx.lineTo(X + 150, Y + 260);
+      cx.lineTo(X, Y + 260);
+      cx.lineTo(X, Y + 210);
+      cx.lineTo(X + 75, Y + 210);
+
+      //Instruccion 2
+      cx.moveTo(X + 75, Y + 280);
+      cx.lineTo(X + 150, Y + 280);
+      cx.lineTo(X + 150, Y + 330);
+      cx.lineTo(X, Y + 330);
+      cx.lineTo(X, Y + 280);
+      cx.lineTo(X + 75, Y + 280);
+
+      //Instruccion 3
+      cx.moveTo(X + 75, Y + 380);
+      cx.lineTo(X + 150, Y + 380);
+      cx.lineTo(X + 150, Y + 430);
+      cx.lineTo(X, Y + 430);
+      cx.lineTo(X, Y + 380);
+      cx.lineTo(X + 75, Y + 380);
+
+      //Condicion
+      cx.moveTo(X + 75, Y + 70);
+      cx.lineTo(X + 135, Y + 120);
+      cx.lineTo(X + 75, Y + 170);
+      cx.lineTo(X + 15, Y + 120);
+      cx.lineTo(X + 75, Y + 70);
+      
+      cx.fill();
+      cx.fillStyle = "Black";
+
+      //primera linea
+      cx.moveTo(X + 75, Y + 50);
+      cx.lineTo(X + 75, Y + 70);
+
+      //linea del "si"
+      cx.moveTo(X + 75, Y + 170);
+      cx.lineTo(X + 75, Y + 210);
+
+      //Linea de la ins 1
+      cx.moveTo(X + 75, Y + 260);
+      cx.lineTo(X + 75, Y + 280);
+
+      //Linea de la ins 2
+      cx.moveTo(X + 75, Y + 330);
+      cx.lineTo(X + 75, Y + 345);
+      cx.lineTo(X - 25, Y + 345);
+      cx.lineTo(X - 25, Y + 180);
+      cx.lineTo(X + 75, Y + 180);
+
+      //Linea del "No"
+      cx.moveTo(X + 135, Y + 120);
+      cx.lineTo(X + 170, Y + 120);
+      cx.lineTo(X + 170, Y + 360);
+      cx.lineTo(X + 75, Y + 360);
+      cx.lineTo(X + 75, Y + 380);
+      
+      //Linea de la ins 3
+      cx.moveTo(X + 75, Y + 430);
+      cx.lineTo(X + 75, Y + 450);
+      cx.stroke();
+      cx.closePath();
+          
+      //triangulos 
+      cx.beginPath();
+
+      //triangulo inicializacion
+      cx.moveTo(X + 75, Y + 60);
+      cx.lineTo(X + 85, Y + 60);
+      cx.lineTo(X + 75, Y + 70);
+      cx.lineTo(X + 65, Y + 60);
+      cx.lineTo(X + 75, Y + 60);
+
+      //triangulo condicion si
+      cx.moveTo(X + 75, Y + 200);
+      cx.lineTo(X + 85, Y + 200);
+      cx.lineTo(X + 75, Y + 210);
+      cx.lineTo(X + 65, Y + 200);
+      cx.lineTo(X + 75, Y + 200);
+
+      //triangulo condicion no
+      cx.moveTo(X + 75, Y + 370);
+      cx.lineTo(X + 85, Y + 370);
+      cx.lineTo(X + 75, Y + 380);
+      cx.lineTo(X + 65, Y + 370);
+      cx.lineTo(X + 75, Y + 370);
+
+      //triangulo ins 1
+      cx.moveTo(X + 75, Y + 270);
+      cx.lineTo(X + 85, Y + 270);
+      cx.lineTo(X + 75, Y + 280);
+      cx.lineTo(X + 65, Y + 270);
+      cx.lineTo(X + 75, Y + 270);
+
+      //triangulo ins2
+      cx.moveTo(X + 65, Y + 170);
+      cx.lineTo(X + 65, Y + 180);
+      cx.lineTo(X + 65, Y + 170);
+      cx.lineTo(X + 75, Y + 180);
+      cx.lineTo(X + 65, Y + 190);
+      cx.lineTo(X + 65, Y + 180);
+
+      //Triangulo ins3
+      cx.moveTo(X + 75, Y + 440);
+      cx.lineTo(X + 85, Y + 440);
+      cx.lineTo(X + 75, Y + 450);
+      cx.lineTo(X + 65, Y + 440);
+      cx.lineTo(X + 75, Y + 440);      
+      //cx.stroke();
+      cx.fill();
+
+      //texto
+      cx.fillStyle = "Black";
+      cx.fillText(ini, X + 10, Y + 30);
+      cx.fillText(cnd, X + 23, Y + 125);
+      cx.fillText("Si",X + 80,Y + 180);
+      cx.fillText("No", X + 137, Y + 115);
+      cx.fillText(ins1, X + 10, Y + 242);
+      cx.fillText(ins2, X + 10, Y + 310);
+      cx.fillText(ins3, X + 10, Y + 410);
+      cx.closePath();
+    }
+
+    function drawFin(X, Y, color, texto){
+      cx.fillStyle = color;
+      cx.beginPath();
+      cx.moveTo(X,Y);
+      cx.lineTo(X + 150, Y);
+      cx.arc(X + 150, Y+25, 25, 270*Math.PI/180, 90*Math.PI/180);
+      cx.lineTo(X, Y + 50);
+      cx.arc(X, Y+25, 25, 90*Math.PI/180, 270*Math.PI/180);
+      cx.stroke();
+      cx.fill();
+
+      cx.fillStyle = "Black";
+      cx.fillText(texto, X + 50, Y + 30);
+      cx.closePath();
+    }
+
+    function drawLinea(X, Y, color){
+      cx.fillStyle = color;
+      cx.beginPath();
+
+      //linea
+      cx.moveTo(X, Y);
+      cx.lineTo(X, Y + 50);
+
+      //Triangulo
+      cx.moveTo(X, Y + 40);
+      cx.lineTo(X + 10, Y + 40);
+      cx.lineTo(X, Y + 50);
+      cx.lineTo(X - 10, Y + 40);
+      cx.lineTo(X, Y + 40);
+      cx.stroke();
+      cx.fill();
+      cx.closePath();
+    }
+
+//----------------------funciones para agregar elementos al diagrama-------------------
+
+    function agregarInicio(){
+      objetos.push({
+        x: 600, y: 10,
+        color: '#00B3FF', texto: "Inicio", 
+        figura: "Inicio"
+      });
+      codigo.push({
+        x: 30, y: 60, figura: "Inicio"
+      });
+      actualizar();
+    }
+
+    function agregarVar(){
+      let ultimoObjeto = obtenerUltimoObjeto();
+      let ultimoCodigo = obtenerUltimoCodigo();
+      let txt = prompt('Ingresa la Variable');
+      if(txt != null){
+        if(ultimoObjeto.figura == "SCondicional"){
+          objetos.push({
+            x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 250,
+            color: '#00E1D9', texto: txt, figura: "Variable"
+          });
+        }
+        else if(ultimoObjeto.figura == "SRepeat"){
+          objetos.push({
+            x: ultimoObjeto.x, y: ultimoObjeto.y + 450,
+            color: '#00E1D9', texto: txt, figura: "Variable"
+          });
+        }
+        else{
+          objetos.push({
+            x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 50,
+            color: '#00E1D9', texto: txt, figura: "Variable"
+          });
+        }
+        if(ultimoCodigo.figura == "SCondicional"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 80, texto: txt,
+            figura: "Variable"
+          });
+        }else if(ultimoCodigo.figura == "SRepeat"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 120, texto: txt,
+            figura: "Variable"
+          });
+        }else{
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 20, texto: txt,
+            figura: "Variable"
+          });
+        }
+        actualizar();
+      }
+    }
+
+    function agregarEntrada(){
+      let ultimoObjeto = obtenerUltimoObjeto();
+      let ultimoCodigo = obtenerUltimoCodigo();
+      let txt = prompt('Ingresa la Entrada');
+      if(txt != null){
+        if(ultimoObjeto.figura == "SCondicional"){
+          objetos.push({
+            x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 250,
+            color: '#009665', texto: txt, figura: "Entrada"
+          });
+        }
+        else if(ultimoObjeto.figura == "SRepeat"){
+          objetos.push({
+            x: ultimoObjeto.x, y: ultimoObjeto.y + 450,
+            color: '#009665', texto: txt, figura: "Entrada"
+          });
+        }
+        else{
+          objetos.push({
+            x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 50,
+            color: '#009665', texto: txt, figura: "Entrada"
+          });
+        }
+        if(ultimoCodigo.figura == "SCondicional"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 80, texto: txt,
+            figura: "Entrada"
+          });
+        }else if(ultimoCodigo.figura == "SRepeat"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 120, texto: txt,
+            figura: "Entrada"
+          });
+        }else{
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 20, texto: txt,
+            figura: "Entrada"
+          });
+        }
+        actualizar();
+      }
+    }
+
+    function agregarSalida(){
+      let ultimoObjeto = obtenerUltimoObjeto();
+      let ultimoCodigo = obtenerUltimoCodigo();
+      let txt = prompt('Ingresa la Salida');
+      let opc = prompt('Texto o Variable');
+      if(txt != null){
+        if(ultimoObjeto.figura == "SCondicional"){
+          objetos.push({
+            x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 250,
+            color: '#80E961', texto: txt, figura: "Salida"
+          });
+        }
+        else if(ultimoObjeto.figura == "SRepeat"){
+          objetos.push({
+            x: ultimoObjeto.x, y: ultimoObjeto.y + 450,
+            color: '#80E961', texto: txt, figura: "Salida"
+          });
+        }
+        else{
+          objetos.push({
+            x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 50,
+            color: '#80E961', texto: txt, figura: "Salida"
+          });
+        }
+        if(ultimoCodigo.figura == "SCondicional"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 80, texto: txt,
+            figura: "Salida", op: opc
+          });
+        }else if(ultimoCodigo.figura == "SRepeat"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 120, texto: txt,
+            figura: "Salida", op: opc
+          });
+        }else{
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 20, texto: txt,
+            figura: "Salida", op: opc
+          });
+        }
+        
+        actualizar();
+      }
+    }
+
+    function agregarSSimple(){
+      let ultimoObjeto = obtenerUltimoObjeto();
+      let ultimoCodigo = obtenerUltimoCodigo();
+      let txt = prompt('Ingresa la Sentencia');
+      if(txt != null){
+        if(ultimoObjeto.figura == "SCondicional"){
+          objetos.push({
+           x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 250,
+           color: '#DAF800', texto: txt, figura: "SSimple"
+          });
+        }
+        else if(ultimoObjeto.figura == "SRepeat"){
+          objetos.push({
+           x: ultimoObjeto.x, y: ultimoObjeto.y + 450,
+           color: '#DAF800', texto: txt, figura: "SSimple"
+          });
+        }
+        else{
+          objetos.push({
+           x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 50,
+           color: '#DAF800', texto: txt, figura: "SSimple"
+          });
+        }
+        if(ultimoCodigo.figura == "SCondicional"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 80, texto: txt,
+            figura: "SSimple"
+          });
+        }else if(ultimoCodigo.figura == "SRepeat"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 120, texto: txt,
+            figura: "SSimple"
+          });
+        }else{
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 20, texto: txt,
+            figura: "SSimple"
+          });
+        }
+        
+        actualizar();
+      }
+    }
+
+    function agregarSCondicional(){
+      let ultimoObjeto = obtenerUltimoObjeto();
+      let ultimoCodigo = obtenerUltimoCodigo();
+      let cnd = prompt('Ingresa la Condición');
+      let ins1 = prompt('Ingresa la Instrucción 1');
+      let tipoins1 = prompt('Ingresa el tipo de Instrucción (Variable, Entrada, Salida o Asignación)');
+      let ins2 = prompt('Ingresa la Instrucción 2');
+      let tipoins2 = prompt('Ingresa el tipo de Instrucción (Variable, Entrada, Salida o Asignación)');
+      if(cnd != null && ins1 != null && ins2 != null){
+        if(ultimoObjeto.figura == "SCondicional"){
+          objetos.push({
+           x: ultimoObjeto.x, y: ultimoObjeto.y + 250,
+           color: '#F1FA7E', texto: cnd, texto2: ins1,
+           texto3: ins2, figura: "SCondicional" 
+          });
+        }
+        else if(ultimoObjeto.figura == "SRepeat"){
+          objetos.push({
+           x: ultimoObjeto.x + 75, y: ultimoObjeto.y + 450,
+           color: '#F1FA7E', texto: cnd, texto2: ins1,
+           texto3: ins2, figura: "SCondicional" 
+          });  
+        }
+        else{ 
+          objetos.push({
+           x: ultimoObjeto.x, y: ultimoObjeto.y + 50,
+           color: '#F1FA7E', texto: cnd, texto2: ins1,
+           texto3: ins2, figura: "SCondicional" 
+          });  
+        }
+
+        if(ultimoCodigo.figura == "SCondicional"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 80, texto: cnd
+            , texto2: ins1, texto3: ins2, figura: "SCondicional",
+           tins1: tipoins1, tins2: tipoins2  
+          });
+        }else if(ultimoCodigo.figura == "SRepeat"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 120, texto: cnd
+            , texto2: ins1, texto3: ins2, figura: "SCondicional",
+           tins1: tipoins1, tins2: tipoins2  
+          });
+        }else{
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 20, texto: cnd
+            , texto2: ins1, texto3: ins2, figura: "SCondicional",
+           tins1: tipoins1, tins2: tipoins2  
+          });
+        }
+        actualizar();     
+      }
+    }
+
+    function agregarSRepet(){
+      let ultimoObjeto = obtenerUltimoObjeto();
+      let ultimoCodigo = obtenerUltimoCodigo();
+      let ini = prompt('Ingresa la inicialización');
+      let cnd = prompt('Ingresa la Condición (Por defecto es un ciclo while)');
+      let ins1 = prompt('Ingresa la Instrucción 1');
+      let tipoins1 = prompt('Ingresa el tipo de Instrucción (Variable, Entrada, Salida o Asignación)');
+      let opc1, opc2, opc3;
+
+      if(tipoins1 == "Salida"){
+        opc1 = prompt('Variable o Texto');
+      }
+
+      let ins2 = prompt('Ingresa la Instrucción 2');
+      let tipoins2 = prompt('Ingresa el tipo de Instrucción (Variable, Entrada, Salida o Asignación)');
+
+      if(tipoins2 == "Salida"){
+        opc2 = prompt('Variable o Texto');
+      }
+
+      let ins3 = prompt('Ingresa la Instrucción 3');
+      let tipoins3 = prompt('Ingresa el tipo de Instrucción (Variable, Entrada, Salida o Asignación)');
+
+      if(tipoins3 == "Salida"){
+        opc3 = prompt('Variable o Texto');
+      }
+
+      if(ini != null && cnd != null && ins1 != null && ins2 != null && ins3 != null){
+        if(ultimoObjeto.figura == "SCondicional"){
+          objetos.push({
+            x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 250,
+            color: '#FFE25C', texto: cnd, texto2: ini,
+            texto3: ins1, texto4: ins2, texto5: ins3,
+            figura: "SRepeat"  
+          });
+        }
+        else if(ultimoObjeto.figura == "SRepeat"){
+          objetos.push({
+            x: ultimoObjeto.x, y: ultimoObjeto.y + 450,
+            color: '#FFE25C', texto: cnd, texto2: ini,
+            texto3: ins1, texto4: ins2, texto5: ins3,
+            figura: "SRepeat"  
+          });
+        }
+        else{
+          objetos.push({
+            x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 50,
+            color: '#FFE25C', texto: cnd, texto2: ini,
+            texto3: ins1, texto4: ins2, texto5: ins3,
+            figura: "SRepeat"  
+          });
+        }
+
+        if(ultimoCodigo.figura == "SCondicional"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 80, texto: ini
+            , texto2: cnd, texto3: ins1, texto4: ins2, 
+            texto5: ins3, figura: "SRepeat", tins1: tipoins1, 
+            tins2: tipoins2, tins3: tipoins3, op1: opc1,
+            op2: opc2, op3: opc3  
+          });
+        }else if(ultimoCodigo.figura == "SRepeat"){
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 120, texto: ini
+            , texto2: cnd, texto3: ins1, texto4: ins2, 
+            texto5: ins3, figura: "SRepeat", tins1: tipoins1, 
+            tins2: tipoins2, tins3: tipoins3, op1: opc1,
+            op2: opc2, op3: opc3   
+          });
+        }else{
+          codigo.push({
+            x: ultimoCodigo.x, y: ultimoCodigo.y + 20, texto: ini
+            , texto2: cnd, texto3: ins1, texto4: ins2, 
+            texto5: ins3, figura: "SRepeat", tins1: tipoins1, 
+            tins2: tipoins2, tins3: tipoins3, op1: opc1,
+            op2: opc2, op3: opc3   
+          });
+        }
+        
+        actualizar();
+      }
+    }
+
+    function agregarFin(){
+      let ultimoObjeto = obtenerUltimoObjeto();
+      let ultimoCodigo = obtenerUltimoCodigo();
+      if(ultimoObjeto.figura == "SCondicional"){
+        objetos.push({
+          x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 250,
+          color: '#FFEC00', texto: "Fin", figura: "Fin"
+        });
+      }
+      else if(ultimoObjeto.figura == "SRepeat"){
+        objetos.push({
+          x: ultimoObjeto.x, y: ultimoObjeto.y + 450,
+          color: '#FFEC00', texto: "Fin", figura: "Fin"
+        });
+      }
+      else{
+        objetos.push({
+          x: ultimoObjeto.x - 70, y: ultimoObjeto.y + 50,
+          color: '#FFEC00', texto: "Fin", figura: "Fin"
+        });
+      }
+      if(ultimoCodigo.figura == "SCondicional"){
+        codigo.push({
+          x: ultimoCodigo.x, y: ultimoCodigo.y + 80, figura: "Fin"  
+        });
+      }else if(ultimoCodigo.figura == "SRepeat"){
+        codigo.push({
+          x: ultimoCodigo.x, y: ultimoCodigo.y + 120, figura: "Fin"  
+        });
+      }else{
+        codigo.push({
+          x: ultimoCodigo.x, y: ultimoCodigo.y + 20, figura: "Fin"  
+        });  
+      }  
+      actualizar();
+    }
+
+    function agregarLinea(){
+      let ultimoObjeto = obtenerUltimoObjeto();
+      let ultimoCodigo = obtenerUltimoCodigo();
+      if(ultimoObjeto.figura == "SCondicional"){
+        objetos.push({
+          x: ultimoObjeto.x, y: ultimoObjeto.y + 250,
+          color: '#000000', texto: "", figura: "Linea"
+        });
+      }
+      else if(ultimoObjeto.figura == "SRepeat"){
+        objetos.push({
+          x: ultimoObjeto.x + 75, y: ultimoObjeto.y + 450,
+          color: '#000000', texto: "", figura: "Linea"
+        });
+      }
+      else{
+        objetos.push({
+          x: ultimoObjeto.x + 70, y: ultimoObjeto.y + 50,
+          color: '#000000', texto: "", figura: "Linea"
+        });
+      }
+      codigo.push({
+        x: ultimoCodigo.x, y: ultimoCodigo.y, figura: "Flecha"  
+      }); 
+      actualizar();
+    }
+    
+//----------------------------Otras funciones--------------------------------
+    function obtenerUltimoObjeto(){
+      let ultimoObjeto = objetos[objetos.length - 1];
+      return ultimoObjeto;
+    }
+
+    function obtenerUltimoCodigo(){
+      let ultimoCodigo = codigo[codigo.length - 1];
+      return ultimoCodigo;
+    }
+
+    function guardarDiagrama(){
+      var archivo = prompt('Ingresa el nombre del archivo');
+      
+      if(archivo != null){
+        localStorage.setItem(archivo, JSON.stringify(objetos));
+        localStorage.setItem(archivo+"C", JSON.stringify(codigo));
+      }else{
+        console.log("Error el diagrama no tiene nombre");
+      }
+    }
+
+    function cargarDiagrama(){
+      var nombre = prompt('Ingresa el nombre del archivo');
+      if(nombre != null && localStorage.getItem(nombre) && localStorage.getItem(nombre+"C")){
+        deleteAll();
+        generaCodigo();
+        objetos = JSON.parse(localStorage.getItem(nombre));
+        codigo = JSON.parse(localStorage.getItem(nombre+"C"));
+        actualizar();
+      }else{
+        console.log("Archivo no encontrado");
+      }
+    }
+
+    function deleteAll(){
+      for (var i = 0; i < objetos.length; i++) {
+         objetos.splice(i);
+         codigo.splice(i); 
+      }
+      actualizar(); 
+      generaCodigo(); 
+    }
+
+    function deleteObj(){
+      cv.onmousedown = function(event){
+        for(var i = 0; i <objetos.length; i++){
+          if(objetos[i].figura == "SCondicional"){
+            if(objetos[i].x - 80 < event.clientX && objetos[i].x + 255> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 250> event.clientY){
+              objetos.splice(i,1);
+              codigo.splice(i,1);  
+              actualizar();
+              break;
+            }
+          }
+          else if(objetos[i].figura == "Inicio" || objetos[i].figura == "Fin"){
+            if(objetos[i].x - 32 < event.clientX && objetos[i].x + 175> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 50> event.clientY){
+              objetos.splice(i,1);
+              codigo.splice(i,1);   
+              actualizar();
+              
+              break;
+            }
+          }
+          else if(objetos[i].figura == "Variable" || objetos[i].figura == "Entrada"){
+            if(objetos[i].x < event.clientX && objetos[i].x + 150> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 50> event.clientY){
+              objetos.splice(i,1); 
+              codigo.splice(i,1);  
+              actualizar(); 
+              
+              break;
+            }
+          }
+          else if(objetos[i].figura == "Salida"){
+            if(objetos[i].x - 32 < event.clientX && objetos[i].x + 150> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 50> event.clientY){
+              objetos.splice(i,1); 
+              codigo.splice(i,1); 
+              actualizar(); 
+              
+              break;
+            }
+          }
+          else if(objetos[i].figura == "SSimple"){
+            if(objetos[i].x < event.clientX && objetos[i].x + 170> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 50> event.clientY){
+              objetos.splice(i,1);  
+              codigo.splice(i,1); 
+              actualizar(); 
+              break;
+            }
+          }
+          else if(objetos[i].figura == "SRepeat"){
+            if(objetos[i].x - 35 < event.clientX && objetos[i].x + 170> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 450> event.clientY){
+              objetos.splice(i,1);  
+              codigo.splice(i,1);
+              actualizar(); 
+              break;
+            }
+          }
+          else if(objetos[i].figura == "Linea"){
+            if(objetos[i].x - 5 < event.clientX && objetos[i].x + 5> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 50> event.clientY){
+              objetos.splice(i,1);
+              codigo.splice(i,1);  
+              actualizar(); 
+              break;
+            }
+          }
+        }
+      }
+    }
+
+    function cambiarColor(){
+        cv.onmousedown = function(event) {
+        for(var i = 0; i <objetos.length; i++){
+          if(objetos[i].figura == "SCondicional"){
+            if(objetos[i].x - 80 < event.clientX && objetos[i].x + 255> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 250> event.clientY){
+                objetoActual = objetos[i];
+                figcolor = document.getElementById("figcolor").value;
+                objetoActual.color = figcolor;
+                actualizar();
+                break;
+            }
+          }
+          else if(objetos[i].figura == "Inicio" || objetos[i].figura == "Fin"){
+            if(objetos[i].x - 32 < event.clientX && objetos[i].x + 175> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 50> event.clientY){
+                objetoActual = objetos[i];
+                figcolor = document.getElementById("figcolor").value;
+                objetoActual.color = figcolor;
+                actualizar();
+                break;
+            }
+          }
+          else if(objetos[i].figura == "Variable" || objetos[i].figura == "Entrada"){
+            if(objetos[i].x < event.clientX && objetos[i].x + 150> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 50> event.clientY){
+                objetoActual = objetos[i];
+                figcolor = document.getElementById("figcolor").value;
+                objetoActual.color = figcolor;
+                actualizar();
+                break;
+            }
+          }
+          else if(objetos[i].figura == "Salida"){
+            if(objetos[i].x - 32 < event.clientX && objetos[i].x + 150> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 50> event.clientY){
+                objetoActual = objetos[i];
+                figcolor = document.getElementById("figcolor").value;
+                objetoActual.color = figcolor;
+                actualizar();
+                break;
+            }
+          }
+          else if(objetos[i].figura == "SSimple"){
+            if(objetos[i].x < event.clientX && objetos[i].x + 170> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 50> event.clientY){
+                objetoActual = objetos[i];
+                figcolor = document.getElementById("figcolor").value;
+                objetoActual.color = figcolor;
+                actualizar();
+                break;
+            }
+          }
+          else if(objetos[i].figura == "SRepeat"){
+            if(objetos[i].x - 35 < event.clientX && objetos[i].x + 170> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 450> event.clientY){
+                objetoActual = objetos[i];
+                figcolor = document.getElementById("figcolor").value;
+                objetoActual.color = figcolor;
+                actualizar();
+                break;
+            }
+          }
+          else if(objetos[i].figura == "Linea"){
+            if(objetos[i].x - 5 < event.clientX && objetos[i].x + 5> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 50> event.clientY){
+                objetoActual = objetos[i];
+                figcolor = document.getElementById("figcolor").value;
+                objetoActual.color = figcolor;
+                actualizar();
+                break;
+            }
+          }
+        }
+      }
+
+      cv.onmousemove = function(event) {
+        objetoActual = null;
+        actualizar();
+      }
+
+      cv.onmouseup = function(event) {
+        objetoActual = null;
+      }
+      actualizar();
+    }
+
+    function moverInicio(){
+      cv.onmousedown = function(event) {
+        for(var i = 0; i <objetos.length; i++){
+          if(objetos[i].figura == "Inicio"){
+            if(objetos[i].x - 32 < event.clientX && objetos[i].x + 175> event.clientX && objetos[i].y < event.clientY && objetos[i].y + 50> event.clientY){
+                objetoActual = objetos[i];
+                inicioY = event.clientY - objetos[i].y;
+                inicioX = event.clientX - objetos[i].x;
+                break;
+            }
+          }
+        }
+      }
+
+      cv.onmousemove = function(event) {
+        if (objetoActual != null) {
+          objetoActual.x = event.clientX - inicioX;
+          objetoActual.y = event.clientY - inicioY;
+        }
+        actualizar();
+      }
+
+      cv.onmouseup = function(event) {
+        objetoActual = null;
+      }
+      actualizar();
+    }
+
+    function dejarInicio(){
+      cv.onmousedown = function(event) {
+        objetoActual = null;
+      }
+
+      cv.onmousemove = function(event) {
+        objetoActual = null;
+        actualizar();
+      }
+
+      cv.onmouseup = function(event) {
+        objetoActual = null;
+      }
+      actualizar();
+
+    }
+
+    function tamañoLetra() {
+      tamLetra = prompt('Ingresa el tamaño de letra');
+      actualizar();
+    }
+
+//--------------------------Código generado---------------------------
+    function generaCodigo(){
+      cx2.fillStyle = '#154360';
+      cx2.fillRect(10, 10, 510, 850);
+      cx2.font = "bold 15px sans-serif";
+      cx2.fillStyle = "white";
+
+      for(var i = 0; i < codigo.length; i++){
+        if(codigo[i].figura == "Inicio"){
+          codeInicio(codigo[i].x, codigo[i].y);
+        }
+        else if(codigo[i].figura == "Variable"){
+          codeVariable(codigo[i].texto, codigo[i].x, codigo[i].y);
+        }
+        else if(codigo[i].figura == "Entrada"){
+          codeEntrada(codigo[i].texto, codigo[i].x, codigo[i].y);
+        }
+        else if(codigo[i].figura == "Salida"){
+          codeSalida(codigo[i].texto, codigo[i].x, codigo[i].y, codigo[i].op);
+        }
+        else if(codigo[i].figura == "SSimple"){
+          codeSSimple(codigo[i].texto, codigo[i].x, codigo[i].y);
+        }
+        else if(codigo[i].figura == "SCondicional"){
+          codeSCondicional(codigo[i].texto, codigo[i].texto2, codigo[i].texto3, codigo[i].x, codigo[i].y, codigo[i].tins1, codigo[i].tins2);
+        }
+        else if(codigo[i].figura == "SRepeat"){
+          codeSRepeat(codigo[i].texto, codigo[i].texto2, codigo[i].texto3, codigo[i].texto4, codigo[i].texto5, codigo[i].x, codigo[i].y, codigo[i].tins1, codigo[i].tins2, codigo[i].tins3, codigo[i].op1, codigo[i].op2, codigo[i].op3);
+        }
+        else if(codigo[i].figura == "Fin"){
+          codeFin(codigo[i].x, codigo[i].y);
+        }
+      }
+    }
+
+    function codeInicio(X, Y){
+      cx2.fillText("#include <stdio.h>", X, Y - 20);
+      cx2.fillText("int main() {", X, Y);
+    }
+    
+    function codeVariable(tx, X, Y){
+      cx2.fillText("int " + tx + ";", X + 20, Y);
+    }
+
+    function codeEntrada(tx, X, Y){
+      cx2.fillText("scanf(''%d'', &" + tx + ");", X + 20, Y);
+    }
+
+    function codeSalida(tx, X, Y, op){
+      if(op == "Variable"){
+        cx2.fillText("printf(''%d'', "+ tx +");", X + 20, Y);
+      }else{
+        cx2.fillText("printf(''" + tx + "'');", X + 20, Y);
+      }
+    }
+
+    function codeSSimple(tx, X, Y){
+      cx2.fillText(tx + ";", X + 20, Y);
+    }
+
+    function codeSCondicional(tx1, tx2, tx3, X, Y, i1, i2){
+      cx2.fillText("if( "+ tx1 + ")", X + 20, Y);
+
+      if(i1 == "Variable"){//primera instrucción
+        cx2.fillText("int "+ tx3 + ";", X + 40, Y + 20);
+      }else if(i1 == "Entrada"){
+        cx2.fillText("scanf(''%d '', &"+ tx3 + ");", X + 40, Y + 20);
+      }else if(i1 == "Salida"){
+        cx2.fillText("printf(''"+ tx3 + "'');", X + 40, Y + 20);
+      }else{
+        cx2.fillText(tx3 + ";", X + 40, Y + 20);  
+      }
+      cx2.fillText("else ", X + 20, Y + 40);
+
+      if(i2 == "Variable"){//primera instrucción
+        cx2.fillText("int "+ tx2 + ";", X + 40, Y + 60);
+      }else if(i2 == "Entrada"){
+        cx2.fillText("scanf(''%d '', &"+ tx2 + ");", X + 40, Y + 60);
+      }else if(i2 == "Salida"){
+        cx2.fillText("printf(''"+ tx2 + "'');", X + 40, Y + 60);
+      }else{
+        cx2.fillText(tx2 + ";", X + 40, Y + 60);  
+      }
+    }
+
+    function codeSRepeat(tx1, tx2, tx3, tx4, tx5, X, Y, i1, i2, i3, op1, op2, op3){
+      cx2.fillText("int "+ tx1 + ";", X + 20, Y);
+      cx2.fillText("while (" + tx2 + "){", X + 20, Y + 20);
+
+      if(i1 == "Variable"){
+        cx2.fillText("int "+ tx3 + ";", X + 40, Y + 40);
+      }else if(i1 == "Entrada"){
+        cx2.fillText("scanf(''%d '', &"+ tx3 + ");", X + 40, Y + 40);
+      }else if(i1 == "Salida"){
+        if(op1 == "Variable"){
+          cx2.fillText("printf(''%d'', " + tx3 + ");", X + 40, Y + 40);
+        }else{
+          cx2.fillText("printf(''"+ tx3 + "'');", X + 40, Y + 40);
+        }
+      }else{
+        cx2.fillText(tx3 + ";", X + 40, Y + 40);
+      }
+
+      if(i2 == "Variable"){
+        cx2.fillText("int "+ tx4 + ";", X + 40, Y + 60);
+      }else if(i2 == "Entrada"){
+        cx2.fillText("scanf(''%d '', &"+ tx4 + ");", X + 40, Y + 60);
+      }else if(i2 == "Salida"){
+        if(op2 == "Variable"){
+          cx2.fillText("printf(''%d'', " + tx4 + ");", X + 40, Y + 60);
+        }else{
+          cx2.fillText("printf(''"+ tx4 + "'');", X + 40, Y + 60);
+        }
+      }else{
+        cx2.fillText(tx4 + ";", X + 40, Y + 60);
+      }
+
+      cx2.fillText("}", X + 20, Y + 80);
+
+      if(i3 == "Variable"){
+        cx2.fillText("int "+ tx5 + ";", X + 20, Y + 100);
+      }else if(i3 == "Entrada"){
+        cx2.fillText("scanf(''%d '', &"+ tx5 + ");", X + 20, Y + 100);
+      }else if(i3 == "Salida"){
+        if(op3 == "Variable"){
+          cx2.fillText("printf(''%d'', " + tx5 + ");", X + 20, Y + 100);
+        }else{
+          cx2.fillText("printf(''"+ tx5 + "'');", X + 20, Y + 100);
+        }
+      }else{
+        cx2.fillText(tx5 + ";", X + 20, Y + 100);
+      } 
+    }
+
+    function codeFin(X, Y){
+      cx2.fillText("return 0;", X + 20, Y);
+      cx2.fillText("}", X, Y + 10);
+    }
+
+//----------------------------------------------------------------------
+
+
+  </script>
+</body>
+</html>

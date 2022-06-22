@@ -1,0 +1,17 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\divOsc00.vhd":10:7:10:14|Top entity is set to divOsc00.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\divOsc00.vhd":10:7:10:14|Synthesizing work.divosc00.divosc0.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":9:7:9:11|Synthesizing work.div00.div0.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":30:6:30:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":39:6:39:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":48:6:48:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":57:6:57:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":66:6:66:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":75:6:75:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":84:6:84:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd":93:6:93:11|Removing redundant assignment.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\osc00.vhd":8:7:8:11|Synthesizing work.osc00.osc0.
+@N: CD630 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+@N|Running in 64-bit mode
+

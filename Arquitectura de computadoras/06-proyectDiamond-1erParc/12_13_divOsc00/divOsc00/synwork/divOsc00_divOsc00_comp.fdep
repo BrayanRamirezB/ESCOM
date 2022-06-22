@@ -1,0 +1,42 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\06-projectDiamond-1erParc\\12_13_divOsc00\\divOsc00\\synwork\\divOsc00_divOsc00_comp.srs|-top|divOsc00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\bin64\\c_vhdl.exe":1603988322
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\location.map":1604359580
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std1164.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\numeric.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\umr_capim.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\arith.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\unsigned.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\hyperents.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1542263532
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\06-projectDiamond-1erParc\\12_13_divOsc00\\osc00.vhd":1632402932
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\cpld\\lattice.vhd":1603988444
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\machxo2.vhd":1603988454
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\06-projectDiamond-1erParc\\12_13_divOsc00\\div00.vhd":1632760400
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\06-projectDiamond-1erParc\\12_13_divOsc00\\packageOsc00.vhd":1632402932
+#CUR:"C:\\Users\\braya\\Downloads\\Arquitectura de computadoras\\06-projectDiamond-1erParc\\12_13_divOsc00\\divOsc00.vhd":1632402932
+0			"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1			"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\osc00.vhd" vhdl
+2			"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\div00.vhd" vhdl
+3			"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\packageOsc00.vhd" vhdl
+4			"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\12_13_divOsc00\divOsc00.vhd" vhdl
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 3 2 1
+#Dependency Lists(Users Of)
+0 -1
+1 4
+2 4
+3 4
+4 -1
+#Design Unit to File Association
+module work divosc00 4
+arch work divosc00 divosc0 4
+module work div00 2
+arch work div00 div0 2
+module work osc00 1
+arch work osc00 osc0 1

@@ -1,0 +1,8 @@
+i C00.osc_int0_i
+m 0 0
+u 2 23
+p {t:C00.OSCInst0.OSC}{t:C00.osc_int0_inferred_clock.I[0]}{t:C00.osc_int0_inferred_clock.OUT[0]}{p:C00.osc_int0}{t:C00.osc_int0}{t:C01.osc_int}{p:C01.osc_int}{t:C01.sdiv[21:0].C}
+e ckid0_0 {t:C01.sdiv[21:0].C} sdffr
+c ckid0_0 {t:C00.OSCInst0.OSC} OSCH Unsupported/too complex instance on clock path
+l 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

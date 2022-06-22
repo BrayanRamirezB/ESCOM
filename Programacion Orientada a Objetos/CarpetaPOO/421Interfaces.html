@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Interfaces</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 4</header>
+ <nav>
+    <!--<div class="contenedor">-->
+      <p>Enseñanza<img src="curie.svg" align=center width=35% border=5></image>Clásica</p>
+      <p class="derecha"><a href="TemarioPOO.html">Temario</a></p>
+      
+      <p><a href="41EnlacesPrac.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="41EnlacesHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">INTERFACES</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>Definición de interface</h1>
+       <hr>
+       <br>
+       <p>Una interfaz es una construcción similar a una clase que contiene solo constantes y métodos abstractos. De muchas maneras una interfaz es similar a una clase abstracta, pero su intención es especificar
+comportamiento de los objetos. Por ejemplo, utilizando las interfaces adecuadas, se puede especificar que los objetos son comparables, comestibles y/o clonables.
+Para distinguir una interfaz de una clase, Java utiliza la siguiente sintaxis para definir una
+interfaz:</p>
+       <br>
+       <pre>
+       modificador interface NombreInterface {
+         /** Declaración de Constantes */
+         /** Declaración de métodos */
+       }
+       </pre>
+       <br>
+       <p><strong>Ejemplo.</strong> Interface Comestible.</p>
+       <br>
+       <pre>
+       public interface Comestible {
+         /** Describe cómo se comen */
+         public abstract String comoSeCome();
+       }
+       </pre>
+       <br>
+       <p class="cita"><cite>Java: manual de referencia, Patrick Naughton y Herbert Schildt, Pág. 115</cite></p>
+       <br>
+      
+       <hr>
+       <h1>Ejemplos de interfaces</h1>
+       <hr>
+       <br>
+       <pre>
+       class Animal {
+         // Se omiten campos de datos, constructores, y métodos
+       }
+       
+       class Pollos extends Animal implements Comestible {
+         public String comoSeCome() {
+           return "Los pollos: Se frien";
+         }
+       }
+       class Tigre extends Animal {
+       }
+       
+       abstract class Frutas implements Comestible {
+         // Se omiten campos de datos, constructores, y métodos
+       }
+       class Manzanas extends Frutas {
+         public String comoSeCome() {
+           return "Manzanas: Se hacen sidra";
+         }
+       }
+       class Naranjas extends Frutas {
+         public String comoSeCome() {
+           return "Naranjas: Se hacen jugo";
+         }
+       }
+       
+       public class ComestibleDriver {
+         public static void main(String[] args) {
+           Object[] objectos = {new Tigre(), new Pollos(), new Manzanas()};
+           for (int i = 0; i < objectos.length; i++)
+             if (objectos[i] instanceof Comestible)
+               System.out.println(((Comestible)objectos[i]).comoSeCome());
+         }
+       }
+       </pre>
+       <br>
+       <p><strong>Otro ejemplo de interface.</strong> La siguiente interface se refiere a la comparación:</p>
+       <br>
+       <pre>
+       package java.lang;
+       
+       public interface Comparable {
+         public int compareTo(Object o);
+       }
+       </pre>
+       <br>
+       <p><strong>Código en java.</strong> El siguiente código es un ejemplo de clase que usa la interface Comparable:</p>
+       <br>
+       <pre>
+       public class CompararRectangulos extends Rectangulo implements Comparable {
+         /** Construir un clase CompararRectangulos con propiedades especificadas */
+         public CompararRectangulos(double ancho, double alto) {
+           super(ancho, alto);
+         }
+         /** Implementar el método compareTo declarado en la interface Comparable */
+         public int compareTo(Object o) {
+           if (getArea() > ((CompararRectangulos)o).getArea())
+             return 1;
+           else if (getArea() < ((CompararRectangulos) o).getArea())
+             return -1;
+           else
+             return 0;
+         }
+       }
+       </pre>
+       <br>
+       <p>El método compareTo determina el orden de este objeto con el objeto especificado o y
+devuelve un entero negativo, cero o un entero positivo si este objeto es menor que, igual o
+mayor que o.
+Muchas clases de la biblioteca de Java (por ejemplo, String y Date) implementan Comparable para
+definir un orden natural para los objetos. Si examina el código fuente de estas clases, podrá
+ver el uso de la palabra clave <strong>implements</strong> utilizados en las clases, como se muestra a continuación:
+       </p>
+       <br>
+       <pre>
+       public class String extends Object implements Comparable {
+         // Cuerpo de la clase omitido
+       }
+       </pre>
+       <br>
+       <pre>
+       public class Date extends Object implements Comparable {
+         // Cuerpo de la clase omitido
+       }
+       </pre>
+       <br>
+       <p>Dado que todos los campos de datos son estáticos finales públicos y todos los métodos son abstractos públicos en un interfaz, Java permite omitir estos modificadores. Por lo tanto, las siguientes definiciones de interfaz son equivalentes: 
+       </p>
+       <br>
+       <p><strong>Definición 1:</strong></p>
+       <br>
+       <pre>
+       public interface T {
+         public static final int K = 1;
+         
+         public abstract void p();
+       }
+       </pre>
+       <br>
+       <p><strong>Definición 2:</strong></p>
+       <br>
+       <pre>
+       public interface T {
+         int K = 1;
+         
+         void p();
+       }
+       </pre>
+       <br>
+       <p class="cita"><cite>Object-Oriented Analysis and Design, Brahma Dathan and Sarnath Ramnath, Pág. 13</cite></p>
+        <br>
+        <h3>Otro ejemplo de interface</h3>
+        <hr>
+        <br>
+        <pre>
+         <br>
+         import java.util.*;
+
+         interface Instrumento {
+           int i = 5;
+           void tocar();
+           String que();
+           void ajustar();
+         }
+
+       class Viento implements Instrumento {
+           public void tocar() {
+             System.out.println("Viento.tocar()");
+         }
+
+         public String que() { 
+           return "Viento";
+         }
+         public void ajustar() { 
+         }
+       }
+
+       class Percusion implements Instrumento {
+         public void tocar() {
+           System.out.println("Percusion.tocar()");
+         }
+         public String que() { 
+           return "Percusion";
+         }
+
+         public void ajustar() {
+         }
+       }
+
+       class Cuerda implements Instrumento {
+         public void tocar() {
+           System.out.println("Cuerda.tocar()");
+         }
+
+         public String que() { 
+           return "Cuerda";
+         }
+
+         public void ajustar() {
+         }
+    
+       }
+
+       class MetalViento extends Viento {
+         public void tocar() {
+           System.out.println ("MetalViento.tocar()");
+         }
+
+         public void ajustar() {
+           System.out.println ("MetalViento.ajustar()");
+         }
+       }
+
+       class MaderaViento extends Viento {
+         public void tocar( ) {
+           System.out.println("MaderaViento.tocar()");
+         }
+
+         public String que() {
+           return "Madera viento";
+         }
+       }
+
+     public class MusicaDriver {
+       // No le importa el tipo por lo que los nuevos
+       // tipos que se aniadan al sistema seguirán funcionando bien:
+       static void afinar(Instrumento i) {
+       //---
+       i.tocar();
+       }
+       static void afinarTodo(Instrumento[] e) {
+         for(int i = 0; i < e.length; i++)
+           afinar(e[i]);
+       }
+       public static void main(String[] args) {
+         Instrumento[] orquesta = new Instrumento[5];
+         int i = 0;
+         // Haciendo conversión hacia arriba durante la inserción en el arreglo:
+         orquesta[i++] = new Viento();
+         orquesta[i++] = new Percusion();
+         orquesta[i++] = new Cuerda();
+         orquesta[i++] = new MetalViento();
+         orquesta[i++] = new Maderaviento();
+         afinarTodo(orquesta);
+       }
+     } //Fin de la clase principal
+         </pre>
+         <br>
+         <p><strong>Código en java.</strong> El siguiente es la clase principal que se llama Nomina:</p>
+         <pre>
+         <pre>
+         public class MusicaDriver {
+         // No le importa el tipo por lo que los nuevos
+         // tipos que se aniadan al sistema seguirán funcionando bien:
+           static void afinar(Instrumento i) {
+             
+             i.tocar();
+           }
+           static void afinarTodo(Instrumento[] e) {
+             for(int i = 0; i < e.length; i++)
+               afinar(e[i]);
+           }
+           public static void main(String[] args) {
+             Instrumento[] orquesta = new Instrumento[5];
+             int i = 0;
+             // Haciendo conversión hacia arriba durante la inserción en el arreglo:
+             orquesta[i++] = new Viento();
+             orquesta[i++] = new Percusion();
+             orquesta[i++] = new Cuerda();
+             orquesta[i++] = new Metal();
+             orquesta[i++] = new MaderaViento();
+             afinarTodo(orquesta);
+           }
+         } //Fin de la clase principal
+         </pre>
+         <br>
+         <p><strong>Diagrama de clases de la interfaz Instrumento</strong></p>
+         <br>
+         <img src="InterfaceInstrumento.svg" align=center width=80% border=5></image>
+         <br>
+         <p><strong>Interfaz de Asalariado.</strong> Es el código de como implementar la interfaz de Asalariado.</p>
+         <br>
+         <pre>
+         interface Comision {
+           double RELACION_COMISION = 0.10;
+           void addVentas(double ventas);
+         }
+         
+         class Comisionado extends Empleado implements Comision {
+           private double ventas = 0.0;
+           public Comisionado(String nombre) {
+             super(nombre);
+             this.ventas = ventas;
+           }
+           public void addVentas(double ventas) {
+             this.ventas += ventas;
+           }
+           public double getPago() {
+             double pago = RELACION_COMISION * ventas;
+             
+             ventas = 0.0;
+             return pago;
+           }
+         }
+         
+         class AsalariadoYcomisionado extends Asalariado implements Comision {
+           private double ventas;
+           public AsalariadoYcomisionado(String nombre, double salario) {
+             super(nambre, salario);
+           }
+           public void addVentas(double ventas) {
+             this.ventas += ventas;
+           }
+           public double getPago() {
+             double pago = super.getPago() + RELACION_COMISION * ventas;
+             ventas = 0.0;
+             return pago;
+           }
+         }
+           
+         </pre>
+         <br>
+         <p><strong>La clase principal.</strong> El código.</p>
+         <br>
+         <pre>
+         public class Nomina {
+           public static void main(String[] args) {
+             Empleado[] empleados = new Empleado[100];
+             PorHora porHora;
+             empleados[0] = new PorHora("Ana", 25.0);
+             empleados[1] = new Asalariado("Simon", 48000);
+             empleados[2] = new PorHora("Daniel", 20.0);
+             empleados[3] = new Comisionado("Gilberto");
+             empleados[4] = new AsalariadoYcomisionado("Carlota", 24000);
+             ((Comision) empleados[3]).addVentas(15000);
+             ((Comision) empleados[4]).addVentas(15000);
+
+             // This arbitrarily assumes that the payroll's month
+             // starts on a Tuesday (day = 2), and it contains 30 days.
+             for (int dato=1,dia=2; dato<=15; dato++,dia++,dia%=7) {
+               for (int i=0;i<empleados.length && empleados[i] != null; i++) {
+                 if (dia > 0 && dia < 6 && empleados[i] instanceof Hourly2) {
+                   porHora = (PorHora) empleados[i];
+                   porHora.addPorHoras(8);
+               }
+               if ((dia == 5 && empleados[i] instanceof PorHora) || 
+               (date%15 == 0 && (empleados[i] instanceof Asalariado || empleados[i] instanceof Comisionado))) {
+                 empleados[i].imprimirPago(dato);
+              }
+             } // end for i
+            } // end for date
+           } // end main
+          } // end class Payroll3
+         </pre>
+         <br>
+    </article>
+    <br>
+      </section>
+      
+      <aside>
+      <h1>Ejercicios de interfaces</h1>
+        <hr>
+        <br>
+        <p><strong>Ejercicio 1.</strong> Hacer el diagrama de clases de la interfaz Comestible.</p>
+     <br>
+     <hr>
+     <h1>Preguntas de interfaces</h1>
+     <hr>
+     <br>
+     <p><strong>Pregunta 1.</strong> Listar las diferencias entre una clase abstracta y una interfaz.</p>
+       <br>
+  <!--     <hr>
+      <p><strong>Enlaces dinámicos.</strong> Construir un programa basado en el ejemplo de enlaces dinámicos. El programa debe hacer ladrar a un perro, mauyar a un gato y cantar a un canario.</p>
+      <br>
+     <hr>
+     <h1>Práctica 4 (la correspondiente)</h1>
+        <hr>
+        <br>
+        <p>Realizar la siguiente prácticas presentarlas en un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p>
+      
+      <br>
+     <hr>
+     <h1>Realizar el proyecto (parcial 1)</h1>
+        <hr>
+        <br>
+        <p>Presentar el proyecto por medio de un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p> -->
+        </aside>
+      <footer><p>Polimorfismo: Tema 4.2.1 (extra)</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

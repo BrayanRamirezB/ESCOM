@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001030</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>K0203.plec.out32lc15</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>K0200/D00/OSCInst0_SEDSTDBY</Dynamic>
+            <Navigation>K0200/D00/OSCInst0_SEDSTDBY</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG296 :&quot;C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl&quot;:20:9:20:15|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
+            <Navigation>CG296</Navigation>
+            <Navigation>C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl&quot;:22:11:22:20|Referenced variable scontrollc is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Referenced variable scontrollc is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL113 :&quot;C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl&quot;:22:6:22:9|Feedback mux created for signal out32lc[31:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Dynamic>
+            <Navigation>CL113</Navigation>
+            <Navigation>C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Feedback mux created for signal out32lc[31:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG296 :&quot;C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl&quot;:19:13:19:19|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
+            <Navigation>CG296</Navigation>
+            <Navigation>C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl&quot;:25:8:25:10|Referenced variable enc is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Referenced variable enc is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD276 :&quot;C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd&quot;:2297:8:2297:15|Map for port sedstdby of component osch not found</Dynamic>
+            <Navigation>CD276</Navigation>
+            <Navigation>C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>2297</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Map for port sedstdby of component osch not found</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL246 :&quot;C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder7seg00.vhdl&quot;:9:2:9:8|Input port bits 31 to 16 of in32cr7(31 downto 0) are unused. Assign logic for all port bits or change the input port size.</Dynamic>
+            <Navigation>CL246</Navigation>
+            <Navigation>C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder7seg00.vhdl</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Input port bits 31 to 16 of in32cr7(31 downto 0) are unused. Assign logic for all port bits or change the input port size.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\vhdls-oscilador\div00.vhdl&quot;:20:4:20:5|Found inferred clock oscint00|osc_int_inferred_clock which controls 23 sequential elements including K0200.D01.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\vhdls-oscilador\div00.vhdl</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found inferred clock oscint00|osc_int_inferred_clock which controls 23 sequential elements including K0200.D01.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl&quot;:105:16:105:24|ROM sout7seg3[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl</Navigation>
+            <Navigation>105</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>105</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>ROM sout7seg3[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl&quot;:86:16:86:24|ROM sout7seg2[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl</Navigation>
+            <Navigation>86</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>86</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>ROM sout7seg2[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl&quot;:67:16:67:24|ROM sout7seg1[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>ROM sout7seg1[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl&quot;:48:16:48:24|ROM sout7seg0[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl</Navigation>
+            <Navigation>48</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>48</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>ROM sout7seg0[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl&quot;:105:16:105:24|ROM sout7seg3[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl</Navigation>
+            <Navigation>105</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>105</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>ROM sout7seg3[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl&quot;:86:16:86:24|ROM sout7seg2[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl</Navigation>
+            <Navigation>86</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>86</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>ROM sout7seg2[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl&quot;:67:16:67:24|ROM sout7seg1[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>67</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>ROM sout7seg1[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FA239 :&quot;c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl&quot;:48:16:48:24|ROM sout7seg0[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Dynamic>
+            <Navigation>FA239</Navigation>
+            <Navigation>c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl</Navigation>
+            <Navigation>48</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>48</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>ROM sout7seg0[6:0] (in view: work.coder7seg00(coder7seg0)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock oscint00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on net K0200.D00.sclk.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock oscint00|osc_int_inferred_clock with period 480.77ns. Please declare a user-defined clock on net K0200.D00.sclk.</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

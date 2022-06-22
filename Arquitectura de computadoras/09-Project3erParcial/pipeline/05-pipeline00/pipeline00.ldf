@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="pipeline00" device="LCMXO2-7000HE-5TG144C" default_implementation="pipeline0">
+    <Options/>
+    <Implementation title="pipeline0" dir="pipeline0" description="pipeline0" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="pipeline00"/>
+        <Source name="pipeline0/source/div00.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="pipeline0/source/osc00.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="pipeline0/source/oscint00.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="pipeline0/source/packageOsc00.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="pc00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="pc00"/>
+        </Source>
+        <Source name="memEBR00.ipx" type="IPX_Module" type_short="IPX">
+            <Options top_module="memEBR00"/>
+        </Source>
+        <Source name="fi00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="di00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="co00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="fo00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="eo00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="wr00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="fsmpipe02.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="packagepipeline00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="pipeline00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="pipeline00"/>
+        </Source>
+        <Source name="pipeline0/pipeline0.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="pipeline00.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="pipeline001.sty"/>
+</BaliProject>

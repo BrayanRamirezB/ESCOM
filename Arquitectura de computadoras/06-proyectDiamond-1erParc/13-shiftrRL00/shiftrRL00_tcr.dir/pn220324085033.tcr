@@ -1,0 +1,7 @@
+#Start recording tcl command: 3/24/2022 08:48:38
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00; Project name: shiftrRL00
+prj_project open "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL00.ldf"
+pgr_project open "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL0/shiftrRL0.xcf"
+pgr_program run
+prj_project close
+#Stop recording: 3/24/2022 08:50:33

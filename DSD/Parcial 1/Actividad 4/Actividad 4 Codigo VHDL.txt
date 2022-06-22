@@ -1,0 +1,133 @@
+-----------Registro Serie - Serie J-K ------------------
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY SP IS
+	PORT (clk, J, K, clear : in std_logic;
+			Q : OUT STD_LOGIC);
+END SP;
+
+ARCHITECTURE BEHAV OF SP IS
+
+	SIGNAL JK, JK0, JK1, JK2, JK3: STD_LOGIC_VECTOR (1 downto 0);
+	SIGNAL Q0, Q1, Q2, Q3, Q4 : STD_LOGIC;
+
+BEGIN
+	JK <= J&K;
+	JK0 <= Q0&(NOT Q0);
+	JK1 <= Q1&(NOT Q1);
+	JK2 <= Q2&(NOT Q2);
+	JK3 <= Q3&(NOT Q3);
+	
+	PROCESS (clear, clk)
+		BEGIN
+			IF (clear = '1') THEN
+				Q1 <= '0';
+			ELSIF ((clk'EVENT)AND(clk = '1')) THEN
+				CASE JK IS
+					WHEN "00" => Q0 <= Q0;
+					WHEN "01" => Q0 <= '0';
+					WHEN "10" => Q0 <= '1';
+					WHEN OTHERS => Q0 <= NOT Q0;
+				END CASE;
+				
+				CASE JK0 IS
+					WHEN "00" => Q1 <= Q1;
+					WHEN "01" => Q1 <= '0';
+					WHEN "10" => Q1 <= '1';
+					WHEN OTHERS => Q1 <= NOT Q1;
+				END CASE;
+
+				CASE JK1 IS
+					WHEN "00" => Q2 <= Q2;
+					WHEN "01" => Q2 <= '0';
+					WHEN "10" => Q2 <= '1';
+					WHEN OTHERS => Q2 <= NOT Q2;
+				END CASE;
+
+				CASE JK2 IS
+					WHEN "00" => Q3 <= Q3;
+					WHEN "01" => Q3 <= '0';
+					WHEN "10" => Q3 <= '1';
+					WHEN OTHERS => Q3 <= NOT Q3;
+				END CASE;
+
+				CASE JK3 IS
+					WHEN "00" => Q4 <= Q4;
+					WHEN "01" => Q4 <= '0';
+					WHEN "10" => Q4 <= '1';
+					WHEN OTHERS => Q4 <= NOT Q4;
+				END CASE;
+				
+			END IF;
+	END PROCESS;
+	Q <= Q4;
+END BEHAV;
+
+
+-----------Registro Serie - Paralelo J-K ------------------
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY SP IS
+	PORT (clk, J, K : in std_logic;
+			Q : OUT STD_LOGIC_VECTOR (4 downto 0));
+END SP;
+
+ARCHITECTURE BEHAV OF SP IS
+
+	SIGNAL JK, JK0, JK1, JK2, JK3: STD_LOGIC_VECTOR (1 downto 0);
+	SIGNAL Q_aux : STD_LOGIC_VECTOR (4 downto 0);
+
+BEGIN
+	JK <= J&K;
+	JK0 <= Q_aux(0)&(NOT Q_aux(0));
+	JK1 <= Q_aux(1)&(NOT Q_aux(1));
+	JK2 <= Q_aux(2)&(NOT Q_aux(2));
+	JK3 <= Q_aux(3)&(NOT Q_aux(3));
+	
+	PROCESS (clk)
+		BEGIN
+			IF ((clk'EVENT)AND(clk = '1')) THEN
+				CASE JK IS
+					WHEN "00" => Q_aux(0) <= Q_aux(0);
+					WHEN "01" => Q_aux(0) <= '0';
+					WHEN "10" => Q_aux(0) <= '1';
+					WHEN OTHERS => Q_aux(0) <= NOT Q_aux(0);
+				END CASE;
+				
+				CASE JK0 IS
+					WHEN "00" => Q_aux(1) <= Q_aux(1);
+					WHEN "01" => Q_aux(1) <= '0';
+					WHEN "10" => Q_aux(1) <= '1';
+					WHEN OTHERS => Q_aux(1) <= NOT Q_aux(1);
+				END CASE;
+
+				CASE JK1 IS
+					WHEN "00" => Q_aux(2) <= Q_aux(2);
+					WHEN "01" => Q_aux(2) <= '0';
+					WHEN "10" => Q_aux(2) <= '1';
+					WHEN OTHERS => Q_aux(2) <= NOT Q_aux(2);
+				END CASE;
+
+				CASE JK2 IS
+					WHEN "00" => Q_aux(3) <= Q_aux(3);
+					WHEN "01" => Q_aux(3) <= '0';
+					WHEN "10" => Q_aux(3) <= '1';
+					WHEN OTHERS => Q_aux(3) <= NOT Q_aux(3);
+				END CASE;
+
+				CASE JK3 IS
+					WHEN "00" => Q_aux(4) <= Q_aux(4);
+					WHEN "01" => Q_aux(4) <= '0';
+					WHEN "10" => Q_aux(4) <= '1';
+					WHEN OTHERS => Q_aux(4) <= NOT Q_aux(4);
+				END CASE;
+				
+			END IF;
+	END PROCESS;
+	Q <= Q_aux;
+END BEHAV;
+

@@ -1,0 +1,1 @@
+project -fileorder "C:/lscc/diamond/3.12/cae_library/synthesis/vhdl/machxo2.vhd" "C:/Users/Emanuel/Documents/ESCOM/7\ SEPTIMO\ SEMESTRE/Arquitectura\ de\ computadoras/1erP/06-proyectDiamond-1erParc/07oscint00/oscint00.vhdl" 

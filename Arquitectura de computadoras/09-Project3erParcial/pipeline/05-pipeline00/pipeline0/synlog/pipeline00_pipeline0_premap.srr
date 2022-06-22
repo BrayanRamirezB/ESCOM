@@ -1,0 +1,146 @@
+# Thu Jun  9 21:21:56 2022
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: UNKNOWN
+
+Implementation : pipeline0
+Synopsys Lattice Technology Pre-mapping, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\pipeline00_pipeline0_scck.rpt 
+See clock summary report "C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\pipeline00_pipeline0_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 129MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 129MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+Encoding state machine aux01[0:6] (in view: work.fsmpipe02(fsmpipe0))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+@N: FX493 |Applying initial value "1" on instance aux01[6].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0" on instance aux01[5].
+@N: FX493 |Applying initial value "0" on instance aux01[4].
+@N: FX493 |Applying initial value "0" on instance aux01[3].
+@N: FX493 |Applying initial value "0" on instance aux01[2].
+@N: FX493 |Applying initial value "0" on instance aux01[1].
+@N: FX493 |Applying initial value "0" on instance aux01[0].
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=26 on top level netlist pipeline00 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                Requested     Requested     Clock                                               Clock                   Clock
+Level     Clock                                Frequency     Period        Type                                                Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       oscint00|osc_int0_inferred_clock     2.1 MHz       480.769       inferred                                            Inferred_clkgroup_0     23   
+1 .         div00|oscOut_derived_clock         2.1 MHz       480.769       derived (from oscint00|osc_int0_inferred_clock)     Inferred_clkgroup_0     117  
+============================================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                     Clock     Source                           Clock Pin              Non-clock Pin     Non-clock Pin
+Clock                                Load      Pin                              Seq Example            Seq Example       Comb Example 
+--------------------------------------------------------------------------------------------------------------------------------------
+oscint00|osc_int0_inferred_clock     23        FSM00.C00.OSCInst0.OSC(OSCH)     FSM00.C01.oscOut.C     -                 -            
+div00|oscOut_derived_clock           117       FSM00.C01.oscOut.Q[0](dffe)      FSM07.outzz[2:0].C     -                 -            
+======================================================================================================================================
+
+@W: MT529 :"c:\users\mau\documents\arqui\practicas\tercelparcial\05-pipeline00\pipeline0\source\div00.vhd":22:2:22:3|Found inferred clock oscint00|osc_int0_inferred_clock which controls 23 sequential elements including FSM00.C01.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 23 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 117 clock pin(s) of sequential element(s)
+0 instances converted, 117 sequential instances remain driven by gated/generated clocks
+
+================================= Non-Gated/Non-Generated Clocks ==================================
+Clock Tree ID     Driving Element            Drive Element Type     Fanout     Sample Instance     
+---------------------------------------------------------------------------------------------------
+@KP:ckid0_2       FSM00.C00.OSCInst0.OSC     OSCH                   23         FSM00.C01.sdiv[21:0]
+===================================================================================================
+================================================================ Gated/Generated Clocks ================================================================
+Clock Tree ID     Driving Element           Drive Element Type     Unconverted Fanout     Sample Instance     Explanation                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       FSM00.C01.oscOut.Q[0]     dffe                   117                    FSM07.aux01[0]      Derived clock on input (not legal for GCC)
+========================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 92MB peak: 175MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Thu Jun  9 21:21:59 2022
+
+###########################################################]

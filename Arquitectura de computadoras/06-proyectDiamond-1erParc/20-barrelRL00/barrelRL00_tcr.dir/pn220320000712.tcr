@@ -1,0 +1,20 @@
+#Start recording tcl command: 3/19/2022 23:44:37
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/20-barrelRL00; Project name: barrelRL00
+prj_project open "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/20-barrelRL00/barrelRL00.ldf"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/div00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/osc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/oscint00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/packageosc00.vhdl"
+prj_src remove "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/VHDLs-Oscilador/div00.vhdl"
+prj_src remove "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/VHDLs-Oscilador/osc00.vhdl"
+prj_src remove "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/VHDLs-Oscilador/oscint00.vhdl"
+prj_src remove "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/VHDLs-Oscilador/packageosc00.vhdl"
+prj_run Export -impl barrelRL0 -task Jedecgen
+pgr_project open "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/20-barrelRL00/barrelRL0/barrelRL0.xcf"
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/20-barrelRL00/barrelRL0/barrelRL0.xcf"
+pgr_project close
+pgr_project open "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/20-barrelRL00/barrelRL0/barrelRL0.xcf"
+pgr_program run
+prj_run Export -impl barrelRL0 -task Jedecgen
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/20-barrelRL00/barrelRL0/barrelRL0.xcf"
+pgr_project close
+prj_project save
+prj_project close
+#Stop recording: 3/20/2022 00:07:12

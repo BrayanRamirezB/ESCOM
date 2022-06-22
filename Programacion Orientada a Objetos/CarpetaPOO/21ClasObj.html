@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Clases y objetos</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 2</header>
+ <nav>
+   <!-- <div class="contenedor">--> 
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+      <p class="derecha"><a href="TemarioPOO.html">Temario</a></p>
+      
+      <p><a href="21ClasObjPra.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="21ClasObjHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">CLASES Y OBJETOS</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>La clase</h1>
+       <hr>
+       <p><strong>Definición de clase de la Real Academia Española.</strong> 1. f. Conjunto de elementos con caracteres comunes, 8. f. Distinción, categoría.</p>
+       <br>
+       <p><strong>Definición de clase en computación.</strong> Es la agrupación de objetos. Las clases permiten que un diseñador de software considere los objetos como diferentes tipos de entidades. Visita
+objetos de esta manera nos permite utilizar los mecanismos de clasificación para categorizar estos tipos,
+definir jerarquías y comprometerse con las ideas de especialización y generalización de objetos.</p>
+      <br>
+   <p class="cita"><cite>Object-Oriented Analysis
+and Design, Sarnath Ramnath and Brahma Dathan, Pág. 6</cite></p>
+       <br>
+       <p>La programación orientada a objetos (POO) implica la programación mediante objetos. Un objeto representa una entidad en el mundo real que se puede identificar claramente. Por ejemplo, un estudiante, un un escritorio, un círculo, un botón e incluso un préstamo pueden verse como objetos. Un objeto tiene una única
+identidad, estado y comportamiento. <strong>class</strong>.</p>
+       <br>
+     <p>El estado de un objeto (también conocido como propiedades o atributos) está representado por
+campos de datos con sus valores actuales. Un objeto circulo, por ejemplo, tiene un campo de datos
+radio, que es la propiedad que caracteriza a un círculo. Un objeto rectángulo tiene campos de datos ancho y alto, que son las propiedades que caracterizan a un rectángulo.</p>
+     <br>
+    <p>El comportamiento de un objeto (también conocido como sus acciones) se define mediante métodos. A
+Invocar un método en un objeto es pedirle al objeto que realice una acción. Por ejemplo, se puede definir un método llamado <strong>getArea()</strong> para objetos circulo. Un objeto circulo puede
+invocar <strong>getArea()</strong> para devolver su área.</p>
+    <br>
+    <p class="cita"><cite>Introduction to java programming, Y. Daniel Liang, Pág. 264</cite></p>
+      <br>
+      <p>Dado que una clase describe un conjunto de objetos que tienen idénticas características (elementos de datos) y comportamientos (funcionalidad), una clase es realmente un tipo de datos porque un número de punto flotante, por ejemplo,
+también tiene un conjunto de características y comportamientos. La diferencia es que un programador define una clase para adaptarse a un problema en lugar de ser forzado a usar un tipo de datos existente que fue diseñado para representar una unidad de almacenamiento en una máquina. Se extiende el lenguaje de programación agregando nuevos tipos de datos específicos para sus necesidades. El sistema de programación da la bienvenida a las nuevas clases y les da a todas
+el cuidado y la verificación de tipos que da a los tipos integrados.</p>
+      <br>
+    <p class="cita"><cite>Thinking In C++, Bruce Eckel, Pág. 28-29</cite></p>
+       <br>
+      <h3>Ejemplo de código de clases</h3>
+      <hr>
+     <p><strong>Usar los siguientes nombres de clases.</strong> Estudiante, Trabajador, Circulo.</p>
+      <br>
+      <p><strong>Código en java.</strong> Se presenta la clase <strong>Circulo</strong> en el siguiente código:</p>
+       <br>
+       <pre>
+       public class Circulo {
+         double radio;
+         double getArea() {
+           return radio * radio * Math.PI;
+         }
+         public static void main(String[] args) {
+           // Crea un circulo con radio 1.0
+           Circulo circulo1 = new Circulo();
+           circulo1.radio = 1;
+           System.out.println("El area del circulo de radio "
+	     + circulo1.radio + " es " + circulo1.getArea());
+           // Crea un circulo con radio 25
+           Circulo circulo2 = new Circulo();
+           circulo2.radio = 25;
+           System.out.println("El area del circulo de radio "
+	      + circulo2.radio + " es " + circulo2.getArea());
+           // Crea un circulo de radio 125
+           Circulo circulo3 = new Circulo();
+           circulo3.radio = 125;
+           System.out.println("El area del circulo de radio "
+	      + circulo3.radio + " es " + circulo3.getArea());
+           // Modifica el radio del circulo
+           circulo2.radio = 100;
+           System.out.println("El area del circulo de radio "
+	      + circulo2.radio + " es " + circulo2.getArea() );
+         }
+       }
+       </pre>
+       <br>
+      <p>La clase contiene campos de datos, métodos, Constructores.</p>
+      <br>
+      <p><strong>Código en java.</strong> Se presenta la clase <strong>Estudiante</strong> en el siguiente código:</p>
+       <br>
+       <pre>
+       public class Estudiante {
+         String nombre; // nombre tiene valor null
+         int edad; // edad
+         boolean estudianteMaestria; // estudiante de maestria
+         char genero; // h hombre, m mujer
+         String getNombre(String nombre) {
+           return nombre;
+         }
+       }
+       </pre>
+       <br>
+       <p><strong>Código en java.</strong> Se presenta la clase <strong>Raton</strong> en el siguiente código:</p>
+       <br>
+       <pre>
+       public class Raton {
+         private int edad = 0; // edad del raton en dias
+         private double peso = 1.0; // peso del raton en gramos
+         private double porcientoCrecimiento; // incremento en dias
+  
+         // Este metodo asigna el porciento de crecimiento del raton.
+         public void setPorcientoCrecimiento(double porcientoCrecimiento) {
+           this.porcientoCrecimiento = porcientoCrecimiento; 
+         } // fin del setPorcientoCrecimiento
+  
+        // Este metodo simula un dia de crecimiento del raton.
+        public void crecer() {
+          this.peso += (.01 * this.porcientoCrecimiento * this.peso); 
+          this.edad++;
+        } // fin crecer
+  
+        // Este metodo imprime la edad del raton y su peso.
+        public void desplegar() {
+          System.out.printf("Edad = %d, peso = %.3f\n",
+          this.edad, this.peso);
+        } // fin desplegar
+      } // fin clase Raton
+       </pre>
+       <br>
+       <hr>
+       <h1>El objeto</h1>
+       <hr>
+        <p><strong>Definición de objeto.</strong> En la vida real los objetos son representados (o modelados) como un conjunto de objetos, los cuales forman un modelo de objeto.</p>
+        <br>
+        <p>Todo es un objeto. Piense en un objeto como una fantasía
+variable; almacena datos, pero puede "hacer solicitudes" a ese
+objeto, pidiéndole que realice operaciones sobre sí mismo. En teoria,
+puede tomar cualquier componente conceptual en el problema
+que intentas resolver (perros, edificios, servicios, etc.) y
+representarlo como un objeto en su programa.</p>
+       <br>
+        <p class="cita"><cite>Thinking In C++, Bruce Eckel, Pág. 26</cite></p>
+        <br>
+        <p><strong>Ejemplos de objeto.</strong>
+Un objeto carro puede representar un carro, un objeto cesta puede representar una compra de cestas, y un objeto documento podría representar un documento tal como una página web.</p>
+        <br>
+        <p><strong>Caractísticas de los objetos.</strong>
+Cada objeto puede tener un conjunto de propiedades que describen aspectos del objeto. Un objeto carro puede tener propiedades que describen su color o el tamaño del motor. Un objeto cesta puede tener propiedades que describen el número de elementos que contiene o el valor de aquellos elementos. Un objeto documento tene propiedades que describen el color de fondo de la página web o el titulo de la página.</p>
+        <br>
+        <p><strong>Los métodos.</strong>
+Hay métodos; cada método describe una acción que puede ser hecha (o con) el objeto. Por ejemplo, un método de un objeto representa un carro que puede ser acelerado o para cambiar un engranaje. Un método de comprar cesto puede ser agregar un elemento o para recalcular el valor de los elementos en el cesto. Un método de un documento podría ser escribir una linea nueva de texto en la página web.</p>
+</article>
+<br>
+<br>
+     
+      <article>
+       
+        <p><strong>Los eventos.</strong>
+Finalmente, hay eventos. En un lenguaje de programación, un evento es el objeto que levanta la mano y que dice, "x sucedió", generalmente porque un programa pude hacer algo como un resultado de un evento. Por ejemplo, un objeto carro puede aumentar un evento que dice la ignición ha comenzado o que se acabó la gasolina. Un cesto puede subir un evento cuando un elemento es agregado o cuando esta lleno. Un documento puede aumentar un evento cuando el usuario presiona Submit en forma de click en un enlace. Otras formas, un evento puede también disparar acciones; por ejemplo, si un carro no tiene gasolina, el carro se parará.</p>
+      <br>
+      <p><strong>Los modelos.</strong>
+Un modelo objeto es por ello una descripción de como un programa puede representar entidades de la vida real que usan un conjunto de objetos, y esto también especifica un conjunto de métodos, propiedades, y eventos que un objeto puede tener. </p>
+       <br>
+       <p><strong>Los buscadores.</strong>
+Los principales buscadores implementan un modelo objeto llamado DOM que fué ideado para representar páginas web, la página como un todo es representado usando un objeto documento.</p>
+
+
+       <p class="cita"><cite>Beginnig HTML and CSS, Rob Larsen, Pág. 341</cite></p>
+     <br>
+     <h3>Ejemplo de código de objetos</h3>
+      <hr>
+      <br>
+      <p>Sin inicialización para la variable de instancia <strong>porcientoCrecimiento</strong>, ¿cómo puede configurar el crecimiento para un objeto <strong>raton</strong>? Puede hacer que el objeto <strong>raton</strong> llame al método <strong>setPorcientoCrecimiento</strong>
+con un valor de tasa de crecimiento como argumento. Por ejemplo, así es como un objeto <strong>raton</strong> puede establecer su tasa de crecimiento en
+10 (por ciento):</p>
+    <br>
+    <p><strong>Código en java.</strong> Se presenta la forma de invocar al objeto <strong>raton</strong> en su método <strong>porcientoCrecimiento</strong>:</p>
+     <br>
+     <pre>
+    setPorcientoCrecimiento(10);
+     </pre>
+     <br>
+     <p>Los valores entre paréntesis de una llamada a un método se denominan argumentos.
+Por tanto, en el ejemplo anterior, 10 es un argumento. El 10 se pasa a la variable <strong>porcientoCrecimiento</strong>
+en el encabezado de <strong>setPorcientoCrecimiento</strong>. Las variables entre paréntesis de un encabezado de método se denominan
+parámetros. Por lo tanto, en el <strong>programa Raton</strong> se muestra, <strong>porcientoCrecimiento</strong> el cuál es un parámetro. Dentro de <strong>setPorcientoCrecimiento</strong> cuerpo del método (el código entre las llaves de apertura y cierre del método), el parámetro <strong>porcientoCrecimiento</strong> se asigna a la variable de instancia <strong>porcientoCrecimiento</strong>. Aquí está la declaración de asignación correspondiente:</p>
+     <br>
+      <p><strong>Código en java.</strong> Se presenta la forma de hacer la declaración y asignación del valor:</p>
+     <br>
+     <pre>
+     this.porcientoCrecimiento = porcientoCrecimiento;
+     </pre>
+     <br>
+    <p><strong>Código en java.</strong> Se presenta la forma de crear a los objetos <strong>jaq y gus</strong> y asignarles el valor, con el siguiente código:</p>
+    <br>
+    <pre>
+     Raton gus = new Raton();
+     Raton jaq = new Raton();
+
+     gus.crecer();
+     jaq.crecer();
+     gus.desplegar();
+     jaq.desplegar();
+     </pre>
+     <br>
+    <p class="cita"><cite>Introduction to programming with java: A problem solving approach, John Dean and Raymond Dean, Pág. 204</cite></p>
+    <br>
+     </article>
+    </section>
+      <aside>
+      <h1>Resumen</h1>
+     <hr>
+     <p>La clase contiene más elementos. Sólamente trataremos los campos de datos y los métodos. Entre los métodos simpre hay <strong>set</strong> y <strong>get</strong>. </p>
+     <br>
+     <hr> 
+     <h1>Ejercicios</h1>
+        <hr>
+        <p><strong>Ejercicio 1.</strong> Realizar la clase <strong>Estudiante</strong> con boleta, nombre y calificación. Presentarlo en una hoja de word.</p>
+       
+      <br>
+      <hr>
+     <h1>Preguntas</h1>
+        <hr>
+        <p><strong>Pregunta 1.</strong> Describir los set y los get en la construcción de métodos. Escribir en una hoja de word.</p>
+       <br>
+       <p><strong>Pregunta 2.</strong> Describir como se crea el objeto y como se llama el campo de datos y el método. Escribir en una hoja de word.</p>
+        <br>
+        <hr>
+     <h1>Dudas surgidas en clase</h1>
+        <hr>
+        
+       <p>La palabra clave <strong>this</strong>. Para que se usa y cuales son sus límites.</p>
+       <br>
+       <p>El siguiente enlace es para abrir la página que contiene información sobre el uso de <strong>this</strong>. </p>
+       <br>
+        <p><a href="211ClasObj.html">Aclaración del this.</a></p>
+        </aside>
+      <footer><p>Clases y objetos: Tema 2.1</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

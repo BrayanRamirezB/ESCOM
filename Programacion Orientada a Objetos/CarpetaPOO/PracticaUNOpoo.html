@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Práctica 1 POO</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Práctica 1</header>
+ <nav>
+    
+     <p><img src="temario-icono.png" width=95% border=5></image></p>
+     
+     <p class="derecha"><a href="TemarioPOO.html">Temario<img src="iconoPoo.png" width=65% border=5></image></a></p>
+     
+     <p><a href="MaterialPoo.html"><img src="iconoPoo.png" width=90% border=5></image></a></p>
+         
+ </nav>
+
+  <section class="envoltura">
+    <h1 class="titulo">¿CÓMO COMPILAR PROGRAMAS ORIENTADOS A OBJETOS?</h1>
+
+    <section class="interna">
+      
+      <article>
+       
+       <h1>Objetivo</h1>
+       <hr>
+       <p>Se compilarán y ejecutarán los programas en java, usando la consola.</p>
+      <hr>
+      <h1>Actividades</h1>
+      <hr>
+       <p>Compilar y ejecutar el siguiente programa:</p>
+       <br>
+       <p><strong>Programa UNO:</strong></p>
+       <br>
+       <pre>
+       public class A {
+         String a;
+         public String A() {
+           return "Hola";
+         }
+         public void setPalabra(String b) {
+           a = b;
+         }
+         public String getPalabra() {
+           return a;
+         }
+         public void metodo1() {
+           System.out.println("Metodo 1");
+         }
+         public void metodo2() {
+           System.out.println("Metodo 2");
+         }
+         public static void main(String[] args) {
+           A obj = new A();
+           obj.metodo1();
+           obj.metodo2();
+           A obj1 = new A();
+           System.out.println(obj1.A());
+           A obj2 = new A();
+           obj2.setPalabra("Mundo");
+           System.out.println(obj2.getPalabra());
+         }
+       }
+       </pre>
+       <br>
+
+       <hr>
+      <h1>Cuestionario</h1>
+      <hr>
+      <br>
+      <p><strong>Pregunta 1.</strong> ¿Cómo se debe llamar el programa UNO? Justificar su respuesta.</p>
+      <br>
+      <p><strong>Pregunta 2.</strong> El programa UNO, ahora dividilo en dos clases. Luego: ¿Cómo se debe llamar el programa? Entregar el código.</p>
+      <br>
+      </article>
+       <br>
+       <hr>
+       <br> 
+          
+    </section>
+
+       <aside>
+        <h1>Sugerencias</h1>
+        <hr>
+        <p><strong>Sugerencia 1. </strong> Para compilar el programa en la consola, usar el comando: <strong>javac ProgramaUNO.java</strong>. Para ejecutarlo, usar el comando: <strong>java ProgramaUNO</strong>.</p>
+        <br>
+        <p><strong>Sugerencia 2.</strong> Dividir el programaUNO en dos, considerando dos clases. La clase principal se declara como public y la otra no.</p>
+        <br>
+       </aside>
+      <footer><p>Práctica 1</p><p class="derecha">Prof. José Sánchez Juárez</p></footer>
+   </section>
+</body>
+</html>

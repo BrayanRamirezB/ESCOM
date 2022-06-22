@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Report>
+<ReportView version="2.0">
+    <Implement name="mult4bit000">
+        <ToolReport id="tooldec" path="" status="0"/>
+        <ToolReport id="toolhle_genhierarchy" path="C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/Practica 11.- Multiplicador 8 bits/mult4bit000/hdla_gen_hierarchy.html" status="1"/>
+        <ToolReport id="toolpio" path="" status="2"/>
+        <ToolReport id="toolsso" path="" status="2"/>
+    </Implement>
+</ReportView>

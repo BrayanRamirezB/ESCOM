@@ -1,0 +1,47 @@
+LIBRARY IEEE;
+
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_SIGNED.ALL;
+
+ENTITY pract7 IS
+
+	PORT( X, Y : IN STD_LOGIC_VECTOR(2 downto 0);
+  		 R : OUT STD_LOGIC_VECTOR(5 downto 0));
+
+END pract7;
+
+ARCHITECTURE behavior OF pract7 IS
+
+BEGIN
+	PROCESS (X, Y)
+		
+		VARIABLE A, S, P : STD_LOGIC_VECTOR(8 downto 0);
+		VARIABLE aux : STD_LOGIC_VECTOR(3 downto 0);
+		VARIABLE C1, C2, C3: STD_LOGIC;
+		
+		BEGIN
+			aux := "0001";
+			A := '0'&X&"00000";				
+			S := "000000000";
+			P := "00000"&Y&'0';
+
+			S(5) := (NOT X(0)) XOR aux(0);			
+			C1 := (NOT X(0)) AND aux(0);
+			S(6) := ((NOT X(1)) XOR aux(1)) XOR C1;
+			C2 := ((NOT X(1)) AND aux(1)) OR (((NOT X(1)) XOR aux(1)) AND C1);
+			S(7) := ((NOT X(2)) XOR aux(2)) XOR C2;
+			C3 := ((NOT X(2)) AND aux(2)) OR (((NOT X(2)) XOR aux(2)) AND C2);
+			S(8) := (NOT aux(3)) XOR C3;
+	
+			FOR i IN 0 TO 3 LOOP	
+				IF (P(1 downto 0) = "01") THEN
+					P := P+A;
+			    ELSIF (P(1 downto 0) = "10") THEN
+					P := P+S;
+			    END IF;
+				P(7 downto 0) := P(8 downto 1);
+			END LOOP;	
+			R(5 downto 0) <= P(6 downto 1);
+				
+	END PROCESS;						
+END behavior;

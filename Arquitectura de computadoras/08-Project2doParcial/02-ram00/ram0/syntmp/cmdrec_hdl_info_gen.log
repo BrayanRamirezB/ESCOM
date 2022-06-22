@@ -1,0 +1,18 @@
+C:\lscc\diamond\3.12\synpbase\bin64\c_vhdl.exe  -osyn  C:\Users\braya\Downloads\02-ram00\ram0\synwork\ram00_ram0_hdl_.srs  -top  ram00  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  C:\Users\braya\Downloads\02-ram00\ram0\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd -lib work C:\Users\braya\Downloads\02-ram00\ram0\source\oscint00.vhdl -lib work C:\Users\braya\Downloads\02-ram00\ram0\source\div00.vhdl -lib work C:\Users\braya\Downloads\02-ram00\ram0\source\packageosc00.vhdl -lib work C:\Users\braya\Downloads\02-ram00\ram0\source\osc00.vhdl -lib work C:\Users\braya\Downloads\02-ram00\contring00.vhdl -lib work C:\Users\braya\Downloads\02-ram00\coder00.vhdl -lib work C:\Users\braya\Downloads\02-ram00\memram00.vhdl -lib work C:\Users\braya\Downloads\02-ram00\contRead00.vhdl -lib work C:\Users\braya\Downloads\02-ram00\muxram00.vhdl -lib work C:\Users\braya\Downloads\02-ram00\packageram00.vhdl -lib work C:\Users\braya\Downloads\02-ram00\ram00.vhdl  -log  C:\Users\braya\Downloads\02-ram00\ram0\syntax.log  -fileorder  C:\Users\braya\Downloads\02-ram00\ram0\syntmp\hdlorder.tcl  -jobname  "hdl_info_gen" 
+relcom:..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\c_vhdl.exe -osyn ..\synwork\ram00_ram0_hdl_.srs -top ram00 -prodtype synplify_pro -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver -encrypt -pro -dmgen ..\dm -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib -lib work ..\..\..\..\..\..\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd -lib work ..\source\oscint00.vhdl -lib work ..\source\div00.vhdl -lib work ..\source\packageosc00.vhdl -lib work ..\source\osc00.vhdl -lib work ..\..\contring00.vhdl -lib work ..\..\coder00.vhdl -lib work ..\..\memram00.vhdl -lib work ..\..\contRead00.vhdl -lib work ..\..\muxram00.vhdl -lib work ..\..\packageram00.vhdl -lib work ..\..\ram00.vhdl -log ..\syntax.log -fileorder hdlorder.tcl -jobname "hdl_info_gen"
+rc:0 success:1 runtime:2
+file:..\synwork\ram00_ram0_hdl_.srs|io:o|time:0|size:-1|exec:0|csum:
+file:..\..\..\..\..\..\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd|io:i|time:1542263532|size:73964|exec:0|csum:CFF92E93E4FE354031DBB4E0E47DD4A6
+file:..\source\oscint00.vhdl|io:i|time:1646946660|size:522|exec:0|csum:C84CBD99C01765A0A2399B2A988EA59A
+file:..\source\div00.vhdl|io:i|time:1646946660|size:2092|exec:0|csum:97EDE9133863A76E80C07E2DF6DD051A
+file:..\source\packageosc00.vhdl|io:i|time:1646946660|size:359|exec:0|csum:B0167B2A11746C36C35C959C7A020AC3
+file:..\source\osc00.vhdl|io:i|time:1646946660|size:469|exec:0|csum:C60E5BC2B6B01BE6B343A2F253857A32
+file:..\..\contring00.vhdl|io:i|time:1652318828|size:697|exec:0|csum:422488F8908440B9A8B69C55E9996738
+file:..\..\coder00.vhdl|io:i|time:1652321154|size:6385|exec:0|csum:BEF20F9AF0029C81B34A7B9ADFEFC64B
+file:..\..\memram00.vhdl|io:i|time:1652240588|size:999|exec:0|csum:FDED9C3B5EC179EF083A8D6E383286D0
+file:..\..\contRead00.vhdl|io:i|time:1652242818|size:1077|exec:0|csum:80C5F8A56096743E311A48E8405B09A9
+file:..\..\muxram00.vhdl|io:i|time:1652240884|size:556|exec:0|csum:BFC3B4FC92C735392FDEC072974D60BD
+file:..\..\packageram00.vhdl|io:i|time:1652242894|size:1455|exec:0|csum:C4A2CBE5C44B574BD79A5D0400F7593D
+file:..\..\ram00.vhdl|io:i|time:1652305683|size:1700|exec:0|csum:F624F383E2845E0FC1F4205CC55FCF9D
+file:..\syntax.log|io:o|time:1652321187|size:1113|exec:0|csum:
+file:..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\c_vhdl.exe|io:i|time:1603988322|size:6088192|exec:1|csum:65784030B81A37FDBF615E387BAB679B

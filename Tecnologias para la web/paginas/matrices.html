@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Arreglos
+		</title>
+	</head>
+
+	<body>
+		<script languaje="Javascript">
+			var mat2 = new Array(new Array(3,4), new Array(5,6));
+			var mat = new Array(new Array(2), new Array(5));
+
+			for(i=0;i<mat.length;i++){
+				for(j=0;j<mat[i].length;j++)
+					mat[i][j]=i+j;
+			}
+			alert(mat[1].join());
+			for(i=0;i<mat.length;i++){
+				alert("Fila"+i+":")
+				for(j=0;j<mat[i].length;j++)
+					alert(mat[i][j]+",");
+			}	
+
+			
+		</script>
+	</body>
+</html>

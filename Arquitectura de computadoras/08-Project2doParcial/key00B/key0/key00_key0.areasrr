@@ -1,0 +1,94 @@
+----------------------------------------------------------------------
+Report for cell key00.key0
+
+Register bits: 36 of 6864 (1%)
+PIC Latch:       0
+I/O cells:       26
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       12       100.0
+                            FD1S3AX        2       100.0
+                            FD1S3IX       26       100.0
+                            FD1S3JX        1       100.0
+                                GSR        1       100.0
+                                 IB       10       100.0
+                                INV        1       100.0
+                                 OB       16       100.0
+                           OFS1P3DX        7       100.0
+                           ORCALUT4       68       100.0
+                               OSCH        1       100.0
+                              PFUMX        2       100.0
+                                PUR        1       100.0
+                                VHI        4       100.0
+                                VLO        4       100.0
+SUB MODULES 
+                            coder00        1       100.0
+                         contring00        1       100.0
+                              div00        1       100.0
+                              osc00        1       100.0
+                           oscint00        1       100.0
+                            
+                         TOTAL           161           
+----------------------------------------------------------------------
+Report for cell coder00.netlist
+     Instance path:  K02
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3AX        1        50.0
+                           ORCALUT4       33        48.5
+                              PFUMX        1        50.0
+                                VHI        1        25.0
+                                VLO        1        25.0
+                            
+                         TOTAL            37           
+----------------------------------------------------------------------
+Report for cell contring00.netlist
+     Instance path:  K01
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3IX        4        15.4
+                            FD1S3JX        1       100.0
+                                VHI        1        25.0
+                            
+                         TOTAL             6           
+----------------------------------------------------------------------
+Report for cell osc00.netlist
+     Instance path:  K00
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       12       100.0
+                            FD1S3AX        1        50.0
+                            FD1S3IX       22        84.6
+                           ORCALUT4       35        51.5
+                               OSCH        1       100.0
+                              PFUMX        1        50.0
+                                VHI        1        25.0
+                                VLO        2        50.0
+SUB MODULES 
+                              div00        1       100.0
+                           oscint00        1       100.0
+                            
+                         TOTAL            77           
+----------------------------------------------------------------------
+Report for cell div00.netlist
+     Instance path:  K00.OS01
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       12       100.0
+                            FD1S3AX        1        50.0
+                            FD1S3IX       22        84.6
+                           ORCALUT4       35        51.5
+                              PFUMX        1        50.0
+                                VHI        1        25.0
+                                VLO        1        25.0
+                            
+                         TOTAL            73           
+----------------------------------------------------------------------
+Report for cell oscint00.netlist
+     Instance path:  K00.OS00
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                               OSCH        1       100.0
+                                VLO        1        25.0
+                            
+                         TOTAL             2           

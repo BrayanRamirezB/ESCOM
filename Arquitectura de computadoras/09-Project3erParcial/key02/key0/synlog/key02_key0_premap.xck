@@ -1,0 +1,2 @@
+ckid0_0:@|S:K0200.D01.oscout.Q[0]@|E:K0204.outr7[3:0]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_2:@|S:K0200.D00.OSCInst0.OSC@|E:K0200.D01.sdiv[21:0]@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2

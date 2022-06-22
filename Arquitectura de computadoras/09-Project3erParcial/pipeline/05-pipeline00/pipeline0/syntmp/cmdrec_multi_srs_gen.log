@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  pipeline00  -multisrs  C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\synwork\pipeline00_pipeline0_comp.srs  -osyn  C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\synwork\pipeline00_pipeline0_mult.srs  -log  C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\synlog\pipeline00_pipeline0_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top pipeline00 -multisrs ..\synwork\pipeline00_pipeline0_comp.srs -osyn ..\synwork\pipeline00_pipeline0_mult.srs -log ..\synlog\pipeline00_pipeline0_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\pipeline00_pipeline0_comp.srs|io:i|time:1654827715|size:17019|exec:0|csum:598B46F5960E2DE698CCAF40D4A1BD7B
+file:..\synwork\pipeline00_pipeline0_mult.srs|io:o|time:1654827716|size:4876|exec:0|csum:
+file:..\synlog\pipeline00_pipeline0_multi_srs_gen.srr|io:o|time:1654827716|size:1180|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1603984722|size:8875008|exec:1|csum:43373AFF0ED6BCEB26CB4B4947B972DD

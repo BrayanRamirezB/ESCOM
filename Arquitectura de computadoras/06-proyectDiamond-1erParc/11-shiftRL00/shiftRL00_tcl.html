@@ -1,0 +1,135 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn220310095258"></A><B><U><big>pn220310095258</big></U></B>
+#Start recording tcl command: 3/10/2022 09:20:43
+#Project Location: C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00; Project name: shiftRL00
+prj_project new -name "shiftRL00" -impl "shiftRL0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/10-osc00-vhdl/div00.vhdl" "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/10-osc00-vhdl/osc00.vhdl" "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/10-osc00-vhdl/oscint00.vhdl" "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/10-osc00-vhdl/packageosc00.vhdl"
+prj_project save
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL.vhdl"
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00/packageshiftRL00.vhdl"
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL00.vhdl"
+prj_project save
+prj_run Export -impl shiftRL0 -task Jedecgen
+prj_run Export -impl shiftRL0 -task Jedecgen
+prj_run Export -impl shiftRL0 -task Jedecgen
+prj_project save
+#Stop recording: 3/10/2022 09:52:58
+
+
+
+<A name="pn220311234313"></A><B><U><big>pn220311234313</big></U></B>
+#Start recording tcl command: 3/11/2022 23:40:22
+#Project Location: C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00; Project name: shiftRL00
+prj_project open "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL00.ldf"
+pgr_project close
+prj_run Export -impl shiftRL0 -task Jedecgen
+prj_project save
+prj_project close
+#Stop recording: 3/11/2022 23:43:13
+
+
+
+<A name="pn220319222058"></A><B><U><big>pn220319222058</big></U></B>
+#Start recording tcl command: 3/19/2022 21:59:59
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/11-shiftRL00; Project name: shiftRL00
+C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00
+shiftLR00
+#Start recording tcl command: 3/19/2022 22:20:58
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00; Project name: shiftLR00
+prj_project open "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL00.ldf"
+prj_run Export -impl shiftRL0 -task Jedecgen
+prj_run Export -impl shiftRL0 -task Jedecgen
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL0/shiftRL0.xcf"
+prj_src add -exclude "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL0/shiftRL0.xcf"
+prj_src enable "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL0/shiftRL0.xcf"
+pgr_program run
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL0/shiftRL0.xcf"
+pgr_project close
+prj_project save
+prj_project close
+prj_project new -name "shiftLR00" -impl "shiftLR0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/div00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/osc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/oscint00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/packageosc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/source"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/source/div00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/source/osc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/source/oscint00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/source/packageosc00.vhdl"
+prj_project save
+#Stop recording: 3/19/2022 22:20:58
+
+
+
+<A name="pn220319222606"></A><B><U><big>pn220319222606</big></U></B>
+#Start recording tcl command: 3/19/2022 22:22:42
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/11-shiftRL00; Project name: shiftRL00
+prj_project open "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL00.ldf"
+prj_project close
+#Stop recording: 3/19/2022 22:26:06
+
+
+
+<A name="pn220319223942"></A><B><U><big>pn220319223942</big></U></B>
+#Start recording tcl command: 3/19/2022 22:35:38
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/11-shiftRL00; Project name: shiftRL00
+prj_project open "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL00.ldf"
+prj_project close
+#Stop recording: 3/19/2022 22:39:42
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

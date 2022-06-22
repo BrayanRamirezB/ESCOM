@@ -1,0 +1,29 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Wed Jun 01 22:45:51 2022 *
+NOTE DESIGN NAME: fsmoore00 *
+NOTE DEVICE NAME: LCMXO2-7000HE-5TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS clk0 : 61 : out *
+NOTE PINS cdiv0[0] : 34 : in *
+NOTE PINS outfsm0[2] : 42 : out *
+NOTE PINS outfsm0[1] : 44 : out *
+NOTE PINS outfsm0[0] : 39 : out *
+NOTE PINS inxfsm0[5] : 99 : out *
+NOTE PINS inxfsm0[4] : 100 : out *
+NOTE PINS inxfsm0[3] : 104 : out *
+NOTE PINS inxfsm0[2] : 105 : out *
+NOTE PINS inxfsm0[1] : 106 : out *
+NOTE PINS inxfsm0[0] : 107 : out *
+NOTE PINS address0[4] : 91 : out *
+NOTE PINS address0[3] : 92 : out *
+NOTE PINS address0[2] : 93 : out *
+NOTE PINS address0[1] : 94 : out *
+NOTE PINS address0[0] : 96 : out *
+NOTE PINS en0 : 1 : in *
+NOTE PINS cdiv0[4] : 27 : in *
+NOTE PINS cdiv0[3] : 33 : in *
+NOTE PINS cdiv0[2] : 32 : in *
+NOTE PINS cdiv0[1] : 35 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

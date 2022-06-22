@@ -1,0 +1,7 @@
+#Start recording tcl command: 2/16/2022 08:55:34
+#Project Location: C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/02-mux00; Project name: mux00
+prj_project new -name "mux00" -impl "mux0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/02-mux00/mux00.vhdl"
+prj_run Export -impl mux0 -task Jedecgen
+#Stop recording: 2/16/2022 09:42:48

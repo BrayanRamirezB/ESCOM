@@ -1,0 +1,1 @@
+project -fileorder "C:/lscc/diamond/3.12/cae_library/synthesis/vhdl/machxo2.vhd" "C:/Users/braya/Downloads/Arquitectura\ de\ computadoras/06-projectDiamond-1erParc/01-and00/and00.vhdl" 

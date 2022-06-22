@@ -1,0 +1,40 @@
+LIBRARY IEEE;
+
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY pract4 IS
+
+	PORT( clk, clear : IN STD_LOGIC;
+    	SEL : IN STD_LOGIC_VECTOR(1 downto 0);
+  		Q : OUT STD_LOGIC_VECTOR(2 downto 0));
+
+END pract4;
+
+ARCHITECTURE behavior OF pract4 IS
+	
+	SIGNAL Q_aux : STD_LOGIC_VECTOR(2 downto 0) := "000";
+	SIGNAL T : STD_LOGIC := '1';
+
+BEGIN
+	PROCESS (clk, clear)
+		BEGIN
+			IF (clear = '1') THEN
+				Q_aux <= "000";
+			ELSIF ((clk'EVENT) AND (clk = '1')) THEN			
+				CASE SEL IS
+					WHEN "00" => Q_aux <= Q_aux;
+					WHEN "01" => Q_aux <= Q_aux;
+					WHEN "10" =>		
+						Q_aux(2) <= ((NOT Q_aux(2)) AND (NOT Q_aux(1)) AND(NOT Q_aux(0))) OR (Q_aux(2) AND Q_aux(0)) OR (Q_aux(2) AND Q_aux(1));--d
+						Q_aux(1) <= (((NOT Q_aux(0)) AND (NOT Q_aux(1)))OR(Q_aux(0)AND Q_aux(1)));--jk
+						Q_aux(0) <= (T XOR Q_aux(0));--t
+				    WHEN "11" => 
+				   		Q_aux(2) <= ((NOT Q_aux(2)) AND (Q_aux(1)) AND(Q_aux(0))) OR (Q_aux(2) AND (NOT Q_aux(1))) OR (Q_aux(2) AND (NOT Q_aux(0)));--d
+						Q_aux(1) <= ((Q_aux(0) AND (NOT Q_aux(1)))OR((NOT Q_aux(0))AND Q_aux(1)));--jk
+						Q_aux(0) <= (T XOR Q_aux(0));--t
+				    WHEN OTHERS => Q_aux <= "000";
+				END CASE;
+			END IF;	
+	END PROCESS;
+	Q <= Q_aux; 
+END behavior;

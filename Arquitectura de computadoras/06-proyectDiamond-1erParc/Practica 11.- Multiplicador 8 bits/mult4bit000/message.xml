@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD796 :&quot;F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit00.vhdl&quot;:17:27:17:30|Bit 7 of signal ss01 is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit.</Dynamic>
+            <Navigation>CD796</Navigation>
+            <Navigation>F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit00.vhdl</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>27</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>Bit 7 of signal ss01 is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD796 :&quot;F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit00.vhdl&quot;:17:77:17:80|Bit 7 of signal sc06 is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit.</Dynamic>
+            <Navigation>CD796</Navigation>
+            <Navigation>F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit00.vhdl</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>77</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>80</Navigation>
+            <Navigation>Bit 7 of signal sc06 is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. </Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

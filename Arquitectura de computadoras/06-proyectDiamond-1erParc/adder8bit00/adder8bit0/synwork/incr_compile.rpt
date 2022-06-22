@@ -1,0 +1,98 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : adder8bit0
+Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+Modified Files: 42
+FID:  path (prevtimestamp, timestamp)
+0        C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\adder8bit00.vhdl (2020-02-12 19:14:40, N/A)
+1        C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\and00.vhdl (2020-02-12 19:05:31, N/A)
+2        C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\fa00.vhdl (2020-02-12 19:05:31, N/A)
+3        C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\ha00.vhdl (2020-02-12 19:05:31, N/A)
+4        C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\or00.vhdl (2020-02-12 19:05:31, N/A)
+5        C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\packageadder8bit00.vhdl (2020-02-12 19:06:20, N/A)
+6        C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\packagefa00.vhdl (2020-02-12 19:05:31, N/A)
+7        C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\packageha00.vhdl (2020-02-12 19:05:31, N/A)
+8        C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\xnor00.vhdl (2020-02-12 19:05:31, N/A)
+9        C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\xor00.vhdl (2020-02-12 19:05:31, N/A)
+21       C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit00.vhdl (N/A, 2020-02-12 17:14:42)
+22       C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\and00.vhdl (N/A, 2020-02-12 17:05:32)
+23       C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\fa00.vhdl (N/A, 2020-02-12 17:05:32)
+24       C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\ha00.vhdl (N/A, 2020-02-12 17:05:32)
+25       C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\or00.vhdl (N/A, 2020-02-12 17:05:32)
+26       C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\packageadder8bit00.vhdl (N/A, 2020-02-12 17:06:22)
+27       C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\packagefa00.vhdl (N/A, 2022-03-02 20:59:27)
+28       C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\packageha00.vhdl (N/A, 2020-02-12 17:05:32)
+29       C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\xnor00.vhdl (N/A, 2020-02-12 17:05:32)
+30       C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\xor00.vhdl (N/A, 2020-02-12 17:05:32)
+10       C:\lscc\diamond\3.11_x64\cae_library\synthesis\vhdl\machxo2.vhd (2018-11-15 01:32:12, N/A)
+11       C:\lscc\diamond\3.11_x64\synpbase\lib\cpld\lattice.vhd (2019-04-01 09:08:08, N/A)
+12       C:\lscc\diamond\3.11_x64\synpbase\lib\vhd\arith.vhd (2019-04-01 09:07:44, N/A)
+13       C:\lscc\diamond\3.11_x64\synpbase\lib\vhd\hyperents.vhd (2019-04-01 09:07:44, N/A)
+14       C:\lscc\diamond\3.11_x64\synpbase\lib\vhd\location.map (2019-04-01 15:38:28, N/A)
+15       C:\lscc\diamond\3.11_x64\synpbase\lib\vhd\numeric.vhd (2019-04-01 09:07:44, N/A)
+16       C:\lscc\diamond\3.11_x64\synpbase\lib\vhd\snps_haps_pkg.vhd (2019-04-01 09:07:44, N/A)
+17       C:\lscc\diamond\3.11_x64\synpbase\lib\vhd\std.vhd (2019-04-01 09:07:44, N/A)
+18       C:\lscc\diamond\3.11_x64\synpbase\lib\vhd\std1164.vhd (2019-04-01 09:07:44, N/A)
+19       C:\lscc\diamond\3.11_x64\synpbase\lib\vhd\umr_capim.vhd (2019-04-01 09:07:44, N/A)
+20       C:\lscc\diamond\3.11_x64\synpbase\lib\vhd\unsigned.vhd (2019-04-01 09:07:44, N/A)
+31       C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd (N/A, 2018-11-15 00:32:12)
+32       C:\lscc\diamond\3.12\synpbase\lib\cpld\lattice.vhd (N/A, 2020-10-29 10:20:44)
+33       C:\lscc\diamond\3.12\synpbase\lib\vhd\arith.vhd (N/A, 2020-10-29 10:23:10)
+34       C:\lscc\diamond\3.12\synpbase\lib\vhd\hyperents.vhd (N/A, 2020-10-29 10:23:10)
+35       C:\lscc\diamond\3.12\synpbase\lib\vhd\location.map (N/A, 2020-11-02 17:26:20)
+36       C:\lscc\diamond\3.12\synpbase\lib\vhd\numeric.vhd (N/A, 2020-10-29 10:23:10)
+37       C:\lscc\diamond\3.12\synpbase\lib\vhd\snps_haps_pkg.vhd (N/A, 2020-10-29 10:23:10)
+38       C:\lscc\diamond\3.12\synpbase\lib\vhd\std.vhd (N/A, 2020-10-29 10:23:10)
+39       C:\lscc\diamond\3.12\synpbase\lib\vhd\std1164.vhd (N/A, 2020-10-29 10:23:10)
+40       C:\lscc\diamond\3.12\synpbase\lib\vhd\umr_capim.vhd (N/A, 2020-10-29 10:23:10)
+41       C:\lscc\diamond\3.12\synpbase\lib\vhd\unsigned.vhd (N/A, 2020-10-29 10:23:10)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 7
+MID:  lib.cell.view
+0        work.adder8bit00.adder8bit0 may have changed because the following files changed:
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit00.vhdl (N/A, 2020-02-12 17:14:42) <-- (architecture and entity definition)
+2        work.and00.and0 may have changed because the following files changed:
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit00.vhdl (N/A, 2020-02-12 17:14:42) <-- (may instantiate this module)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\and00.vhdl (N/A, 2020-02-12 17:05:32) <-- (architecture and entity definition)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\fa00.vhdl (N/A, 2020-02-12 17:05:32) <-- (may instantiate this module)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\ha00.vhdl (N/A, 2020-02-12 17:05:32) <-- (may instantiate this module)
+4        work.fa00.fa0 may have changed because the following files changed:
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit00.vhdl (N/A, 2020-02-12 17:14:42) <-- (may instantiate this module)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\fa00.vhdl (N/A, 2020-02-12 17:05:32) <-- (architecture and entity definition)
+6        work.ha00.ha0 may have changed because the following files changed:
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit00.vhdl (N/A, 2020-02-12 17:14:42) <-- (may instantiate this module)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\fa00.vhdl (N/A, 2020-02-12 17:05:32) <-- (may instantiate this module)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\ha00.vhdl (N/A, 2020-02-12 17:05:32) <-- (architecture and entity definition)
+8        work.or00.or0 may have changed because the following files changed:
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit00.vhdl (N/A, 2020-02-12 17:14:42) <-- (may instantiate this module)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\fa00.vhdl (N/A, 2020-02-12 17:05:32) <-- (may instantiate this module)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\or00.vhdl (N/A, 2020-02-12 17:05:32) <-- (architecture and entity definition)
+11       work.xnor00.xnor0 may have changed because the following files changed:
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit00.vhdl (N/A, 2020-02-12 17:14:42) <-- (may instantiate this module)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\xnor00.vhdl (N/A, 2020-02-12 17:05:32) <-- (architecture and entity definition)
+13       work.xor00.xor0 may have changed because the following files changed:
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit00.vhdl (N/A, 2020-02-12 17:14:42) <-- (may instantiate this module)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\fa00.vhdl (N/A, 2020-02-12 17:05:32) <-- (may instantiate this module)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\ha00.vhdl (N/A, 2020-02-12 17:05:32) <-- (may instantiate this module)
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\xor00.vhdl (N/A, 2020-02-12 17:05:32) <-- (architecture and entity definition)
+
+*******************************************************************
+Unmodified files: 0
+FID:  path (timestamp)
+
+*******************************************************************
+Unchanged modules: 0
+MID:  lib.cell.view

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="key02" device="LCMXO2-7000HE-5TG144C" default_implementation="key0">
+    <Options/>
+    <Implementation title="key0" dir="key0" description="key0" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="key02"/>
+        <Source name="../VHDLs-Oscilador/oscint00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../VHDLs-Oscilador/div00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../VHDLs-Oscilador/packageosc00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../VHDLs-Oscilador/osc00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="contring00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="coder00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="lect00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="contring7seg00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="coder7seg00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="packagekey0200.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="key02.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="key02"/>
+        </Source>
+        <Source name="key0/key0.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="key02.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="key021.sty"/>
+</BaliProject>

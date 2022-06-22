@@ -1,0 +1,77 @@
+@N: CD630 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline00.vhdl":7:7:7:16|Synthesizing work.pipeline00.pipeline0.
+@N: CD630 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fsmpipe02.vhdl":6:7:6:15|Synthesizing work.fsmpipe02.fsmpipe0.
+Post processing for work.fsmpipe02.fsmpipe0
+Running optimization stage 1 on fsmpipe02 .......
+@N: CD630 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\wr00.vhdl":6:7:6:10|Synthesizing work.wr00.wr0.
+Post processing for work.wr00.wr0
+Running optimization stage 1 on wr00 .......
+@W: CL177 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\wr00.vhdl":22:3:22:4|Sharing sequential element out5s. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CD630 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\eo00.vhdl":6:7:6:10|Synthesizing work.eo00.eo0.
+Post processing for work.eo00.eo0
+Running optimization stage 1 on eo00 .......
+@N: CD630 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fo00.vhdl":6:7:6:10|Synthesizing work.fo00.fo0.
+Post processing for work.fo00.fo0
+Running optimization stage 1 on fo00 .......
+@N: CD630 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\co00.vhdl":6:7:6:10|Synthesizing work.co00.co0.
+Post processing for work.co00.co0
+Running optimization stage 1 on co00 .......
+@N: CD630 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\di00.vhdl":6:7:6:10|Synthesizing work.di00.di0.
+Post processing for work.di00.di0
+Running optimization stage 1 on di00 .......
+@N: CD630 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":6:7:6:10|Synthesizing work.fi00.fi0.
+@W: CG296 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":20:7:20:13|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":23:14:23:18|Referenced variable inr0s is not in sensitivity list.
+@W: CG290 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":22:7:22:15|Referenced variable instate0s is not in sensitivity list.
+@W: CG290 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":22:28:22:31|Referenced variable en0s is not in sensitivity list.
+Post processing for work.fi00.fi0
+Running optimization stage 1 on fi00 .......
+@W: CL113 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":22:3:22:4|Feedback mux created for signal soutr0s[7:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fi00.vhdl":22:3:22:4|Feedback mux created for signal outr0s[7:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@N: CD630 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\osc00.vhd":10:7:10:11|Synthesizing work.osc00.osc0.
+@N: CD630 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\div00.vhd":9:7:9:11|Synthesizing work.div00.div0.
+@N: CD364 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\div00.vhd":30:6:30:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\div00.vhd":39:6:39:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\div00.vhd":48:6:48:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\div00.vhd":57:6:57:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\div00.vhd":66:6:66:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\div00.vhd":75:6:75:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\div00.vhd":84:6:84:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\div00.vhd":93:6:93:11|Removing redundant assignment.
+Post processing for work.div00.div0
+Running optimization stage 1 on div00 .......
+@N: CD630 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\source\oscint00.vhd":8:7:8:14|Synthesizing work.oscint00.oscint0.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.oscint00.oscint0
+Running optimization stage 1 on oscint00 .......
+Post processing for work.osc00.osc0
+Running optimization stage 1 on osc00 .......
+Post processing for work.pipeline00.pipeline0
+Running optimization stage 1 on pipeline00 .......
+Running optimization stage 2 on oscint00 .......
+Running optimization stage 2 on div00 .......
+Running optimization stage 2 on osc00 .......
+Running optimization stage 2 on fi00 .......
+Running optimization stage 2 on di00 .......
+Running optimization stage 2 on co00 .......
+Running optimization stage 2 on fo00 .......
+Running optimization stage 2 on eo00 .......
+Running optimization stage 2 on wr00 .......
+Running optimization stage 2 on fsmpipe02 .......
+@N: CL201 :"C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\fsmpipe02.vhdl":21:4:21:5|Trying to extract state machine for register aux01.
+Extracted state machine for register aux01
+State machine has 7 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+Running optimization stage 2 on pipeline00 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Mau\Documents\Arqui\practicas\TercelParcial\05-pipeline00\pipeline0\synwork\layer0.rt.csv
+

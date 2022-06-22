@@ -1,0 +1,29 @@
+SCUBA, Version Diamond (64-bit) 3.12.0.240.2
+Thu Jun 09 21:21:40 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n memEBR00 -lang vhdl -synth synplify -bus_exp 7 -bb -arch xo2c00 -type ramdq -device LCMXO2-7000HE -addr_width 6 -data_width 8 -num_words 64 -outdata REGISTERED -cascade -1 -resetmode SYNC -sync_reset -memfile c:/users/mau/documents/arqui/practicas/tercelparcial/05-pipeline00/datapipeline00.mem -memformat bin -writemode NORMAL 
+    Circuit name     : memEBR00
+    Module type      : RAM_DQ
+    Module Version   : 7.5
+    Ports            : 
+	Inputs       : Clock, ClockEn, Reset, WE, Address[5:0], Data[7:0]
+	Outputs      : Q[7:0]
+    I/O buffer       : not inserted
+    Memory file      : c:/users/mau/documents/arqui/practicas/tercelparcial/05-pipeline00/datapipeline00.mem
+    EDIF output      : memEBR00.edn
+    VHDL output      : memEBR00.vhd
+    VHDL template    : memEBR00_tmpl.vhd
+    VHDL testbench    : tb_memEBR00_tmpl.vhd
+    VHDL purpose     : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : memEBR00.srp
+    Element Usage    :
+          DP8KC : 1
+    Estimated Resource Usage:
+            EBR : 1

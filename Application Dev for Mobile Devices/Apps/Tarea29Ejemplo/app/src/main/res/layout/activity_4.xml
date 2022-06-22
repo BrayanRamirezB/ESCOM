@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity4"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona un contacto"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"/>
+
+    <Spinner
+        android:id="@+id/xsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensage"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/xet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/xbn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/xbn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear nuevo contacto"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

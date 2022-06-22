@@ -1,0 +1,7 @@
+#Start recording tcl command: 9/23/2021 17:29:00
+#Project Location: C:/Users/Natalia/Desktop/Practicas_Arqui_Comp-main (2)/Practicas_Arqui_Comp-main/Parcial01/12_13_divOsc00; Project name: divOsc00
+prj_project open "C:/Users/Natalia/Desktop/Practicas_Arqui_Comp-main (2)/Practicas_Arqui_Comp-main/Parcial01/12_13_divOsc00/divOsc00.ldf"
+prj_run Export -impl divOsc00 -task Jedecgen
+prj_run Export -impl divOsc00 -task Jedecgen
+prj_project close
+#Stop recording: 9/23/2021 17:36:00

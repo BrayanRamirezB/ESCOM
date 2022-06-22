@@ -1,0 +1,70 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : key0
+Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+Modified Files: 1
+FID:  path (prevtimestamp, timestamp)
+27       C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder7seg00.vhdl (2022-05-28 22:53:35, 2022-05-28 22:56:14)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 1
+MID:  lib.cell.view
+2        work.coder7seg00.coder7seg0 may have changed because the following files changed:
+                        C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder7seg00.vhdl (2022-05-28 22:53:35, 2022-05-28 22:56:14) <-- (architecture and entity definition)
+
+*******************************************************************
+Unmodified files: 21
+FID:  path (timestamp)
+22       C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\div00.vhdl (2022-03-14 14:53:00)
+23       C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\osc00.vhdl (2022-03-14 14:53:00)
+24       C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\oscint00.vhdl (2022-03-14 14:53:00)
+25       C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\packageosc00.vhdl (2022-03-14 14:53:00)
+26       C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl (2022-05-28 22:49:27)
+28       C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\contring00.vhdl (2022-05-12 09:09:09)
+29       C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\contring7seg00.vhdl (2022-05-18 09:24:54)
+30       C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\key02.vhdl (2022-05-16 09:45:51)
+31       C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl (2022-05-12 08:56:00)
+32       C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\packagekey0200.vhdl (2022-05-16 09:59:53)
+11       C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd (2018-11-15 00:32:12)
+12       C:\lscc\diamond\3.12\synpbase\lib\cpld\lattice.vhd (2020-10-29 10:20:44)
+13       C:\lscc\diamond\3.12\synpbase\lib\vhd\arith.vhd (2020-10-29 10:23:10)
+14       C:\lscc\diamond\3.12\synpbase\lib\vhd\hyperents.vhd (2020-10-29 10:23:10)
+15       C:\lscc\diamond\3.12\synpbase\lib\vhd\location.map (2020-11-02 17:26:20)
+16       C:\lscc\diamond\3.12\synpbase\lib\vhd\numeric.vhd (2020-10-29 10:23:10)
+17       C:\lscc\diamond\3.12\synpbase\lib\vhd\snps_haps_pkg.vhd (2020-10-29 10:23:10)
+18       C:\lscc\diamond\3.12\synpbase\lib\vhd\std.vhd (2020-10-29 10:23:10)
+19       C:\lscc\diamond\3.12\synpbase\lib\vhd\std1164.vhd (2020-10-29 10:23:10)
+20       C:\lscc\diamond\3.12\synpbase\lib\vhd\umr_capim.vhd (2020-10-29 10:23:10)
+21       C:\lscc\diamond\3.12\synpbase\lib\vhd\unsigned.vhd (2020-10-29 10:23:10)
+
+*******************************************************************
+Unchanged modules: 16
+MID:  lib.cell.view
+0        work.coder00.coder0
+1        work.coder00.vhdl
+4        work.contring00.contring0
+5        work.contring00.vhdl
+6        work.contring7seg00.contring7seg0
+7        work.contring7seg00.vhdl
+8        work.div00.div0
+9        work.div00.vhdl
+10       work.key02.key0
+11       work.key02.vhdl
+12       work.lect00.lect0
+13       work.lect00.vhdl
+14       work.osc00.osc0
+15       work.osc00.vhdl
+16       work.oscint00.oscint0
+17       work.oscint00.vhdl

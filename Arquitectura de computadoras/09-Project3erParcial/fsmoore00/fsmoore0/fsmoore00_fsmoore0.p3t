@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "fsmoore00_fsmoore0.log"
+-o "fsmoore00_fsmoore0.csv"
+-pr "fsmoore00_fsmoore0.prf"

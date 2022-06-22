@@ -1,0 +1,14 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Thu Mar 10 09:10:32 2022 *
+NOTE DESIGN NAME: osc00 *
+NOTE DEVICE NAME: LCMXO2-7000HE-5TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS oscout0 : 52 : out *
+NOTE PINS cdiv[0] : 58 : in *
+NOTE PINS cdiv[4] : 54 : in *
+NOTE PINS cdiv[3] : 56 : in *
+NOTE PINS cdiv[2] : 57 : in *
+NOTE PINS cdiv[1] : 55 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

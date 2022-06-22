@@ -1,0 +1,8 @@
+#Start recording tcl command: 3/22/2021 20:30:26
+#Project Location: D:/ISC/Semestre 2021-1/Arquitectura de Computadoras/practicas/12_divOsc00; Project name: divOsc00
+prj_project open "D:/ISC/Semestre 2021-1/Arquitectura de Computadoras/practicas/12_divOsc00/divOsc00.ldf"
+prj_src add "D:/ISC/Semestre 2021-1/Arquitectura de Computadoras/practicas/12_divOsc00/packageOsc00.vhd"
+prj_src add "D:/ISC/Semestre 2021-1/Arquitectura de Computadoras/practicas/12_divOsc00/divOsc00.vhd"
+prj_project save
+prj_project close
+#Stop recording: 3/22/2021 20:50:36

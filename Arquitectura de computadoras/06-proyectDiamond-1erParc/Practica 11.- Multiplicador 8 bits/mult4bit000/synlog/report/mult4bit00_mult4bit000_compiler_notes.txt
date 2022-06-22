@@ -1,0 +1,11 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit00.vhdl":7:7:7:16|Top entity is set to mult4bit00.
+@N: CD630 :"F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit00.vhdl":7:7:7:16|Synthesizing work.mult4bit00.mult4bit0.
+@N: CD630 :"F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\fa00.vhdl":7:7:7:10|Synthesizing work.fa00.fa0.
+@N: CD630 :"F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\ora00.vhdl":6:7:6:11|Synthesizing work.ora00.ora0.
+@N: CD630 :"F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\ha00.vhdl":7:7:7:10|Synthesizing work.ha00.ha0.
+@N: CD630 :"F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\xora00.vhdl":6:7:6:12|Synthesizing work.xora00.xora0.
+@N: CD630 :"F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\anda00.vhdl":6:7:6:12|Synthesizing work.anda00.anda0.
+@N|Running in 64-bit mode
+

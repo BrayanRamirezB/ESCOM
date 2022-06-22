@@ -1,0 +1,8 @@
+#Start recording tcl command: 3/23/2021 17:32:43
+#Project Location: D:/ISC/Semestre 2021-1/Arquitectura de Computadoras/practicas/12_13_divOsc00; Project name: divOsc00
+prj_project open "D:/ISC/Semestre 2021-1/Arquitectura de Computadoras/practicas/12_13_divOsc00/divOsc00.ldf"
+pgr_project close
+prj_run Export -impl divOsc00 -task Jedecgen
+prj_run Export -impl divOsc00 -task Jedecgen
+prj_project close
+#Stop recording: 3/23/2021 17:37:56

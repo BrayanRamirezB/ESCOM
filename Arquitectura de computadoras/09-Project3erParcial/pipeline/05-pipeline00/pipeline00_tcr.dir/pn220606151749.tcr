@@ -1,0 +1,16 @@
+#Start recording tcl command: 6/6/2022 10:44:59
+#Project Location: C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00; Project name: pipeline00
+prj_project open "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/pipeline00.ldf"
+prj_src add "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/memEBR00.ipx"
+prj_src add "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/di00.vhdl"
+prj_src add "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/fi00.vhdl"
+prj_src add "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/co00.vhdl"
+prj_src add "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/fo00.vhdl"
+prj_src add "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/eo00.vhdl"
+prj_src add "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/wr00.vhdl"
+prj_src add "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/fsmpipe02.vhdl"
+prj_src add "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/packagepipeline00.vhdl"
+prj_src add "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/pipeline00.vhdl"
+prj_project save
+prj_project close
+#Stop recording: 6/6/2022 15:17:49

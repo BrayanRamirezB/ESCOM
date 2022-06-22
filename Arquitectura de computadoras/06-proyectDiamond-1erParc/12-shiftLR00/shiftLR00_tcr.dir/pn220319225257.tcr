@@ -1,0 +1,12 @@
+#Start recording tcl command: 3/19/2022 22:47:06
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00; Project name: shiftLR00
+prj_project open "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR00.ldf"
+prj_run Export -impl shiftLR0 -task Jedecgen
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/shiftLR0.xcf"
+prj_src add -exclude "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/shiftLR0.xcf"
+prj_src enable "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/shiftLR0.xcf"
+pgr_program run
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/shiftLR0.xcf"
+prj_project save
+prj_project close
+#Stop recording: 3/19/2022 22:52:57

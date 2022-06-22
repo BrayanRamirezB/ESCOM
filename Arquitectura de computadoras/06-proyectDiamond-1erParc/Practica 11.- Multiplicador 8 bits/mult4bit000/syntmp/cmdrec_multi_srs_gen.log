@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  mult4bit00  -multisrs  "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\synwork\mult4bit00_mult4bit000_comp.srs"  -osyn  "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\synwork\mult4bit00_mult4bit000_mult.srs"  -log  "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\synlog\mult4bit00_mult4bit000_multi_srs_gen.srr" 
+relcom:C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top mult4bit00 -multisrs "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\synwork\mult4bit00_mult4bit000_comp.srs" -osyn "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\synwork\mult4bit00_mult4bit000_mult.srs" -log "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\synlog\mult4bit00_mult4bit000_multi_srs_gen.srr"
+rc:0 success:1 runtime:0
+file:..\synwork\mult4bit00_mult4bit000_comp.srs|io:i|time:1632371725|size:7391|exec:0|csum:84C699C758CE1D81AB089887FADF6E6E
+file:..\synwork\mult4bit00_mult4bit000_mult.srs|io:o|time:1632371727|size:5117|exec:0|csum:
+file:..\synlog\mult4bit00_mult4bit000_multi_srs_gen.srr|io:o|time:1632371727|size:1286|exec:0|csum:
+file:C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1603984722|size:8875008|exec:1|csum:43373AFF0ED6BCEB26CB4B4947B972DD

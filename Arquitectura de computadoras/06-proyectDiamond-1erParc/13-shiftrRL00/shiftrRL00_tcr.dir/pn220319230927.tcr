@@ -1,0 +1,20 @@
+#Start recording tcl command: 3/19/2022 22:58:18
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00; Project name: shiftrRL00
+prj_project new -name "shiftrRL00" -impl "shiftrRL0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/div00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/osc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/oscint00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/packageosc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL0/source"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL0/source/div00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL0/source/osc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL0/source/oscint00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL0/source/packageosc00.vhdl"
+prj_project save
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL.vhdl"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/packageshiftrRL00.vhdl"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL00.vhdl"
+prj_run Export -impl shiftrRL0 -task Jedecgen
+prj_run Export -impl shiftrRL0 -task Jedecgen
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL0/shiftrRL0.xcf"
+prj_src add -exclude "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL0/shiftrRL0.xcf"
+prj_src enable "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL0/shiftrRL0.xcf"
+pgr_program run
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/13-shiftrRL00/shiftrRL0/shiftrRL0.xcf"
+pgr_project close
+prj_project save
+prj_project close
+#Stop recording: 3/19/2022 23:09:27

@@ -1,0 +1,79 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+
+ENTITY PR1 IS
+	PORT (clk, clear, D, T, J, K, R, S : IN std_logic;
+		SEL : IN std_logic_vector(1 downto 0);
+		Q, NQ : OUT std_logic);
+END PR1;
+
+ARCHITECTURE behavior OF PR1 IS
+	SIGNAL JK : std_logic_vector(1 downto 0);
+	SIGNAL Q1, Q2, Q3, Q4 : std_logic:='0';
+BEGIN
+	JK <= J&K;
+
+	PROCESS (clear, clk)
+		BEGIN
+			IF (clear = '1') THEN
+				Q1 <= '0';
+			ELSIF (clk'EVENT)AND(clk = '1') THEN 
+				Q1 <= D;
+			END IF;
+	END PROCESS;
+
+	PROCESS (clk, clear)
+		BEGIN
+			IF (clear = '1') THEN
+				Q2 <= '0';
+			ELSIF (clk'EVENT) AND (clk = '1') THEN
+				IF (S = '1') THEN
+					Q2 <= '1';
+				ELSIF (R = '1') THEN
+					Q2 <= '0';
+				END IF;
+			END IF;
+	END PROCESS;
+
+	PROCESS (clk, clear)
+ 		BEGIN
+			IF (clear = '1') THEN
+				Q3 <= '0';
+			ELSIF rising_edge(clk) THEN
+				CASE JK IS
+					WHEN "00" => Q3 <= Q3;
+					WHEN "01" => Q3 <= '0';
+					WHEN "10" => Q3 <= '1';
+					WHEN OTHERS => Q3 <= NOT Q3;
+				END CASE;
+		 	END IF;
+	END PROCESS;
+
+ 	PROCESS (clk, clear)
+ 		BEGIN
+			IF (clear = '1') THEN
+				Q4 <= '0';
+			ELSIF (clk'EVENT) AND (clk='1') THEN 
+				IF (T = '1') THEN
+					Q4 <= NOT Q4;
+				END IF;
+			END IF;
+	END PROCESS;
+
+	PROCESS (Q1, Q2, Q3, Q4)
+	 BEGIN
+		 IF (SEL = "00") THEN
+	 		Q <= Q1;
+			NQ <= NOT Q1;
+	 	ELSIF (SEL = "01") THEN
+	 		Q <= Q2;
+			NQ <= NOT Q2;
+		ELSIF (SEL = "10") THEN
+			Q <= Q3;
+			NQ <= NOT Q3;
+		ELSIF (SEL = "11") THEN
+			Q <= Q4;
+			NQ <= NOT Q4;
+		END IF;
+	END PROCESS;
+END behavior;

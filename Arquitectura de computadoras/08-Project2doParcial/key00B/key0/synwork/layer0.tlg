@@ -1,0 +1,41 @@
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\key00.vhdl":7:7:7:11|Synthesizing work.key00.key0.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\coder00.vhdl":6:7:6:13|Synthesizing work.coder00.coder0.
+Post processing for work.coder00.coder0
+Running optimization stage 1 on coder00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\contring00.vhdl":6:7:6:16|Synthesizing work.contring00.contring0.
+Post processing for work.contring00.contring0
+Running optimization stage 1 on contring00 .......
+@W: CL279 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\contring00.vhdl":19:7:19:8|Pruning register bits 2 to 0 of sshift(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\osc00.vhdl":7:7:7:11|Synthesizing work.osc00.osc0.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\div00.vhdl":8:7:8:11|Synthesizing work.div00.div0.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\div00.vhdl":28:6:28:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\div00.vhdl":37:6:37:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\div00.vhdl":46:6:46:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\div00.vhdl":55:6:55:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\div00.vhdl":64:6:64:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\div00.vhdl":73:6:73:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\div00.vhdl":82:6:82:11|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\div00.vhdl":91:6:91:11|Removing redundant assignment.
+Post processing for work.div00.div0
+Running optimization stage 1 on div00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\oscint00.vhdl":6:7:6:14|Synthesizing work.oscint00.oscint0.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.oscint00.oscint0
+Running optimization stage 1 on oscint00 .......
+Post processing for work.osc00.osc0
+Running optimization stage 1 on osc00 .......
+Post processing for work.key00.key0
+Running optimization stage 1 on key00 .......
+Running optimization stage 2 on oscint00 .......
+Running optimization stage 2 on div00 .......
+Running optimization stage 2 on osc00 .......
+Running optimization stage 2 on contring00 .......
+Running optimization stage 2 on coder00 .......
+Running optimization stage 2 on key00 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\key0\synwork\layer0.rt.csv
+

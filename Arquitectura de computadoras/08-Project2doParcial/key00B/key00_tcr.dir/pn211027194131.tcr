@@ -1,0 +1,7 @@
+#Start recording tcl command: 10/27/2021 08:08:36
+#Project Location: C:/Users/ESCOM/Documents/AC/2P/key00B; Project name: key00
+prj_project open "C:/Users/ESCOM/Documents/AC/2P/key00B/key00.ldf"
+prj_run Export -impl key0 -task Jedecgen
+prj_project save
+prj_project close
+#Stop recording: 10/27/2021 19:41:31

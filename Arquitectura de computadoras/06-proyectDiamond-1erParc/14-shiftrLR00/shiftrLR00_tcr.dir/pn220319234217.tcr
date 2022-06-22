@@ -1,0 +1,18 @@
+#Start recording tcl command: 3/19/2022 23:33:34
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00; Project name: shiftrLR00
+prj_project new -name "shiftrLR00" -impl "shiftrLR0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/div00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/osc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/oscint00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/packageosc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/shiftrLR0/source"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/shiftrLR0/source/div00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/shiftrLR0/source/osc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/shiftrLR0/source/oscint00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/shiftrLR0/source/packageosc00.vhdl"
+prj_project save
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/shiftrLR.vhdl"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/packageshiftrLR00.vhdl"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/shiftrLR00.vhdl"
+prj_run Export -impl shiftrLR0 -task Jedecgen
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/shiftrLR0/shiftrLR0.xcf"
+prj_src add -exclude "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/shiftrLR0/shiftrLR0.xcf"
+prj_src enable "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/shiftrLR0/shiftrLR0.xcf"
+pgr_program run
+pgr_project save "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/14-shiftrLR00/shiftrLR0/shiftrLR0.xcf"
+prj_project save
+prj_project close
+#Stop recording: 3/19/2022 23:42:17

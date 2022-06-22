@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tema"
+        android:textSize="20sp"
+        android:textColor="#2874A6"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:text="@string/tx1"
+        android:layout_marginTop="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/tx2"
+        android:layout_marginTop="15sp"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/xet1"
+        android:hint="@string/tx3"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/xet2"
+        android:hint="@string/tx4"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/xet3"
+        android:hint="@string/tx5"
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/xbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/aceptar" />
+
+</LinearLayout>

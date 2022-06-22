@@ -1,0 +1,28 @@
+---------------------------------------------------
+Report for cell osc00
+   Instance path: osc00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      36.00        100.0
+                                  LUT4	      48.00        100.0
+                                 IOBUF	          6        100.0
+                                PFUREG	         23        100.0
+                                RIPPLE	         12        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                              oscint00	          1         0.0
+                                 div00	          1        100.0
+---------------------------------------------------
+Report for cell div00
+   Instance path: osc00/D01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      36.00        100.0
+                                  LUT4	      48.00        100.0
+                                PFUREG	         23        100.0
+                                RIPPLE	         12        100.0
+---------------------------------------------------
+Report for cell oscint00
+   Instance path: osc00/D00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

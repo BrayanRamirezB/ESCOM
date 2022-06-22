@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Primer cuestionario</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 2</header>
+ <nav>
+    <!--<div class="contenedor">-->
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+
+      <p class="derecha"><a href="TemarioPOO.html">Classroom</a></p>
+      <p><a href="TemarioPOO.html">Temario</a></p>
+      <p><a href="41EnlacesPrac.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="41EnlacesHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">PRIMER CUESTIONARIO DE EVALUACIÓN</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>Primer cuestionario que abarca los capítulos 1 y 2</h1>
+       <hr>
+       <br>
+       <p><strong>Instrucciones.</strong> Lea con cuidado cada una de las preguntas. Contestar en una hoja de word cada una de las preguntas. Para después subir el archivo de word, en el repositorio de classroom.</p>
+       <br>
+       <hr>
+       <h3>Pregunta 1 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2 puntos</h3>
+       <hr>
+       <br>
+       <p><strong>Programa.</strong> En el modelo orientado a objetos el elemento principal es el objeto.</p>
+     <br>
+     <p><strong>Código en java.</strong> Se pueden construir las clases Animal, Instrumento, Luz, Robot, Estudiante, Trabajador, FiguraGeometrica, etc.</p>
+        <br>
+        <pre>
+         public class Instrumento {
+           String nota;
+         }
+         </pre>
+     <p>Se presenta el código que incluye métodos:</p>
+    <br>
+     <pre>
+         public class Instrumento {
+           public void tocar() {
+             System.out.println("Instrumento.tocar()");
+           }
+           
+           public String queInstrumento() {
+             return "Instrumento";
+           }
+           
+           public void afinar() {
+               System.out.println("tocar()");
+           }
+         }
+     </pre>
+     <br>
+     <p>Basado en la clase Instrumento con sus métodos. Construya un programa que toque la guitarra. <strong>Recomendación: Construya el objeto guitarra.</strong> </p>
+     <br>
+       
+       <hr>
+       <h3>Pregunta 2 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2 puntos</h3>
+       <hr>
+       <br>
+       <br>
+       <p><strong>Programa.</strong> La clase SerVivo representa a los seres vivos animales y vegetales.</p>
+     <br>
+     <pre>
+     class SerVivo {
+       boolean venado;
+       boolean lechuga;
+       
+       boolean esAnimal() {
+         return venado;
+       }
+       
+       boolean esVegetal() {
+        return lechuga;
+       }
+     }
+     </pre>
+     <br>
+     <p>Construya un programa que indique que tipo de ser vivo es un <strong>venado. Que diga: "El venado es un animal"</strong>.</p>
+     <br>
+     <pre>
+     if(!ser.esAnimal())
+       System.out.println("El venado es un animal");
+     else
+       System.out.println("La lechuga es un vegetal");
+     </pre>
+     <br>
+     <br>
+      <hr>
+       <h3>Pregunta 3 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 3 puntos</h3>
+       <hr>
+       <br>
+       
+       <p><strong>Programa.</strong> El programa ArbolDriver.java contiene sobrecarga para constructores y sobrecarga para métodos.</p>
+       <br>
+       <pre>
+class Arbol {
+  int altura;
+  Arbol() {
+    visualizar ("Plantando un retoño");
+    altura = 0;
+  }
+  Arbol(int i) {
+    visualizar("Creando un nuevo arbol que tiene "
+    + i + " metros de alto");
+    altura = i;
+  }
+  void info() {
+    visualizar("E1 arbol tiene " + altura
+    + " metros de alto");
+  }
+  void info(String s) {
+    visualizar(s + " : El arbol tiene "
+     + altura + " metros de alto");
+  }
+  static void visualizar(String s) {
+    System.out.println(s);
+  }
+}
+
+public class ArbolDriver {
+    public static void main(String[] args) {
+
+      for(int i = 0; i < 5; i++) {
+        Arbol t = new Arbol(i);
+        t.info();
+        t.info("metodo sobrecargado");
+      } // Constructor sobrecargado:
+      
+    }
+}
+       </pre>
+      <br>
+      <p>Construya un programa que indique: <strong>"El árbol tiene 10 metros de alto cuando comienza a dar duraznos"</strong>.</p>
+      <br>
+       <br>
+       <hr>
+       <h3>Pregunta 4 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 3 puntos</h3>
+       <hr>
+       <br>
+       
+       <p><strong>Programa.</strong> El programa PruebaMetodosSobrecargados.java contiene sobrecarga para métodos.</p>
+       <br>
+      <pre>
+public class PruebaMetodoSobrecargado {
+         /** Metodo principal */
+  public static void main(String[] args) {
+    // Invoca el metodo max con paramatros enteros
+    System.out.println("El maximo entre 3 y 4 es " + max(3,4));
+    // Invoca el metodo max con paramatros double
+    System.out.println("El maximo entre 3.0 y 5.4 es " + 
+    max(3.0, 5.4));
+    // Invoca el metodo max con tres paramatros double
+    System.out.println("El maximo entre 3.0, 5.4, y 10.14 es " +
+     max(3.0, 5.4, 10.14));
+  }
+         
+  /** Regresa el max entre dos valores enteros */
+  public static int max(int num1, int num2) {
+    if (num1 > num2)
+       return num1;
+     else
+       return num2;
+  }
+         
+    /** Encuentra el max entre dos valores double */
+   public static double max(double num1, double num2) {
+       if (num1 > num2)
+          return num1;
+       else
+          return num2;
+   }
+     
+     /** Regresa la cantidad max de tres valores double */
+   public static double max(double num1, double num2, double num3) {
+       return max(max(num1, num2), num3);
+   }
+}
+      </pre>
+      <br>
+      <p>Construya un programa que calcule: <strong>El número mínimo de dos y tres números enteros, también para dos y tres números doubles.</strong>.</p>
+       
+       <br>
+       <br>
+       
+       
+ </article>
+<br>
+<br>
+     
+      <article>
+       
+    <br>
+     </article>
+    </section>
+    
+    
+      <aside>
+      <h1>Pautas para el desarrollo del cuestionario.</h1>
+      <hr>
+      <br>
+      <p><strong>El objeto es la parte central del paradigma orientado a objetos.</strong> </p>
+      <br>
+      <hr>
+       
+      </aside>
+      
+      <footer><p>Primer cuestionario: Capítulos 1 y 2</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

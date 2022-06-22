@@ -1,0 +1,105 @@
+//////////////////////////////////////////////
+// Lámpara.
+// MainActivity.java
+import android.app.Activity;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.hardware.Camera;
+import android.hardware.Camera.Parameters;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+public class MainActivity extends Activity {
+    private boolean encendida = false;
+    private Camera camera;
+    private Button button;
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (camera != null) camera.release();
+    }
+    @Override
+    public void onCreate(Bundle b) {
+        super.onCreate(b);
+        setContentView(R.layout.activity_main);
+        button = (Button) findViewById(R.id.LED);
+        Context context = this;
+        PackageManager pm = context.getPackageManager();
+        if (!pm.hasSystemFeature(PackageManager.FEATURE_CAMERA)) {
+            Log.e("err", "El móvil no tiene cámara!");
+            return;
+        }
+        camera = Camera.open();
+        final Parameters p = camera.getParameters();
+        button.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                if (encendida) {
+                    Log.i("info", "Linterna apagada!");
+                    p.setFlashMode(Parameters.FLASH_MODE_OFF);
+                    camera.setParameters(p);
+                    camera.stopPreview();
+                    encendida = false;
+
+                } else {
+                    Log.i("info", "Linterna encendida!");
+                    p.setFlashMode(Parameters.FLASH_MODE_TORCH);
+                    camera.setParameters(p);
+                    camera.startPreview();
+                    encendida = true;
+                }
+            }
+        });
+    }
+}
+
+//////////////////////////////////////////////
+// activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <Button
+        android:id="@+id/LED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_centerVertical="true"
+       	android:layout_centerHorizontal="true"
+        android:text="Linterna" />
+</RelativeLayout>
+
+
+//////////////////////////////////////////////
+// AndroidManifest.xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.escom.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk android:minSdkVersion="10" />
+   <!--  <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" /> -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".MainActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

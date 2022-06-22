@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="@string/opcion" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/xbn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back" />
+        <Button
+            android:id="@+id/xbn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home" />
+        <Button
+            android:id="@+id/xbn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forward" />
+        <Button
+            android:id="@+id/xbn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/xbn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Historial"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="@string/url" />
+    <EditText
+        android:id="@+id/xet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Escribir una URL"
+        android:textColor="#ffffff"/>
+    <WebView
+        android:id="@+id/xwv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" />
+</LinearLayout>

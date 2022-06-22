@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="divOsc00" device="LCMXO2-7000HE-4TG144I" default_implementation="divOsc00">
+    <Options/>
+    <Implementation title="divOsc00" dir="divOsc00" description="divOsc00" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="divOsc00"/>
+        <Source name="osc00.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="div00.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="packageOsc00.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="divOsc00.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="divOsc00"/>
+        </Source>
+        <Source name="divOsc00.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="divOsc00/divOsc00.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="divOsc001.sty"/>
+</BaliProject>

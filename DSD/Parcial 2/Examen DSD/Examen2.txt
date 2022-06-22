@@ -1,0 +1,44 @@
+LIBRARY IEEE;
+
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY examen2 IS
+
+	PORT( clk, clear : IN STD_LOGIC;
+			Q : OUT STD_LOGIC_VECTOR(6 downto 0));    	
+
+END examen2;
+
+ARCHITECTURE behavior OF examen2 IS
+	
+	SIGNAL Q_aux : STD_LOGIC_VECTOR(2 downto 0):= "000";
+
+BEGIN
+	PROCESS (clk, clear)
+		BEGIN
+			IF (clear = '1') THEN
+				Q_aux <= "000";
+			ELSIF ((clk'EVENT)AND(clk = '1')) THEN
+				Q_aux(2) <= ((NOT Q_aux(2))AND(Q_aux(1))AND (Q_aux(0))) OR ((Q_aux(2))AND(NOT Q_aux(1))AND(NOT Q_aux(0)));
+ 			    Q_aux(1) <= ((NOT Q_aux(2)AND Q_aux(0)) AND(NOT Q_aux(1))) OR ((NOT (NOT Q_aux(2)AND Q_aux(0))) AND Q_aux(1));
+				Q_aux(0) <= ((NOT Q_aux(2)) OR (NOT Q_aux(1))) XOR Q_aux(0);
+			END IF;
+			
+			CASE Q_aux IS
+				WHEN "000" =>
+					Q <= "1101101";
+				WHEN "001" =>
+					Q <= "1111110";
+  			    WHEN "010" =>
+					Q <= "1011111";
+				WHEN "011" =>
+					Q <= "1111001";
+				WHEN "100" =>
+					Q <= "1011011";
+				WHEN "101" =>
+					Q <= "1110011";
+				WHEN OTHERS => Q <= "1101101";
+			END CASE;
+	END PROCESS;
+
+END behavior;

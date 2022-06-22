@@ -1,0 +1,58 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: ALVARADOO
+
+Implementation : shiftRL0
+Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+Modified Files: 1
+FID:  path (prevtimestamp, timestamp)
+20       C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\shiftRL00.vhdl (2021-10-21 13:37:05, 2021-10-21 15:20:11)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 1
+MID:  lib.cell.view
+8        work.shiftrl00.shiftrl0 may have changed because the following files changed:
+                        C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\shiftRL00.vhdl (2021-10-21 13:37:05, 2021-10-21 15:20:11) <-- (architecture and entity definition)
+
+*******************************************************************
+Unmodified files: 17
+FID:  path (timestamp)
+18       C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\packagesshiftRL00.vhdl (2021-10-21 13:19:45)
+19       C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\shiftRL.vhdl (2021-10-21 13:19:33)
+21       C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\shiftRL0\source\div00.vhdl (2021-10-05 08:55:18)
+22       C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\shiftRL0\source\osc00.vhdl (2021-10-05 08:55:18)
+23       C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\shiftRL0\source\oscint00.vhdl (2021-09-27 11:29:26)
+24       C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\shiftRL0\source\packageosc00.vhdl (2021-09-27 16:53:56)
+7        C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd (2018-11-14 23:32:12)
+8        C:\lscc\diamond\3.12\synpbase\lib\cpld\lattice.vhd (2020-10-29 09:20:44)
+9        C:\lscc\diamond\3.12\synpbase\lib\vhd\arith.vhd (2020-10-29 09:23:10)
+10       C:\lscc\diamond\3.12\synpbase\lib\vhd\hyperents.vhd (2020-10-29 09:23:10)
+11       C:\lscc\diamond\3.12\synpbase\lib\vhd\location.map (2020-11-02 16:26:20)
+12       C:\lscc\diamond\3.12\synpbase\lib\vhd\numeric.vhd (2020-10-29 09:23:10)
+13       C:\lscc\diamond\3.12\synpbase\lib\vhd\snps_haps_pkg.vhd (2020-10-29 09:23:10)
+14       C:\lscc\diamond\3.12\synpbase\lib\vhd\std.vhd (2020-10-29 09:23:10)
+15       C:\lscc\diamond\3.12\synpbase\lib\vhd\std1164.vhd (2020-10-29 09:23:10)
+16       C:\lscc\diamond\3.12\synpbase\lib\vhd\umr_capim.vhd (2020-10-29 09:23:10)
+17       C:\lscc\diamond\3.12\synpbase\lib\vhd\unsigned.vhd (2020-10-29 09:23:10)
+
+*******************************************************************
+Unchanged modules: 8
+MID:  lib.cell.view
+0        work.div00.div0
+1        work.div00.vhdl
+2        work.osc00.osc0
+3        work.osc00.vhdl
+4        work.oscint00.oscint0
+5        work.oscint00.vhdl
+6        work.shiftrl.shiftrl0
+7        work.shiftrl.vhdl

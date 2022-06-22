@@ -1,0 +1,28 @@
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Mar 16 09:04:44 2022
+
+C:/lscc/diamond/3.12/ispfpga\bin\nt64\par -f divOsc00_divOsc00.p2t
+divOsc00_divOsc00_map.ncd divOsc00_divOsc00.dir divOsc00_divOsc00.prf -gui
+-msgset
+C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/12_13_divOsc00/promote.xml
+
+
+Preference file: divOsc00_divOsc00.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            464.386      0            0.372        0            09           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 9 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.

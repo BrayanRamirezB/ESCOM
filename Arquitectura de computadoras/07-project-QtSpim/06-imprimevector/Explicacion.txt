@@ -1,0 +1,25 @@
+Se carga el registro 29 en el registro 4
+se hace una suma inmediata de la constante 4 con el registro 29 y se guarda en el registro 5
+se hace una suma inmediata de la constante 4 con el registro 5 y se guarda en el registro 6
+se hace dezplazamiento hacia la izquierda
+se hace una suma inmediata
+posteriormente se hace la llamada al metodo principal
+
+
+En esta parte empieza el programa
+columna derecha pseudoinstrucciones
+directiva .text //detecta lo que sigue son instrucciones
+
+
+se hace la llamada al sistema para imprimir un entero
+se carga el vector en el registro v0
+se carga el primer valor del vector que es el 5
+se hace una llamada al sistema para mostrar el valor
+
+se cargar el siguiente valor del vector que es el 2
+se hace una llamada al sistema para mostrar el valor
+
+finalmente se carga el ultimo valor del vector que es el 30
+se hace una llamada al sistema para mostrar el valor
+
+

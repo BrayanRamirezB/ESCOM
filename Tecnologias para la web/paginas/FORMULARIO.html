@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv = "Content-Type" content = "text/html; charset 0 utf-8">
+<title>Formulario</title>
+</head>
+
+<body>
+	<form method="get" action="un lugar" id="formulario" name="formulario">
+		<label>Nombre:</label><input type="text" name="nombre" value="tu nombre aqui" size="40" maxlength="15"><br/><br/>
+
+		<label>Edad: </label><input type="text" size="5" maxlength="2"><br/><br/>
+
+		<label>password</label><input type="password" size="5" maxlength="5"><br/><br/>
+
+		<label>Oculto</label><input type="hidden" size="5" value="algo que mandamos al servidor"><br/>
+
+		<label>Sexo:</label><br/><label>Masculino</label>
+		<input type="radio" name="sexo" id="sexo" value="Masculino">
+		<label>Femenino</label>
+		<input type="radio" name="sexo" id="sexo" value="Femenino" checked="checked"><br/><br/>
+
+		<label>Lenguajes de programación conocidos</label><br/>
+		<label>C</label>
+		<input type="checkbox" name="c1" value="C"><br/>
+		<label>C++</label>
+		<input type="checkbox" name="c1" value="C++"><br/>
+		<label>Java</label>
+		<input type="checkbox" name="c1" value="Java"><br/>
+		<label>Phyton</label>
+		<input type="checkbox" name="c1" value="Phyton"><br/><br/>
+
+		<label>Ciudad de residencia</label><br/>
+		<select name="ciudad">
+			<option value="df">Distrito federal</option>
+			<option value="mty">Monterrey</option>
+			<option selected="selected" value="slp">San luis potosi</option>	
+		</select>
+		<br/>
+		<br/>
+
+		<label>Frutas favoritas</label><br/>
+		<select name="fruta" multiple="multiple" size="4">
+			<option value="sandia">Sandia</option>
+			<option value="limon">Limón</option>
+			<option value="naranja" selected="selected">Naranja</option>
+			<option value="limon colima">Limón colima</option>
+			<option value="limon ss">Limón sin semilla</option>
+			<option value="otro limon">otro Limón</option>	
+		</select>
+		<br/>
+		<br/>
+
+		<label>Comentaios</label><br/>
+		<textarea cols="20" rows="5">Texto que aparece por default</textarea>	
+		<br/>
+		<br/>
+	</form>
+</body>
+</html>

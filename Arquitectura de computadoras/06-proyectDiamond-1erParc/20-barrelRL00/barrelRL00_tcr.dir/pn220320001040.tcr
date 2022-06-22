@@ -1,0 +1,8 @@
+#Start recording tcl command: 3/20/2022 00:07:17
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/20-barrelRL00; Project name: barrelRL00
+prj_project open "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/20-barrelRL00/barrelRL00.ldf"
+prj_run Export -impl barrelRL0 -task Jedecgen
+prj_run Export -impl barrelRL0 -task Jedecgen
+prj_project save
+prj_project close
+#Stop recording: 3/20/2022 00:10:40

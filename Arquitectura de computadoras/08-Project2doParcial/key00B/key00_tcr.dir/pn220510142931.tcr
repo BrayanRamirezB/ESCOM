@@ -1,0 +1,5 @@
+#Start recording tcl command: 5/10/2022 14:28:59
+#Project Location: C:/Users/braya/Downloads/Arquitectura de computadoras/08-Project2doParcial/key00B; Project name: key00
+prj_project open "C:/Users/braya/Downloads/Arquitectura de computadoras/08-Project2doParcial/key00B/key00.ldf"
+prj_project close
+#Stop recording: 5/10/2022 14:29:31

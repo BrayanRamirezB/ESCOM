@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ImagenSharedPref</string>
+    <string name="indicaciones">Diseñar una aplicación para almacenar una imagen, seleccionada desde la galería de imágenes, en un almacén del dispositivo. Después, mostrar en un Canvas la imagen almacenada a través de un Intent</string>
+    <string name="guardar">Ver imagen</string>
+    <string name="textoSecondActivity">La imagen almacenada mediante preferencias es:</string>
+    <string name="seleccionar">Seleccionar imagen</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre: "
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/xet1"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor: "
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/xet2"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/xtv"
+        android:layout_width="333dp"
+        android:layout_height="267dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/xbn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Alta" />
+        <Button
+            android:id="@+id/xbn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Baja" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/xbn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Salir" />
+
+</LinearLayout>

@@ -1,0 +1,3 @@
+@W: CL279 :"C:\Users\braya\Downloads\Arquitectura de computadoras\Pruebas\GELACIO_ARQUITECTURA\Practicas 2do Parcial\PRACTICAS 2DO PARCIAL\key00B\contring00.vhdl":19:7:19:8|Pruning register bits 2 to 0 of sshift(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+

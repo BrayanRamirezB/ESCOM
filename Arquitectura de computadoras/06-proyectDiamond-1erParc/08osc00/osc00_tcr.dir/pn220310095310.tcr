@@ -1,0 +1,6 @@
+#Start recording tcl command: 3/10/2022 09:15:56
+#Project Location: C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/08osc00; Project name: osc00
+prj_project open "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/08osc00/osc00.ldf"
+prj_run Export -impl osc0 -task Jedecgen
+prj_project save
+#Stop recording: 3/10/2022 09:53:10

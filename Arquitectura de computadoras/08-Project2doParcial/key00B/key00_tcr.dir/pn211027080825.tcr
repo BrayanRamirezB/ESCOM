@@ -1,0 +1,5 @@
+#Start recording tcl command: 10/27/2021 08:08:17
+#Project Location: C:/Users/ESCOM/Documents/AC/2P/key00B; Project name: key00
+prj_project open "C:/Users/ESCOM/Documents/AC/2P/key00B/key00.ldf"
+prj_project close
+#Stop recording: 10/27/2021 08:08:25

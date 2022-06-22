@@ -1,0 +1,7 @@
+#Start recording tcl command: 3/22/2021 10:37:07
+#Project Location: D:/ISC/Semestre 2021-1/Arquitectura de Computadoras/practicas/12_divOsc00; Project name: divOsc00
+prj_project new -name "divOsc00" -impl "divOsc00" -dev LCMXO2-7000HE-4TG144I -synthesis "synplify"
+prj_project save
+prj_src add "D:/ISC/Semestre 2021-1/Arquitectura de Computadoras/practicas/12_divOsc00/osc00.vhd"
+prj_src add "D:/ISC/Semestre 2021-1/Arquitectura de Computadoras/practicas/12_divOsc00/div00.vhd"
+#Stop recording: 3/22/2021 18:14:14

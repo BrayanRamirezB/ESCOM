@@ -1,0 +1,70 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|F:\\Materias\\Arqui\\Practica 11.- Multiplicador 8 bits\\mult4bit000\\synwork\\mult4bit00_mult4bit000_comp.srs|-top|mult4bit00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\bin64\\c_vhdl.exe":1603984722
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\location.map":1604355980
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std.vhd":1603984990
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1603984990
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std1164.vhd":1603984990
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\numeric.vhd":1603984990
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\umr_capim.vhd":1603984990
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\arith.vhd":1603984990
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\unsigned.vhd":1603984990
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\hyperents.vhd":1603984990
+#CUR:"C:\\lscc\\diamond\\3.12\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1542259932
+#CUR:"F:\\Materias\\Arqui\\Practica 11.- Multiplicador 8 bits\\mult4bit000\\source\\anda00.vhdl":1602518818
+#CUR:"F:\\Materias\\Arqui\\Practica 11.- Multiplicador 8 bits\\mult4bit000\\source\\xora00.vhdl":1602518776
+#CUR:"F:\\Materias\\Arqui\\Practica 11.- Multiplicador 8 bits\\mult4bit000\\source\\packageha00.vhdl":1602519040
+#CUR:"F:\\Materias\\Arqui\\Practica 11.- Multiplicador 8 bits\\mult4bit000\\source\\ora00.vhdl":1602600540
+#CUR:"F:\\Materias\\Arqui\\Practica 11.- Multiplicador 8 bits\\mult4bit000\\source\\packagefa00.vhdl":1602600542
+#CUR:"F:\\Materias\\Arqui\\Practica 11.- Multiplicador 8 bits\\packagemult4bit00.vhdl":1603812800
+#CUR:"F:\\Materias\\Arqui\\Practica 11.- Multiplicador 8 bits\\mult4bit000\\source\\ha00.vhdl":1602519064
+#CUR:"F:\\Materias\\Arqui\\Practica 11.- Multiplicador 8 bits\\mult4bit000\\source\\fa00.vhdl":1602600590
+#CUR:"F:\\Materias\\Arqui\\Practica 11.- Multiplicador 8 bits\\mult4bit00.vhdl":1604595041
+0 "C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\anda00.vhdl" vhdl
+2 "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\xora00.vhdl" vhdl
+3 "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\packageha00.vhdl" vhdl
+4 "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\ora00.vhdl" vhdl
+5 "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\packagefa00.vhdl" vhdl
+6 "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\packagemult4bit00.vhdl" vhdl
+7 "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\ha00.vhdl" vhdl
+8 "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit000\source\fa00.vhdl" vhdl
+9 "F:\Materias\Arqui\Practica 11.- Multiplicador 8 bits\mult4bit00.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 1 2 3 
+8 7 4 5 
+9 1 8 6 
+
+# Dependency Lists (Users Of)
+0 -1
+1 9 7 
+2 7 
+3 7 
+4 8 
+5 8 
+6 9 
+7 8 
+8 9 
+9 -1
+
+# Design Unit to File Association
+arch work anda00 anda0 1
+module work anda00 1
+arch work xora00 xora0 2
+module work xora00 2
+arch work ora00 ora0 4
+module work ora00 4
+arch work ha00 ha0 7
+module work ha00 7
+arch work fa00 fa0 8
+module work fa00 8
+arch work mult4bit00 mult4bit0 9
+module work mult4bit00 9

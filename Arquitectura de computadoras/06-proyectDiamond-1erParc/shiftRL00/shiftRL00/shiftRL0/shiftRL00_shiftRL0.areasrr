@@ -1,0 +1,79 @@
+----------------------------------------------------------------------
+Report for cell shiftRL.shiftrl0
+
+Register bits: 42 of 6864 (1%)
+PIC Latch:       0
+I/O cells:       33
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       12       100.0
+                            FD1P3AX        8       100.0
+                            FD1S3AX        1       100.0
+                            FD1S3IX       25       100.0
+                                GSR        1       100.0
+                                 IB       24       100.0
+                                 OB        9       100.0
+                           OFS1P3IX        8       100.0
+                           ORCALUT4       87       100.0
+                               OSCH        1       100.0
+                                PUR        1       100.0
+                                VHI        3       100.0
+                                VLO        4       100.0
+SUB MODULES 
+                              div00        1       100.0
+                              osc00        1       100.0
+                           oscint00        1       100.0
+                          shiftRL00        1       100.0
+                            
+                         TOTAL           188           
+----------------------------------------------------------------------
+Report for cell shiftRL00.netlist
+     Instance path:  SLR01
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3AX        8       100.0
+                            FD1S3IX        3        12.0
+                           ORCALUT4       36        41.4
+                                VHI        1        33.3
+                                VLO        1        25.0
+                            
+                         TOTAL            49           
+----------------------------------------------------------------------
+Report for cell osc00.netlist
+     Instance path:  SLR00
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       12       100.0
+                            FD1S3AX        1       100.0
+                            FD1S3IX       22        88.0
+                           ORCALUT4       51        58.6
+                               OSCH        1       100.0
+                                VHI        1        33.3
+                                VLO        2        50.0
+SUB MODULES 
+                              div00        1       100.0
+                           oscint00        1       100.0
+                            
+                         TOTAL            92           
+----------------------------------------------------------------------
+Report for cell div00.netlist
+     Instance path:  SLR00.OS01
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       12       100.0
+                            FD1S3AX        1       100.0
+                            FD1S3IX       22        88.0
+                           ORCALUT4       51        58.6
+                                VHI        1        33.3
+                                VLO        1        25.0
+                            
+                         TOTAL            88           
+----------------------------------------------------------------------
+Report for cell oscint00.netlist
+     Instance path:  SLR00.OS00
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                               OSCH        1       100.0
+                                VLO        1        25.0
+                            
+                         TOTAL             2           

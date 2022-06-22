@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset = "utf-8">
+	<title>Formulario</title>
+	<script type="text/javascript">
+	
+		function muestraDatos(){
+			let nom = document.getElementById("nombre").value;
+			let ap = document.getElementById("apellidop").value;
+			let am = document.getElementById("apellidom").value;
+			let cal = document.getElementById("calle").value;
+			let no = document.getElementById("numero").value;
+			let col = document.getElementById("colonia").value;
+			let cp = document.getElementById("cp").value;
+			let comen = document.getElementById("texto").value;
+			let se = document.getElementsByName('sexo');
+			let sel1;
+			let fechan = document.getElementById("f_nac").value;
+			let curp = document.getElementById("curp").value;
+			let ciudad = document.getElementById("ciudad").value;
+			let c1 = "", c2 = "";
+
+			for(i = 0;i < se.length;i++){
+				if(se[i].checked){
+					sel1 = se[i].value;
+				}	
+			}
+
+			
+			for(i=1; i<9;i++){
+				if(document.getElementById('c'+i).checked && c1.length == 0){
+					c1 = document.getElementById("c"+i).value;
+				}
+				else if(document.getElementById('c'+i).checked && c1.length>=1){
+					c1 = c1 +", "+ document.getElementById("c"+ i).value;
+				}
+			}
+
+			for(i=9; i<16;i++){
+				if(document.getElementById('c'+i).checked && c2.length == 0){
+					c2 = document.getElementById("c"+i).value;
+				}
+				else if(document.getElementById('c'+i).checked && c2.length>=1){
+					c2 = c2 +", "+ document.getElementById("c"+ i).value;
+				}
+			}
+
+
+
+			document.write("Nombre: " + nom + "<br>");
+			document.write("Apellido Paterno: " + ap + "<br>");
+			document.write("Apellido Materno: " + am + "<br>");
+			document.write("Calle: " + cal + "<br>");
+			document.write("No.: " + no + "<br>");
+			document.write("Colonia: " + col + "<br>");
+			document.write("Cp: " + cp + "<br>");
+			document.write("Ciudad: " + ciudad + "<br>");
+			document.write("Sexo: " + sel1 + "<br>");
+			document.write("Fecha de Nacimiento: " + fechan + "<br>");
+			document.write("Curp: " + curp + "<br>");
+			document.write("Lenguajes de programación: " + c1 + "<br>");
+			document.write("Pasatiempos: " + c2 + "<br>");
+			document.write("Comentarios: " + comen);
+		}
+
+
+</script>
+</head>
+
+<body>
+	<form method="get" id="formulario" name="formulario">
+		<fieldset>
+			<legend>Nombre</legend>
+			<table>
+				<td>
+					<input type="text" name="nombre" id="nombre" size="40" maxlength="15"><br/><label>Nombre</label>
+				</td>
+				<td>
+					<input type="text" name="apellidop" id="apellidop" size="40" maxlength="15"><br/><label>Apellido Paterno</label>	
+				</td>
+				<td>
+					<input type="text" name="apellidom" id="apellidom" size="40" maxlength="15"><br/><label>Apellido Materno</label>	
+				</td>
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend>Dirección</legend>
+			<table>
+				<td>
+					<input type="text" name="calle" id="calle" size="40" maxlength="15"><br/><label>Calle</label>
+				</td>
+				<td>
+					<input type="text" name="numero" id="numero" size="40" maxlength="15"><br/><label>No.</label>	
+				</td>
+				<td>
+					<input type="text" name="colonia" id="colonia" size="40" maxlength="15"><br/><label>Colonia</label>	
+				</td>
+				<td>
+					<input type="text" name="cp" id="cp" size="40" maxlength="15"><br/><label>CP</label>
+				</td>
+				<td>
+					<select name="ciudad" id="ciudad">
+					<option value="Distrito federal">Distrito federal</option>
+					<option value="Monterrey">Monterrey</option>
+					<option selected="selected" value="slp">SLP</option>
+					</select>	
+				</td>
+			</table>	
+		</fieldset>
+
+		<label>Sexo: </label><label>Masculino</label>
+		<input type="radio" name="sexo" value="Masculino" checked="checked">
+		<label>Femenino</label>
+		<input type="radio" name="sexo" value="Femenino" ><br/>
+
+		<label>Fecha de nacimiento: </label> <input type="date" name="f_nac" id="f_nac" value="1997-10-24"><br/>
+
+		<label>Curp:</label><input type="text" name="curp" id="curp" value="RABB011115HMCMNRA6" size="40" maxlength="15"><br/>
+
+		<fieldset>
+			<legend>Lenguajes de programación</legend>
+				<table>
+					<tr>
+						<td>
+							<label>C</label><input type="checkbox" name="c1" id="c1" value="C"></td>
+						<td>
+							<label>Ruby</label><input type="checkbox" name="c2" id="c2" value="Ruby"></td>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>C++</label><input type="checkbox" name="c3" id="c3" value="C++"></td>
+						<td>
+							<label>Perl</label><input type="checkbox" name="c4" id="c4" value="Perl"></td>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Java</label><input type="checkbox" name="c5" id="c5" value="Java"></td>
+						<td>
+							<label>R</label><input type="checkbox" name="c6" id="c6" value="R"></td>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Python</label><input type="checkbox" name="c7" id="c7" value="python"></td>
+						<td>
+							<label>Otro</label><input type="checkbox" name="c8" id="c8" value="Otro"></td>
+						</td>
+					</tr>
+				</table>
+		</fieldset>
+
+		<fieldset>
+			<legend>Pasatiempos</legend>
+			<table>
+					<tr>
+						<td>
+							<label>Leer</label><input type="checkbox" id="c9" value="Leer"></td>
+						<td>
+							<label>Videojuegos</label><input type="checkbox" id="c10" value="Videojuegos"></td>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Ver TV</label><input type="checkbox" id="c11" value="TV"></td>
+						<td>
+							<label>Ir al Cine</label><input type="checkbox" id="c12" value="Cine"></td>
+						</td>
+						<td>
+							<label>Otras Cosas</label><input type="checkbox" id="c13" value="Ortas cosas"></td>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label>Navegar en Internet</label><input type="checkbox" id="c14" value="Internet"></td>
+						<td>
+							<label>Ver Netflix</label><input type="checkbox" id="c15" value="Netflix"></td>
+						</td>
+					</tr>
+
+				</table>	
+		</fieldset>
+
+		<fieldset>
+			<legend>Comentarios</legend>
+				<textarea rows="8" cols="60" name="texto" id="texto"></textarea></br>
+				<table>
+					<td><input type="submit" name="enviar" value="Enviar" onclick="muestraDatos()"></td>
+					<td><input type="reset" name="borrar" value="Borrar"></td>
+				</table>
+		</fieldset>
+	</form>
+</body>
+</html>

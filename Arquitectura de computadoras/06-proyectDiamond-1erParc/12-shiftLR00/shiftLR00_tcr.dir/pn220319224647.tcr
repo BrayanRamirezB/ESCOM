@@ -1,0 +1,12 @@
+#Start recording tcl command: 3/19/2022 22:40:42
+#Project Location: C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00; Project name: shiftLR00
+prj_project new -name "shiftLR00" -impl "shiftLR0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/div00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/osc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/oscint00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/10-osc00-vhdl/packageosc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/source"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/source/div00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/source/osc00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/source/oscint00.vhdl" "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR0/source/packageosc00.vhdl"
+prj_project save
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR00.vhdl"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/shiftLR.vhdl"
+prj_src add "C:/Users/braya/Downloads/06-proyectDiamond-1erParc/12-shiftLR00/packageshiftLR00.vhdl"
+prj_project save
+prj_project close
+#Stop recording: 3/19/2022 22:46:47

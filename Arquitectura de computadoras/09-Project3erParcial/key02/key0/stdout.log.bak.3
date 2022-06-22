@@ -1,0 +1,90 @@
+Running in Lattice mode
+
+Starting:    C:\lscc\diamond\3.12\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.12\synpbase
+Hostname:    DESKTOP-B3E034E
+Date:        Wed May 18 09:09:14 2022
+Version:     Q-2020.03L-SP1
+
+Arguments:   -product synplify_pro -batch key02_key0_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+Copied C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srr to C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\backup\key02_key0.srr
+log file: "C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srr"
+Running: hdl_info_gen in foreground
+
+Generating HDL info...
+Copied C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srr to C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srf
+
+hdl_info_gen completed
+# Wed May 18 09:09:16 2022
+
+Return Code: 0
+Run Time:00h:00m:01s
+log file: "C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srr"
+Running: key0 in foreground
+
+Running proj_1|key0
+
+Running Flow: compile (Compile) on proj_1|key0
+# Wed May 18 09:09:16 2022
+
+Running Flow: compile_flow (Compile Process) on proj_1|key0
+# Wed May 18 09:09:16 2022
+
+Running: compiler (Compile Input) on proj_1|key0
+# Wed May 18 09:09:16 2022
+Copied C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\synwork\key02_key0_comp.srs to C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srs
+
+compiler completed
+# Wed May 18 09:09:20 2022
+
+Return Code: 0
+Run Time:00h:00m:04s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|key0
+# Wed May 18 09:09:20 2022
+
+multi_srs_gen completed
+# Wed May 18 09:09:20 2022
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\synwork\key02_key0_mult.srs to C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srs
+Copied C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srr to C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srf
+Complete: Compile Process on proj_1|key0
+
+Running: premap (Premap) on proj_1|key0
+# Wed May 18 09:09:20 2022
+
+premap completed with warnings
+# Wed May 18 09:09:22 2022
+
+Return Code: 1
+Run Time:00h:00m:02s
+Complete: Compile on proj_1|key0
+
+Running Flow: map (Map) on proj_1|key0
+# Wed May 18 09:09:22 2022
+
+Running: fpga_mapper (Map & Optimize) on proj_1|key0
+# Wed May 18 09:09:22 2022
+Copied C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\synwork\key02_key0_m.srm to C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srm
+
+fpga_mapper completed with warnings
+# Wed May 18 09:09:26 2022
+
+Return Code: 1
+Run Time:00h:00m:04s
+Complete: Map on proj_1|key0
+Copied C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srr to C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\key02_key0.srf
+Complete: Logic Synthesis on proj_1|key0
+TCL script complete: "key02_key0_synplify.tcl"
+exit status=0
+exit status=0
+Save changes for project:
+C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key0\proj_1.prj
+batch mode default:no

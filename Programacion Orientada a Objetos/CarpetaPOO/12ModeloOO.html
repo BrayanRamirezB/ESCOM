@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Modelo orientado a objetos</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 1</header>
+ <nav>
+   <!-- <div class="contenedor">--> 
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+      <p class="derecha"><a href="TemarioPOO.html">Temario</a></p>
+      
+      <p><a href="21ClasObjPra.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="21ClasObjHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">MODELO ORIENTADO A OBJETOS</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>El modelo orientado a objetos</h1>
+       <hr>
+      <p><strong>Definición de Abstracción.</strong> Operación intelectual que ignora selectivamente partes de un todo para facilitar su comprensión. Abstracción en la resolución de problemas: Ignorar detalles específicos buscando generalidades que
+ofrezcan una perspectiva distinta, más favorable a su resolución.</p>
+      <br>
+       <p class="cita"><cite>www.decsai.ugr.es/abs.pdf, No dice, Pág. 1</cite></p>
+       <br>
+       <p><strong>Abstracción. </strong> Aunque esta elemento de la programación se ha empleado para el paradigma orientado a procesos. Es muy importante para el paradigma orientado a objetos.</p>
+       <br>
+      <p>El concepto nos permite utilizar un coche para ir al supermercado sin ser abrumados por la complejidad de las partes que forman el coche. Podemos ignorar los detalles acerca de cómo funciona el motor, la transmisión y el sistema de frenos, utilizando el objeto en su conjunto.</p>
+      <br>
+       <p><strong>Programación. </strong> Todos los programas están formados por dos elementos: código y datos. Un programa puede estar conceptualmente organizado con base a su código o a sus datos. Algunos programas se escriben en función de <strong>lo qué esta sucediendo</strong> mientros que otros están escritos en fución de <strong>quién está siendo afectado</strong>.</p>
+      <br>
+      <p><strong>Paradigmas de programación.</strong> Modelo orientado a proceso, que cosiste en construir un programa como una serie de pasos lineales, es decir, código. Con este enfoque los problemas aparecen cuando los programas crecen y se hacen más complejos. Modelo orientado a objetos, este modelo organiza un programa con respecto a sus datos (objetos) y a un conjunto de interfaces bien definidas con los datos. Un programa orientado a objetos se puede interpretar como datos que controlan el acceso al código.</p>
+      <br>
+      <p class="cita"><cite>Java: Manual de referencia, Patrick Naughton y Herbert Schildt, Pág. 17-18</cite></p>
+       <br>
+       <p><strong>Definición de clase de la Real Academia Española.</strong> 1. f. Conjunto de elementos con caracteres comunes, 8. f. Distinción, categoría.</p>
+       <br>
+       <p><strong>Definición de clase en computación.</strong> Es la agrupación de objetos. Las clases permiten que un diseñador de software considere los objetos como diferentes tipos de entidades. Visita
+objetos de esta manera nos permite utilizar los mecanismos de clasificación para categorizar estos tipos,
+definir jerarquías y comprometerse con las ideas de especialización y generalización de objetos.</p>
+      <br>
+   <p class="cita"><cite>Object-Oriented Analysis
+and Design, Sarnath Ramnath and Brahma Dathan, Pág. 6</cite></p>
+       <br>
+       <p>Objetos que son idénticos excepto por su estado
+durante la ejecución de un programa se agrupan en <i>clases de
+objetos</i> y de ahí proviene la palabra clave <strong>class</strong>.</p>
+       <br>
+    <p class="cita"><cite>Thinking In C++, Bruce Eckel, Pág. 28</cite></p>
+      <br>
+      <p>Dado que una clase describe un conjunto de objetos que tienen idénticas características (elementos de datos) y comportamientos (funcionalidad), una clase es realmente un tipo de datos porque un número de punto flotante, por ejemplo,
+también tiene un conjunto de características y comportamientos. La diferencia es que un programador define una clase para adaptarse a un problema en lugar de ser forzado a usar un tipo de datos existente que fue diseñado para representar una unidad de almacenamiento en una máquina. Se extiende el lenguaje de programación agregando nuevos tipos de datos específicos para sus necesidades. El sistema de programación da la bienvenida a las nuevas clases y les da a todas
+el cuidado y la verificación de tipos que da a los tipos integrados.</p>
+      <br>
+      <p class="cita"><cite>Thinking In C++, Bruce Eckel, Pág. 28</cite></p>
+    <br>
+    <p><strong>Los tres principios de la programación orientada a objetos.</strong> Los lenguajes de programación orientada a objetos proporcionan mecanismos que ayudan a implementar el modelo orientado a objetos. Estos mecanismos se llaman: encapsulado, herencia y polimorfismo.</p>
+     <br>
+     <p class="cita"><cite>Java: Manual de referencia, Patrick Naughton y Herbert Schildt, Pág. 19</cite></p>
+     <br>
+      <h3>Ejemplo de código de clases</h3>
+      <hr>
+      <br>
+      <p><strong>Código en java.</strong> Se presenta la clase Luz en el siguiente código:</p>
+       <br>
+       <pre>
+       class Luz {
+         on();
+         off();
+         brillantez();
+         atenuacion();
+       }
+       </pre>
+       <br>
+      <p><strong>Código en java.</strong> Se presenta la forma de crear objetos y sus llamadas con código:</p>
+       <br>
+       <pre>
+       Luz foco;
+       foco.on();
+       </pre>
+       <br>
+       <hr>
+       <h1>Los objetos</h1>
+       <hr>
+        <p><strong>Definición de objeto.</strong> En la vida real los objetos son representados (o modelados) como un conjunto de objetos, los cuales forman un modelo de objeto.</p>
+        <br>
+        <p>Todo es un objeto. Piense en un objeto como una fantasía
+variable; almacena datos, pero puede "hacer solicitudes" a ese
+objeto, pidiéndole que realice operaciones sobre sí mismo. En teoria,
+puede tomar cualquier componente conceptual en el problema
+que intentas resolver (perros, edificios, servicios, etc.) y
+representarlo como un objeto en su programa.</p>
+       <br>
+        <p class="cita"><cite>Thinking In C++, Bruce Eckel, Pág. 26</cite></p>
+        <br>
+        <p><strong>Ejemplos de objeto.</strong>
+Un objeto carro puede representar un carro, un objeto cesta puede representar una compra de cestas, y un objeto documento podría representar un documento tal como una página web.</p>
+        <br>
+        <p><strong>Caractísticas de los objetos.</strong>
+Cada objeto puede tener un conjunto de propiedades que describen aspectos del objeto. Un objeto carro puede tener propiedades que describen su color o el tamaño del motor. Un objeto cesta puede tener propiedades que describen el número de elementos que contiene o el valor de aquellos elementos. Un objeto documento tene propiedades que describen el color de fondo de la página web o el titulo de la página.</p>
+        <br>
+        <p><strong>Los métodos.</strong>
+Hay métodos; cada método describe una acción que puede ser hecha (o con) el objeto. Por ejemplo, un método de un objeto representa un carro que puede ser acelerado o para cambiar un engranaje. Un método de comprar cesto puede ser agregar un elemento o para recalcular el valor de los elementos en el cesto. Un método de un documento podría ser escribir una linea nueva de texto en la página web.</p>
+</article>
+<br>
+<br>
+     <p><strong>El objeto.</strong> Como el objeto es el elemento principal del paradigma. Es una característica abstraida.</p>
+     <br>
+      <article>
+       <hr>
+       <h1>Las operaciones de los objetos</h1>
+       <hr>
+        <p><strong>Los eventos.</strong>
+Finalmente, hay eventos. En un lenguaje de programación, un evento es el objeto que levanta la mano y que dice, "x sucedió", generalmente porque un programa pude hacer algo como un resultado de un evento. Por ejemplo, un objeto carro puede aumentar un evento que dice la ignición ha comenzado o que se acabó la gasolina. Un cesto puede subir un evento cuando un elemento es agregado o cuando esta lleno. Un documento puede aumentar un evento cuando el usuario presiona Submit en forma de click en un enlace. Otras formas, un evento puede también disparar acciones; por ejemplo, si un carro no tiene gasolina, el carro se parará.</p>
+      <br>
+      <p><strong>Los modelos.</strong>
+Un modelo objeto es por ello una descripción de como un programa puede representar entidades de la vida real que usan un conjunto de objetos, y esto también especifica un conjunto de métodos, propiedades, y eventos que un objeto puede tener. </p>
+       <br>
+       <p><strong>Los buscadores.</strong>
+Los principales buscadores implementan un modelo objeto llamado DOM que fué ideado para representar páginas web, la página como un todo es representado usando un objeto documento.</p>
+
+
+       <p class="cita"><cite>Beginnig HTML and CSS, Rob Larsen, Pág. 341</cite></p>
+     <br>
+    <h3>Ejemplo de código de objetos</h3>
+      <hr>
+      <br>
+    <p><strong>Código en java.</strong> Se presenta el código de una clase:</p>
+     <br>
+     <pre>
+     class Datos {
+       int i;
+       float f;
+       boolean b;
+     }
+     </pre>
+     <br>
+      <p><strong>Código en java.</strong> Se presenta la forma de crear el objeto S con el siguiente código:</p>
+     <br>
+     <pre>
+     Datos S = new Datos();
+     </pre>
+     <br>
+    <p><strong>Código en java.</strong> Se presenta la forma de llamar al objeto y asignarle valor al objeto S con el siguiente código:</p>
+    <br>
+    <pre>
+     S.i = 47;
+     S.f = 1.1;
+     S.b = false;
+     </pre>
+     <br>
+    <p class="cita"><cite>Piensa en Java, Bruce Eckel, Pág. 62-63</cite></p>
+    <br>
+     </article>
+    </section>
+      <aside>
+        <h1>Resumen</h1>
+        <hr>
+        <p><strong>Recordar el significado de las siguientes palabras:</strong> Abstracción, Programación, Paradigmas, Clase, Objeto, los tres principios de la programación orientada a objetos (encapsulado, herencia y polimorfismo), Características de los objetos, métodos, eventos, modelos, buscadores.</p>
+        <br>
+        <hr>
+     <h1>Ejercicios</h1>
+        <hr>
+         <p><strong>Código en java.</strong> Usar los siguientes nombres de clase: Animal, Musica, Luz, Robot, Estudiante, Trabajador, FiguraGeometrica, CalcularArea, CalcularPromedio.</p>
+        <br>
+        <pre>
+         public class Animal {
+           String perro;
+         }
+         </pre>
+     <p>Se presenta el código que incluye métodos:</p>
+    <br>
+     <pre>
+         public class Perro {
+           String QueRuidoHace() {
+             System.out.println("Ladra");
+           }
+           String QueCome() {
+               System.out.println("Come croquetas");
+           }
+         }
+     </pre>
+      <p><strong>Ejercicio 1.</strong> construir dos clases con sus objetos.</p>
+        <br>
+        <p><strong>Ejercicio 2.</strong> De acuerdo a la reseña presentada con respectoa a la historia de los lenguajes orientados a objetos. Argumentar porque el lenguaje a Phyton es el que cumple más con el paradigma orientado a objetos.</p>
+      <br>
+       <p><strong>Ejercicio 3.</strong> Será que el paradigma orientado a objetos es perdurable por mucho tiempo. Ya que las características de encapsulamiento, herencia y polimorfismo. ¿Habrá otra característica que surja?</p>
+     <br>
+      <hr>
+     <h1>Preguntas</h1>
+        <hr>
+        <p><strong>Pregunta 1.</strong> Explica en que consiste cada uno de los paradigmas presentados. Presentarlo en una hoja de word.</p>
+       <p><strong>Pregunta 2.</strong> Explica porque es importante el objeto en este paradigma orientado a objetos.</p>
+      
+      
+        </aside>
+      <footer><p>Fundamentos: Tema 1.2</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

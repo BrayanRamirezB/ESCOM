@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Listas
+		</title>
+		<script languaje="Javascript">
+			var tabla,fila,celda,texto;
+			function AgregarFinal(){
+				var valor=prompt("Inserta el valor del elemento");
+				tabla = document.getElementById("tabla1");
+				fila=document.createElement("tr")
+				tabla.appendChild(fila);
+				for(i=0;i<5;i++){
+					celda=document.createElement("td");
+					texto=document.createTextNode(valor);
+					celda.appendChild(texto);
+					fila.appendChild(celda);
+				}
+			}
+			
+
+			function EliminarFinal(){
+				if(tabla.hasChildNodes())
+					tabla.removeChild(tabla.lastChild);
+			}
+		</script>
+	</head>
+	<body>
+		<table align="center" width="450" border="2">
+			<tbody id="tabla1"></tbody>
+		</table><br/><br/>
+		<input type="button" value="Agregar al final" onClick="AgregarFinal()"/><br/>
+		<input type="button" value="Eliminar al final" onClick="EliminarFinal()"/><br/>
+	</body>
+</html>

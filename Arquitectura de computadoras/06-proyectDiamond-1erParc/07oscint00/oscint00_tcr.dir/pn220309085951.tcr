@@ -1,0 +1,8 @@
+#Start recording tcl command: 3/9/2022 08:41:24
+#Project Location: C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/07oscint00; Project name: oscint00
+prj_project open "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/07oscint00/oscint00.ldf"
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/07oscint00/osc00.vhdl"
+prj_src remove "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/07oscint00/osc00.vhdl"
+prj_project save
+prj_project close
+#Stop recording: 3/9/2022 08:59:51

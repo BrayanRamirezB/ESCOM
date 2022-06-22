@@ -1,0 +1,11 @@
+#Start recording tcl command: 3/9/2022 08:56:05
+#Project Location: C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/08osc00; Project name: osc00
+prj_project new -name "osc00" -impl "osc0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/08osc00/oscint00.vhdl"
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/08osc00/div00.vhdl"
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/08osc00/packageosc00.vhdl"
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/08osc00/osc00.vhdl"
+prj_run Export -impl osc0 -task Jedecgen
+prj_project save
+#Stop recording: 3/9/2022 09:48:34

@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Tema extra de Clases y objetos</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 2</header>
+ <nav>
+   <!-- <div class="contenedor">--> 
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+      <p class="derecha"><a href="TemarioPOO.html">Temario</a></p>
+      
+      <p><a href="21ClasObjPra.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="21ClasObjHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">TEMA EXTRA DE CLASES Y OBJETOS</h1>
+    <section class="interna">
+      
+      <article>
+      <h1>La palabra clave this</h1>
+       <hr>
+       <p>El ámbito de una variable es la parte del programa donde se puede hacer referencia a la variable. Una variable definida dentro de un método se denomina variable local.</p>
+       <br>
+       <pre>
+       Prisma(double an, double al, double p) {
+         ancho = an;
+         alto = al;
+         profundidad = p;
+       }
+       </pre>
+       <br>
+       <p><strong>¿Como se usa el this?</strong> Se usa de la siguiente forma:</p>
+      <br>
+      <p>Algunas veces un método necesita hacer referencia al objeto que lo invocó. Para permitir esto, Java define la palabra clave <strong>this</strong>, que puede ser utilizada dentro de cualquier método para referirse al objeto actual. Esta palabra clave <strong>this</strong> es siempre una referencia al objeto que llama al método. Se puede utilizar <strong>this</strong> siempre que se requiera una referencia a un objeto del tipo de la clase actual. </p>
+       <br>
+       <pre>
+       Prisma(double an, double al, double p) {
+         this.ancho = an;
+         this.alto = al;
+         this.profundidad = p;
+       }
+       </pre>
+       <br>
+       <p>Esta versión de <strong>Prisma()</strong> funciona exactamente igual que la que no usa la palabra clave <strong>this</strong>. La utilización de <strong>this</strong> es redundante, pero perfectamente correcta. Dentro de <strong>Prisma()</strong>. La palabra clave <strong>this</strong> siempre se refiere al objeto que invoca al método. Aunque en este caso es redundante, <strong>this</strong> es útil en otros contextos, uno de los cuales es ocultar variables de instancias. </p>
+       <br>
+      <p><strong>Variables de instancia.</strong> En Java es ilegal declarar dos variables locales con el mismo nombre dentro del mismo ámbito o en uno que lo incluya. Sí se pueden declarar variables locales, incluyendo parámetros formales de métodos, que se solapen con los nombres de las variables de instancia. Sin embarago, cuando una variable local tiene el mismo nombre que una variable de instancia, la variable local oculta a la variable de instancia. Esta es la razón por la que no se utiliza <strong>ancho</strong>, <strong>alto</strong> y <strong>profundidad</strong> como nombres de parámetros del constructor <strong>Prisma()</strong> en la clase <strong>Prisma</strong>. Si lo hubésemos hecho, entonces <strong>ancho</strong> se hubiera referido al parámetro formal, ocultando la variable de instancia <strong>ancho</strong>. Aunque suele ser más sencillo utilizar nombres distintos, hay otra forma de resolver este problema. Como <strong>this</strong> permite referirse directamente al objeto en si, se puede utilizar para resolver cualquier colisión de nombres que pudiese haber entre variables de instancia y variables locales. Por ejemplo, la siguiente versión de <strong>Prisma()</strong> utiliza <strong>ancho</strong>, <strong>alto</strong> y <strong>profundidad</strong> como nombres de parámetros y hace uso de <strong>this</strong> para acceder a las variables instancia que tienen el mismo nombre.</p>
+      <br>
+      <pre>
+       Prisma(double ancho, double alto, double profundidad) {
+         this.ancho = ancho;
+         this.alto = alto;
+         this.profundidad = profundidad;
+       }
+       </pre>
+      <br>
+      <p>La utilización de <strong>this</strong> en dicho contexto puede ser confusa en ocasiones y algunos programadores procuran no utilizar variables locales y nombres de parámetros formales que oculten variables de instancia. Por otro lado, otros programadores piensan que es bueno seguir el convenio de utilizar los mismos nombres por claridad, y utilizar <strong>this</strong> para no ocultar las variables de instancia. Es una cuestión personal decidir que filosofía adoptar. Aunque <strong>this</strong> no tiene un valor significativo hasta ahora, es muy útil en ciertas ocasiones. </p>
+      <br>
+     <p><a href="PrismaDemo.java">Programa PrismaDemo.</a> Este es un programa sin this.</p> <p><a href="PrismaDemo1.java">Programa PrismaDemo1.</a> Los programas PrismaDemo y PrismaDemo1, demuestran que this es redundante.</p> 
+<p><a href="PrismaDemo3.java">Programa PrismaDemo3.</a> Es un programa que no usa this, y no se puede acceder a las variables de instancia ancho, alto y profundidad.</p>
+<p><a href="PrismaDemo2.java">Programa PrismaDemo2.</a> Es un programa que usa la misma variable de instancia con this.</p>
+      <br>
+      <p class="cita"><cite>Java manual de referencia, Patrick Naughton y Herbert Schildt, Pág. 132</cite></p>
+      <br>
+      <p>La palabra clave <strong>this</strong> es el nombre de una referencia que se refiere a un objeto que se llama a sí mismo. Uno de sus usos comunes es hacer referencia a los campos de datos ocultos de una clase. Por ejemplo, el nombre de un campo de datos es
+a menudo el que se utiliza como nombre de parámetro en un método establecido para el campo de datos. En este caso, el campo de datos
+está oculto en el método <strong>set</strong>. Necesita hacer referencia al nombre del campo de datos oculto en el método
+para establecer un nuevo valor. Se puede acceder a una variable estática oculta simplemente usando la referencia <strong>NombreClase.variableStatic</strong>. Se puede acceder a una variable de instancia oculta mediante la utilización de la palabra clave <strong>this</strong>, como se muestra a continuación:</p>
+      <br>
+      <pre>
+      public class Fulana {
+        int i = 5;
+        static double k = 0;
+        void setI(int i) {
+          this.i = i;
+        }
+        static void setK(double k) {
+          Fulana.k = k;
+        }
+      }
+      </pre>
+      <br>
+     <p>Se tiene que f1 y f2 son dos objetos de la clase Fulana. Al invocar:</p>
+     <br>
+     <pre>
+     f1.setI(10);
+     </pre>
+     <br>
+     <p>Se ejecuta lo siguiente:</p>
+     <br>
+     <pre>
+     this.i = 10;
+     </pre>
+     <br>
+     <p>Si se invoca:</p>
+     <br>
+     <pre>
+     f2.setI(45);
+     </pre>
+     <br>
+     <p>Se ejecuta lo siguiente:</p>
+     <br>
+     <pre>
+     this.i = 45;
+     </pre>
+     <br>
+     <p>donde<strong>this</strong> se refiere a f2. </p>
+     <br>
+     <p><a href="DemoCirculoC.java">Programa DemoCirculoC.</a> Este programa contiene diferentes accesos a las variables de la clase CirculoC.</p>
+     <br>
+     <p><strong>Código en java.</strong> Se presenta la clase <strong>Circulo</strong> en el siguiente código, el cual es un programa que funciona:</p>
+       <br>
+       <pre>
+       public class Circulo {
+         double radio;
+         double getArea() {
+           return radio * radio * Math.PI;
+         }
+         public static void main(String[] args) {
+           // Crea un circulo con radio 1.0
+           Circulo circulo1 = new Circulo();
+           circulo1.radio = 1;
+           System.out.println("El area del circulo de radio "
+	     + circulo1.radio + " es " + circulo1.getArea());
+           // Crea un circulo con radio 25
+           Circulo circulo2 = new Circulo();
+           circulo2.radio = 25;
+           System.out.println("El area del circulo de radio "
+	      + circulo2.radio + " es " + circulo2.getArea());
+           // Crea un circulo de radio 125
+           Circulo circulo3 = new Circulo();
+           circulo3.radio = 125;
+           System.out.println("El area del circulo de radio "
+	      + circulo3.radio + " es " + circulo3.getArea());
+           // Modifica el radio del circulo
+           circulo2.radio = 100;
+           System.out.println("El area del circulo de radio "
+	      + circulo2.radio + " es " + circulo2.getArea() );
+         }
+       }
+       </pre>
+       <br>
+
+
+     <p class="cita"><cite>Introduction to Java programing, Y. Daniel Liang, Pág. 346</cite></p>
+       <br>
+       <p>Las variables locales y sus reglas de ámbito. Las variables locales son
+declaradas y se utilizan dentro de un método. Las reglas de ámbito de todas las
+variables en el contexto de una clase.
+Las variables de instancia y estáticas de una clase se denominan variables o campos de datos de la clase.
+Una variable definida dentro de un método se denomina variable local. El ámbito de una variable de clase es la clase completa, independientemente de dónde se declaren las variables. Las variables de una clase
+y los métodos pueden aparecer en cualquier orden en la clase. La excepción es
+cuando un campo de datos se inicializa basándose en una referencia a otro campo de datos. En tales casos, el
+otro campo de datos debe declararse primero. Por coherencia, los campos de datos se declaran al comienzo de la clase.</p>
+      <br>
+        <p class="cita"><cite>Introduction to Java programing, Y. Daniel Liang, Pág. 345</cite></p>
+       <br>
+       
+      <h3>Ejemplo de código de clases</h3>
+      <hr>
+     <p><strong>Usar los siguientes nombres de clases.</strong> Estudiante, Trabajador, Circulo y Raton.</p>
+      <br>
+      
+      <p>La clase contiene campos de datos, métodos, Constructores e interfaces.</p>
+      <br>
+      <p><strong>Código en java.</strong> Se presenta la clase <strong>Estudiante</strong> en el siguiente código:</p>
+       <br>
+       <pre>
+       public class Estudiante {
+         String nombre; // nombre tiene valor null
+         int edad; // edad
+         boolean estudianteMaestria; // estudiante de maestria
+         char genero; // h hombre, m mujer
+         String getNombre(String nombre) {
+           return nombre;
+         }
+       }
+       </pre>
+       <br>
+       <p><strong>Código en java.</strong> Se presenta la clase <strong>Raton</strong> en el siguiente código:</p>
+       <br>
+       <pre>
+       public class Raton {
+         private int edad = 0; // edad del raton en dias
+         private double peso = 1.0; // peso del raton en gramos
+         private double porcientoCrecimiento; // incremento en dias
+  
+         // Este metodo asigna el porciento de crecimiento del raton.
+         public void setPorcientoCrecimiento(double porcientoCrecimiento) {
+           this.porcientoCrecimiento = porcientoCrecimiento; 
+         } // fin del setPorcientoCrecimiento
+  
+        // Este metodo simula un dia de crecimiento del raton.
+        public void crecer() {
+          this.peso += (.01 * this.porcientoCrecimiento * this.peso); 
+          this.edad++;
+        } // fin crecer
+  
+        // Este metodo imprime la edad del raton y su peso.
+        public void desplegar() {
+          System.out.printf("Edad = %d, peso = %.3f\n",
+          this.edad, this.peso);
+        } // fin desplegar
+      } // fin clase Raton
+       </pre>
+       <br>
+      <p><a href="RatonD1.java">Programa RatonD1.</a> Este programa contiene el uso de this redundante en la clase Raton.</p>
+     <br> 
+      <p><a href="RatonD.java">Programa RatonD.</a> Este programa contiene el uso de this en la clase Raton.</p>
+     <br> 
+</article>
+<br>
+<br>
+     
+      <article>
+       
+        
+     <h3>Ejemplo de código de objetos</h3>
+      <hr>
+      <br>
+      <p>Sin inicialización para la variable de instancia <strong>porcientoCrecimiento</strong>, ¿cómo puede configurar el crecimiento para un objeto <strong>raton</strong>? Puede hacer que el objeto <strong>raton</strong> llame al método <strong>setPorcientoCrecimiento</strong>
+con un valor de tasa de crecimiento como argumento. Por ejemplo, así es como un objeto <strong>raton</strong> puede establecer su tasa de crecimiento en
+10 (por ciento):</p>
+    <br>
+    <p><strong>Código en java.</strong> Se presenta la forma de invocar al objeto <strong>raton</strong> en su método <strong>porcientoCrecimiento</strong>:</p>
+     <br>
+     <pre>
+    setPorcientoCrecimiento(10);
+     </pre>
+     <br>
+     <p>Los valores entre paréntesis de una llamada a un método se denominan argumentos.
+Por tanto, en el ejemplo anterior, 10 es un argumento. El 10 se pasa a la variable <strong>porcientoCrecimiento</strong>
+en el encabezado de <strong>setPorcientoCrecimiento</strong>. Las variables entre paréntesis de un encabezado de método se denominan
+parámetros. Por lo tanto, en el <strong>programa Raton</strong> se muestra, <strong>porcientoCrecimiento</strong> el cuál es un parámetro. Dentro de <strong>setPorcientoCrecimiento</strong> cuerpo del método (el código entre las llaves de apertura y cierre del método), el parámetro <strong>porcientoCrecimiento</strong> se asigna a la variable de instancia <strong>porcientoCrecimiento</strong>. Aquí está la declaración de asignación correspondiente:</p>
+     <br>
+      <p><strong>Código en java.</strong> Se presenta la forma de hacer la declaración y asignación del valor:</p>
+     <br>
+     <pre>
+     this.porcientoCrecimiento = porcientoCrecimiento;
+     </pre>
+     <br>
+    <p><strong>Código en java.</strong> Se presenta la forma de crear a los objetos <strong>jaq y gus</strong> y asignarles el valor, con el siguiente código:</p>
+    <br>
+    <pre>
+     Raton gus = new Raton();
+     Raton jaq = new Raton();
+
+     gus.crecer();
+     jaq.crecer();
+     gus.desplegar();
+     jaq.desplegar();
+     </pre>
+     <br>
+    <p class="cita"><cite>Introduction to programming with java: A problem solving approach, John Dean and Raymond Dean, Pág. 204</cite></p>
+    <br>
+     </article>
+    </section>
+      <aside>
+      <h1>Resumen</h1>
+     <hr>
+     <p>La clase contiene los elementos.</p>
+     <br>
+     <ol><li>Campos de datos.</li> <li>Métodos (Contiene get y set).</li> <li>Constructores.</li> <li>Interfaces.</li></ol>
+    <br>
+    <p>Sólamente trataremos los campos de datos y los métodos.</p>
+     <br>
+     <hr> 
+     <h1>Características buenas de this</h1>
+        <hr>
+        <p><strong>Característica 1.</strong> Oculta las variables de instancia.</p>
+      <br>
+       <p><strong>Característica 2.</strong> Resuelve cualquier colisión de nombres de variables de instancia.</p>
+      <br>
+      <p><strong>Característica 3.</strong> Habilita a un constructor para invocar a otro constructor de la misma clase.</p>
+      <br>
+      <hr>
+     <h1>Características malas de this</h1>
+        <hr>
+        <p><strong>Característica 1.</strong> Es redundante con los nombres de las variables de instancias.</p>
+       <br>
+       
+     <!--   <hr>
+     <h1>Dudas surgidas clase anterior</h1>
+        <hr>
+        <br>
+        <p><a href="ALex.html">Aclaración del this.</a></p>-->
+        </aside>
+      <footer><p>Clases y objetos: Tema extra 2.1.1</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

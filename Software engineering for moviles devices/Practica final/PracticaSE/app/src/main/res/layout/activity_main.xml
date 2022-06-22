@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu nombre"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/xet"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:hint="Tu nombre aqui"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/xbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Aceptar"
+        android:textSize="18dp"/>
+
+</LinearLayout>

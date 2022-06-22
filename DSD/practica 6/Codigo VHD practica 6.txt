@@ -1,0 +1,73 @@
+LIBRARY IEEE;
+
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY pract6 IS
+
+	PORT( clk, clear, X : IN STD_LOGIC;
+		Q : OUT STD_LOGIC_VECTOR(6 downto 0));    	
+
+END pract6;
+
+ARCHITECTURE behavior OF pract6 IS
+	
+	TYPE estado IS (A, B, C, D, E);
+	SIGNAL actual, siguiente: estado;
+	
+BEGIN
+	PROCESS (clk, clear)
+		BEGIN
+			IF (clear = '1') THEN
+				actual <= A;
+			ELSIF ((clk'EVENT) AND (clk = '1')) THEN			
+				actual <= siguiente;
+			END IF;	
+	END PROCESS;
+	
+	PROCESS (actual, X)
+		BEGIN
+			CASE actual IS
+				WHEN A =>
+					IF (X = '1')THEN
+						Q <= "1001111";
+						siguiente <= B;
+					ELSE
+						Q <= "1001111";
+						siguiente <= A;
+					END IF;
+				WHEN B =>
+					IF (X = '1')THEN
+						Q <= "1001111";
+						siguiente <= C;
+					ELSE
+						Q <= "1001111";
+						siguiente <= A;
+					END IF;
+				WHEN C =>
+					IF (X = '1')THEN
+						Q <= "1001111";
+						siguiente <= C;
+					ELSE
+						Q <= "1001111";
+						siguiente <= D;
+					END IF;
+				WHEN D =>
+					IF (X = '1')THEN
+						Q <= "1110111";
+						siguiente <= E;
+					ELSE
+						Q <= "1001111";
+						siguiente <= A;
+					END IF;
+				WHEN E =>
+					IF (X = '1')THEN
+						Q <= "1001111";
+						siguiente <= B;
+					ELSE
+						Q <= "1001111";
+						siguiente <= A;
+					END IF;
+			END CASE;
+	END PROCESS;
+
+END behavior;

@@ -1,0 +1,441 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Constructores y destructores</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 2</header>
+ <nav>
+    <!--<div class="contenedor">-->
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+
+      <p class="derecha"><a href="TemarioPOO.html">Classroom</a></p>
+      <p><a href="TemarioPOO.html">Temario</a></p>
+      <p><a href="41EnlacesPrac.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="41EnlacesHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">CONTRUCTORES Y DESTRUCTORES</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>Constructores</h1>
+       <hr>
+       <p><strong>Métodos descriptores de acceso.</strong> Un descriptor de acceso es un método que recupera parte de los datos almacenados de un objeto, generalmente datos privados. Nota que los siguietes métodos getEdad y getPeso (tomados de la clase <a href="Raton2.java">Raton2</a>). Son descriptores de acceso, métodos que a medida recuperan los valores de las variables de instancia, edad y peso, respectivamente.</p>
+       <br>
+       <pre>
+        public int getEdad() {
+          return this.edad;
+        } // fin getEdad
+        public double getPeso() {
+          return this.peso;
+        } // fin getPeso
+       </pre>
+       <br>
+       <p>Como lo demuestran los métodos getAge y getWeight, los métodos de acceso deben nombrarse con un prefijo <strong>get</strong>. Es por eso que los métodos de acceso a menudo se denominan métodos <strong>get</strong>. Un método debe realizar una tarea. Debe escribirse de tal manera que solo logre una cosa
+que su nombre implica. Por ejemplo, un método <strong>getEdad</strong> simplemente debería devolver el valor de la variable de instancia de edad de su objeto y no hacer nada más. Mencionamos esta noción porque a veces existe la tentación de proporcionar
+funcionalidad adicional a un método para evitar tener que implementar esa funcionalidad en otro lugar. Uno particularmente el paso en falso común (un término francés que significa error en la etiqueta) es agregar declaraciones impresas a un método que
+no necesita imprimir. Por ejemplo, un programador novato podría implementar el método <strong>getEdad</strong> como este:</p>
+       <br>
+       <pre>
+       public int getEdad() {
+         System.out.println("Edad = " + this.edad);
+         return this.edad;
+       } // fin getEdad
+       </pre>
+       <br>
+       <p>Ese método <strong>getEdad</strong> podría funcionar bien para el programador novato, que tiene en cuenta la declaración de impresión no estándar del método <strong>getEdad</strong>. Pero si luego otro programador necesita trabajar con el
+programa y llama al método <strong>getEdad</strong>, el nuevo programador se sorprendería al encontrar la declaración no estándar de impresión. El nuevo programador tendría que (1) adaptarse a la declaración de impresión o
+(2) elimínar del método <strong>getEdad</strong> y verificar cualquier efecto dominó. Para evitar ese escenario, deber
+incluir declaraciones de impresión en un método solo si el propósito del método es imprimir algo.
+La excepción a la regla anterior es que es aceptable y útil agregar temporalmente declaraciones de impresión a los métodos cuando se intenta depurar un programa. Por ejemplo, si cree que hay algún problema con su método <strong>getEdad</strong>, es posible que desee agregar la declaración de impresión anterior sobre la exactitud del valor de edad justo antes de que <strong>getEdad</strong> lo devuelva. Si agrega tales declaraciones de impresión de depuración, no olvide eliminarlas más adelante, una vez que su programa esté funcionando.</p>
+       <br>
+       <p><strong>Definición de métodos mutadores.</strong> Un mutador es un método que cambia o <strong>muta</strong> el estado de un objeto al cambiar algunos o todos los
+datos almacenados, normalmente datos privados. Por ejemplo, aquí está el método mutador para establecer o cambiar un
+<strong>variable de instancia percientoRelacionCrecimiento</strong> del <strong>raton</strong>:</p>
+       <br>
+       <pre>
+       public void setPorcientoRelacionCrecimiento(double porcientoRelacionCrecimiento) {
+         this.porcientoRelacionCrecimiento = porcientoRelacionCrecimiento;
+       } // fin setPorcientoRelacionCrecimiento
+       </pre>
+       <br>
+       <p>Como lo demuestra el método <strong>setPorcientoRelacionCrecimiento</strong>, los métodos mutadores deben nombrarse con un prefijo <strong>set</strong>. Es por eso que los métodos mutantes a menudo se denominan métodos establecidos.
+Un descriptor de acceso le permite leer una variable de instancia privada. Un mutador te permite actualizar un
+variable de instancia. Si proporciona una variable de instancia privada con un descriptor de acceso y un mutador simple al igual que el método <strong>setPorcientoRelacionCrecimiento</strong> anterior, convierte efectivamente esa variable de instancia privada en una variable de instancia pública, y rompe la encapsulación de esa variable. Existe el peligro de tener un descriptor de acceso solo, pero tener un simple mutador permite que un forastero ingrese a un valor irrazonable que puede producir una operación errática del programa. Sin embargo, si incluye la verificación de restricciones y quizás la corrección de código en sus mutadores, estos pueden servir como filtros de datos que asignan solo los datos adecuados a sus variables de instancia privadas. Por ejemplo, aquí hay que establecer el mutador <strong>porcientoRelacionCrecimiento</strong> que filtra las tasas de crecimiento inferiores al 100%:</p>
+       <br>
+       <pre>
+       public void setPorcientoRelacionCrecimiento(double porcientoRelacionCrecimiento) {
+         if (porcientoRelacionCreciemiento < -100) {
+           System.out.println("Intente asignar una tasa de crecimiento no válida.");
+         }
+         else {
+           this.porcientoRelacionCrecimiento = porcientoRelacionCrecimiento;
+         }
+       } // fin setPorcientoRelacionCrecimiento
+       </pre>
+       <br>
+       <p><strong>Definición de métodos binarios.</strong> Un método booleano comprueba si alguna condición es verdadera o falsa. Si la condición es verdadera, entonces verdadero
+es regresado. Si la condición es falsa, se devuelve falso. Para acomodar el valor devuelto booleano, los métodos booleanos siempre deben especificar un tipo de retorno booleano. Un nombre de método booleano normalmente debería
+empezar con <strong>es</strong>. Por ejemplo, aquí hay un método <strong>esAdolecente</strong> que determina si un objeto <strong>Raton</strong> es un adolescente comparando su valor de edad con 100 días:</p>
+       <br>
+       <pre>
+       public boolean esAdolecente() {
+         if (this.edad <= 100) {
+           return true;
+         }
+         else {
+           return false;
+         }
+        } // fin esAdolecente
+       </pre>
+       <br>
+       <p>Así es como se puede abreviar este código:</p>
+       <br>
+       <pre>
+       public boolean esAdolecente() {
+         return this.edad <= 100;
+       } // fin esAdolecente
+       </pre>
+       <br>
+       <p>Para mostrar cómo funciona el método abreviado, ingresaremos valores de muestra. Pero primero, establezcamos el objetivo: siempre que la edad sea menor o igual a 100, queremos que el método devuelva verdadero para indicar la adolescencia. Si la edad es 50, ¿qué se devuelve? Verdadero (porque la expresión de la declaración de retorno de esta edad <= 100 se evalúa como verdadera). Si la edad es 102, ¿qué se devuelve? falso (porque la declaración de devolución es la expresión edad <= 100 se evalúa como falsa). Ingrese cualquier número para la edad y verá que La función abreviada funciona correctamente. En otras palabras, el método abreviado <strong>esAdolecente</strong> no
+de hecho devuelve verdadero siempre que la edad sea menor o igual a 100.</p>
+       <br>
+       <p>¿Le molesta la falta de paréntesis alrededor de la expresión devuelta de la declaración de devolución? Con
+declaraciones que usan una condición (declaración if, declaración while, etc.), la condición debe estar rodeada por
+paréntesis. Con la expresión devuelta de la declaración de retorno, los paréntesis son opcionales. Usted lo verá
+en ambos sentidos en la industria: a veces se incluyen paréntesis y otras se omiten.
+Así es como se puede usar el método <strong>esAdolecente</strong> en un módulo de llamada:</p>
+       <br>
+       <pre>
+       Raton pinky = new Raton();
+       . . .
+       if (pinky.esAdolecente() == false) {
+         System.out.println("El crecimiento del raton no es grande" + " comenzar simulacion - demasiado viejo.");
+       }
+       </pre>
+       <br>
+       <p>¿Sabe cómo se puede acortar la declaración <strong>if</strong> anterior? Aquí hay un declaración <strong>if</strong> funcional equivalente con una condición mejorada:</p>
+       <br>
+       <pre>
+       if (!pinky.esAdolecente()) {
+         System.out.println("El crecimiento del raton no es grande" + " comenzar simulacion - demasiado viejo.");
+       }
+       </pre>
+       <br>
+      <p>El objetivo es imprimir el mensaje de advertencia si Pinky es mayor (no un adolescente). Si <strong>esAdolecente</strong> regresa
+falso (indica un Pinky antiguo), entonces la condición de la declaración <strong>if</strong> es verdadera (! falso se evalúa como verdadero)
+y el programa imprime el mensaje de advertencia. Por otro lado, si <strong>esAdolecente</strong> devuelve verdadero (indicando un Pinky joven), entonces la condición de la declaración <strong>if</strong> es falsa (! True se evalúa como falso) y el programa omite el mensaje de advertencia.
+Aunque la declaración <strong>if</strong> de la versión abreviada puede ser más difícil de entender inicialmente, los programadores experimentados la preferirían. Siguiendo ese ejemplo, ¡te animamos a que lo uses! en lugar de == falso para similares situaciones.</p>
+       <br>
+       <p class="cita"><cite>Introduction to programming with Java a problem solving Approach, John S. Dean and Raymond H. Dean, Pág. 224-227</cite></p>
+       <br>
+       <p><strong>Definición de constructor.</strong> Hasta este punto, hemos usado mutadores para asignar valores a las variables de instancia en recién objetos instanciados. Eso funciona bien, pero requiere tener y llamar a un mutador para cada variable de instancia. Como alternativa, puede utilizar un único método para inicializar todas las variables de instancia de un objeto lo antes posible
+después de crear ese objeto. Por ejemplo, en la clase <a href="Coche.java">Coche</a>, en lugar de definir tres
+Mutadores, puede definir un único método <strong>initCoche</strong> para inicializar los objetos Coche. Entonces podrías usarlo así:</p>
+       <br>
+       <pre>
+       Coche allexCoche = new Coche();
+       allexCoche.initCoche("Porsche", 2006, "beige");
+       </pre>
+       <br> 
+        <p>La clase <strong>Estudiante</strong> tiene un método para establecer el nombre de un estudiante. Aquí ponemos el nombre
+del estudiante después de crear el objeto. Esto es algo antinatural, dado que cada estudiante tiene
+un nombre, cuando creamos un objeto estudiante, probablemente también sepamos el nombre del estudiante.
+Sería conveniente almacenar el nombre del estudiante en el objeto mientras creamos el objeto estudiante.</p>
+       <br>
+    
+      <p><strong>Definición de constructor.</strong> Un constructor es un método en el sentido de que puede tener un especificador de acceso (como público o privado), un nombre, parámetros y código ejecutable. Sin embargo, los constructores tienen las siguientes diferencias o características especiales: Los constructores no pueden tener un tipo de retorno: ni siquiera vacío.
+Los constructores tienen el mismo nombre que la clase en la que están definidos.
+Los constructores se llaman cuando se crea el objeto.</p>
+     <br>
+   <p><strong>Código en java.</strong> Se muestra a continuación como se implementa un constructor,</p>
+    <br>
+    <pre>
+ public class Estudiante {
+   private String nombre;
+   private String direccion;
+   private double gpa;
+   public Estudiante(String estudianteNombre) {
+     nombre = estudianteNombre;
+   }
+   public void setNombre(String estudianteNombre) {
+     nombre = estudianteNombre;
+   }
+   public void setDireccion(String estudianteDireccion) {
+     direccion = estudianteDireccion;
+   }
+   public String getNombre() {
+     return nombre;
+   }
+   public String getDireccion() {
+     return direccion;
+   }
+   public double getGpa() {
+     return gpa;
+   }
+   public void calcularGPA(Curso nuevoCurso, char grado) {
+     // usar el grado y el curso para actualizar gpa
+   }
+ }
+    </pre>
+    <br>
+    <p><strong>Código en java.</strong> El método que se muestra a continuación es el constructor de la clase Estudiante:</p>
+    <br>
+    <pre>
+    public Estudiante(String estudianteNombre) {
+     nombre = estudianteNombre;
+    }
+    </pre>
+    <br>
+  <p class="cita"><cite>Object-Oriented Analysis
+and Design, Sarnath Ramnath and Brahma Dathan, Pág. 19-20</cite></p>
+     <br>
+    <h3>Ejemplo de código de constructores</h3>
+        <hr>
+       <br>
+       <p><strong>Como ejemplo</strong>, es difícil imaginar a un banco interesado
+en si un cliente es diestro; por lo tanto, el sistema de software no tendrá este atributo.</p>
+       <br>
+       <br>
+      <p>El mecanismo de clases en los lenguajes orientados a objetos proporciona una forma de crear tales objetos.
+Una clase es un diseño que puede reutilizarse tantas veces como desee para crear objetos. Por ejemplo,
+considere un sistema orientado a objetos para una universidad. Hay objetos de estudiantes, objetos de instructor, objetos de miembros del personal, etc. Antes de que se creen tales objetos, creamos clases
+que sirven como planos para estudiantes, instructores, miembros del personal y cursos de la siguiente manera:</p>
+    <br>
+    <br>
+    <p><strong>Código en java.</strong> El siguiente código es un ejemplo del uso de atributos:</p>
+    <br>
+     <pre>
+ public class Estudiante {
+ // codigo para implemtar un estudiante
+ }
+ public class Instructor {
+ // codigo para implementar un instructor
+ }
+ public class miembroPersonal {
+ // codigo para implementar un miembro del personal
+ }
+ public class Curso {
+ // codigo para implementar un curso
+ }
+ </pre>
+   <br>
+   <br>
+   <p>Antes de ver cómo poner los detalles de la clase, veamos cómo crear objetos.
+usando estas clases. El proceso de creación de un objeto también se denomina <strong>instanciación</strong>. Cada
+class introduce un nuevo nombre de tipo. Por lo tanto, estudiante, instructor, miembro del personal y los cursos son los tipos que hemos introducido.</p>
+   <br>
+   <br>
+   <p><strong>Código en java.</strong> El siguiente código <strong>instancia</strong> un nuevo objeto del tipo Estudiante:</p>
+  <br>
+    <pre>
+ new Estudiante();
+   </pre>
+   <br>
+<p><strong>Código en java.</strong> El siguiente código crea una variable del tipo Estudiante:</p>
+  <br>
+    <pre>
+ estudiante Jorge;
+   </pre>
+   <br>
+   <p><strong>Código en java.</strong> El constructor es invocado con el uso del operador <strong>new</strong> cuando un objeto es creado. Los constructores tienen el papel de inicializar los objetos. En el siguiente código se crea un objeto círculo con parámetro 25:</p>
+   <br>
+   <pre>
+  new Circulo(25);
+   </pre>
+   <br>
+  <p><strong>Código en java.</strong> La diferencia entre un método y un constructor, es cuando se coloca <strong>void</strong>. El siguiente código es un método:</p>
+   <br>
+   <pre>
+  public void Circulo() {
+  }
+   </pre>
+   <br>
+<p class="cita"><cite>Object-Oriented Analysis
+and Design, Sarnath Ramnath and Brahma Dathan, Pág. 13-14</cite></p>
+     <br>
+     <br>
+       <hr>
+       <h1>Destructores</h1>
+       <hr>
+       <p><strong>Definición de destructor.</strong> En C++ se permite definir un destructor para una clase que será llamado cuando un objeto se va fuera de ámbito. Java no contempla esta idea ni proporciona destructores. El método <strong>finalize()</strong> sólo es una aproximación a la función de un destructor. En java la necesidad de un constructor es mínima gracias al sistema de recogida de basura.</p>
+   <br>
+   <p class="cita"><cite>Java manual de referencia, Patrick Naughton y Herbert Schildt, Pág. 134</cite></p>
+   <br>
+   <p><strong>Definición de finally.</strong> Al implementar un controlador de excepciones, a veces se quiere proporcionar "código de limpieza" que se ejecuta
+independientemente de si se lanza una excepción. Suponga que abre un archivo e intenta escribir en él. La operación puede producir una excepción o no. De cualquier manera, debe cerrar el archivo cuando haya terminado. Si se te olvida cerrar el archivo, entonces los recursos del sistema permanecen atados dando servicio al archivo abierto, y eso hace que el rendimiento del sistema se degrade. Cerrar un archivo es un ejemplo de código de limpieza. Si maneja la limpieza localmente (por ejemplo, las operaciones de escritura y cierre están en el mismo método), entonces la limpieza es sencilla. Solo el código de limpieza debajo de los bloques <strong>try</strong> y <strong>catch</strong>, y la JVM lo ejecuta independientemente de si se lanza una excepción. Pero si transfiere el trabajo de manejo de excepciones con una cláusula <strong>throws</strong>, la limpieza es
+un poco más involucrada.
+Si maneja una excepción con una cláusula <strong>throws</strong> y necesita proporcionar un código de limpieza independientemente de si se lanza una excepción, use un bloque <strong>finally</strong>. Un bloque <strong>finally</strong> está asociado con un
+bloque <strong>try</strong>, como tal, debe colocarse inmediatamente después de un bloque <strong>try</strong>. Si la JVM lanza una excepción
+dentro del bloque <strong>try</strong>, la JVM salta inmediatamente al bloque <strong>finally</strong>, lo ejecuta y luego lanza la excepción de nuevo al módulo de llamada. Si la JVM no lanza una excepción dentro del bloque <strong>try</strong>, el
+JVM finaliza el bloque <strong>try</strong> y luego ejecuta el bloque <strong>finally</strong>.
+El método <strong>writeToFile</strong> de la figura 14.17 ilustra el bloque <strong>finally</strong>. El método abre un archivo
+y escribe un mensaje de prueba en el archivo. Específicamente, la llamada al constructor <strong>PrintWriter</strong> abre un archivo llamado
+<strong>testFile.txt</strong>. La llamada <strong>fileOut.printf</strong> escribe <strong>Esto es una prueba</strong> del archivo abierto. Entonces el archivo es
+cerrado por <strong>fileOut.close</strong>. Dado que la llamada <strong>fileOut.close</strong> está dentro de un bloque <strong>finally</strong>, se ejecuta
+independientemente de si se lanza una excepción.</p>
+   <br>
+   <p><strong>Código en java.</strong> Un ejemplo del uso de finally:</p>
+   <br>
+  <pre>
+    import java.util.Scanner;
+
+    public class ListaEstudiantes2Driver {
+      public static void main(String[] args) {
+        Scanner estIn = new Scanner(System.in);
+        String[] nombres = {"Caleb", "Izumi", "Mary", "Usha"};
+        ListaEstudiantes2 estudianteLista = new StudentList2(nombres);
+        int indice;
+        boolean reentrar;
+        ListaEstudiantes.display();
+        do {
+         System.out.print("Escribir indice de estudiante para quitar: ");
+         indice = stdIn.nextInt();
+         try {
+           System.out.println(
+             "quitado " + listaEstudiantes.removerEstudiante(indice));
+           reentrar = false;
+         }
+         catch(IndiceDeSalidaBoundsException e) {
+           System.out.print("Entarda Invalida. ");
+           reenter = true;
+         }
+        } while(reentrar);
+        listaEstudiantes.display();
+      } // fin main
+    } // fin ListaEstudiantes2Driver
+  </pre>
+  <br>
+  <pre>
+   public void escribirEnArchivo() throws IOExcepcion {
+     PrintWriter archivoSalida = new PrintWriter("testFile.txt");
+     try{
+       fileOut.printf("%s", "Esto es una prueba.");
+     }
+     finally {
+       fileOut.close();
+     }
+   } // fin escribirEnArchivo
+  </pre>
+  <br>
+  <p class="cita"><cite>Introduction to programming with Java a problem solving Approach, John S. Dean and Raymond H. Dean, Pág. 582-584</cite></p>
+  <br>
+  <p><strong>Definición de final.</strong> En ocasiones, es posible que desee evitar que las clases se extiendan. En tales casos, utilice el
+modificador final para indicar que una clase es final y no puede ser una clase principal. La clase de matemáticas es
+una clase final. Las clases String, StringBuilder y StringBuffer también son clases finales. Por ejemplo, la siguiente clase es definitiva y no se puede ampliar:</p>
+  <br>
+  <pre>
+    public final class C {
+     // Campos de Datos, constructores, y metodos omitidos
+    }
+  </pre>
+   <br>
+   <p>También puede definir un método para que sea definitivo; un método final no puede ser anulado por sus subclases.
+Por ejemplo, el siguiente método es definitivo y no se puede anular:</p>
+     <br>
+     <pre>
+     public class Test {
+       // Campos de Datos, constructores, y metodos omitidos
+       public final void m() {
+       // Hacer algo
+       }
+     }
+     </pre>
+     <br>
+     <p><strong>Definición de modificadores.</strong> Los modificadores se utilizan en clases y miembros de clase (constructores, métodos, datos y nivel de clase
+blocks), pero el modificador final también se puede usar en variables locales en un método. Un modificador que
+se puede aplicar a una clase se llama modificador de clase. Un modificador que se puede aplicar a un método.
+se llama modificador de método. Un modificador que se puede aplicar a un campo de datos se denomina modificador de datos. Un modificador que se puede aplicar a un bloque de nivel de clase se denomina modificador de bloque. La siguiente tabla ofrece un resumen de los modificadores de Java.</p>
+  <br>
+     <p>Una clase final no puede ser extendida. Un método final no se puede modificar en un subclase. Un campo de datos final es una constante.      
+     </p>
+      <br>
+     <p class="cita"><cite>Introduction to java programming, Y. Daniel Liang, Págs. 396 y 1316</cite></p>
+      <br>
+  <p><strong>Definición de recolector de basura.</strong> Java tiene un recolector de basura, que recorre todos los objetos que fueron creados con <strong>new</strong> y averigua cuáles no serán referenciados más. Posteriormente, libera la memoria de los que han dejado de ser referenciados, de forma que la memoria pueda ser utilizada por otros objetos.</p>
+       <br>
+      <p><strong>Código en java.</strong> En el siguiente ejemplo, observe cómo se usa el método finalize():</p>
+       <br>
+       <pre>
+     protected void finalize() {
+       //código de finalización
+     }
+       </pre>
+       <br>
+  
+     <pre>
+     paymentInDollars = Math.round(calculatedEarnings);
+     </pre>
+<p class="cita"><cite>Introduction to programming with Java: A problem solving Approach, John Dean and Raymond Dean, Pág. 152</cite></p>
+       <br>
+        <h3>Ejemplo de código de destructores</h3>
+        <hr>
+         <p><strong>Código en java.</strong> El siguiente código es un ejemplo del vínculo entre el método y la definición del mismo:</p>
+       <br>
+     
+<p class="cita"><cite>Introduction to Java programing, Y. Daniel Liang, Pág. 156</cite></p>
+       <br>
+       </article>
+    </section>
+
+      <aside>
+       <h1>Ejercicios de constructores y destructores</h1>
+        <hr>
+        <br>
+        <p><strong>Atributos.</strong> Construir las clases Estudiante, Instructor, miembroPersonal, Curso. Instancia objetos de cada una de las clases y crea variables de cada objeto.</p>
+     <br>
+      <hr>
+       <p><strong>Métodos.</strong> Construir un programa basado en el ejemplo de métodos. El programa debe contener una clase con dos o tres métodos, que después deben ser invocados usando sobrecarga.</p>
+       <br>
+      <p><strong>Ejercicio.</strong> Utilizar la clase <strong>Circulo</strong> con su constructor para inicializar los objetos:</p>
+       <br>
+       <pre>
+  class Circulo {
+    double radio = 1.0;
+    Circulo() {
+    }
+    Circulo(double radioNuevo) {
+      radio = radioNuevo;
+    }
+    double getArea() {
+      return radio * radio * Math.PI;
+    }
+  }
+       </pre>
+      <p> Los métodos de clase, como las variables de clase, se relacionan con la clase como un todo y no se relacionan con objetos individuales.
+Como tal, si necesita realizar una tarea que involucre a la clase como un todo, entonces debe implementar y
+utilizar un método de clase. Métodos de clase definidos en la clase Java API Math; por ejemplo,
+Math.round y Math.sqrt. Ahora aprenderá a escribir sus propios métodos de clase. Métodos de clase
+a menudo acceden a variables de clase, y al escribir sus propios métodos de clase, tendrá la oportunidad de ver cómo
+acceder a las variables de clase que ha definido.</p>
+      <br>
+     <p class="cita"><cite>Introduction to Java programing, Y. Daniel Liang, Pág. 265</cite></p>
+
+
+       <p><a href="Coche4Driver.java">Programa de coche.</a></p>
+       <p><a href="FraccionDriver.java">Programa fracción.</a></p>
+       <p><a href="PrismaDemo2.java">Programa prisma.</a></p>
+ <!--    <hr>
+     <h1>Práctica 4 (la correspondiente)</h1>
+        <hr>
+        <br>
+        <p>Realizar la siguiente prácticas presentarlas en un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p>
+      
+      <br>
+     <hr>
+     <h1>Realizar el proyecto (parcial 1)</h1>
+        <hr>
+        <br>
+        <p>Presentar el proyecto por medio de un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p> -->
+        </aside>
+      <footer><p>Clases y objetos: Tema 2.1.2</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

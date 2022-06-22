@@ -1,0 +1,6 @@
+#Start recording tcl command: 2/24/2022 08:32:04
+#Project Location: C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/04-adder4bitLib00; Project name: adder4bitLib00
+prj_project new -name "adder4bitLib00" -impl "adder4bitLib0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/04-adder4bitLib00/adder4bitLib00.vhdl"
+#Stop recording: 2/24/2022 09:33:02

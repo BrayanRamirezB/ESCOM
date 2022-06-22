@@ -1,0 +1,5 @@
+#Start recording tcl command: 3/10/2022 08:41:38
+#Project Location: C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/07-oscint00; Project name: oscint00
+prj_project open "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/07-oscint00/oscint00.ldf"
+prj_project close
+#Stop recording: 3/10/2022 08:46:42

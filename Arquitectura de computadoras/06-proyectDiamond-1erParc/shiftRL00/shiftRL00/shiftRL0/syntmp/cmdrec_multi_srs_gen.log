@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  shiftRL  -multisrs  C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\shiftRL0\synwork\shiftRL00_shiftRL0_comp.srs  -osyn  C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\shiftRL0\synwork\shiftRL00_shiftRL0_mult.srs  -log  C:\Users\ESCOM\Documents\AC\2P\shiftRL00\shiftRL00\shiftRL0\synlog\shiftRL00_shiftRL0_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top shiftRL -multisrs ..\synwork\shiftRL00_shiftRL0_comp.srs -osyn ..\synwork\shiftRL00_shiftRL0_mult.srs -log ..\synlog\shiftRL00_shiftRL0_multi_srs_gen.srr
+rc:0 success:1 runtime:2
+file:..\synwork\shiftRL00_shiftRL0_comp.srs|io:i|time:1634847630|size:8222|exec:0|csum:9E6F57EC55559D1CF38E62A94C630F50
+file:..\synwork\shiftRL00_shiftRL0_mult.srs|io:o|time:1634847634|size:2431|exec:0|csum:
+file:..\synlog\shiftRL00_shiftRL0_multi_srs_gen.srr|io:o|time:1634847634|size:1162|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1603984722|size:8875008|exec:1|csum:43373AFF0ED6BCEB26CB4B4947B972DD

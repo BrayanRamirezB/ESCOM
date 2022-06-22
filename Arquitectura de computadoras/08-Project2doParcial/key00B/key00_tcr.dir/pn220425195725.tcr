@@ -1,0 +1,11 @@
+#Start recording tcl command: 4/25/2022 19:15:52
+#Project Location: C:/Users/braya/Downloads/Arquitectura de computadoras/Pruebas/GELACIO_ARQUITECTURA/Practicas 2do Parcial/PRACTICAS 2DO PARCIAL/key00B; Project name: key00
+prj_project open "C:/Users/braya/Downloads/Arquitectura de computadoras/Pruebas/GELACIO_ARQUITECTURA/Practicas 2do Parcial/PRACTICAS 2DO PARCIAL/key00B/key00.ldf"
+pgr_project open "C:/Users/braya/Downloads/Arquitectura de computadoras/Pruebas/GELACIO_ARQUITECTURA/Practicas 2do Parcial/PRACTICAS 2DO PARCIAL/key00B/key0/key0.xcf"
+pgr_program run
+pgr_project save "C:/Users/braya/Downloads/Arquitectura de computadoras/Pruebas/GELACIO_ARQUITECTURA/Practicas 2do Parcial/PRACTICAS 2DO PARCIAL/key00B/key0/key0.xcf"
+prj_run Export -impl key0 -task Jedecgen
+pgr_program run
+pgr_project save "C:/Users/braya/Downloads/Arquitectura de computadoras/Pruebas/GELACIO_ARQUITECTURA/Practicas 2do Parcial/PRACTICAS 2DO PARCIAL/key00B/key0/key0.xcf"
+pgr_project close
+#Stop recording: 4/25/2022 19:57:25

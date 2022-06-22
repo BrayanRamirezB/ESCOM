@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/6/2022 16:19:24
+#Project Location: C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00; Project name: pipeline00
+prj_project open "C:/Users/migue/OneDrive/Documentos/ADC/03-3CM12-3erParcial/01-Practicas/04-pipeline00/pipeline00.ldf"
+pgr_project close
+#Stop recording: 6/6/2022 16:19:47

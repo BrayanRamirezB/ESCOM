@@ -1,0 +1,17 @@
+@P:  Worst Slack : 466.436
+@P:  div00|oscout_derived_clock - Estimated Frequency : 324.7 MHz
+@P:  div00|oscout_derived_clock - Requested Frequency : 2.1 MHz
+@P:  div00|oscout_derived_clock - Estimated Period : 3.079
+@P:  div00|oscout_derived_clock - Requested Period : 480.769
+@P:  div00|oscout_derived_clock - Slack : 955.380
+@P:  oscint00|osc_int_inferred_clock - Estimated Frequency : 69.8 MHz
+@P:  oscint00|osc_int_inferred_clock - Requested Frequency : 2.1 MHz
+@P:  oscint00|osc_int_inferred_clock - Estimated Period : 14.333
+@P:  oscint00|osc_int_inferred_clock - Requested Period : 480.769
+@P:  oscint00|osc_int_inferred_clock - Slack : 466.436
+@P:  Total Area : 87.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:07s

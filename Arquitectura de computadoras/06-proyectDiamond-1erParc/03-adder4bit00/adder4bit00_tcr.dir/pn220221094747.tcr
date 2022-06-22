@@ -1,0 +1,5 @@
+#Start recording tcl command: 2/21/2022 09:19:38
+#Project Location: C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/03-adder4bit00; Project name: adder4bit00
+prj_project open "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/03-adder4bit00/adder4bit00.ldf"
+prj_src add "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/03-adder4bit00/fa00.vhdl"
+#Stop recording: 2/21/2022 09:47:47

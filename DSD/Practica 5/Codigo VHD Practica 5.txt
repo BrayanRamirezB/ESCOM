@@ -1,0 +1,54 @@
+LIBRARY IEEE;
+
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY pract5 IS
+
+	PORT( clk, clear, EN : IN STD_LOGIC;
+			Q : OUT STD_LOGIC_VECTOR(5 downto 0));    	
+
+END pract5;
+
+ARCHITECTURE behavior OF pract5 IS
+	
+	SIGNAL Q_aux : STD_LOGIC_VECTOR(3 downto 0);
+	
+BEGIN
+	PROCESS (clk, clear)
+		BEGIN
+			IF (clear = '1') THEN
+				Q <= "001111";
+				Q_aux <= "0000";
+			ELSIF ((clk'EVENT) AND (clk = '1')) THEN			
+				IF (EN  = '0') THEN
+					Q_aux <= Q_aux;
+				ELSIF (EN = '1') THEN
+					Q_aux(3)<= (((NOT Q_aux(3)) AND (Q_aux(2)) AND (Q_aux(1)) AND (Q_aux(0))) AND (NOT Q_aux(3)))
+				 OR ((NOT ((NOT Q_aux(3)) AND (Q_aux(2)) AND (Q_aux(1)) AND (Q_aux(0)))) AND (Q_aux(3)));
+					Q_aux(2)<= ((((NOT Q_aux(3)) AND (Q_aux(0))) OR ((NOT Q_aux(2)) AND (Q_aux(0)))) AND (NOT Q_aux(2)))
+				 OR ((NOT (((NOT Q_aux(3)) AND (Q_aux(0))) OR ((NOT Q_aux(2)) AND (Q_aux(0))))) AND (Q_aux(2)));
+					Q_aux(1)<= ((((NOT Q_aux(2))AND(Q_aux(1))AND(Q_aux(0)))) AND (NOT Q_aux(1))) OR ((NOT (((NOT Q_aux(3))
+				 AND (Q_aux(1)) AND (Q_aux(0))) OR ((Q_aux(3)) AND (NOT Q_aux(1)) AND (NOT Q_aux(0))))) AND (Q_aux(1)));
+					Q_aux(0)<= ((NOT Q_aux(3)) AND (NOT Q_aux(0))) OR ((NOT Q_aux(2)) AND (NOT Q_aux(0)));
+				END IF;
+				
+				CASE Q_aux IS
+					WHEN "0000" => Q <= "001111";
+					WHEN "0001" => Q <= "000010";
+					WHEN "0010" => Q <= "111011";
+					WHEN "0011" => Q <= "011101";
+					WHEN "0100" => Q <= "111011";
+					WHEN "0101" => Q <= "001010";
+					WHEN "0110" => Q <= "000010";
+					WHEN "0111" => Q <= "111011";
+					WHEN "1000" => Q <= "011011";
+					WHEN "1001" => Q <= "000011";
+					WHEN "1010" => Q <= "000010";
+					WHEN "1011" => Q <= "100111";
+					WHEN "1100" => Q <= "100111";
+					WHEN OTHERS => Q <= "000000";
+				END CASE;
+			END IF;	
+	END PROCESS;	
+
+END behavior;

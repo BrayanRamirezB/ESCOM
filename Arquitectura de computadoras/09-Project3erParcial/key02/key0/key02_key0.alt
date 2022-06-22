@@ -1,0 +1,66 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Wed Jun 01 19:56:19 2022 *
+NOTE DESIGN NAME: key02 *
+NOTE DEVICE NAME: LCMXO2-7000HE-5TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS clk0 : 61 : out *
+NOTE PINS cdiv0[0] : 34 : in *
+NOTE PINS out7seg0[6] : 77 : out *
+NOTE PINS out7seg0[5] : 78 : out *
+NOTE PINS out7seg0[4] : 81 : out *
+NOTE PINS out7seg0[3] : 82 : out *
+NOTE PINS out7seg0[2] : 83 : out *
+NOTE PINS out7seg0[1] : 84 : out *
+NOTE PINS out7seg0[0] : 85 : out *
+NOTE PINS outr70[3] : 73 : out *
+NOTE PINS outr70[2] : 74 : out *
+NOTE PINS outr70[1] : 75 : out *
+NOTE PINS outr70[0] : 76 : out *
+NOTE PINS out32lc0[31] : 59 : out *
+NOTE PINS out32lc0[30] : 57 : out *
+NOTE PINS out32lc0[29] : 56 : out *
+NOTE PINS out32lc0[28] : 54 : out *
+NOTE PINS out32lc0[27] : 55 : out *
+NOTE PINS out32lc0[26] : 52 : out *
+NOTE PINS out32lc0[25] : 50 : out *
+NOTE PINS out32lc0[24] : 48 : out *
+NOTE PINS out32lc0[23] : 49 : out *
+NOTE PINS out32lc0[22] : 47 : out *
+NOTE PINS out32lc0[21] : 45 : out *
+NOTE PINS out32lc0[20] : 43 : out *
+NOTE PINS out32lc0[19] : 42 : out *
+NOTE PINS out32lc0[18] : 44 : out *
+NOTE PINS out32lc0[17] : 39 : out *
+NOTE PINS out32lc0[16] : 41 : out *
+NOTE PINS out32lc0[15] : 91 : out *
+NOTE PINS out32lc0[14] : 92 : out *
+NOTE PINS out32lc0[13] : 93 : out *
+NOTE PINS out32lc0[12] : 94 : out *
+NOTE PINS out32lc0[11] : 96 : out *
+NOTE PINS out32lc0[10] : 95 : out *
+NOTE PINS out32lc0[9] : 98 : out *
+NOTE PINS out32lc0[8] : 97 : out *
+NOTE PINS out32lc0[7] : 99 : out *
+NOTE PINS out32lc0[6] : 100 : out *
+NOTE PINS out32lc0[5] : 104 : out *
+NOTE PINS out32lc0[4] : 105 : out *
+NOTE PINS out32lc0[3] : 106 : out *
+NOTE PINS out32lc0[2] : 107 : out *
+NOTE PINS out32lc0[1] : 40 : out *
+NOTE PINS out32lc0[0] : 38 : out *
+NOTE PINS inkey0[3] : 120 : in *
+NOTE PINS inkey0[2] : 115 : in *
+NOTE PINS inkey0[1] : 117 : in *
+NOTE PINS inkey0[0] : 113 : in *
+NOTE PINS outr0[3] : 126 : out *
+NOTE PINS outr0[2] : 121 : out *
+NOTE PINS outr0[1] : 122 : out *
+NOTE PINS outr0[0] : 119 : out *
+NOTE PINS en0 : 1 : in *
+NOTE PINS cdiv0[4] : 27 : in *
+NOTE PINS cdiv0[3] : 33 : in *
+NOTE PINS cdiv0[2] : 32 : in *
+NOTE PINS cdiv0[1] : 35 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			P&aacute;gina con Javascript
+		</title>
+		<script languaje="Javascript">
+			function leerCookie(){
+				alert(document.cookie);
+				variableCookie = unescape(document.cookie);
+				if(variableCookie){
+					matrizValores = variableCookie.split("; ");
+					posicionSigno = matrizValores[0].indexOf ("=");
+					form1.mostrarUsuario.value = unescape(matrizValores[0].substring (posicionSigno+1));
+					posicionSigno = matrizValores[1].indexOf ("=");
+					form1.mostrarCiudad.value = unescape(matrizValores[1].substring (posicionSigno+1));
+				}else{
+					form1.mostrarUsuario.value = "";
+					form1.mostrarCiudad.value = "";
+				}
+
+			}
+			function grabarCookie(){
+				fechaTope = new Date();
+				fechaTope.setDate (fechaTope.getDate () + 60);
+				limite = fechaTope.toGMTString();
+
+				document.cookie = escape("nombre=" + form1.mostrarUsuario.value + "; ciudad="+form1.mostrarCiudad.value+"; expires="+limite);
+				alert(document.cookie);
+			}
+			window.addEventListener("load", leerCookie, false);
+
+		</script>
+	</head>
+	<body onload="leerCookie()">
+		<form name="form1">
+			<b> El usuario actual es:
+			</b> <input type="text" name="mostrarUsuario">
+			<br>
+			<b> Su ciudad de nacimiento es:
+			</b> <input type="text" name="mostrarCiudad">
+			<br>
+			<input type="button" value="Grabar" onClick="grabarCookie();">
+			<input type="button" value="Leer" onClick="leerCookie();">
+		</form>
+	</body>
+</html>

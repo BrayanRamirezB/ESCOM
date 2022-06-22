@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Report>
+<ReportView version="2.0">
+    <Implement name="adder4bitLib0">
+        <ToolReport id="tooldec" path="" status="0"/>
+        <ToolReport id="toolhle_genhierarchy" path="C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/04-adder4bitLib00/adder4bitLib0/hdla_gen_hierarchy.html" status="1"/>
+        <ToolReport id="toolpio" path="" status="0"/>
+        <ToolReport id="toolsso" path="" status="0"/>
+    </Implement>
+</ReportView>

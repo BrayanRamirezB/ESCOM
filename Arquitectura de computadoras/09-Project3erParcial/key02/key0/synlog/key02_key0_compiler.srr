@@ -1,0 +1,163 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : key0
+Synopsys HDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : key0
+Synopsys VHDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+@N:"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\key02.vhdl":8:7:8:11|Top entity is set to key02.
+File C:\lscc\diamond\3.12\synpbase\lib\cpld\lattice.vhd changed - recompiling
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\div00.vhdl changed - recompiling
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\packageosc00.vhdl changed - recompiling
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\contring00.vhdl changed - recompiling
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl changed - recompiling
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl changed - recompiling
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\contring7seg00.vhdl changed - recompiling
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder7seg00.vhdl changed - recompiling
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\packagekey0200.vhdl changed - recompiling
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\osc00.vhdl changed - recompiling
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\key02.vhdl changed - recompiling
+VHDL syntax check successful!
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder7seg00.vhdl changed - recompiling
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\key02.vhdl":8:7:8:11|Synthesizing work.key02.key0.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder7seg00.vhdl":6:7:6:17|Synthesizing work.coder7seg00.coder7seg0.
+Post processing for work.coder7seg00.coder7seg0
+Running optimization stage 1 on coder7seg00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\contring7seg00.vhdl":6:7:6:20|Synthesizing work.contring7seg00.contring7seg0.
+Post processing for work.contring7seg00.contring7seg0
+Running optimization stage 1 on contring7seg00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl":6:7:6:12|Synthesizing work.lect00.lect0.
+@W: CG296 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl":20:9:20:15|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl":22:11:22:20|Referenced variable scontrollc is not in sensitivity list.
+Post processing for work.lect00.lect0
+Running optimization stage 1 on lect00 .......
+@W: CL113 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\lect00.vhdl":22:6:22:9|Feedback mux created for signal out32lc[31:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl":6:7:6:13|Synthesizing work.coder00.coder0.
+@W: CG296 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl":19:13:19:19|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl":25:8:25:10|Referenced variable enc is not in sensitivity list.
+Post processing for work.coder00.coder0
+Running optimization stage 1 on coder00 .......
+@A: CL282 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl":25:3:25:6|Feedback mux created for signal var3. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl":25:3:25:6|Feedback mux created for signal var2. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl":25:3:25:6|Feedback mux created for signal var1. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder00.vhdl":25:3:25:6|Feedback mux created for signal var0. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\contring00.vhdl":6:7:6:16|Synthesizing work.contring00.contring0.
+Post processing for work.contring00.contring0
+Running optimization stage 1 on contring00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\osc00.vhdl":7:7:7:11|Synthesizing work.osc00.osc0.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\div00.vhdl":8:7:8:11|Synthesizing work.div00.div0.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\div00.vhdl":28:3:28:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\div00.vhdl":36:3:36:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\div00.vhdl":44:3:44:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\div00.vhdl":52:3:52:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\div00.vhdl":60:3:60:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\div00.vhdl":68:3:68:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\div00.vhdl":76:3:76:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\div00.vhdl":84:3:84:8|Removing redundant assignment.
+Post processing for work.div00.div0
+Running optimization stage 1 on div00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\VHDLs-Oscilador\oscint00.vhdl":6:7:6:14|Synthesizing work.oscint00.oscint0.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.oscint00.oscint0
+Running optimization stage 1 on oscint00 .......
+Post processing for work.osc00.osc0
+Running optimization stage 1 on osc00 .......
+Post processing for work.key02.key0
+Running optimization stage 1 on key02 .......
+Running optimization stage 2 on oscint00 .......
+Running optimization stage 2 on div00 .......
+Running optimization stage 2 on osc00 .......
+Running optimization stage 2 on contring00 .......
+Running optimization stage 2 on coder00 .......
+Running optimization stage 2 on lect00 .......
+Running optimization stage 2 on contring7seg00 .......
+Running optimization stage 2 on coder7seg00 .......
+@W: CL246 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\coder7seg00.vhdl":9:2:9:8|Input port bits 31 to 16 of in32cr7(31 downto 0) are unused. Assign logic for all port bits or change the input port size.
+Running optimization stage 2 on key02 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\key0\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 98MB peak: 99MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May 28 22:56:24 2022
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : key0
+Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+File C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\key0\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 91MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May 28 22:56:24 2022
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\key0\synwork\key02_key0_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 23MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May 28 22:56:24 2022
+
+###########################################################]

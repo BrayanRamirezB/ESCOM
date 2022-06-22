@@ -1,0 +1,38 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY RU IS 
+	PORT (clk, clear, ES : IN std_logic;
+		OPER : IN std_logic_vector(1 downto 0);
+		D : IN std_logic_vector (6 downto 0);
+		Q : INOUT std_logic_vector (6 downto 0));
+END RU;
+
+ARCHITECTURE behav OF RU IS
+
+BEGIN
+	PROCESS (clk, clear)
+		BEGIN	
+			IF (clear = '1') THEN
+				Q <= "0000000";
+			ELSIF (clk'EVENT) AND (clk = '1') THEN
+				IF (OPER(0) = '0') AND (OPER(1) = '0') THEN
+					Q <= Q;
+				ELSIF (OPER(0) = '1') AND (OPER(1) = '0') THEN
+					Q <= D;
+				ELSIF (OPER(0) = '0') AND (OPER(1) = '1') THEN 
+					FOR i IN 1 TO 6 LOOP
+						Q(i) <= Q(i-1);
+					END LOOP;
+					Q(0) <= ES;
+				ELSIF (OPER(0) = '1') AND (OPER(1) = '1') THEN 
+					FOR i IN 0 TO 5 LOOP
+						Q(i) <= Q(i+1);
+					END LOOP;
+					Q(6) <= ES;
+				END IF;
+			END IF;
+	END PROCESS;
+
+END behav;
+ 

@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Agregación</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 3</header>
+ <nav>
+    <!--<div class="contenedor">-->
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+
+      <p class="derecha"><a href="TemarioPOO.html">Classroom</a></p>
+      <p><a href="TemarioPOO.html">Temario</a></p>
+      <p><a href="41EnlacesPrac.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="41EnlacesHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">AGREGACIÓN</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>Composición y agregación</h1>
+       <hr>
+       <p><strong>Definición de composición.</strong> La composición es en realidad un caso especial de la relación de agregación. Los modelos de agregación tienen una relación y representación de propiedad entre dos objetos. El objeto propietario se denomina objeto de agregación y su clase una clase de agregación. El objeto sujeto es llamado objeto agregado y su clase una clase agregada. Un objeto puede pertenecer a varios otros objetos de agregación. <strong>Si un objeto es exclusivamente
+propiedad de un objeto de agregación, la relación entre ellos se conoce como composición.</strong>
+Por ejemplo, <i>un estudiante tiene un nombre</i> esto es una relación de composición entre la clase Estudiante y la clase Nombre, mientras que <i>un estudiante tiene una dirección</i> es una relación de agregación entre la clase Estudiante y la clase Dirección, ya que una dirección puede ser compartida por varios estudiantes. En UML, un diamante relleno se adjunta a una clase agregada (por ejemplo, Estudiante) para denotar la relación de <strong>composición</strong> con una clase agregada (por ejemplo, Nombre), y un diamante vacío se
+adjunto a una clase de agregación (por ejemplo, Estudiante) para denotar la relación de <strong>agregación</strong> con
+una clase agregada (por ejemplo, Dirección).</p>
+       <br>
+       <p><strong>La clase Nombre es una clase agregada.</strong> La relación con la clase Estudiante es de composición.</p>
+       <br>
+       <pre>
+       public class Nombre {
+       
+       }
+       </pre>
+       <br>
+       <p><strong>La clase Estudiante es una clase de agregación.</strong></p>
+       <br>
+       <pre>
+       public class Estudiante {
+         private Nombre nombre;
+         private Direccion direccion;
+
+       }
+       </pre>
+       <br>
+       <p><strong>La clase Direccion es una clase agregada.</strong> La relación con la clase Estudiante es de agregación.</p>
+       <br>
+       <pre>
+       public class Direccion {
+       
+       }
+       </pre>
+       <br>
+       <p>En una jerarquía de composición (así como en una jerarquía de agregación), la relación entre una clase contenedora y una de sus clases parte se conoce como relación uno a uno. Por ejemplo, cada cuerpo humano tiene un
+cerebro y tiene corazón. Recuerde que con una relación de composición, un componente se limita a solo
+un propietario a la vez. Por ejemplo, un corazón puede estar en un solo cuerpo a la vez. Aunque la propiedad es exclusiva, es posible que la propiedad cambie. Con un trasplante de corazón, un corazón puede cambiar de dueño,
+pero todavía tiene un solo propietario a la vez.</p>
+        <br>
+        
+        <p><strong>Programa 1.</strong></p>
+        <br>
+        <pre>
+        class IndiceDeMasa {
+          private String nombre;
+          private int edad;
+          private double peso; // en libras
+          private double altura; // en pulgadas
+          public static final double KILOGRAMOS_POR_LIBRA = 0.45359237;
+          public static final double METROS_POR_PULGADA = 0.0254;
+          public IndiceDeMasa(String nombre, int edad, double peso, double altura) {
+            this.nombre = nombre;
+            this.edad = edad;
+            this.peso = peso;
+            this.altura = altura;
+          }
+         public IndiceDeMasa(String nombre, double peso, double altura) {
+           this(nombre, 20, peso, altura);
+         }
+         public double getIndiceDeMasa() {
+           double im = peso * KILOGRAMOS_POR_LIBRA /
+           ((altura * METROS_POR_PULGADA) * (altura * METROS_POR_PULGADA));
+           return Math.round(im * 100) / 100.0;
+         }
+         public String getCondicion() {
+           double im = getIndiceDeMasa();
+           if (mi < 16)
+             return "seriamente bajo de peso";
+           else if (im < 18)
+             return "bajo de peso";
+           else if (im < 24)
+             return "normal con el peso";
+           else if (im < 29)
+             return "sobrepeso";
+           else if (im < 35)
+             return "seriamente con sobrepeso";
+           else
+             return "grabemente con sobrepeso";
+         }
+         public String getNombre() {
+           return nombre;
+         }
+         public int getEdad() {
+           return edad;
+         }
+         public double getPeso() {
+           return peso;
+         }
+         public double getAltura() {
+           return altura;
+         }
+       }
+
+        public class IndiceDeMasaDriver {
+          public static void main(String[] args) {
+          IndiceDeMasa im1 = new IndiceDeMasa("Juan Duval", 18, 145, 70);
+          System.out.println("El Indice de masa para " +
+            im1.getNombre() + " es " + im1.getIndiceDeMasa()
+               + " " + im1.getCondicion() );
+          IndiceDeMasa im2 = new IndiceDeMasa("Pedro Reyes", 215, 70);
+          System.out.println("El indice de masa para " +
+            im2.getNombre() + " es " + im2.getIndiceDeMasa()
+              + " " + im2.getCondicion() );
+          }
+        }
+        </pre>
+        <br>
+        <p>Ahora es el momento de pasar de la fase conceptual, con énfasis en el diagrama de clases UML del concesionario, a la fase de implementación, con énfasis en el código del programa <strong>ConcesionarioDriver.java</strong>. Tenga en cuenta el concesionario
+en el <strong>programa 2</strong> y, en particular, observe las variables de instancia de gerente, personal y coche declaradas dentro de la clase Concesionario. Esas declaraciones de variable de instancia implementan el concepto de clase Concesionario que contiene a las otras tres clases. <strong>La regla general es que siempre que tenga una clase que contenga
+otra clase, declare una variable de instancia dentro de la clase contenedora de manera que la variable de instancia haga referencia a uno o más de los objetos de la clase contenida.</strong>
+
+También en la clase Concesionario, se tene en cuenta el uso de ArrayLists para las variables de instancia de personal y coche. Normalmente, si tiene una clase en un diagrama de clases UML con un valor de * multiplicidad, debe usar
+una ArrayList para implementar la referencia a la clase con asterisco. Los ArrayLists son buenos para implementar * valores de multiplicidad porque pueden expandirse para adaptarse a cualquier número de elementos.
+Las clases Coche, Gerente y VentasPersona, simplemente
+almacenan y recuperan datos. Tenga en cuenta la variable de instancia ventasPersona: realiza un seguimiento del total de 
+ventas para un vendedor para el año en curso. No hay métodos para acceder o actualizar la variable de instancia de ventas. Se omiten esos métodos para evitar el desorden de código y mantener el enfoque en el asunto en cuestión,
+agregación y composición. En un programa de concesion de coches real, debe proporcionar esos métodos.
+</p>
+        <br>
+        <p><strong>Programa 2.</strong></p>
+        <br>
+        <pre>
+        import java.util.ArrayList;
+
+        class Concesionario {
+          private String compania;
+          private Gerente gerente;
+          private ArrayList&lt;VentasPersona&gt; personal =
+          new ArrayList&lt;VentasPersona&gt;();
+          private ArrayList&lt;Coche&gt; coches = new ArrayList&lt;Coche&gt;();
+
+          public Concesionario(String compania, Gerente gerente) {
+            this.compania = compania;
+            this.gerente = gerente;
+          }
+
+          public void addCoche(Coche coche) {
+            coches.add(coche);
+          }
+
+          public void addPersona(VentasPersona persona) {
+            personal.add(persona);
+          }
+
+          public void imprimirConcesionario() {
+            System.out.println(compania + "\t" + gerente.getNombre());
+            for (VentasPersona persona : personal)
+              System.out.println(persona.getNombre());
+            for (Coche coche : coches)
+              System.out.println(coche.getHacer());
+          } // fin imprimirConcesionario
+        } // fin de la clase Concesionario
+        
+        class Gerente {
+          private String nombre;
+          public Gerente(String nombre) {
+            this.nombre = nombre;
+          }
+          public String getNombre() {
+            return nombre;
+          }
+        } // fin de la clase Gerente
+
+        class VentasPersona {
+          private String nombre;
+          private double ventas = 0.0; // ventas por dia
+          public VentasPersona(String nombre) {
+            this.nombre = nombre;
+          }
+          public String getNombre() {
+            return nombre;
+          }
+        } // fin de la clase ventasPersona
+
+        class Coche {
+          private String hacer;
+          public Coche(String hacer) {
+            this.hacer = hacer;
+          } 
+          public String getHacer() {
+            return hacer;
+          }
+        } // fin de la clase Coche
+        
+        public class ConcesionarioDriver {
+          public static void main(String[] args) {
+            Gerente ryne = new Gerente("Ryne Mendez");
+            VentasPersona nicole = new VentasPersona("Nicole Betz");
+            VentasPersona vince = new VentasPersona("Vince Sola");
+            Concesionario concesionario = new Concesionario("Coche
+              usado en buen estado", ryne);
+
+            concesionario.addPersona(nicole);
+            concesionario.addPersona(vince);
+            concesionario.addCoche(new Coche("GMC")); 
+            concesionario.addCoche(new Coche("Yugo")); 
+            concesionario.addCoche(new Coche("Dodge")); 
+            concesionario.imprimirCondicion();
+          } // fin de main
+        } // fin de la clase ConsecionarioDriver
+
+      
+        </pre>
+        <br>
+        <p>La agregación es un tipo de asociación en la que el objeto de la clase A está <strong><i>formado por</i></strong> objetos de la clase B. Esto sugiere algún tipo de relación entre A y B.
+Los expertos han minimizado la importancia de este tipo de asociación como algo que no
+merece ser embellecido de cualquier manera. Sin embargo, <strong>la agregación compuesta, también conocida
+como composición</strong>, ha sido reconocido como significativo. La composición implica que cada
+instancia de la parte pertenece a una sola instancia del todo, y que la parte no puede
+existir excepto como parte del todo. La composición se indica con un diamante rellenado y este
+generalmente no se nombra ya que se supone alguna forma de relación entre el todo y la parte. El vértice no puede existir a menos que sea parte de un triángulo. Si el objeto triangular se destruye, también los vértices individuales.</p>
+        <br>
+        <pre>
+        public class A {
+          private B o1;  
+        }
+
+        public class Triangulo {
+          private Vertice vertice;
+        }
+        </pre>
+        <br>
+         <pre>
+        public class B {
+          
+        }
+
+        public class Vertice {
+        
+        }
+        </pre>
+        <br>
+        <p align="center">
+<img src="AsoTriVert.svg" align=center width=100% border=0></p>
+     <br>
+        <p>Una asociación se define formalmente como una relación entre dos o más clases que describen una
+grupo de enlaces con estructura y semántica comunes. Una asociación implica que un objeto
+de una clase está haciendo uso de un objeto de otra clase y se indica simplemente por una línea sólida que conecta los dos iconos de clase. Se define una clase Estudiante
+que realiza un seguimiento de la información sobre los cursos en los que el estudiante se ha registrado. La información se representa como se muestra en la Figura siguiente. En nuestro ejemplo, los objetos Estudiante pueden
+hacer uso de los objetos del curso cuando se generan las inscripciones, cuando se calcula la matrícula
+o cuando se abandona un curso. El enlace al curso proporciona al objeto de estudiante la
+Información necesaria.</p>
+      <br>
+       <p align="center">
+<img src="AsoEstCurso.svg" align=center width=100% border=0></p>
+     <br>
+        <p>Una asociación generalmente da como resultado que se agregue cierta información al sistema, ya que agrega
+un camino que conecta dos objetos. En algunas situaciones agregamos alguna información que califica
+la naturaleza y describe las propiedades de la relación. Fuera del contexto de la asociación, esta información no tiene ninguna relevancia para ninguno de los objetos involucrados. En tales casos, tratamos a la asociación en sí misma como una clase. Cuando un estudiante se inscribe en una sección, se crea un registro para almacenar la fecha de
+registro y una nota. Tal registro no tiene sentido si un estudiante en particular no se inscribe en una sección determinada.</p>
+       <br>
+       
+       </article>
+    </section>
+      <aside>
+      
+      <h1>Preguntas</h1>
+        <hr>
+        <br>
+        <p><strong>Pregunta 1.</strong> Describir una clase de agregación.</p>
+        <br>
+        <p><strong>Pregunta 2.</strong> Describir una clase agregada.</p>
+        <br>
+        <hr>
+      <h1>Ejercicios</h1>
+        <hr>
+        <br>
+        <p><strong>Ejercicio 1.</strong> Crear una clase de agregación.</p>
+     <br>
+      <hr>
+       <p><strong>Ejercicio 2.</strong> Crear una clase agregada.</p>
+       <br>
+       
+      <br>
+ <!--    <hr>
+     <h1>Práctica 4 (la correspondiente)</h1>
+        <hr>
+        <br>
+        <p>Realizar la siguiente prácticas presentarlas en un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p>
+      
+      <br>
+     <hr>
+     <h1>Realizar el proyecto (parcial 1)</h1>
+        <hr>
+        <br>
+        <p>Presentar el proyecto por medio de un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p> -->
+        </aside>
+      <footer><p>Relación de objetos: Tema 3.1</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

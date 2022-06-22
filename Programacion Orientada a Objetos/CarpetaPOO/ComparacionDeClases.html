@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Comparación de clases en Programación orientada a objetos</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo extra</header>
+ <nav>
+   <!-- <div class="contenedor">--> 
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+      <p class="derecha"><a href="TemarioPOO.html">Temario</a></p>
+      
+      <p><a href="21ClasObjPra.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="21ClasObjHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">COMPARACIÓN DE CLASES</h1>
+    
+    
+    <section class="izquierda">
+        <h1>Clase concreta</h1>
+        <hr>
+        <br>
+        <p><strong>La clase concreta.</strong> Esta clase tiene variables y métodos concretos.</p>
+        <br>
+        <pre>
+class Instrumento {
+  public void tocar() {
+    System.out.println("Instrumento.tocar()");
+  }
+  
+  public String queInstrumento() {
+    return "Instrumento";
+  }
+  
+  public void afinar() {
+  
+  }
+}
+
+class Viento extends Instrumento {
+  public void tocar() {
+    System.out.println("Viento.tocar()");
+  }
+  
+  public String queInstrumento() {
+    return "Viento";
+  }
+  
+  public void afinar() {
+  
+  }
+
+}
+
+class Cuerda extends Instrumento {
+  public void tocar() {
+    System.out.println("Cuerda.tocar()");
+  }
+  
+  public String queInstrumento() {
+    return "Cuerda";
+  }
+  
+  public void afinar() {
+  
+  }
+}
+
+class Percusion extends Instrumento {
+  public void tocar() {
+    System.out.println("Percusion.tocar()");
+  }
+  
+  public String queInstrumento() {
+    return "Percusión";
+  }
+}
+
+class Madera extends Viento {
+  public void tocar() {
+    System.out.println("VientoMadera.tocar()");
+  }
+  
+  public String queInstrumento() {
+    return "Viento madera";
+  }
+  
+  public void afinar() {
+  
+  }
+}
+
+class Metal extends Viento {
+  public void tocar() {
+    System.out.println("VientoMetal.tocar()");
+  }
+  
+  public String queInstrumento() {
+    return "Viento metal";
+  }
+  
+  public void afinar() {
+  
+  }
+}
+
+class Nota {
+  public static final int SOL = 0, DO = 1, RE = 2, MI = 3, 
+  LA = 4;
+}
+
+public class MusicaDriver1 {
+  static void armonizar(Instrumento i) {
+    i.tocar();
+  }
+  
+  static void armonizarOrquesta(Instrumento[] or) {
+    for(int i = 0; i < or.length; i++)
+      armonizar(or[i]);  
+  }
+  
+  public static void main(String args[]) {
+    Instrumento[] orquesta = new Instrumento[5];
+    int i = 0;
+    
+    orquesta[i++] = new Viento();
+    orquesta[i++] = new Metal();
+    orquesta[i++] = new Madera();
+    orquesta[i++] = new Percusion();
+    orquesta[i++] = new Cuerda();
+        
+    armonizarOrquesta(orquesta);
+  }
+}
+        </pre>
+        <br>
+        <br>
+        
+        <p align="center">
+<img src="ClaseInstrumento.svg" align=center width=100% border=1></p>
+     <br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+    </section>
+
+    
+    <section class="derecha">
+        <h1>Clase Abstracta</h1>
+        <hr>
+        <br>
+        <p><strong>La clase abstracta.</strong> Esta clase es una clase incompleta, ya que solo se llaman a los métodos sin definirlos.</p>
+        <br>
+        <pre>
+abstract class Instrumento {
+  int i;
+  public abstract void tocar();
+  
+  public String queInstrumento() {
+    return "Instrumento";
+  }
+  
+  public abstract void afinar();
+}
+
+class Viento extends Instrumento {
+  public void tocar() {
+    System.out.println("Viento.tocar()");
+  }
+  
+  public String queInstrumento() {
+    return "Viento";
+  }
+  
+  public void afinar() {
+  
+  }
+
+}
+
+class Cuerda extends Instrumento {
+  public void tocar() {
+    System.out.println("Cuerda.tocar()");
+  }
+  
+  public String queInstrumento() {
+    return "Cuerda";
+  }
+  
+  public void afinar() {
+  
+  }
+}
+
+class Percusion extends Instrumento {
+  public void tocar() {
+    System.out.println("Percusion.tocar()");
+  }
+  
+  public String queInstrumento() {
+    return "Percusión";
+  }
+  
+  public void afinar() {
+  
+  }
+}
+
+class Madera extends Viento {
+  public void tocar() {
+    System.out.println("VientoMadera.tocar()");
+  }
+  
+  public String queInstrumento() {
+    return "Viento madera";
+  }
+  
+  public void afinar() {
+  
+  }
+}
+
+class Metal extends Viento {
+  public void tocar() {
+    System.out.println("VientoMetal.tocar()");
+  }
+  
+  public String queInstrumento() {
+    return "Viento metal";
+  }
+  
+  public void afinar() {
+  
+  }
+}
+
+class Nota {
+  public static final int SOL = 0, DO = 1, RE = 2, MI = 3, LA = 4;
+}
+
+public class MusicaDriver2 {
+  static void armonizar(Instrumento i) {
+    i.tocar();
+  }
+  
+  static void armonizarOrquesta(Instrumento[] or) {
+    for(int i = 0; i < or.length; i++)
+      armonizar(or[i]);  
+  }
+  
+  public static void main(String args[]) {
+    Instrumento[] orquesta = new Instrumento[5];
+    int i = 0;
+    
+    orquesta[i++] = new Viento();
+    orquesta[i++] = new Metal();
+    orquesta[i++] = new Madera();
+    orquesta[i++] = new Percusion();
+    orquesta[i++] = new Cuerda();
+        
+    armonizarOrquesta(orquesta);
+  }
+}
+        </pre>
+        <br>
+        <br>
+        <br>
+        
+        <p align="center">
+<img src="ClaseAbstractaInstrumento.svg" align=center width=100% border=1></p>
+     <br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+      
+    </section>
+
+    
+    <aside class="largo">
+        <h1>Interfaces</h1>
+        <hr>
+        <br>
+        <p><strong>La interfaz.</strong> Se construye substituyendo la clase por la interfaz:</p>
+         <br>
+         <pre>
+interface Instrumento {
+  int i = 5;
+  void tocar();
+  String queInstrumento();
+  void afinar();
+}
+
+class Viento implements Instrumento {
+  public void tocar() {
+    System.out.println("Viento.tocar()");
+  }
+
+  public String queInstrumento() { 
+    return "Viento";
+  }
+  public void afinar() { 
+  }
+}
+
+class Percusion implements Instrumento {
+  public void tocar() {
+    System.out.println("Percusion.tocar()");
+  }
+  public String queInstrumento() { 
+    return "Percusion";
+  }
+
+  public void afinar() {
+  }
+}
+
+class Cuerda implements Instrumento {
+    public void tocar() {
+      System.out.println("Cuerda.tocar()");
+    }
+
+    public String queInstrumento() { 
+      return "Cuerda";
+    }
+
+    public void afinar() {
+    }
+    
+}
+
+class Metal extends Viento {
+    public void tocar() {
+      System.out.println ("VientoMetal.tocar()");
+    }
+
+    public void afinar() {
+      System.out.println ("VientoMetal.afinar()");
+    }
+}
+
+class Madera extends Viento {
+    public void tocar( ) {
+        System.out.println("VientoMadera.tocar()");
+    }
+
+    public String queInstrumento() {
+        return "VientoMadera";
+    }
+}
+
+public class MusicaDriver {
+  
+  static void armonizar(Instrumento i) {
+    
+    i.tocar();
+  }
+  static void armonizarOrquesta(Instrumento[] or) {
+    for(int i = 0; i < or.length; i++)
+      armonizar(or[i]);
+  }
+  public static void main(String[] args) {
+    Instrumento[] orquesta = new Instrumento[5];
+    int i = 0;
+        
+    orquesta[i++] = new Viento();
+    orquesta[i++] = new Percusion();
+    orquesta[i++] = new Cuerda();
+    orquesta[i++] = new Metal();
+    orquesta[i++] = new Madera();
+    armonizarOrquesta(orquesta);
+  }
+} 
+
+         </pre>
+         <br>
+     
+    </aside>
+      <footer><p>Capítulo extra: E.7 Comparación de clases en POO</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

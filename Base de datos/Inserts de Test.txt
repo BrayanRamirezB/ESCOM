@@ -1,0 +1,71 @@
+//ENGINE = InnoDB PERMITE TRANSACCIONES
+
+
+create table asistencia (
+    -> idp char(3) not null,
+    -> ida char(3) not null,
+    -> idc char(3) not null);
+
+create table clase(
+    -> idc char(3) not null,
+    -> piso int(2) not null,
+    -> bloque int(2) not null);
+
+create table asignatura(
+    -> ida char(3) not null,
+    -> nombrea varchar(15) not null);
+
+create table profesor(
+    -> idp char(3) not null,
+    -> nombrep varchar(15) not null,
+    -> estudio int(3) not null,
+    -> fechanac date null);
+
+alter table profesor add constraint pk11 primary key(idp);
+
+alter table asignatura add constraint pk22 primary key(ida);
+
+alter table clase add constraint pk33 primary key(idc);
+
+alter table asistencia add constraint pk44 primary key(idp,ida,idc);
+
+alter table asistencia add constraint fk11 foreign key(idp) references profesor (idp);
+
+alter table asistencia add constraint fk22 foreign key(ida) references asignatura (ida);
+
+alter table asistencia add constraint fk33 foreign key(idc) references clase (idc);
+
+insert into clase values ('c1',1,1),('c2',1,2),('c3',2,3),('c4',2,1),('c5',3,2);
+
+insert into asignatura values ('a1','Programacion'), ('a2', 'Redes'),('a3','Quimica'),('a4','Fisica'),('a5','ingsw');
+
+insert into profesor values ('p1','Ricardo',215,'1988-02-24'),('p2','Pedro',105,'1987-04-16'),('p3','Antonio',210,'1990-02-09'), ('p4', 'Jose', 107,'1984-11-11'),('p5','Rolando',107,'1991-06-14'), ('p6', 'Sandy', 105,'1987-08-28');
+
+insert into asistencia values ('p1','a2','c3'),('p5','a2','c3');
+
+create table auxiliar (
+idp char(3) not null,
+nombre varchar(10) null);
+
+alter table auxiliar add constraint pk55 primary key(idp);
+
+alter table auxiliar add constraint fk55 foreign key(idp) references profesor (idp);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

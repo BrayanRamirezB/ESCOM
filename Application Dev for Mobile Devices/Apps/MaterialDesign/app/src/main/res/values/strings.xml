@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Material Design</string>
+    <!-- Ingles
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_opn">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+     navigation drawer item labels
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+     TODO: Remove or change this placeholder text
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open</string>
+    -->
+
+    <string name="action_settings">Ajustes</string>
+    <string name="action_search">Buscar</string>
+    <string name="drawer_opn">Abri</string>
+    <string name="drawer_close">Cerrar</string>
+    <string name="nav_item_home">Principal</string>
+    <string name="nav_item_friends">Amigos</string>
+    <string name="nav_item_notifications">Mensajes</string>
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+    <string name="title_messages">Mensajes</string>
+    <string name="title_friends">Amigos</string>
+    <string name="title_home">Principal</string>
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="drawer_open">Abrir</string>
+</resources>

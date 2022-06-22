@@ -1,0 +1,957 @@
+
+synpwrap -msg -prj "adder8bit00_adder8bit0_synplify.tcl" -log "adder8bit00_adder8bit0.srf"
+Copyright (C) 1992-2020 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 3.12.0.240.2
+    <postMsg mid="2011000" type="Info"    dynamic="0" navigation="0"  />
+
+==contents of adder8bit00_adder8bit0.srf
+#Build: Synplify Pro (R) Q-2020.03L-SP1, Build 182R, Oct 29 2020
+#install: C:\lscc\diamond\3.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-4OJJTR2
+
+# Wed Mar  2 20:59:35 2022
+
+#Implementation: adder8bit0
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : adder8bit0
+Synopsys HDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : adder8bit0
+Synopsys VHDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+@N:"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit00.vhdl":7:7:7:17|Top entity is set to adder8bit00.
+Options changed - recompiling
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit00.vhdl":7:7:7:17|Synthesizing work.adder8bit00.adder8bit0.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\xor00.vhdl":6:7:6:11|Synthesizing work.xor00.xor0.
+Post processing for work.xor00.xor0
+Running optimization stage 1 on xor00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\xnor00.vhdl":6:7:6:12|Synthesizing work.xnor00.xnor0.
+Post processing for work.xnor00.xnor0
+Running optimization stage 1 on xnor00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\and00.vhdl":6:7:6:11|Synthesizing work.and00.and0.
+Post processing for work.and00.and0
+Running optimization stage 1 on and00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\fa00.vhdl":7:7:7:10|Synthesizing work.fa00.fa0.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\or00.vhdl":6:7:6:10|Synthesizing work.or00.or0.
+Post processing for work.or00.or0
+Running optimization stage 1 on or00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\ha00.vhdl":7:7:7:10|Synthesizing work.ha00.ha0.
+Post processing for work.ha00.ha0
+Running optimization stage 1 on ha00 .......
+Post processing for work.fa00.fa0
+Running optimization stage 1 on fa00 .......
+Post processing for work.adder8bit00.adder8bit0
+Running optimization stage 1 on adder8bit00 .......
+Running optimization stage 2 on ha00 .......
+Running optimization stage 2 on or00 .......
+Running optimization stage 2 on fa00 .......
+Running optimization stage 2 on and00 .......
+Running optimization stage 2 on xnor00 .......
+Running optimization stage 2 on xor00 .......
+Running optimization stage 2 on adder8bit00 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit0\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 94MB peak: 95MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Mar  2 20:59:37 2022
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : adder8bit0
+Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+File C:\lscc\diamond\3.11_x64\synpbase\bin64\syn_nfilter.exe changed - recompiling
+File C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\adder8bit0\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 90MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Mar  2 20:59:38 2022
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit0\synwork\adder8bit00_adder8bit0_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 29MB peak: 29MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Mar  2 20:59:38 2022
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : adder8bit0
+Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+File C:\lscc\diamond\3.11_x64\synpbase\bin64\syn_nfilter.exe changed - recompiling
+File C:\Users\ale_j\Desktop\Arquitectura_de_Computadoras\Practicas\Practica1\adder8bit00\adder8bit0\synwork\adder8bit00_adder8bit0_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 90MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Wed Mar  2 20:59:39 2022
+
+###########################################################]
+Premap Report
+
+# Wed Mar  2 20:59:40 2022
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : adder8bit0
+Synopsys Lattice Technology Pre-mapping, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit0\adder8bit00_adder8bit0_scck.rpt 
+See clock summary report "C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit0\adder8bit00_adder8bit0_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 125MB peak: 129MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 125MB peak: 129MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 138MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 170MB)
+
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 171MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 171MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 171MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=26 on top level netlist adder8bit00 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 170MB peak: 171MB)
+
+
+
+Clock Summary
+******************
+
+          Start     Requested     Requested     Clock     Clock     Clock
+Level     Clock     Frequency     Period        Type      Group     Load 
+-------------------------------------------------------------------------
+=========================================================================
+
+
+
+Clock Load Summary
+***********************
+
+          Clock     Source     Clock Pin       Non-clock Pin     Non-clock Pin
+Clock     Load      Pin        Seq Example     Seq Example       Comb Example 
+------------------------------------------------------------------------------
+==============================================================================
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 171MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 172MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 88MB peak: 173MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Wed Mar  2 20:59:42 2022
+
+###########################################################]
+Map & Optimize Report
+
+# Wed Mar  2 20:59:42 2022
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-4OJJTR2
+
+Implementation : adder8bit0
+Synopsys Lattice Technology Mapper, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 167MB peak: 167MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		100000.00ns		  22 /         0
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 176MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 176MB)
+
+Writing Analyst data base C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit0\synwork\adder8bit00_adder8bit0_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\adder8bit00\adder8bit0\adder8bit00_adder8bit0.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 180MB peak: 181MB)
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Wed Mar  2 20:59:45 2022
+#
+
+
+Top view:               adder8bit00
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: NA
+
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-5
+
+Register bits: 0 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       26
+
+
+Details:
+GSR:            1
+IB:             17
+OB:             9
+ORCALUT4:       22
+PUR:            1
+VHI:            1
+VLO:            9
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 63MB peak: 181MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Wed Mar  2 20:59:45 2022
+
+###########################################################]
+
+
+Synthesis exit by 0.
+
+edif2ngd  -l "MachXO2" -d LCMXO2-7000HE -path "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/adder8bit00/adder8bit0" -path "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/adder8bit00"   "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/adder8bit00/adder8bit0/adder8bit00_adder8bit0.edi" "adder8bit00_adder8bit0.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Writing the design to adder8bit00_adder8bit0.ngo...
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 10 MB
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-7000HE  -p "C:/lscc/diamond/3.12/ispfpga/xo2c00/data"  -p "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/adder8bit00/adder8bit0" -p "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/adder8bit00"  "adder8bit00_adder8bit0.ngo" "adder8bit00_adder8bit0.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'adder8bit00_adder8bit0.ngo' ...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+     59 blocks expanded
+Complete the first expansion.
+Writing 'adder8bit00_adder8bit0.ngd' ...
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 17 MB
+
+
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 5 -oc Commercial   "adder8bit00_adder8bit0.ngd" -o "adder8bit00_adder8bit0_map.ncd" -pr "adder8bit00_adder8bit0.prf" -mp "adder8bit00_adder8bit0.mrp" -lpf "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/adder8bit00/adder8bit0/adder8bit00_adder8bit0_synplify.lpf" -lpf "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/adder8bit00/adder8bit00.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: adder8bit00_adder8bit0.ngd
+   Picdevice="LCMXO2-7000HE"
+
+   Pictype="TQFP144"
+
+   Picspeed=5
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-7000HETQFP144, Performance used: 5.
+
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.39.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:      0 out of  7209 (0%)
+      PFU registers:            0 out of  6864 (0%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:        11 out of  3432 (0%)
+      SLICEs as Logic/ROM:     11 out of  3432 (0%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:          0 out of  3432 (0%)
+   Number of LUT4s:         22 out of  6864 (0%)
+      Number used as logic LUTs:         22
+      Number used as distributed RAM:     0
+      Number used as ripple logic:        0
+      Number used as shift registers:     0
+   Number of PIO sites used: 26 + 4(JTAG) out of 115 (26%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:        0 out of 1 (0%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  0
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net SL_c: 15 loads
+     Net LED_c: 8 loads
+     Net Ai_c[0]: 2 loads
+     Net Ai_c[5]: 2 loads
+     Net Ai_c[6]: 2 loads
+     Net Ai_c[7]: 2 loads
+     Net Bi_c[7]: 2 loads
+     Net SC[4]: 2 loads
+     Net SC[5]: 2 loads
+     Net SC[6]: 2 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 2 secs  
+Peak Memory Usage: 58 MB
+
+Dumping design to file adder8bit00_adder8bit0_map.ncd.
+
+mpartrce -p "adder8bit00_adder8bit0.p2t" -f "adder8bit00_adder8bit0.p3t" -tf "adder8bit00_adder8bit0.pt" "adder8bit00_adder8bit0_map.ncd" "adder8bit00_adder8bit0.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "adder8bit00_adder8bit0_map.ncd"
+Wed Mar 02 20:59:51 2022
+
+PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/adder8bit00/promote.xml" -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 adder8bit00_adder8bit0_map.ncd adder8bit00_adder8bit0.dir/5_1.ncd adder8bit00_adder8bit0.prf
+Preference file: adder8bit00_adder8bit0.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file adder8bit00_adder8bit0_map.ncd.
+Design name: adder8bit00
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Loading device for application par from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   26+4(JTAG)/336     9% used
+                  26+4(JTAG)/115     26% bonded
+
+   SLICE             11/3432         <1% used
+
+
+
+Number of Signals: 39
+Number of Connections: 83
+
+Pin Constraint Summary:
+   26 out of 26 pins locked (100% locked).
+
+No signal is selected as primary clock.
+
+
+No signal is selected as secondary clock.
+
+No signal is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 2 secs 
+
+Starting Placer Phase 1.
+...................
+Placer score = 19657.
+Finished Placer Phase 1.  REAL time: 3 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  19657
+Finished Placer Phase 2.  REAL time: 3 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+
+  PRIMARY  : 0 out of 8 (0%)
+  SECONDARY: 0 out of 8 (0%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   26 + 4(JTAG) out of 336 (8.9%) PIO sites used.
+   26 + 4(JTAG) out of 115 (26.1%) bonded PIO sites used.
+   Number of PIO comps: 26; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 2 / 28 (  7%) | 2.5V       | -         |
+| 1        | 0 / 29 (  0%) | -          | -         |
+| 2        | 9 / 29 ( 31%) | 2.5V       | -         |
+| 3        | 0 / 9 (  0%)  | -          | -         |
+| 4        | 8 / 10 ( 80%) | 2.5V       | -         |
+| 5        | 7 / 10 ( 70%) | 2.5V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 1 secs 
+
+Dumping design to file adder8bit00_adder8bit0.dir/5_1.ncd.
+
+
+-----------------------------------------------------------------
+INFO - par: ASE feature is off due to non timing-driven settings.  
+-----------------------------------------------------------------
+
+0 connections routed; 83 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 5 secs 
+
+Start NBR router at 20:59:56 03/02/22
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 20:59:56 03/02/22
+
+Start NBR section for initial routing at 20:59:56 03/02/22
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 20:59:56 03/02/22
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+
+Start NBR section for re-routing at 20:59:56 03/02/22
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+
+Start NBR section for post-routing at 20:59:56 03/02/22
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : <n/a>
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 3 secs 
+Total REAL time: 5 secs 
+Completely routed.
+End of route.  83 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file adder8bit00_adder8bit0.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = <n/a>
+PAR_SUMMARY::Timing score<setup/<ns>> = <n/a>
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 3 secs 
+Total REAL time to completion: 6 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "adder8bit00_adder8bit0.pt" -o "adder8bit00_adder8bit0.twr" "adder8bit00_adder8bit0.ncd" "adder8bit00_adder8bit0.prf"
+trce:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file adder8bit00_adder8bit0.ncd.
+Design name: adder8bit00
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Wed Mar 02 20:59:57 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o adder8bit00_adder8bit0.twr -gui -msgset C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/adder8bit00/promote.xml adder8bit00_adder8bit0.ncd adder8bit00_adder8bit0.prf 
+Design file:     adder8bit00_adder8bit0.ncd
+Preference file: adder8bit00_adder8bit0.prf
+Device,speed:    LCMXO2-7000HE,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 299 paths, 39 nets, and 83 connections (100.00% coverage)
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 65 MB
+
+
+tmcheck -par "adder8bit00_adder8bit0.par" 
+
+bitgen -f "adder8bit00_adder8bit0.t2b" -w "adder8bit00_adder8bit0.ncd"  -jedec "adder8bit00_adder8bit0.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.12.0.240.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file adder8bit00_adder8bit0.ncd.
+Design name: adder8bit00
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Loading device for application Bitgen from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from adder8bit00_adder8bit0.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.95.
+ 
+Saving bit stream in "adder8bit00_adder8bit0.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        2046 Pages (128*2046 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory: 2046 Pages (Page 0 to Page 2045).
+Initialized UFM Pages:                     0 Page.
+ 
+Total CPU Time: 3 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 289 MB

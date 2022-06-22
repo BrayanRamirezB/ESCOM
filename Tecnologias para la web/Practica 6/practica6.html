@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Listas
+		</title>
+		<script languaje="Javascript">
+			var tabla,fila,celda,texto;
+
+			function AgregarFinal(){
+				var valor=prompt("Inserta el valor del elemento");
+				tabla = document.getElementById("tabla1");
+				fila=document.createElement("td");
+				tabla.appendChild(fila);
+				celda=document.createElement("td");
+				texto=document.createTextNode(valor);
+				celda.appendChild(texto);
+				fila.appendChild(celda);
+			}
+
+			function AgregarInicio(){
+				var valor=prompt("Inserta el valor del elemento");
+				tabla = document.getElementById("tabla1");
+				fila=document.createElement("td");
+				//tabla.appendChild(fila);
+				celda=document.createElement("td");
+				texto=document.createTextNode(valor);
+				celda.appendChild(texto);
+				fila.appendChild(celda);
+				tabla.insertBefore(fila,tabla.firstChild);
+				
+				
+			}
+
+			function ObtenerValor(){
+				var valor=prompt("Inserta el valor del elemento");
+
+				alert("Valor: " + tabla.childNodes[valor].textContent);
+			}
+
+			function BorrarLista(){
+				while(tabla.hasChildNodes())
+					tabla.removeChild(tabla.firstChild);
+			}
+
+			function EliminarFinal(){
+				if(tabla.hasChildNodes())
+					tabla.removeChild(tabla.lastChild);
+			}
+
+			function EliminarPosicion(){
+				var valor=prompt("Inserta el valor del elemento");
+
+				if(tabla.hasChildNodes())
+					tabla.removeChild(tabla.childNodes[valor]);
+			}
+
+		</script>
+	</head>
+	<body>
+		<table align="center" width="450" border="2">
+			<tbody id="tabla1"></tbody>
+		</table><br/><br/>
+		<input type="button" value="Agregar al final" onClick="AgregarFinal()"/><br/>
+		<input type="button" value="Agregar al inicio" onClick="AgregarInicio()"/><br/>
+		<input type="button" value="Obtener el valor" onClick="ObtenerValor()"/><br/>
+		<input type="button" value="Borrar lista" onClick="BorrarLista()"/><br/>
+		<input type="button" value="Eliminar al final" onClick="EliminarFinal()"/><br/>
+		<input type="button" value="Eliminar la celda con posición" onClick="EliminarPosicion()"/><br/>
+	</body>
+</html>

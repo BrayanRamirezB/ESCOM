@@ -1,0 +1,88 @@
+Running in Lattice mode
+
+Starting:    C:\lscc\diamond\3.12\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.12\synpbase
+Hostname:    DESKTOP-4OJJTR2
+Date:        Sat Mar 19 23:05:28 2022
+Version:     Q-2020.03L-SP1
+
+Arguments:   -product synplify_pro -batch shiftrRL00_shiftrRL0_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+log file: "C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\shiftrRL00_shiftrRL0.srr"
+Running: hdl_info_gen in foreground
+
+Generating HDL info...
+
+hdl_info_gen completed
+# Sat Mar 19 23:05:29 2022
+
+Return Code: 0
+Run Time:00h:00m:01s
+log file: "C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\shiftrRL00_shiftrRL0.srr"
+Running: shiftrRL0 in foreground
+
+Running proj_1|shiftrRL0
+
+Running Flow: compile (Compile) on proj_1|shiftrRL0
+# Sat Mar 19 23:05:29 2022
+
+Running Flow: compile_flow (Compile Process) on proj_1|shiftrRL0
+# Sat Mar 19 23:05:29 2022
+
+Running: compiler (Compile Input) on proj_1|shiftrRL0
+# Sat Mar 19 23:05:29 2022
+Copied C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\synwork\shiftrRL00_shiftrRL0_comp.srs to C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\shiftrRL00_shiftrRL0.srs
+
+compiler completed
+# Sat Mar 19 23:05:33 2022
+
+Return Code: 0
+Run Time:00h:00m:04s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|shiftrRL0
+# Sat Mar 19 23:05:33 2022
+
+multi_srs_gen completed
+# Sat Mar 19 23:05:33 2022
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\synwork\shiftrRL00_shiftrRL0_mult.srs to C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\shiftrRL00_shiftrRL0.srs
+Copied C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\shiftrRL00_shiftrRL0.srr to C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\shiftrRL00_shiftrRL0.srf
+Complete: Compile Process on proj_1|shiftrRL0
+
+Running: premap (Premap) on proj_1|shiftrRL0
+# Sat Mar 19 23:05:33 2022
+
+premap completed with warnings
+# Sat Mar 19 23:05:36 2022
+
+Return Code: 1
+Run Time:00h:00m:03s
+Complete: Compile on proj_1|shiftrRL0
+
+Running Flow: map (Map) on proj_1|shiftrRL0
+# Sat Mar 19 23:05:36 2022
+
+Running: fpga_mapper (Map & Optimize) on proj_1|shiftrRL0
+# Sat Mar 19 23:05:36 2022
+Copied C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\synwork\shiftrRL00_shiftrRL0_m.srm to C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\shiftrRL00_shiftrRL0.srm
+
+fpga_mapper completed with warnings
+# Sat Mar 19 23:05:40 2022
+
+Return Code: 1
+Run Time:00h:00m:04s
+Complete: Map on proj_1|shiftrRL0
+Copied C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\shiftrRL00_shiftrRL0.srr to C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\shiftrRL00_shiftrRL0.srf
+Complete: Logic Synthesis on proj_1|shiftrRL0
+TCL script complete: "shiftrRL00_shiftrRL0_synplify.tcl"
+exit status=0
+exit status=0
+Save changes for project:
+C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\proj_1.prj
+batch mode default:no

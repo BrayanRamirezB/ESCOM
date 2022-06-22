@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Prueba javascript</title>
+		<script type="text/javascript">
+			let x = 5;
+			var y = 9;
+			
+			alert(factorial(-x));
+			alert(potencia(x, y));
+
+			function multi (a, b){
+				return(a * b);
+			}
+			
+			function factorial(a){
+				let res = 1;
+
+				if (a > 0) {
+					for(var i = 1; i<=a ; i++)
+						res = multi(res, i);
+					return res;
+				}else
+					return 0;	
+			}
+
+			function potencia(b, n){
+				let res = 1;
+				for(var i = 0; i<n ; i++)
+					res = multi(res, b);
+				return res;
+			}
+
+			//--------------soy un limite :D------------
+
+			/*function suma (){
+				let res = x + y;
+				alert("Resultado: "+ res);
+			}
+
+			function resta (a, b){
+				let res = a - b;
+				alert("Resultado: "+ res);
+			}*/
+
+		</script>
+	</head>
+	<body>
+		<table>
+			<caption>Guia de teléfono. Letra: <b>S</b></caption>
+			<thead>
+				<tr><th>Apellidos</th><th>Nombre </th><th> Teléfono</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>Sánchez Gómez</td><td>Maria </td> <td> 666450622</td></tr>
+				<tr><td>Sanz Rodríguez</td><td>Ana </td><td> 6564328343</td></tr>
+				<tr><td>Seis González</td><td>Ruben </td><td> 6235421455</td></tr>
+				<tr><td>Soriano Pascual</td><td>Carlos </td><td> 6123548</td></tr>
+				<tr><td>Soros</td><td>Patricia </td><td>6321456 </td></tr>
+				<tr><td>Soto del Rio</td><td>Pedro </td><td> 6987452</td></tr>
+			</tbody>	
+		</table>
+	</body>
+</html>

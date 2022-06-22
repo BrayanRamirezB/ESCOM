@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="shiftrRL00" device="LCMXO2-7000HE-5TG144C" default_implementation="shiftrRL0">
+    <Options/>
+    <Implementation title="shiftrRL0" dir="shiftrRL0" description="shiftrRL0" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="shiftrRL00"/>
+        <Source name="shiftrRL0/source/div00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="shiftrRL0/source/osc00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="shiftrRL0/source/oscint00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="shiftrRL0/source/packageosc00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="shiftrRL.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="packageshiftrRL00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="shiftrRL00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="shiftrRL00"/>
+        </Source>
+        <Source name="shiftrRL0/shiftrRL0.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="shiftrRL00.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="shiftrRL001.sty"/>
+</BaliProject>

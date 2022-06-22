@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Arreglos
+		</title>
+	</head>
+
+	<body>
+		<script languaje="Javascript">
+			var arr= new Array();
+			arr[0] = 3;
+			arr[1] = "hola";
+			arr[2] = 3.14;
+			arr[4] = 5;
+			alert("elem0: "+arr[0]+" elem1: "+arr[1]+ " elem2: "+arr[2]+" elem3: "+arr[3]+" elem4: "+arr[4]);
+			alert(arr.length);
+			var arr1=new Array(3);
+			alert(arr1.length);
+			arr1[0]=3;
+			arr1[1]=4;
+			arr1[2]=5;
+			arr1[3]=3;
+			arr1[4]="hola";
+			arr1[5]=3.14;
+			var cad="";
+
+			for(var elem of arr1)
+				ca+= ","+elem;
+
+			//for(i=0;i<arr1.length;i++)
+			//		cad+="elem"+1+":"+arr1[i]+"\n";
+			alert("Arreglo: "+cad);
+			
+			var arr2 = new Array(1,2,4,5,"otro",3.14);
+			alert(arr2.length);
+			arr2[15]=12;
+			alert(arr2.length);
+			alert("Arreglo2"+arr2.join("-"));
+
+			var arr3 = [1,2,3,4];
+
+			arr[8]="hola";
+			alert("Arreglo3: "+arr3.join());	
+		</script>
+	</body>
+</html>

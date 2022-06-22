@@ -1,0 +1,58 @@
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: LENEMTC330
+
+Implementation : shiftRL0
+Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+Modified Files: 0
+FID:  path (prevtimestamp, timestamp)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 18
+FID:  path (timestamp)
+0        C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\10-osc00-vhdl\div00.vhdl (2022-03-10 15:11:00)
+1        C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\10-osc00-vhdl\osc00.vhdl (2022-03-10 15:11:00)
+2        C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\10-osc00-vhdl\oscint00.vhdl (2022-03-10 15:11:00)
+3        C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\10-osc00-vhdl\packageosc00.vhdl (2022-03-10 15:11:00)
+4        C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\11-shiftRL00\packageshiftRL00.vhdl (2022-03-10 09:51:27)
+5        C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\11-shiftRL00\shiftRL.vhdl (2022-03-10 09:31:16)
+6        C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\11-shiftRL00\shiftRL00.vhdl (2022-03-10 09:46:57)
+7        C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd (2018-11-15 00:32:12)
+8        C:\lscc\diamond\3.12\synpbase\lib\cpld\lattice.vhd (2020-10-29 10:20:44)
+9        C:\lscc\diamond\3.12\synpbase\lib\vhd\arith.vhd (2020-10-29 10:23:10)
+10       C:\lscc\diamond\3.12\synpbase\lib\vhd\hyperents.vhd (2020-10-29 10:23:10)
+11       C:\lscc\diamond\3.12\synpbase\lib\vhd\location.map (2020-11-02 17:26:20)
+12       C:\lscc\diamond\3.12\synpbase\lib\vhd\numeric.vhd (2020-10-29 10:23:10)
+13       C:\lscc\diamond\3.12\synpbase\lib\vhd\snps_haps_pkg.vhd (2020-10-29 10:23:10)
+14       C:\lscc\diamond\3.12\synpbase\lib\vhd\std.vhd (2020-10-29 10:23:10)
+15       C:\lscc\diamond\3.12\synpbase\lib\vhd\std1164.vhd (2020-10-29 10:23:10)
+16       C:\lscc\diamond\3.12\synpbase\lib\vhd\umr_capim.vhd (2020-10-29 10:23:10)
+17       C:\lscc\diamond\3.12\synpbase\lib\vhd\unsigned.vhd (2020-10-29 10:23:10)
+
+*******************************************************************
+Unchanged modules: 10
+MID:  lib.cell.view
+0        work.div00.div0
+1        work.div00.vhdl
+2        work.osc00.osc0
+3        work.osc00.vhdl
+4        work.oscint00.oscint0
+5        work.oscint00.vhdl
+6        work.shiftrl.shift
+7        work.shiftrl.vhdl
+8        work.shiftrl00.shiftrl0
+9        work.shiftrl00.vhdl

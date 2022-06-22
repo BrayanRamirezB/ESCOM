@@ -1,0 +1,8 @@
+#Start recording tcl command: 3/3/2022 09:20:29
+#Project Location: C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/07-oscint00; Project name: oscint00
+prj_project new -name "oscint00" -impl "oscint0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/braya/Downloads/Arquitectura de computadoras/06-projectDiamond-1erParc/07-oscint00/oscint00.vhdl"
+prj_run Export -impl oscint0 -task Jedecgen
+prj_run Export -impl oscint0 -task Jedecgen
+#Stop recording: 3/3/2022 09:41:59

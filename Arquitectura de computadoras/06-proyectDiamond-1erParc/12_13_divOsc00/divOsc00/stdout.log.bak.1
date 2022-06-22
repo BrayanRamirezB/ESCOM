@@ -1,0 +1,88 @@
+Running in Lattice mode
+
+Starting:    C:\lscc\diamond\3.12\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.12\synpbase
+Hostname:    DESKTOP-2I5LM3P
+Date:        Tue Mar 23 17:33:00 2021
+Version:     Q-2020.03L-SP1
+
+Arguments:   -product synplify_pro -batch divOsc00_divOsc00_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+log file: "D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00.srr"
+Running: hdl_info_gen in foreground
+
+Generating HDL info...
+
+hdl_info_gen completed
+# Tue Mar 23 17:33:02 2021
+
+Return Code: 0
+Run Time:00h:00m:02s
+log file: "D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00.srr"
+Running: divOsc00 in foreground
+
+Running proj_1|divOsc00
+
+Running Flow: compile (Compile) on proj_1|divOsc00
+# Tue Mar 23 17:33:02 2021
+
+Running Flow: compile_flow (Compile Process) on proj_1|divOsc00
+# Tue Mar 23 17:33:02 2021
+
+Running: compiler (Compile Input) on proj_1|divOsc00
+# Tue Mar 23 17:33:02 2021
+Copied D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\synwork\divOsc00_divOsc00_comp.srs to D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00.srs
+
+compiler completed
+# Tue Mar 23 17:33:10 2021
+
+Return Code: 0
+Run Time:00h:00m:08s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|divOsc00
+# Tue Mar 23 17:33:10 2021
+
+multi_srs_gen completed
+# Tue Mar 23 17:33:11 2021
+
+Return Code: 0
+Run Time:00h:00m:01s
+Copied D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\synwork\divOsc00_divOsc00_mult.srs to D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00.srs
+Copied D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00.srr to D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00.srf
+Complete: Compile Process on proj_1|divOsc00
+
+Running: premap (Premap) on proj_1|divOsc00
+# Tue Mar 23 17:33:11 2021
+
+premap completed with warnings
+# Tue Mar 23 17:33:22 2021
+
+Return Code: 1
+Run Time:00h:00m:10s
+Complete: Compile on proj_1|divOsc00
+
+Running Flow: map (Map) on proj_1|divOsc00
+# Tue Mar 23 17:33:22 2021
+
+Running: fpga_mapper (Map & Optimize) on proj_1|divOsc00
+# Tue Mar 23 17:33:22 2021
+Copied D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\synwork\divOsc00_divOsc00_m.srm to D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00.srm
+
+fpga_mapper completed with warnings
+# Tue Mar 23 17:33:35 2021
+
+Return Code: 1
+Run Time:00h:00m:13s
+Complete: Map on proj_1|divOsc00
+Copied D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00.srr to D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00.srf
+Complete: Logic Synthesis on proj_1|divOsc00
+TCL script complete: "divOsc00_divOsc00_synplify.tcl"
+exit status=0
+exit status=0
+Save changes for project:
+D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\proj_1.prj
+batch mode default:no

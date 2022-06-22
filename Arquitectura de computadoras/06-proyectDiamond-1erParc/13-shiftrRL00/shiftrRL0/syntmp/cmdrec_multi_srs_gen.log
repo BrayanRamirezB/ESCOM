@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  shiftrRL00  -multisrs  C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\synwork\shiftrRL00_shiftrRL0_comp.srs  -osyn  C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\synwork\shiftrRL00_shiftrRL0_mult.srs  -log  C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\synlog\shiftrRL00_shiftrRL0_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top shiftrRL00 -multisrs ..\synwork\shiftrRL00_shiftrRL0_comp.srs -osyn ..\synwork\shiftrRL00_shiftrRL0_mult.srs -log ..\synlog\shiftrRL00_shiftrRL0_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\shiftrRL00_shiftrRL0_comp.srs|io:i|time:1647752732|size:6793|exec:0|csum:817EF764DB9B371A4BFA87C69006D6F5
+file:..\synwork\shiftrRL00_shiftrRL0_mult.srs|io:o|time:1647752733|size:2561|exec:0|csum:
+file:..\synlog\shiftrRL00_shiftrRL0_multi_srs_gen.srr|io:o|time:1647752733|size:1045|exec:0|csum:
+file:..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1603988322|size:8875008|exec:1|csum:43373AFF0ED6BCEB26CB4B4947B972DD

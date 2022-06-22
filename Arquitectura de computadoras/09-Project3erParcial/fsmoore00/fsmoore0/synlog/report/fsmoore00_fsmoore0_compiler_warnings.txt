@@ -1,0 +1,10 @@
+@W: CG296 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":19:6:19:12|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":22:8:22:12|Referenced variable enfsm is not in sensitivity list.
+@W: CG296 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":39:6:39:12|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":45:10:45:14|Referenced variable e_act is not in sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":41:8:41:12|Referenced variable enfsm is not in sensitivity list.
+@W: CL117 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":41:3:41:6|Latch generated from process for signal E_sig(0 to 7); possible missing assignment in an if or case statement.
+@W: CG296 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\memrom00.vhdl":51:7:51:13|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\memrom00.vhdl":53:9:53:13|Referenced variable encro is not in sensitivity list.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+

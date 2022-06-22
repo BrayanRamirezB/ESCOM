@@ -1,0 +1,69 @@
+#Build: Synplify Pro (R) Q-2020.03L-SP1, Build 182R, Oct 29 2020
+#install: C:\lscc\diamond\3.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-B3E034E
+
+# Mon May 16 09:49:52 2022
+
+#Implementation: key0
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-B3E034E
+
+Implementation : key0
+Synopsys HDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-B3E034E
+
+Implementation : key0
+Synopsys VHDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+@N:"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key02.vhdl":8:7:8:11|Top entity is set to key02.
+VHDL syntax check successful!
+@N: CD630 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key02.vhdl":8:7:8:11|Synthesizing work.key02.key0.
+@W: CD285 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\key02.vhdl":72:18:72:23|Port map width mismatch (6 => 4) on port incontcr7 of component coder7seg00 
+@N: CD630 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\coder7seg00.vhdl":6:7:6:17|Synthesizing work.coder7seg00.coder7seg0.
+@E: CD395 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\coder7seg00.vhdl":190:1:190:6|Constant width 4 does not match context width 7
+@N: CD630 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\contring7seg00.vhdl":6:7:6:20|Synthesizing work.contring7seg00.contring7seg0.
+@N: CD630 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\lect00.vhdl":6:7:6:12|Synthesizing work.lect00.lect0.
+@W: CG296 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\lect00.vhdl":20:9:20:15|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\lect00.vhdl":22:11:22:20|Referenced variable scontrollc is not in sensitivity list.
+@N: CD630 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\coder00.vhdl":6:7:6:13|Synthesizing work.coder00.coder0.
+@W: CG296 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\coder00.vhdl":19:13:19:19|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\coder00.vhdl":25:8:25:10|Referenced variable enc is not in sensitivity list.
+@N: CD630 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\contring00.vhdl":6:7:6:16|Synthesizing work.contring00.contring0.
+@N: CD630 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\VHDLs-Oscilador\osc00.vhdl":7:7:7:11|Synthesizing work.osc00.osc0.
+1 errors during synthesis
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon May 16 09:49:53 2022
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon May 16 09:49:53 2022
+
+###########################################################]

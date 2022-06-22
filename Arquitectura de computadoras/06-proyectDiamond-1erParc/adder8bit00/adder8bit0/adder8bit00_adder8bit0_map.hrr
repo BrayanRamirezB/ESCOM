@@ -1,0 +1,256 @@
+---------------------------------------------------
+Report for cell adder8bit00
+   Instance path: adder8bit00
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.00        100.0
+                                  LUT4	      22.00        100.0
+                                 IOBUF	         26        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                fa00_7	          1         4.5
+                                xnor00	          1         4.5
+                               xor00_0	          1         4.5
+                               xor00_4	          1         4.5
+                               xor00_5	          1         4.5
+                               xor00_2	          1         4.5
+                               xor00_3	          1         4.5
+                               xor00_1	          1         4.5
+                                fa00_9	          1         4.5
+                                fa00_8	          1         4.5
+                              and00_18	          1         4.5
+                              and00_21	          1         4.5
+                               fa00_10	          1         4.5
+                               fa00_11	          1         4.5
+                               fa00_12	          1         4.5
+                                  fa00	          1         4.5
+                              and00_22	          1         4.5
+                              and00_20	          1         4.5
+                              and00_19	          1         4.5
+                              and00_16	          1         4.5
+                              and00_17	          1         4.5
+                              and00_15	          1         4.5
+---------------------------------------------------
+Report for cell xnor00
+   Instance path: adder8bit00/A24
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell and00_22
+   Instance path: adder8bit00/A23
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell and00_21
+   Instance path: adder8bit00/A22
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell and00_20
+   Instance path: adder8bit00/A21
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell and00_19
+   Instance path: adder8bit00/A20
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell and00_18
+   Instance path: adder8bit00/A19
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell and00_17
+   Instance path: adder8bit00/A18
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell and00_16
+   Instance path: adder8bit00/A17
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell and00_15
+   Instance path: adder8bit00/A16
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell fa00_12
+   Instance path: adder8bit00/A14
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                or00_5	          1         4.5
+---------------------------------------------------
+Report for cell or00_5
+   Instance path: adder8bit00/A14/F02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell fa00_11
+   Instance path: adder8bit00/A13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                or00_4	          1         4.5
+---------------------------------------------------
+Report for cell or00_4
+   Instance path: adder8bit00/A13/F02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell fa00_10
+   Instance path: adder8bit00/A12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                or00_3	          1         4.5
+---------------------------------------------------
+Report for cell or00_3
+   Instance path: adder8bit00/A12/F02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell fa00_9
+   Instance path: adder8bit00/A11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                or00_2	          1         4.5
+---------------------------------------------------
+Report for cell or00_2
+   Instance path: adder8bit00/A11/F02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell fa00_8
+   Instance path: adder8bit00/A10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                or00_1	          1         4.5
+---------------------------------------------------
+Report for cell or00_1
+   Instance path: adder8bit00/A10/F02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell fa00_7
+   Instance path: adder8bit00/A09
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                or00_0	          1         4.5
+---------------------------------------------------
+Report for cell or00_0
+   Instance path: adder8bit00/A09/F02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell fa00
+   Instance path: adder8bit00/A08
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                  or00	          1         4.5
+---------------------------------------------------
+Report for cell or00
+   Instance path: adder8bit00/A08/F02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell xor00_5
+   Instance path: adder8bit00/A06
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell xor00_4
+   Instance path: adder8bit00/A05
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell xor00_3
+   Instance path: adder8bit00/A04
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell xor00_2
+   Instance path: adder8bit00/A03
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell xor00_1
+   Instance path: adder8bit00/A02
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5
+---------------------------------------------------
+Report for cell xor00_0
+   Instance path: adder8bit00/A01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         4.5
+                                  LUT4	       1.00         4.5

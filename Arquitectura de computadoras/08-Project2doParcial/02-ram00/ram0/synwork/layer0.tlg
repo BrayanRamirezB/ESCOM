@@ -1,0 +1,82 @@
+@N: CD630 :"C:\Users\braya\Downloads\02-ram00\ram00.vhdl":7:7:7:11|Synthesizing work.ram00.ram0.
+@N: CD630 :"C:\Users\braya\Downloads\02-ram00\muxram00.vhdl":6:7:6:14|Synthesizing work.muxram00.muxram0.
+Post processing for work.muxram00.muxram0
+Running optimization stage 1 on muxram00 .......
+@N: CD630 :"C:\Users\braya\Downloads\02-ram00\contRead00.vhdl":8:7:8:16|Synthesizing work.contread00.contread0.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\contRead00.vhdl":32:24:32:32|Removing redundant assignment.
+Post processing for work.contread00.contread0
+Running optimization stage 1 on contRead00 .......
+@N: CD630 :"C:\Users\braya\Downloads\02-ram00\memram00.vhdl":8:7:8:14|Synthesizing work.memram00.memram0.
+Post processing for work.memram00.memram0
+Running optimization stage 1 on memram00 .......
+@N: CL134 :"C:\Users\braya\Downloads\02-ram00\memram00.vhdl":22:7:22:13|Found RAM wordram, depth=64, width=7
+@N: CD630 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":8:7:8:13|Synthesizing work.coder00.coder0.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":41:14:41:26|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":49:13:49:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":58:13:58:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":67:13:67:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":76:13:76:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":85:14:85:26|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":93:13:93:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":102:13:102:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":111:13:111:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":120:13:120:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":128:14:128:26|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":136:13:136:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":145:13:145:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":154:13:154:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":163:13:163:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":172:14:172:26|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":180:13:180:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":189:13:189:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":198:13:198:25|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":207:13:207:25|Removing redundant assignment.
+@W: CG296 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":23:13:23:19|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":29:7:29:15|Referenced variable scontrolc is not in sensitivity list.
+Post processing for work.coder00.coder0
+Running optimization stage 1 on coder00 .......
+@A: CL282 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":29:2:29:5|Feedback mux created for signal aux3. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":29:2:29:5|Feedback mux created for signal aux2. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":29:2:29:5|Feedback mux created for signal aux1. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL113 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":29:2:29:5|Feedback mux created for signal outcoderc[6:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":29:2:29:5|Feedback mux created for signal outcontwritec[5:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"C:\Users\braya\Downloads\02-ram00\coder00.vhdl":29:2:29:5|Feedback mux created for signal aux0. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@N: CD630 :"C:\Users\braya\Downloads\02-ram00\contring00.vhdl":6:7:6:16|Synthesizing work.contring00.contring0.
+Post processing for work.contring00.contring0
+Running optimization stage 1 on contring00 .......
+@N: CD630 :"C:\Users\braya\Downloads\02-ram00\ram0\source\osc00.vhdl":7:7:7:11|Synthesizing work.osc00.osc0.
+@N: CD630 :"C:\Users\braya\Downloads\02-ram00\ram0\source\div00.vhdl":8:7:8:11|Synthesizing work.div00.div0.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\ram0\source\div00.vhdl":28:3:28:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\ram0\source\div00.vhdl":36:3:36:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\ram0\source\div00.vhdl":44:3:44:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\ram0\source\div00.vhdl":52:3:52:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\ram0\source\div00.vhdl":60:3:60:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\ram0\source\div00.vhdl":68:3:68:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\ram0\source\div00.vhdl":76:3:76:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\02-ram00\ram0\source\div00.vhdl":84:3:84:8|Removing redundant assignment.
+Post processing for work.div00.div0
+Running optimization stage 1 on div00 .......
+@N: CD630 :"C:\Users\braya\Downloads\02-ram00\ram0\source\oscint00.vhdl":6:7:6:14|Synthesizing work.oscint00.oscint0.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.oscint00.oscint0
+Running optimization stage 1 on oscint00 .......
+Post processing for work.osc00.osc0
+Running optimization stage 1 on osc00 .......
+Post processing for work.ram00.ram0
+Running optimization stage 1 on ram00 .......
+Running optimization stage 2 on oscint00 .......
+Running optimization stage 2 on div00 .......
+Running optimization stage 2 on osc00 .......
+Running optimization stage 2 on contring00 .......
+Running optimization stage 2 on coder00 .......
+Running optimization stage 2 on memram00 .......
+Running optimization stage 2 on contRead00 .......
+Running optimization stage 2 on muxram00 .......
+Running optimization stage 2 on ram00 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\braya\Downloads\02-ram00\ram0\synwork\layer0.rt.csv
+

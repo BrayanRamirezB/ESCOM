@@ -1,0 +1,60 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|shiftRL00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-fileorder|C:\\Users\\Emanuel\\Documents\\ESCOM\\7 SEPTIMO SEMESTRE\\Arquitectura de computadoras\\1erP\\06-proyectDiamond-1erParc\\11-shiftRL00\\shiftRL0\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\bin64\\c_vhdl.exe":1603988322
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\location.map":1604359580
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std1164.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\numeric.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\umr_capim.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\arith.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\unsigned.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\hyperents.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1542263532
+#CUR:"C:\\Users\\Emanuel\\Documents\\ESCOM\\7 SEPTIMO SEMESTRE\\Arquitectura de computadoras\\1erP\\06-proyectDiamond-1erParc\\10-osc00-vhdl\\div00.vhdl":1646946660
+#CUR:"C:\\Users\\Emanuel\\Documents\\ESCOM\\7 SEPTIMO SEMESTRE\\Arquitectura de computadoras\\1erP\\06-proyectDiamond-1erParc\\10-osc00-vhdl\\osc00.vhdl":1646946660
+#CUR:"C:\\Users\\Emanuel\\Documents\\ESCOM\\7 SEPTIMO SEMESTRE\\Arquitectura de computadoras\\1erP\\06-proyectDiamond-1erParc\\10-osc00-vhdl\\oscint00.vhdl":1646946660
+#CUR:"C:\\Users\\Emanuel\\Documents\\ESCOM\\7 SEPTIMO SEMESTRE\\Arquitectura de computadoras\\1erP\\06-proyectDiamond-1erParc\\10-osc00-vhdl\\packageosc00.vhdl":1646946660
+#CUR:"C:\\Users\\Emanuel\\Documents\\ESCOM\\7 SEPTIMO SEMESTRE\\Arquitectura de computadoras\\1erP\\06-proyectDiamond-1erParc\\11-shiftRL00\\shiftRL.vhdl":1646926276
+#CUR:"C:\\Users\\Emanuel\\Documents\\ESCOM\\7 SEPTIMO SEMESTRE\\Arquitectura de computadoras\\1erP\\06-proyectDiamond-1erParc\\11-shiftRL00\\packageshiftRL00.vhdl":1646927487
+#CUR:"C:\\Users\\Emanuel\\Documents\\ESCOM\\7 SEPTIMO SEMESTRE\\Arquitectura de computadoras\\1erP\\06-proyectDiamond-1erParc\\11-shiftRL00\\shiftRL00.vhdl":1646927217
+0 "C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\10-osc00-vhdl\div00.vhdl" vhdl
+2 "C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\10-osc00-vhdl\osc00.vhdl" vhdl
+3 "C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\10-osc00-vhdl\oscint00.vhdl" vhdl
+4 "C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\10-osc00-vhdl\packageosc00.vhdl" vhdl
+5 "C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\11-shiftRL00\shiftRL.vhdl" vhdl
+6 "C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\11-shiftRL00\packageshiftRL00.vhdl" vhdl
+7 "C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\11-shiftRL00\shiftRL00.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 3 1 4 
+3 -1
+4 -1
+5 -1
+6 -1
+7 2 5 6 
+
+# Dependency Lists (Users Of)
+0 -1
+1 2 
+2 7 
+3 2 
+4 2 
+5 7 
+6 7 
+7 -1
+
+# Design Unit to File Association
+arch work div00 div0 1
+module work div00 1
+arch work osc00 osc0 2
+module work osc00 2
+arch work oscint00 oscint0 3
+module work oscint00 3
+arch work shiftrl shift 5
+module work shiftrl 5
+arch work shiftrl00 shiftrl0 7
+module work shiftrl00 7

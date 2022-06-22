@@ -1,0 +1,508 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>321 Herencia múltiple</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 3</header>
+ <nav>
+    <!--<div class="contenedor">-->
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+
+      <p class="derecha"><a href="TemarioPOO.html">Classroom</a></p>
+      <p><a href="TemarioPOO.html">Temario</a></p>
+      <p><a href="41EnlacesPrac.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="41EnlacesHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">HERENCIA MÚLTIPLE</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>Superclase</h1>
+       <hr>
+       <br>
+       <p><strong>Superclase</strong> Esta clase es la base para heredar los campos de datos y los métodos a las subclases. Por lo que a una superclase se le puede llamar <strong>clase base</strong>. Y a la subclase se le llama <strong>clase dervada</strong>.</p>
+       <br> 
+       <p><strong>Herencia múltiple.</strong> Las características y métodos se transmiten de varias clases base (superclases) a una o varias subclases.</p>
+       <br>
+       <p><strong>El pardigma orientado a objetos.</strong> La herencia múltiple es una característica en este paradigma. Pero no quiere decir que todos los lenguajes que se pretenden ostentar como orientados a objetos, aprovechen el uso de la herencia múltiple.</p>
+       <br>
+       <p><strong>La sintaxis para usar la herencia en C++.</strong> Es la siguiente:</p>
+       <br>
+       <pre>
+       class ClaseDerivada o subclase: Especificador ClaseBase o superclase {
+         Lista de miembros
+       };
+       </pre>
+       <br>
+       <p><strong>Programa 1 en C++.</strong> Con herencia jerarquica.</p>
+       <br>
+       <pre>
+       #include &lt;iostream&gt;
+       using namespace std;
+
+       class Estudiante {
+         protected:
+           int numeroInscripcion;
+         protected:
+           void getNumero(int);
+           void setNumero(void);
+       };
+
+       void Estudiante :: getNumero(int a) {
+         numeroInscripcion = a;
+       }
+
+       void Estudiante :: setNumero() {
+         cout << "Numero de inscripcion: " << numeroInscripcion << "\n" ;
+       }
+
+       class Prueba : public Estudiante {
+         protected:
+           float sub1;
+           float sub2;
+         public:
+           void getMarca(float, float);
+           void setMarca(void);
+       };
+
+       void Prueba :: getMarca(float b, float c) {
+         sub1 = b;
+         sub2 = c;
+       }
+
+       void Prueba :: setMarca() {
+         cout << "Marca en sub1 = " << sub1 << "\n" ;
+         cout << "Marca en sub2 = " << sub2 << "\n" ;
+       }
+
+       class Resultado : public Prueba {
+           float total;
+         public:
+           void mostrar(void);
+       };
+
+       void Resultado :: mostrar() {
+         total = sub1 + sub2;
+         setNumero();
+         setMarca();
+         cout << "Total = " << total << "\n" ;
+       }
+
+       int main() {
+         Resultado estudiante1;
+
+         estudiante1.getNumero(111);
+         estudiante1.getMarca(75.0, 59.5);
+
+         estudiante1.mostrar();
+
+         return 0;
+       }
+       </pre>
+       <br>
+       <p><strong>Programa 2 en C++.</strong> Con herencia múltiple.</p>
+       <br>
+       <pre>
+       #include &lt;iostream&gt;
+       using namespace std;
+
+       class M {
+         protected:
+           int m;
+         public:
+           void getM(int);
+       };
+
+       class N {
+         protected:
+           int n;
+         public:
+           void getN(int);
+       };
+
+       class P : public M, public N {
+         public:
+           void mostrar(void);
+       };
+
+       void M :: getM(int x) {
+         m = x;
+       }
+
+       void N :: getN(int y) {
+         n = y;
+       }
+
+       void P :: mostrar(void) {
+         cout << "m = " << m << "\n" ;
+         cout << "n = " << n << "\n" ;
+         cout << "m * n = " << m * n << "\n" ;
+       }
+
+       int main() {
+         P p;
+  
+         p.getM(10);
+         p.getN(20);
+         p.mostrar();
+
+         return 0;
+       }
+       </pre>
+       <br>
+       <br>
+       <br>
+       <p><strong>Diagrama de clase del programa 1.</strong> Herencia jerarquica.</p>
+       <br>
+       <br>
+       <img src="HeEstC++.svg" align=center width=55% border=5></image>
+       <br>
+       <br>
+       <p><strong>Diagrama de clase del programa 2.</strong> Herencia múltiple.</p>
+       <br>
+       <br>
+       <img src="HePC++.svg" align=center width=70% border=5></image>
+       <br>
+       <br>
+       
+       <hr>
+       <h1>Ejemplos de programas que usan la herencia</h1>
+       <hr>
+       
+       <br>
+       <p><strong>Programa 1. En java.</strong> Acceso de la subclase a una variable de la superclase:</p>
+       <br>
+       <pre>
+       class A {
+         int i;
+         int j;
+  
+       void setij(int x, int y) {
+         i = x;
+         j = y;
+       }
+     }
+
+     class B extends A {
+       int total;
+  
+       void suma() {
+         total = i + j;
+       }
+     }
+
+     class AccesoDriver {
+       public static void main(String args[]) {
+         B subO = new B();
+    
+         subO.setij(10,12);
+    
+         subO.suma();
+         System.out.println(" El total es " + subO.total);
+       }
+     }
+       </pre>
+       <br>
+       <p><strong>Programa 2. En java.</strong> Acceso incorrecto de la subclase a una variable privada de la superclase:</p>
+       <br>
+       <pre>
+       class A {
+         int i;
+         private int j;
+  
+       void setij(int x, int y) {
+         i = x;
+         j = y;
+       }
+     }
+
+     class B extends A {
+       int total;
+  
+       void suma() {
+         total = i + j;
+       }
+     }
+
+     class AccesoDriver {
+       public static void main(String args[]) {
+         B subO = new B();
+    
+         subO.setij(10,12);
+    
+         subO.suma();
+         System.out.println(" El total es " + subO.total);
+       }
+       </pre>
+       <br>
+       <p><strong>Programa 3. En java.</strong> Acceso correcto de la subclase a una variable privada de la superclase:</p>
+       <br>
+       <pre>
+       class A {
+         int i;
+         private int j = 0;
+  
+         public A(int i, int j) {
+           this.i = i;
+           this.j = j;
+         }
+  
+         protected void setij(int x, int y) {
+           i = x;
+           j = y;
+         }
+  
+         protected int leer() {
+           return i;
+         }
+  
+       }
+
+       class B extends A {
+  
+         int total;
+         private int a, b;
+  
+         public B(int i, int j) {
+           super(i, j);
+           a = i;
+           b = j;
+         }
+  
+         public void suma() {
+    
+           total = a + b;
+         }
+       }
+
+       class AccesoDriver2 {
+         public static void main(String args[]) {
+           B subO = new B(10, 12);
+    
+           subO.setij(10,12);
+    
+           subO.suma();
+           System.out.println(" El valor de la variable privada i, es " + subO.leer());
+           System.out.println(" El total es " + subO.total);
+         }
+       }
+       </pre>
+       <br>
+       <p><strong>Programa 4. En java.</strong> Otro acceso correcto de la subclase a una variable privada de la superclase:</p>
+       <br>
+       <pre>
+       class Villano {
+  private int i;
+  
+  public Villano(int ii) {
+    i = ii;
+  }
+  
+  protected void poner(int ii) {
+    i = ii;
+  }
+  
+  protected int leer() {
+    return i;
+  }
+  
+  public int valor(int m) {
+    return m * i;
+  }
+}
+
+class Malvado extends Villano {
+  private int j;
+  
+  public Malvado(int ii) {
+    super(ii);
+    j = ii;
+  }
+  
+  public void cambiar(int x) {
+    
+    poner(x);
+  }
+}
+
+public class VillanoDriver {
+  public static void main(String args[]) {
+    Malvado m1 = new Malvado(10);
+    System.out.println("El valor de i, es: " + m1.leer());
+    
+    Villano v1 = new Villano(10);
+    System.out.println("La multiplicación, es: " + v1.valor(4));
+  }
+}
+       </pre>
+       <br>
+       <p><strong>Programa 5. En java.</strong> Acceso correcto de la subclase a una variable privada de la superclase y uso de un objeto como parámetro:</p>
+       <br>
+       <pre>
+       class Prisma {
+         private double ancho;
+         private double alto;
+         private double largo;
+  
+         Prisma(Prisma o) {
+           ancho = o.ancho;
+           alto = o.alto;
+           largo = o.largo;
+         }
+  
+         Prisma() {
+           ancho = -1;
+           alto = -1;
+           largo = -1;
+         }
+  
+         Prisma(double a, double al, double l) {
+           ancho = a;
+           alto = al;
+           largo = l;
+         }
+  
+         Prisma(double lado) {
+           ancho = alto = largo = lado;
+         }
+  
+         double volumen() {
+           return ancho * alto * largo;
+         }
+       }
+
+       class PrismaConPeso extends Prisma{
+         double peso;
+  
+         PrismaConPeso(PrismaConPeso o) {
+           super(o);
+           peso = o.peso;
+         }
+  
+         PrismaConPeso(double a, double al, double l, double m) {
+           super(a, al, l);
+           peso = m;
+         }
+  
+         PrismaConPeso() {
+           super();
+           peso = -1;
+         }
+  
+         PrismaConPeso(double lado, double m) {
+           super(lado);
+           peso = m;
+         }
+       }
+
+       class Barco extends PrismaConPeso {
+         double costo;
+  
+         Barco(Barco o) {
+           super(o);
+           costo = o.costo;
+         }
+  
+         Barco(double a, double al, double l, double m, double c) {
+           super(a, al, l, m);
+           costo = c;
+         }
+    
+         Barco() {
+           super();
+           costo = -1;
+         }
+    
+         Barco(double lado, double m, double c) {
+           super(lado, m);
+           costo = c;
+         }
+       }
+  
+
+       class BarcoDriver {
+         public static void main(String args[]) {
+           Barco barco1 = new Barco(10, 20, 15, 10, 3.41);
+           Barco barco2 = new Barco (2, 3, 4, 0.76, 1.28);
+    
+           double vol;
+    
+           vol = barco1.volumen();
+           System.out.println("El volumen del barco1 es; " + vol);
+           System.out.println("El peso del barco1 es; " + barco1.peso);
+           System.out.println("El costo del transporte es; " + barco1.costo);
+           System.out.println();
+    
+           vol = barco2.volumen();
+           System.out.println("El volumen del barco2 es; " + vol);
+           System.out.println("El peso del barco2 es; " + barco2.peso);
+           System.out.println("El costo del transporte es; " + barco2.costo);
+    
+         }
+       }
+       </pre>
+       <br>
+       </article>
+       
+    </section>
+      <aside>
+      
+      <h1>Preguntas</h1>
+        <hr>
+        <br>
+        <p><strong>Pregunta 1.</strong> Describir la herencia múltiple.</p>
+        <br>
+        <p><strong>Pregunta 2.</strong> Describir la herencia jerárquica</p>
+        <br>
+        <p><strong>Pregunta 3.</strong> Describir la diferencia entre la herencia simple, la herencia jerárquica y la herencia múltiple.</p>
+        <br>
+        <hr>
+      <h1>Ejercicios</h1>
+        <hr>
+        <br>
+       <p><strong>Ejercicio 1.</strong> Usar la clase VentasPersona para hacerla subclase de la superclase Persona.</p>
+       <br>
+       <pre>
+       public class VentasPersona {
+         private String nombre;
+         private double ventas = 0.0; // ventas al día
+
+         public VentasPersona(double ventas) {
+           this.ventas = ventas;
+         }
+         
+       } // fin de la clase VentasPersona
+        </pre>
+      <br>
+         <hr>
+         <br>
+        <p><strong>Ejercicio 2.</strong> Incluirla en el diagrama de clases de Persona.</p>
+     <br>
+        
+        
+     
+ <!--    <hr>
+     <h1>Práctica 4 (la correspondiente)</h1>
+        <hr>
+        <br>
+        <p>Realizar la siguiente prácticas presentarlas en un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p>
+      
+      <br>
+     <hr>
+     <h1>Realizar el proyecto (parcial 1)</h1>
+        <hr>
+        <br>
+        <p>Presentar el proyecto por medio de un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p> -->
+        </aside>
+      <footer><p>Relación de objetos: Tema 3.2.2</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

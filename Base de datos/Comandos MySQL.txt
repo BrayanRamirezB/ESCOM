@@ -1,0 +1,93 @@
+show databases;    Muestra las bases de datos
+
+create database Nombre_Bd;   Crea una base de datos
+
+use Nombre_Bd;  te coloca en la base de datos
+
+create table nombre_tabla (
+          ->atributo tipo(tamaño) restriccion,          
+          ->otro_atributo tipo(tamaño) restriccion);
+
+show tables;     muestra las tablas
+
+describe nombre_tabla;   desc nombre_tabla ;  muestra la tabla profesor
+
+insert into nombre_tabla values ('char','varchar',int, 'año-mes-dia');  recuerda los guiones en date//inserta atributos
+
+insert into nombre_tabla (atributo1,atributo2,..,atributoN) values (valor1,valor2);
+
+insert into nombre_tabla values (a1,a2),(a1,a2);
+
+select * from nombre_tabla; busca todo de la tabla
+
+insert into nombre_tabla values (a1,a2),(a1,a2);
+
+insert into nombre_tabla values (a1,null);              permite un atributo null
+
+delete from nombre_tabla;     borra todo de la tabla 
+
+delete from nombre_tabla where atributo1 = a1 and atributo2 = a2;       borra una tupla con dos condiciones
+
+update nombre_tabla set atributo1=a1; modifica todos los atributos1 de las tuplas
+
+update nombre_tabla set atributo1=a1 where atributon=an and atributom=am; modifica el atributo1 de la tupla con dos condiciones
+ 
+alter table nombre_tabla add constraint nombre_restriccion primary key(atributo_primario); agregar restriccion preferentemente sin atributos
+          
+alter table nombre_tabla1 add constraint nombre_rest foreign key(atributo1) references nombre_tabla2 (atributo1);
+
+show create table nombre_tabla;
+
+trucazo para borrar atributo que tienen referencia en muchas tablas
+
+alter table nombre_tabla drop foreign key nombre_constraint;
+
+alter table nombre_tabla add constraint nombre_constraint foreign key(atributo) references nombre_tabla2(atributo) on delete cascade on update cascade;
+
+
+Funciones para las fechas
+
+select now();     fecha y hora del sistema
+
+select curdate();    fecha del sistema
+
+select timestampdiff(unidad de la diferencia, fecha pasada, fecha actual) as Nombre_columna from nombre_tabla;   (year-month-day, fecha pasada, fecha actual) from tabla donde se encuentran los datos       permite hacer diferencia de tiempos en tiempo de ejecucion
+
+select timestampdiff(unidad de la diferencia, 'fecha pasada', 'fecha actual');
+
+
+Para agregar una columna
+
+alter table Nombre_tabla
+	add column nombre_column typodedato() not null;
+
+
+Para modificar una columna
+
+alter table nombre_tabla
+	modify nombre_column tipodedato() restriccion;
+
+
+Para eliminar una columna
+
+alter table nombre_table
+	drop column nombre_columna;
+
+Para dar un alias a una tabla en tiempo de ejecucion
+
+"comando" as nombre_tabla;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

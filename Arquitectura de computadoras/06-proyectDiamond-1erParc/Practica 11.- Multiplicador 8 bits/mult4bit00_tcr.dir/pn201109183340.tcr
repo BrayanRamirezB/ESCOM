@@ -1,0 +1,9 @@
+#Start recording tcl command: 11/9/2020 18:30:02
+#Project Location: C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/Practicas/Practica 11.- Multiplicador 8 bits; Project name: mult4bit00
+prj_project open "C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/Practicas/Practica 11.- Multiplicador 8 bits/mult4bit00.ldf"
+pgr_project open "C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/Practicas/Practica 11.- Multiplicador 8 bits/mult4bit000/mult4bit000.xcf"
+pgr_program run
+pgr_project save "C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/Practicas/Practica 11.- Multiplicador 8 bits/mult4bit000/mult4bit000.xcf"
+pgr_project close
+prj_project close
+#Stop recording: 11/9/2020 18:33:40

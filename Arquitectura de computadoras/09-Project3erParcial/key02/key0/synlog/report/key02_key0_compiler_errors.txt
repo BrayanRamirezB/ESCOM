@@ -1,0 +1,2 @@
+@E: CD395 :"C:\Users\Juan Alonso\Desktop\ORDEN\03-3CM11-TercerParcial\key02\coder7seg00.vhdl":190:1:190:6|Constant width 4 does not match context width 7
+

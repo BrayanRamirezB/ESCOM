@@ -1,0 +1,6 @@
+con el barrel
+
+19 20 21 22 -> controlas cuantos quieres que se recorran
+8  4  2  1 -> bits para recorrer
+0  0  0  1 -> se recorren 1 bit a la izquierda
+0  1  0  0 -> se recorren 4 bits a la izquierda

@@ -1,0 +1,8 @@
+#Start recording tcl command: 3/11/2022 23:40:22
+#Project Location: C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00; Project name: shiftRL00
+prj_project open "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL00.ldf"
+pgr_project close
+prj_run Export -impl shiftRL0 -task Jedecgen
+prj_project save
+prj_project close
+#Stop recording: 3/11/2022 23:43:13

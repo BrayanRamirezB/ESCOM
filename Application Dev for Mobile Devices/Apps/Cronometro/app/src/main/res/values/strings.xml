@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cronometro</string>
+    <string name="bn1">Inicio</string>
+    <string name="bn2">Terminar</string>
+    <string name="bn3">Pausar</string>
+    <string name="bn4">Continuar</string>
+
+</resources>

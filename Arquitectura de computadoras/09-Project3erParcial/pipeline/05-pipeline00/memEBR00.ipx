@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="memEBR00" module="memEBR00" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2022 06 09 21:21:42.866" version="7.5" type="Module" synthesis="synplify" source_format="VHDL">
+  <Package>
+		<File name="" type="" modified="2022 06 09 21:21:42.675"/>
+		<File name="c:/users/mau/documents/arqui/practicas/tercelparcial/05-pipeline00/datapipeline00.mem" type="mem" modified="2022 06 02 11:23:08.221"/>
+		<File name="memEBR00.lpc" type="lpc" modified="2022 06 09 21:21:40.124"/>
+		<File name="memEBR00.vhd" type="top_level_vhdl" modified="2022 06 09 21:21:40.212"/>
+		<File name="memEBR00_tmpl.vhd" type="template_vhdl" modified="2022 06 09 21:21:40.214"/>
+		<File name="tb_memEBR00_tmpl.vhd" type="testbench_vhdl" modified="2022 06 09 21:21:40.214"/>
+  </Package>
+</DiamondModule>

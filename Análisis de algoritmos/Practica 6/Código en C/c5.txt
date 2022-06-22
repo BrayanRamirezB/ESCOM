@@ -1,0 +1,21 @@
+#define TAM 10000
+
+int RecogeTxt(FILE *, char *);
+int Maximo(int , int );
+int LcsLength(char *, char *, int , int );
+
+void main() {
+    FILE *f1 = fopen("c1.txt","rt");
+    FILE *f2 = fopen("c4.txt","rt");
+    char X[TAM], Y[TAM];
+	
+	int m = RecogeTxt(f1, X), n = RecogeTxt(f2, Y);//Recogemos los archivos de texto y obtenemos su tamaño
+	puts(X);
+	puts("");
+	puts(Y);
+	puts("");
+	printf("Tiene un porcentaje de parecido de %d", LcsLength(X,Y,m,n));
+	
+	
+	fclose(f1);fclose(f2);
+}

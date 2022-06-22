@@ -1,0 +1,606 @@
+#Build: Synplify Pro (R) Q-2020.03L-SP1, Build 182R, Oct 29 2020
+#install: C:\lscc\diamond\3.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-2I5LM3P
+
+# Tue Mar 23 17:33:02 2021
+
+#Implementation: divOsc00
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-2I5LM3P
+
+Implementation : divOsc00
+Synopsys HDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-2I5LM3P
+
+Implementation : divOsc00
+Synopsys VHDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+@N:"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00.vhd":10:7:10:14|Top entity is set to divOsc00.
+VHDL syntax check successful!
+@N: CD630 :"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00.vhd":10:7:10:14|Synthesizing work.divosc00.divosc0.
+@N: CD630 :"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\div00.vhd":9:7:9:11|Synthesizing work.div00.div0.
+@N: CD364 :"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\div00.vhd":30:6:30:11|Removing redundant assignment.
+@N: CD364 :"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\div00.vhd":39:6:39:11|Removing redundant assignment.
+@N: CD364 :"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\div00.vhd":48:6:48:11|Removing redundant assignment.
+@N: CD364 :"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\div00.vhd":57:6:57:11|Removing redundant assignment.
+@N: CD364 :"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\div00.vhd":66:6:66:11|Removing redundant assignment.
+@N: CD364 :"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\div00.vhd":75:6:75:11|Removing redundant assignment.
+@N: CD364 :"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\div00.vhd":84:6:84:11|Removing redundant assignment.
+@N: CD364 :"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\div00.vhd":93:6:93:11|Removing redundant assignment.
+Post processing for work.div00.div0
+Running optimization stage 1 on div00 .......
+@N: CD630 :"D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\osc00.vhd":8:7:8:11|Synthesizing work.osc00.osc0.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Running optimization stage 1 on osc00 .......
+Post processing for work.divosc00.divosc0
+Running optimization stage 1 on divOsc00 .......
+Running optimization stage 2 on osc00 .......
+Running optimization stage 2 on div00 .......
+Running optimization stage 2 on divOsc00 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 97MB peak: 99MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Mar 23 17:33:06 2021
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-2I5LM3P
+
+Implementation : divOsc00
+Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 90MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Mar 23 17:33:07 2021
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\synwork\divOsc00_divOsc00_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 23MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Mar 23 17:33:08 2021
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-2I5LM3P
+
+Implementation : divOsc00
+Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 90MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Mar 23 17:33:10 2021
+
+###########################################################]
+Premap Report
+
+# Tue Mar 23 17:33:12 2021
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-2I5LM3P
+
+Implementation : divOsc00
+Synopsys Lattice Technology Pre-mapping, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@A: MF827 |No constraint file specified.
+@L: D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00_scck.rpt 
+See clock summary report "D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 129MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 129MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 138MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 170MB peak: 170MB)
+
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 170MB peak: 170MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 170MB peak: 170MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 170MB peak: 170MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=26 on top level netlist divOsc00 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 170MB peak: 170MB)
+
+
+
+Clock Summary
+******************
+
+          Start                             Requested     Requested     Clock        Clock                   Clock
+Level     Clock                             Frequency     Period        Type         Group                   Load 
+------------------------------------------------------------------------------------------------------------------
+0 -       osc00|osc_int0_inferred_clock     2.1 MHz       480.769       inferred     Inferred_clkgroup_0     23   
+==================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                  Clock     Source                     Clock Pin        Non-clock Pin     Non-clock Pin
+Clock                             Load      Pin                        Seq Example      Seq Example       Comb Example 
+-----------------------------------------------------------------------------------------------------------------------
+osc00|osc_int0_inferred_clock     23        C00.OSCInst0.OSC(OSCH)     C01.oscOut.C     -                 -            
+=======================================================================================================================
+
+@W: MT529 :"d:\isc\semestre 2021-1\arquitectura de computadoras\practicas\12_13_divosc00\div00.vhd":22:2:22:3|Found inferred clock osc00|osc_int0_inferred_clock which controls 23 sequential elements including C01.sdiv[21:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 23 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+============================ Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance
+----------------------------------------------------------------------------------------
+@KP:ckid0_0       C00.OSCInst0.OSC     OSCH                   23         C01.sdiv[21:0] 
+========================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 171MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 171MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 171MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:02s; Memory used current: 91MB peak: 173MB)
+
+Process took 0h:00m:08s realtime, 0h:00m:02s cputime
+# Tue Mar 23 17:33:20 2021
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Mar 23 17:33:23 2021
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DESKTOP-2I5LM3P
+
+Implementation : divOsc00
+Synopsys Lattice Technology Mapper, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 167MB peak: 167MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 170MB peak: 170MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 173MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		   467.61ns		  44 /        23
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 180MB)
+
+Writing Analyst data base D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\synwork\divOsc00_divOsc00_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 180MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: D:\ISC\Semestre 2021-1\Arquitectura de Computadoras\practicas\12_13_divOsc00\divOsc00\divOsc00_divOsc00.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 184MB peak: 184MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:03s; Memory used current: 183MB peak: 185MB)
+
+@W: MT420 |Found inferred clock osc00|osc_int0_inferred_clock with period 480.77ns. Please declare a user-defined clock on net C00.clkaux.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Tue Mar 23 17:33:31 2021
+#
+
+
+Top view:               divOsc00
+Requested Frequency:    2.1 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 466.444
+
+                                  Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                    Frequency     Frequency     Period        Period        Slack       Type         Group              
+--------------------------------------------------------------------------------------------------------------------------------------
+osc00|osc_int0_inferred_clock     2.1 MHz       69.8 MHz      480.769       14.325        466.444     inferred     Inferred_clkgroup_0
+======================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                        |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                       Ending                         |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------
+osc00|osc_int0_inferred_clock  osc00|osc_int0_inferred_clock  |  480.769     466.444  |  No paths    -      |  No paths    -      |  No paths    -    
+======================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: osc00|osc_int0_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                Starting                                                          Arrival            
+Instance        Reference                         Type        Pin     Net         Time        Slack  
+                Clock                                                                                
+-----------------------------------------------------------------------------------------------------
+C01.sdiv[0]     osc00|osc_int0_inferred_clock     FD1S3IX     Q       sdiv[0]     1.044       466.444
+C01.sdiv[1]     osc00|osc_int0_inferred_clock     FD1S3IX     Q       sdiv[1]     1.044       466.444
+C01.sdiv[2]     osc00|osc_int0_inferred_clock     FD1S3IX     Q       sdiv[2]     1.044       466.444
+C01.sdiv[3]     osc00|osc_int0_inferred_clock     FD1S3IX     Q       sdiv[3]     1.044       466.444
+C01.sdiv[4]     osc00|osc_int0_inferred_clock     FD1S3IX     Q       sdiv[4]     1.044       466.444
+C01.sdiv[5]     osc00|osc_int0_inferred_clock     FD1S3IX     Q       sdiv[5]     1.044       466.444
+C01.sdiv[6]     osc00|osc_int0_inferred_clock     FD1S3IX     Q       sdiv[6]     1.044       466.444
+C01.sdiv[7]     osc00|osc_int0_inferred_clock     FD1S3IX     Q       sdiv[7]     1.044       466.444
+C01.sdiv[8]     osc00|osc_int0_inferred_clock     FD1S3IX     Q       sdiv[8]     1.044       466.444
+C01.sdiv[9]     osc00|osc_int0_inferred_clock     FD1S3IX     Q       sdiv[9]     1.044       466.444
+=====================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                                              Required            
+Instance         Reference                         Type        Pin     Net             Time         Slack  
+                 Clock                                                                                     
+-----------------------------------------------------------------------------------------------------------
+C01.sdiv[21]     osc00|osc_int0_inferred_clock     FD1S3IX     D       sdiv_11[21]     480.664      466.444
+C01.sdiv[19]     osc00|osc_int0_inferred_clock     FD1S3IX     D       sdiv_11[19]     480.664      466.587
+C01.sdiv[20]     osc00|osc_int0_inferred_clock     FD1S3IX     D       sdiv_11[20]     480.664      466.587
+C01.sdiv[17]     osc00|osc_int0_inferred_clock     FD1S3IX     D       sdiv_11[17]     480.664      466.729
+C01.sdiv[18]     osc00|osc_int0_inferred_clock     FD1S3IX     D       sdiv_11[18]     480.664      466.729
+C01.sdiv[15]     osc00|osc_int0_inferred_clock     FD1S3IX     D       sdiv_11[15]     480.664      466.872
+C01.sdiv[16]     osc00|osc_int0_inferred_clock     FD1S3IX     D       sdiv_11[16]     480.664      466.872
+C01.sdiv[13]     osc00|osc_int0_inferred_clock     FD1S3IX     D       sdiv_11[13]     480.664      467.015
+C01.sdiv[14]     osc00|osc_int0_inferred_clock     FD1S3IX     D       sdiv_11[14]     480.664      467.015
+C01.sdiv[11]     osc00|osc_int0_inferred_clock     FD1S3IX     D       sdiv_11[11]     480.664      467.158
+===========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      480.769
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         480.664
+
+    - Propagation time:                      14.220
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     466.444
+
+    Number of logic level(s):                20
+    Starting point:                          C01.sdiv[0] / Q
+    Ending point:                            C01.sdiv[21] / D
+    The start point is clocked by            osc00|osc_int0_inferred_clock [rising] (rise=0.000 fall=240.385 period=480.769) on pin CK
+    The end   point is clocked by            osc00|osc_int0_inferred_clock [rising] (rise=0.000 fall=240.385 period=480.769) on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival      No. of    
+Name                                      Type         Name     Dir     Delay     Time         Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+C01.sdiv[0]                               FD1S3IX      Q        Out     1.044     1.044 r      -         
+sdiv[0]                                   Net          -        -       -         -            2         
+C01.pdiv\.oscout60lto21_i_a2_1_7          ORCALUT4     A        In      0.000     1.044 r      -         
+C01.pdiv\.oscout60lto21_i_a2_1_7          ORCALUT4     Z        Out     1.017     2.061 f      -         
+oscout60lto21_i_a2_1_7                    Net          -        -       -         -            1         
+C01.pdiv\.oscout60lto21_i_a2_1            ORCALUT4     C        In      0.000     2.061 f      -         
+C01.pdiv\.oscout60lto21_i_a2_1            ORCALUT4     Z        Out     1.193     3.253 f      -         
+N_76                                      Net          -        -       -         -            4         
+C01.pdiv\.oscout28lto21_i_a2_0            ORCALUT4     D        In      0.000     3.253 f      -         
+C01.pdiv\.oscout28lto21_i_a2_0            ORCALUT4     Z        Out     1.153     4.406 f      -         
+N_78                                      Net          -        -       -         -            3         
+C01.oscOut_0_sqmuxa_1_0_i_a2              ORCALUT4     C        In      0.000     4.406 f      -         
+C01.oscOut_0_sqmuxa_1_0_i_a2              ORCALUT4     Z        Out     1.153     5.559 f      -         
+N_87                                      Net          -        -       -         -            3         
+C01.pdiv\.oscout12lto21_i_a3              ORCALUT4     C        In      0.000     5.559 f      -         
+C01.pdiv\.oscout12lto21_i_a3              ORCALUT4     Z        Out     1.017     6.576 f      -         
+N_66                                      Net          -        -       -         -            1         
+C01.pdiv\.oscout12lto21_i_a3_RNIEMSE1     ORCALUT4     C        In      0.000     6.576 f      -         
+C01.pdiv\.oscout12lto21_i_a3_RNIEMSE1     ORCALUT4     Z        Out     1.017     7.593 r      -         
+un1_oscout73_i_i_o2_4                     Net          -        -       -         -            1         
+C01.pdiv\.oscout52lto21_i_a3_RNI5PECC     ORCALUT4     C        In      0.000     7.593 r      -         
+C01.pdiv\.oscout52lto21_i_a3_RNI5PECC     ORCALUT4     Z        Out     1.089     8.681 r      -         
+N_14                                      Net          -        -       -         -            2         
+C01.un1_sdiv_cry_0_0_RNO                  ORCALUT4     A        In      0.000     8.681 r      -         
+C01.un1_sdiv_cry_0_0_RNO                  ORCALUT4     Z        Out     1.017     9.698 f      -         
+N_5_i                                     Net          -        -       -         -            1         
+C01.un1_sdiv_cry_0_0                      CCU2D        B0       In      0.000     9.698 f      -         
+C01.un1_sdiv_cry_0_0                      CCU2D        COUT     Out     1.544     11.243 r     -         
+un1_sdiv_cry_0                            Net          -        -       -         -            1         
+C01.un1_sdiv_cry_1_0                      CCU2D        CIN      In      0.000     11.243 r     -         
+C01.un1_sdiv_cry_1_0                      CCU2D        COUT     Out     0.143     11.386 r     -         
+un1_sdiv_cry_2                            Net          -        -       -         -            1         
+C01.un1_sdiv_cry_3_0                      CCU2D        CIN      In      0.000     11.386 r     -         
+C01.un1_sdiv_cry_3_0                      CCU2D        COUT     Out     0.143     11.528 r     -         
+un1_sdiv_cry_4                            Net          -        -       -         -            1         
+C01.un1_sdiv_cry_5_0                      CCU2D        CIN      In      0.000     11.528 r     -         
+C01.un1_sdiv_cry_5_0                      CCU2D        COUT     Out     0.143     11.671 r     -         
+un1_sdiv_cry_6                            Net          -        -       -         -            1         
+C01.un1_sdiv_cry_7_0                      CCU2D        CIN      In      0.000     11.671 r     -         
+C01.un1_sdiv_cry_7_0                      CCU2D        COUT     Out     0.143     11.814 r     -         
+un1_sdiv_cry_8                            Net          -        -       -         -            1         
+C01.un1_sdiv_cry_9_0                      CCU2D        CIN      In      0.000     11.814 r     -         
+C01.un1_sdiv_cry_9_0                      CCU2D        COUT     Out     0.143     11.957 r     -         
+un1_sdiv_cry_10                           Net          -        -       -         -            1         
+C01.un1_sdiv_cry_11_0                     CCU2D        CIN      In      0.000     11.957 r     -         
+C01.un1_sdiv_cry_11_0                     CCU2D        COUT     Out     0.143     12.100 r     -         
+un1_sdiv_cry_12                           Net          -        -       -         -            1         
+C01.un1_sdiv_cry_13_0                     CCU2D        CIN      In      0.000     12.100 r     -         
+C01.un1_sdiv_cry_13_0                     CCU2D        COUT     Out     0.143     12.242 r     -         
+un1_sdiv_cry_14                           Net          -        -       -         -            1         
+C01.un1_sdiv_cry_15_0                     CCU2D        CIN      In      0.000     12.242 r     -         
+C01.un1_sdiv_cry_15_0                     CCU2D        COUT     Out     0.143     12.385 r     -         
+un1_sdiv_cry_16                           Net          -        -       -         -            1         
+C01.un1_sdiv_cry_17_0                     CCU2D        CIN      In      0.000     12.385 r     -         
+C01.un1_sdiv_cry_17_0                     CCU2D        COUT     Out     0.143     12.528 r     -         
+un1_sdiv_cry_18                           Net          -        -       -         -            1         
+C01.un1_sdiv_cry_19_0                     CCU2D        CIN      In      0.000     12.528 r     -         
+C01.un1_sdiv_cry_19_0                     CCU2D        COUT     Out     0.143     12.671 r     -         
+un1_sdiv_cry_20                           Net          -        -       -         -            1         
+C01.un1_sdiv_s_21_0                       CCU2D        CIN      In      0.000     12.671 r     -         
+C01.un1_sdiv_s_21_0                       CCU2D        S0       Out     1.549     14.220 r     -         
+sdiv_11[21]                               Net          -        -       -         -            1         
+C01.sdiv[21]                              FD1S3IX      D        In      0.000     14.220 r     -         
+=========================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:04s; Memory used current: 184MB peak: 185MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:04s; Memory used current: 184MB peak: 185MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 23 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       6
+
+
+Details:
+CCU2D:          12
+FD1S3AX:        1
+FD1S3IX:        22
+GSR:            1
+IB:             5
+OB:             1
+ORCALUT4:       44
+OSCH:           1
+PUR:            1
+VHI:            2
+VLO:            3
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:04s; Memory used current: 64MB peak: 185MB)
+
+Process took 0h:00m:10s realtime, 0h:00m:04s cputime
+# Tue Mar 23 17:33:34 2021
+
+###########################################################]

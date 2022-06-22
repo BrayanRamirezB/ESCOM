@@ -1,0 +1,9 @@
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\01-and00\and00.vhdl":6:7:6:11|Synthesizing work.and00.and0.
+Post processing for work.and00.and0
+Running optimization stage 1 on and00 .......
+Running optimization stage 2 on and00 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\01-and00\and0\synwork\layer0.rt.csv
+

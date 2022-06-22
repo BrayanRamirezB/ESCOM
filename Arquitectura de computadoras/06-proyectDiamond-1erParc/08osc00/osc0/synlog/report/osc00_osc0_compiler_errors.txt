@@ -1,0 +1,2 @@
+@E: CD326 :"C:\Users\Emanuel\Documents\ESCOM\7 SEPTIMO SEMESTRE\Arquitectura de computadoras\1erP\06-proyectDiamond-1erParc\08osc00\osc00.vhdl":15:1:15:3|Port cdiv of entity work.oscint00 is unconnected. If a port needs to remain unconnected, use the keyword open.
+

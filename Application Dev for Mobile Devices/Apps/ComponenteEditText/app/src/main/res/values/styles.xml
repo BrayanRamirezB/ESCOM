@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="miEstilo" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#CD82C7</item>
+        <item name="colorControlActivated">#123ABC</item>
+        <item name="android:textColorHighlight">#D0ADD6</item>
+    </style>
+</resources>

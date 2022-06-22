@@ -1,0 +1,14 @@
+#Start recording tcl command: 3/10/2022 09:20:43
+#Project Location: C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00; Project name: shiftRL00
+prj_project new -name "shiftRL00" -impl "shiftRL0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/10-osc00-vhdl/div00.vhdl" "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/10-osc00-vhdl/osc00.vhdl" "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/10-osc00-vhdl/oscint00.vhdl" "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/10-osc00-vhdl/packageosc00.vhdl"
+prj_project save
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL.vhdl"
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00/packageshiftRL00.vhdl"
+prj_src add "C:/Users/Emanuel/Documents/ESCOM/7 SEPTIMO SEMESTRE/Arquitectura de computadoras/1erP/06-proyectDiamond-1erParc/11-shiftRL00/shiftRL00.vhdl"
+prj_project save
+prj_run Export -impl shiftRL0 -task Jedecgen
+prj_run Export -impl shiftRL0 -task Jedecgen
+prj_run Export -impl shiftRL0 -task Jedecgen
+prj_project save
+#Stop recording: 3/10/2022 09:52:58

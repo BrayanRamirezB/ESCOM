@@ -1,0 +1,12 @@
+#Start recording tcl command: 11/5/2020 11:12:01
+#Project Location: C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/mult8bit00; Project name: mult4bit00
+prj_project open "C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/mult8bit00/mult4bit00.ldf"
+pgr_project save "C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/mult8bit00/mult4bit000/mult4bit000.xcf"
+prj_src add -exclude "C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/mult8bit00/mult4bit000/mult4bit000.xcf"
+prj_src enable "C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/mult8bit00/mult4bit000/mult4bit000.xcf"
+pgr_program run
+pgr_project save "C:/Users/Ivan/Desktop/7to Semestre/Arquitectura de Computadoras/mult8bit00/mult4bit000/mult4bit000.xcf"
+pgr_project close
+prj_project save
+prj_project close
+#Stop recording: 11/5/2020 11:13:28

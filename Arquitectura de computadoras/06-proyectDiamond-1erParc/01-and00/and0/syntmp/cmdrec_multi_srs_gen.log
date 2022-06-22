@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  and00  -multisrs  "C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\01-and00\and0\synwork\and00_and0_comp.srs"  -osyn  "C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\01-and00\and0\synwork\and00_and0_mult.srs"  -log  "C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\01-and00\and0\synlog\and00_and0_multi_srs_gen.srr" 
+relcom:..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top and00 -multisrs "C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\01-and00\and0\synwork\and00_and0_comp.srs" -osyn "C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\01-and00\and0\synwork\and00_and0_mult.srs" -log "C:\Users\braya\Downloads\Arquitectura de computadoras\06-projectDiamond-1erParc\01-and00\and0\synlog\and00_and0_multi_srs_gen.srr"
+rc:0 success:1 runtime:1
+file:..\synwork\and00_and0_comp.srs|io:i|time:1645248144|size:1621|exec:0|csum:36C882F06BBD89BF33F620A919366130
+file:..\synwork\and00_and0_mult.srs|io:o|time:1645248146|size:1314|exec:0|csum:
+file:..\synlog\and00_and0_multi_srs_gen.srr|io:o|time:1645248146|size:1190|exec:0|csum:
+file:..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1603988322|size:8875008|exec:1|csum:43373AFF0ED6BCEB26CB4B4947B972DD

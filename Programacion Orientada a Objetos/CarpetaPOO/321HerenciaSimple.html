@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>321 Herencia simple</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 3</header>
+ <nav>
+    <!--<div class="contenedor">-->
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+
+      <p class="derecha"><a href="TemarioPOO.html">Classroom</a></p>
+      <p><a href="TemarioPOO.html">Temario</a></p>
+      <p><a href="41EnlacesPrac.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="41EnlacesHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">HERENCIA SIMPLE</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>Superclase</h1>
+       <hr>
+       <br>
+       <p><strong>Herencia simple.</strong> Las características y métodos se transmiten de una superclase a una o varias subclases. </p>
+       <br>
+       <p><strong>Beneficios de la herencia.</strong> Ha visto que la herencia da lugar a la reutilización del código y ahora debería estar convencido
+de los beneficios de la reutilización del código. Otro beneficio de la herencia es que da lugar a módulos más pequeños
+(porque las clases se dividen en superclases y subclases). En general, los módulos más pequeños son buenos porque
+hay menos código para leer al buscar errores o realizar actualizaciones.</p>
+       <br>
+       <p><strong>Subclase.</strong></p>
+       <br>
+       <pre>
+       public class Gerente2 extends Persona {
+         public Gerente2(String nombre) {
+           super(nombre);
+         }
+       } // fin de la clase Gerente2
+       </pre>
+       <br>
+       <p><strong>Subclase.</strong></p>
+       <br>
+       <pre>
+       public class Empleado extends Persona {
+         private int id = 0;
+
+         public Empleado() {
+        
+         }
+         public Empleado(String nombre, int id) {
+           super(nombre);
+           this.id = id;
+         }
+         public void mostrar() {
+           System.out.println("nombre: " + getNombre());
+           System.out.println("id: " + id);
+         }
+       } // fin de la clase Empleado
+       </pre>
+       <br>
+       <p><strong>Subclase.</strong></p>
+       <br>
+       <pre>
+       public class TiempoCompleto extends Empleado {
+         private double salario = 0.0;
+
+         public TiempoCompleto() { 
+         
+         }
+         public TiempoCompleto(String nombre, int id, double salario) {
+           super(nombre, id);
+           this.salario = salario;
+         }
+         public void mostrar() {
+           super.mostrar();
+           System.out.printf("salario: $%,.0f\n", salario);
+         }
+       } // fin de la clase TiempoCompleto
+       </pre>
+       <br>
+       <p><strong>Superclase.</strong></p>
+       <br>
+       <pre>
+       public class Persona {
+         private String nombre = "";
+
+         public Persona() {
+
+         }
+         public Persona(String nombre) {
+           this.nombre = nombre;
+         }
+         public String getNombre() {
+           return this.nombre;
+         }
+       } // fin de la clase Persona
+       </pre>
+       <br>
+       <p><strong>Clase principal.</strong></p>
+       <br>
+       <pre>
+       public class TiempoCompletoDriver {
+         public static void main(String[] args) {
+           TiempoCompleto tiempoCompleto = new TiempoCompleto("Shreya", 5733, 80000);
+           tiempoCompleto.mostrar();
+           System.out.println(tiempoCompleto.getNombre());
+       }
+     } // fin de la clase TiempoCompletoDriver
+       </pre>
+       <br>
+       <p><strong>La salida es:</strong></p>
+       <br>
+      <pre>
+      nombre: Shreya
+      id: 5733
+      salario: $80,000
+      Shreya
+      </pre>
+      <br>
+       <p>Para explicar cómo implementar la herencia, implementaremos la jerarquía Persona / Empleado / TiempoCompleto que se muestra en el diagrama de clases. Implementaremos las clases de Persona y Empleado en esta sección y las Clase TiempoCompleto.</p>
+       <br>
+       <br>
+       <p><strong>Diagrama de clase de la herencia de la clase Persona.</strong></p>
+       <br>
+       <img src="HePersonaJerarquia.svg" align=center width=100% border=5></image>
+       <br>
+       <br>
+       <p><strong>El uso de super.</strong> Los objetos de <strong>Empleado</strong> heredan la variable de instancia de nombre de <strong>Persona</strong>. De ello se deduce que los objetos <strong>Empleado</strong>
+deben usar el constructor Persona para inicializar sus variables de instancia de nombre heredadas. Pero, ¿cómo puede una objeto de empleado llamar a un constructor de <stron>Persona</strong>? Es fácil, llamar a un constructor de superclase, se usa la palabra reservada <strong>super</strong> seguida de paréntesis y una lista de argumentos separados por comas que desea pasar al constructor. Por ejemplo, así es como el constructor de empleados del diagrama de clases llama al constructor Persona de un parámetro:</p>
+        <br>
+        <pre>
+        super(parametro);
+        </pre>
+        <br>
+        <p>Más programas sobre herencia simple:</p>
+        <hr>
+        <br>
+        <p><strong>Programa 1</strong></p>
+        <br>
+        <pre>
+        class A {
+          int i;
+          int j;
+  
+          void setij(int x, int y) {
+            i = x;
+            j = y;
+          }
+        }
+
+        class B extends A {
+          int total;
+  
+          void suma() {
+            total = i + j;
+          }
+        }
+
+        class AccesoDriver {
+          public static void main(String args[]) {
+            B subO = new B();
+    
+            subO.setij(10,12);
+    
+            subO.suma();
+            System.out.println(" El total es " + subO.total);
+          }
+        }
+        </pre>
+        <br>
+        <p>La salida es:</p>
+        <pre>
+        El total es 22
+
+        </pre>
+        <br>
+        <p><strong>Programa 2</strong></p>
+        <br>
+        <pre>
+        class Arte {
+          Arte() {
+            System.out.println("Constructor de Arte");
+          }
+        }
+
+        class Dibujo extends Arte {
+          Dibujo() {
+            System.out.println("Costructor de Dibujo");
+          }
+        }
+
+        public class Animacion1 extends Dibujo {
+          Animacion1() {
+            System.out.println("Constructor de Animacion1");
+          }
+  
+          public static void main(String[] args) {
+            Animacion1 x = new Animacion1();
+          }
+        }
+        </pre>
+        <br>
+        <p>La salida es:</p>
+        <br>
+        
+        <p><strong>Programa 3</strong></p>
+        <br>
+        <pre>
+        class Juego {
+          Juego(int i) {
+            System.out.println("Constructor de Juego");
+          }
+        }
+
+        class JuegoMesa extends Juego {
+          JuegoMesa(int i) {
+            super(i);
+            System.out.println("Constructor de JuegoMesa");
+          }
+        }
+
+        public class Ajedrez1 extends JuegoMesa {
+          Ajedrez1() {
+            super(11);
+            System.out.println("Constructor de Ajedrez1");
+          }
+  
+          public static void main(String[] args) {
+            Ajedrez1 x = new Ajedrez1();
+          }
+        }
+        </pre>
+        <br>
+        <pre>
+        Constructor de Juego
+        Constructor de JuegoMesa
+        Constructor de Ajedrez1
+        </p>
+        <br>
+        <p>La salida es:</p>
+        <br>
+        <pre>
+        Constructor de Arte
+        Costructor de Dibujo
+        Constructor de Animacion1
+
+        </pre>
+        <br>
+       </article>
+    </section>
+      <aside>
+      
+      <h1>Preguntas</h1>
+        <hr>
+        <br>
+        <p><strong>Pregunta 1.</strong> Describir la herencia simple.</p>
+        <br>
+        <p><strong>Pregunta 2.</strong> ¿Cómo se indica por medio del código la herencia?</p>
+        <br>
+        <hr>
+      <h1>Ejercicios</h1>
+        <hr>
+        <br>
+       <p><strong>Ejercicio 1.</strong> Usar la clase VentasPersona para hacerla subclase de la superclase Persona.</p>
+       <br>
+       <pre>
+       public class VentasPersona {
+         private String nombre;
+         private double ventas = 0.0; // ventas al día
+
+         public VentasPersona(double ventas) {
+           this.ventas = ventas;
+         }
+         
+       } // fin de la clase VentasPersona
+        </pre>
+      <br>
+      
+         <hr>
+         <br>
+        <p><strong>Ejercicio 2.</strong> Incluirla en el diagrama de clases de Persona.</p>
+     <br>
+        
+        
+     
+ <!--    <hr>
+     <h1>Práctica 4 (la correspondiente)</h1>
+        <hr>
+        <br>
+        <p>Realizar la siguiente prácticas presentarlas en un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p>
+      
+      <br>
+     <hr>
+     <h1>Realizar el proyecto (parcial 1)</h1>
+        <hr>
+        <br>
+        <p>Presentar el proyecto por medio de un formato de power point y enviarla por correo.</p>
+       <p>Ejercicios. Práctica. Proyecto.</p> -->
+        </aside>
+      <footer><p>Relación de objetos: Tema 3.2.1</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

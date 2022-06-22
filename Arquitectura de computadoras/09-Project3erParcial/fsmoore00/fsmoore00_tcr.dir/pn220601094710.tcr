@@ -1,0 +1,32 @@
+#Start recording tcl command: 6/1/2022 08:35:35
+#Project Location: D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00; Project name: fsmoore00
+prj_project open "D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00/fsmoore00.ldf"
+pgr_project open "D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00/fsmoore0/fsmoore0.xcf"
+pgr_project close
+pgr_project open "D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00/fsmoore0/fsmoore0.xcf"
+prj_run Export -impl fsmoore0 -task Jedecgen
+pgr_program run
+pgr_project save "D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00/fsmoore0/fsmoore0.xcf"
+prj_run Export -impl fsmoore0 -task Jedecgen
+pgr_program run
+pgr_project save "D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00/fsmoore0/fsmoore0.xcf"
+prj_run Export -impl fsmoore0 -task Jedecgen
+pgr_program run
+pgr_project save "D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00/fsmoore0/fsmoore0.xcf"
+prj_run Export -impl fsmoore0 -task Jedecgen
+pgr_project save "D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00/fsmoore0/fsmoore0.xcf"
+prj_run Export -impl fsmoore0 -task Jedecgen
+pgr_project save "D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00/fsmoore0/fsmoore0.xcf"
+prj_run Export -impl fsmoore0 -task Jedecgen
+pgr_program run
+pgr_project save "D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00/fsmoore0/fsmoore0.xcf"
+prj_run Export -impl fsmoore0 -task Jedecgen
+pgr_program run
+pgr_project save "D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00/fsmoore0/fsmoore0.xcf"
+prj_run Export -impl fsmoore0 -task Jedecgen
+pgr_program run
+pgr_project save "D:/Materias/Arquitectura de computadoras/09-Prohect3erParcial/fsmoore00/fsmoore0/fsmoore0.xcf"
+pgr_project close
+prj_project save
+prj_project close
+#Stop recording: 6/1/2022 09:47:10

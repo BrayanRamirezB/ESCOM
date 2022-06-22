@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <Meta charset="utf-8">
+    <title>Antecedentes</title>
+    <script src=".js"></script>
+    <link rel="stylesheet" href="PresentacionCapitulo.css">
+  </head>
+<body>
+<header>Programación orientada a objetos<br>Capítulo 1</header>
+ <nav>
+   <!-- <div class="contenedor">--> 
+      <p><img src="curie.svg" align=center width=55% border=5></image>Clásico</p>
+      <p class="derecha"><a href="TemarioPOO.html">Temario</a></p>
+      
+      <p><a href="21ClasObjPra.html"><img src="EstudiarPracticandoIzq.svg" align=center width=55% border=5></image>Práctico</a></p>
+      <p><a href="21ClasObjHac.html"><img src="EstudiarHaciendo.svg" align=center width=55% border=5></image>Haciendo</a></p>
+    <!--</div>-->
+ </nav>
+  <section class="envoltura">
+    <h1 class="titulo">ANTECEDENTES</h1>
+    <section class="interna">
+      
+      <article>
+       <h1>La Programación Orientada a Objetos</h1>
+       <hr>
+        <p><strong>Definición de paradigma de la Real Academia Española.</strong> 2. m. Teoría o conjunto de teorías cuyo núcleo central se acepta sin cuestionar y que suministra la base y modelo para resolver problemas y avanzar en el conocimiento.</p>
+        <br>
+       <p><strong>Clasificación de la programación.</strong> La visión tradicional de un programa de computadora es la de un proceso que ha sido codificado en un
+formulario que se puede ejecutar en una computadora. Esta visión se originó en el hecho de que las primeras computadoras se desarrollaron principalmente para automatizar un proceso bien definido (es decir, un algoritmo)
+para el cálculo numérico, y se remonta a las primeras computadoras con programa almacenado. En consecuencia, el proceso de creación de software se vio como una traducción de una descripción de lenguaje "natural" a una secuencia de operaciones que podrían ejecutarse en una computadora. Como muchos dirían que este paradigma sigue siendo la mejor manera de presentar la noción de programación a un principiante, pero a medida que los sistemas se vuelven más complejos, su eficacia en el desarrollo de las soluciones se volvieron sospechosas. Este cambio de perspectiva por parte de los desarrolladores de software sucedió durante un período de tiempo y fue impulsado por varios factores, incluido el alto costo
+del desarrollo y los esfuerzos constantes para encontrar usos para el software en nuevos dominios. Uno podria argumentar con seguridad que las aplicaciones de software desarrolladas en años posteriores tenían dos caracteristicas:</p>
+      <br>
+     <p><ol><li>Comportamiento que fue difícil de caracterizar como un proceso.</li>
+     
+<li>Requisitos de confiabilidad, rendimiento y costo que hicieron los desarrolladores originales que no enfrentaron.</li></ol></p>
+       <br>
+      <p><strong>Paradigma Orientado a Objetos.</strong> Durante el desarrollo de este paradigma, como era de esperar, se probaron y descartaron varias ideas y enfoques. A lo largo de los años, el campo se ha estabilizado para que podamos
+presentar con seguridad las ideas clave cuya solidez ha resistido el paso del tiempo.</p>
+      <br>
+      <p><strong>La idea principal.</strong> Es el objeto, el cual se agrupa en clases.</p>
+      <br>
+      <p class="cita"><cite>Object-Oriented Analysis
+and Design, Sarnath Ramnath and Brahma Dathan, Pág. 4-5</cite></p>
+      <br>
+      <p><strong>Cambio de lo estructurado a lo orientado a objetos.</strong> Los programas de los años 70 a los 90 crecieron en el número de lineas, debido al incremento del uso de la computadora. Ya que cuando un programa tiene más números de lineas se hace más complejo. Hacer desde el principio un programa grande no es práctico realizarlo, es por eso que se usaron las características que ayudaron a hacer la programación con programas grandes más sencilla. Las características, son: la herencia, la encapsulación y el polimorfismo.</p>
+      <br> 
+      <p class="cita"><cite>Java manual de referencia, Patrick Naughton y Herbert Schildt, Pág. 6</cite></p>
+       <br>
+       <p><strong>Los lenguajes que estan bajo el paradigma orientado a objetos.</strong> Son: Phyton, Java, C++.</p>
+      <br>
+             
+      <h3>Ejemplo de código de clases con diferentes lenguajes</h3>
+      <hr>
+      <br>
+      <p><strong>Código en java.</strong> Se presenta la clase Luz en el siguiente código:</p>
+       <br>
+       <pre>
+       class Luz {
+         on();
+         off();
+         brillantez();
+         atenuacion();
+       }
+       </pre>
+       <br>
+      <p><strong>Código en java.</strong> Se presenta la forma de crear objetos y sus llamadas con código:</p>
+       <br>
+       <pre>
+       Luz foco;
+       foco.on();
+       </pre>
+       <br>
+       
+       <br>
+       </article>
+       <article>
+       <br>
+     <h3>Ejemplo de código de objetos</h3>
+      <hr>
+      <br>
+    <p><strong>Código en java.</strong> Se presenta el código de una clase:</p>
+     <br>
+     <pre>
+     class Datos {
+       int i;
+       float f;
+       boolean b;
+     }
+     </pre>
+     <br>
+      <p><strong>Código en java.</strong> Se presenta la forma de crear el objeto S con el siguiente código:</p>
+     <br>
+     <pre>
+     Datos S = new Datos();
+     </pre>
+     <br>
+    <p><strong>Código en java.</strong> Se presenta la forma de llamar al objeto y asignarle valor al objeto S con el siguiente código:</p>
+    <br>
+    <pre>
+     S.i = 47;
+     S.f = 1.1;
+     S.b = false;
+     </pre>
+     <br>
+    <p class="cita"><cite>Piensa en Java, Bruce Eckel, Pág. 62-63</cite></p>
+    <br>
+     </article>
+    </section>
+      <aside>
+        <h1>Ejemplo de código de objetos</h1>
+        <hr>
+         <p><strong>Código en java.</strong> El siguiente código es como se plantean los objetos en la programación orientada a objetos:</p>
+         <br>
+         <pre>
+         public class Animal {
+           string perro;
+         }
+         </pre>
+     <p>Se presenta el código que incluye un método:</p>
+     <br>
+     <pre>
+         public class Animal {
+           string perro;
+             comer {
+               string carne;
+             }
+         }
+     </pre>
+    <br>
+    <hr>
+    <h1>Ejercicios</h1>
+        <hr>
+    <p><strong>Ejercicio 1.</strong> Investigar sobre los lenguajes de programación que utilizan el paradigma orientado a objetos. Entregar una reseña en word.</p>
+     <br>
+     <p><strong>Ejercicio 2.</strong> Presentar en diversos lenguajes una clase.</p>
+       <br>
+        </aside>
+      <footer><p>Fundamentos: Tema 1.1</p><p class="derecha">Prof. José Sánchez Juárez.</p> </footer>
+   </section>
+</body>
+</html>

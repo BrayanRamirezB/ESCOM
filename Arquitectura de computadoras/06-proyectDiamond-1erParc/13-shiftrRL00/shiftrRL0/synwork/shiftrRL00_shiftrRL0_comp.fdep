@@ -1,0 +1,57 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\braya\\Downloads\\06-proyectDiamond-1erParc\\13-shiftrRL00\\shiftrRL0\\synwork\\shiftrRL00_shiftrRL0_comp.srs|-top|shiftrRL00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\bin64\\c_vhdl.exe":1603988322
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\location.map":1604359580
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\std1164.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\numeric.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\umr_capim.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\arith.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\unsigned.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vhd\\hyperents.vhd":1603988590
+#CUR:"C:\\lscc\\diamond\\3.12\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1542263532
+#CUR:"C:\\Users\\braya\\Downloads\\06-proyectDiamond-1erParc\\13-shiftrRL00\\shiftrRL0\\source\\div00.vhdl":1646946660
+#CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\cpld\\lattice.vhd":1603988444
+#CUR:"C:\\Users\\braya\\Downloads\\06-proyectDiamond-1erParc\\13-shiftrRL00\\shiftrRL0\\source\\oscint00.vhdl":1646946660
+#CUR:"C:\\Users\\braya\\Downloads\\06-proyectDiamond-1erParc\\13-shiftrRL00\\shiftrRL0\\source\\packageosc00.vhdl":1646946660
+#CUR:"C:\\Users\\braya\\Downloads\\06-proyectDiamond-1erParc\\13-shiftrRL00\\shiftrRL.vhdl":1647752579
+#CUR:"C:\\Users\\braya\\Downloads\\06-proyectDiamond-1erParc\\13-shiftrRL00\\packageshiftrRL00.vhdl":1647752649
+#CUR:"C:\\Users\\braya\\Downloads\\06-proyectDiamond-1erParc\\13-shiftrRL00\\shiftrRL0\\source\\osc00.vhdl":1646946660
+#CUR:"C:\\Users\\braya\\Downloads\\06-proyectDiamond-1erParc\\13-shiftrRL00\\shiftrRL00.vhdl":1647752711
+0			"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1			"C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\source\div00.vhdl" vhdl
+2			"C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\source\oscint00.vhdl" vhdl
+3			"C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\source\packageosc00.vhdl" vhdl
+4			"C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL.vhdl" vhdl
+5			"C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\packageshiftrRL00.vhdl" vhdl
+6			"C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL0\source\osc00.vhdl" vhdl
+7			"C:\Users\braya\Downloads\06-proyectDiamond-1erParc\13-shiftrRL00\shiftrRL00.vhdl" vhdl
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 3 1 2
+7 5 4 6
+#Dependency Lists(Users Of)
+0 -1
+1 6
+2 6
+3 6
+4 7
+5 7
+6 7
+7 -1
+#Design Unit to File Association
+module work shiftrrl00 7
+arch work shiftrrl00 shiftrrl0 7
+module work osc00 6
+arch work osc00 osc0 6
+module work shiftrrl 4
+arch work shiftrrl shift 4
+module work oscint00 2
+arch work oscint00 oscint0 2
+module work div00 1
+arch work div00 div0 1

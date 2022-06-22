@@ -1,0 +1,15 @@
+#Start recording tcl command: 6/1/2022 19:41:14
+#Project Location: C:/Users/braya/Downloads/Arquitectura de computadoras/09-Project3erParcial/key02; Project name: key02
+prj_project open "C:/Users/braya/Downloads/Arquitectura de computadoras/09-Project3erParcial/key02/key02.ldf"
+prj_run Export -impl key0 -task Jedecgen
+pgr_project open "C:/Users/braya/Downloads/Arquitectura de computadoras/09-Project3erParcial/key02/key0/key0.xcf"
+pgr_program run
+pgr_project save "C:/Users/braya/Downloads/Arquitectura de computadoras/09-Project3erParcial/key02/key0/key0.xcf"
+prj_run Export -impl key0 -task Jedecgen
+pgr_program run
+pgr_project save "C:/Users/braya/Downloads/Arquitectura de computadoras/09-Project3erParcial/key02/key0/key0.xcf"
+prj_run Export -impl key0 -task Jedecgen
+pgr_program run
+pgr_project save "C:/Users/braya/Downloads/Arquitectura de computadoras/09-Project3erParcial/key02/key0/key0.xcf"
+prj_project close
+#Stop recording: 6/1/2022 20:11:02

@@ -1,0 +1,53 @@
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore00.vhdl":8:7:8:15|Synthesizing work.fsmoore00.fsmoore0.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":6:7:6:11|Synthesizing work.fsm00.fsm0.
+@N: CD231 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":15:13:15:14|Using onehot encoding for type estados. For example, enumeration a is mapped to "10000000".
+@W: CG296 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":19:6:19:12|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":22:8:22:12|Referenced variable enfsm is not in sensitivity list.
+@W: CG296 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":39:6:39:12|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":45:10:45:14|Referenced variable e_act is not in sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":41:8:41:12|Referenced variable enfsm is not in sensitivity list.
+Post processing for work.fsm00.fsm0
+Running optimization stage 1 on fsm00 .......
+@W: CL117 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsm00.vhdl":41:3:41:6|Latch generated from process for signal E_sig(0 to 7); possible missing assignment in an if or case statement.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\memrom00.vhdl":8:7:8:14|Synthesizing work.memrom00.memrom0.
+@W: CG296 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\memrom00.vhdl":51:7:51:13|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\memrom00.vhdl":53:9:53:13|Referenced variable encro is not in sensitivity list.
+Post processing for work.memrom00.memrom0
+Running optimization stage 1 on memrom00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\contRead00.vhdl":11:7:11:16|Synthesizing work.contread00.contread0.
+Post processing for work.contread00.contread0
+Running optimization stage 1 on contRead00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\source\osc00.vhdl":7:7:7:11|Synthesizing work.osc00.osc0.
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\source\div00.vhdl":8:7:8:11|Synthesizing work.div00.div0.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\source\div00.vhdl":28:3:28:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\source\div00.vhdl":36:3:36:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\source\div00.vhdl":44:3:44:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\source\div00.vhdl":52:3:52:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\source\div00.vhdl":60:3:60:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\source\div00.vhdl":68:3:68:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\source\div00.vhdl":76:3:76:8|Removing redundant assignment.
+@N: CD364 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\source\div00.vhdl":84:3:84:8|Removing redundant assignment.
+Post processing for work.div00.div0
+Running optimization stage 1 on div00 .......
+@N: CD630 :"C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\source\oscint00.vhdl":6:7:6:14|Synthesizing work.oscint00.oscint0.
+@W: CD276 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@N: CD630 :"C:\lscc\diamond\3.12\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.oscint00.oscint0
+Running optimization stage 1 on oscint00 .......
+Post processing for work.osc00.osc0
+Running optimization stage 1 on osc00 .......
+Post processing for work.fsmoore00.fsmoore0
+Running optimization stage 1 on fsmoore00 .......
+Running optimization stage 2 on oscint00 .......
+Running optimization stage 2 on div00 .......
+Running optimization stage 2 on osc00 .......
+Running optimization stage 2 on contRead00 .......
+Running optimization stage 2 on memrom00 .......
+Running optimization stage 2 on fsm00 .......
+Running optimization stage 2 on fsmoore00 .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\fsmoore00\fsmoore0\synwork\layer0.rt.csv
+

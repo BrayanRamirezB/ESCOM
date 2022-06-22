@@ -1,0 +1,13 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MO106 :"c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl":105:16:105:24|Found ROM sout7seg3[6:0] (in view: work.coder7seg00(coder7seg0)) with 16 words by 7 bits.
+@N: MO106 :"c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl":86:16:86:24|Found ROM sout7seg2[6:0] (in view: work.coder7seg00(coder7seg0)) with 16 words by 7 bits.
+@N: MO106 :"c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl":67:16:67:24|Found ROM sout7seg1[6:0] (in view: work.coder7seg00(coder7seg0)) with 16 words by 7 bits.
+@N: MO106 :"c:\users\braya\downloads\arquitectura de computadoras\09-project3erparcial\key02\coder7seg00.vhdl":48:16:48:24|Found ROM sout7seg0[6:0] (in view: work.coder7seg00(coder7seg0)) with 16 words by 7 bits.
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FX1056 |Writing EDF file: C:\Users\braya\Downloads\Arquitectura de computadoras\09-Project3erParcial\key02\key0\key02_key0.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT615 |Found clock div00|oscout_derived_clock with period 480.77ns 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

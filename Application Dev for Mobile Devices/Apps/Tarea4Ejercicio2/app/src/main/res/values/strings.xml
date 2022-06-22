@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tarea4Ejercicio2</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="tema">Ejercicio 2</string>
+    <string name="textresul">El resultado es:</string>
+    <string name="tx1">ax^2 + bx + c = 0</string>
+    <string name="tx2">Ingresa los siguientes coeficientes</string>
+    <string name="tx3">a =</string>
+    <string name="tx4">b =</string>
+    <string name="tx5">c =</string>
+</resources>

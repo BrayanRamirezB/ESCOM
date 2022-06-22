@@ -1,0 +1,2 @@
+ckid0_0:@|S:FSM00.C01.oscOut.Q[0]@|E:FSM07.aux01[0]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_2:@|S:FSM00.C00.OSCInst0.OSC@|E:FSM00.C01.sdiv[21:0]@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2

@@ -1,0 +1,409 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta http-equiv = "Content-Type" content = "text/html; charset 0 utf-8">
+<meta name = "Description" content = "Pagina para la Práctica 3">
+
+<title>Práctica 4</title>
+	<style type="text/css">
+
+		html, body {
+			margin:  0;	
+			padding: 0;
+			font-family: Helvetica, Arial, sans-sherif;	
+		}
+
+		h1 {
+			font-size: 60px;
+		}
+
+		input {
+			background-color: whitesmoke;
+		}
+
+		.izq {
+			float: left;
+			margin: 10px;
+		}
+
+		.der {
+			float: right;
+			margin: 10px;
+		}
+ 		.redondo {
+ 			display: block;
+ 			width: 40px;
+ 			height: 40px;
+ 			border-radius: 50%;
+ 			background-color: powderblue;
+ 			border-color: powderblue;
+ 			color: white;
+ 		}
+
+		.banner h1{
+			margin: 0;
+			text-shadow: 2px 2px 6x #000;
+		}
+
+		.banner {
+			color: white;
+			background: url('fondo1.jpg') top left/cover no-repeat;
+			height: 500px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.banner2 {
+			color: white;
+			background: url('fondo2.jpg') top left/cover no-repeat;
+			height: 500px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.navigation {
+  			display: flex;
+  			flex-flow: row wrap;
+  			justify-content: flex-end;
+   			list-style: none;
+ 			margin: 0; 
+		}
+
+		.navigation a {
+  			text-decoration: none;
+  			display: block;
+  			padding: 1em;
+  			color: white;
+		}
+
+		.navigation a:hover {
+  			background: #1565C0;
+		}
+
+    	.navigation li:last-of-type a {
+    		border-bottom: none;
+ 		}
+
+ 		.c1{
+ 			display: flex;
+			justify-content: center;
+			background-color: whitesmoke;
+
+ 		}
+
+ 		.imgc1{
+ 			padding: 10px;
+  			margin: 10px;
+ 		}
+
+ 		.textc1{
+ 			padding: 10px;
+  			margin: 10px;
+ 		}
+
+ 		.textc1 h3{
+ 			font-family: Brush Script MT;
+ 			font-size: 50px;
+ 		}
+
+ 		.textc1 p{
+ 			padding: 10px;
+  			margin: 10px;
+ 			color: red;
+ 		}
+
+ 		.c2{
+ 			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: snow;
+ 		}
+
+ 		.c2-1 {
+ 			padding: 10px;
+  			margin: 10px;
+ 			width: 600px;
+  			text-align: center;
+  			font-size: 50px;
+ 		}
+
+ 		.c2-i {
+ 			width: 350px;
+  			text-align: center;
+  			float: left;
+ 		}
+
+ 		.c2 h2 {
+ 			font-family: Brush Script MT;
+ 			font-size: 30px;
+ 			text-align: left;
+ 		}
+
+ 		.im2{
+ 			padding: 10px;
+  			margin: 10px;
+  			border-radius: 50%;
+ 		}
+
+ 		.icono{
+ 			padding: 2px;
+  			margin: 2px;
+  			float: left;
+ 		}
+
+ 		.parrafo{
+
+ 			font-family: helvetica;
+ 			font-size: 15px;
+ 			text-align: justify;
+ 		}
+
+ 		.subp{
+ 			font-family: helvetica;
+ 			font-size: 13px;
+ 			text-align: left;
+ 			color: skyblue;
+ 		}
+
+ 		.b2 {
+ 			display: block;
+ 			width: 120px;
+ 			height: 30px;
+ 			background-color: indianred;
+ 			border-color: indianred;
+ 			color: white;
+ 		}
+
+ 		.b3 { 
+ 			background-color: indianred;
+ 			border-color: indianred;
+ 			color: white;
+ 		}
+
+ 		ul {
+ 			font-size: 13px;
+ 			padding: 10px;
+  			margin: 10px;
+ 		}
+
+ 		.textr {
+ 			padding: 10px;
+  			margin: 10px;
+ 			font-family: helvetica;
+ 			font-size: 13px;
+ 			text-align: left;
+ 			color: red;
+ 		}
+
+ 		.sttextarea {
+ 			width: 400px;
+ 			height: 50px;
+ 			background-color: black;
+ 			opacity: 0.5;
+ 			color: white;
+ 		}
+
+ 		.b4 {
+ 			display: block;
+ 			width: 120px;
+ 			height: 30px;
+ 			background-color: black;
+ 			border-color: black;
+ 			color: red;
+ 		}
+
+
+	</style>
+</head>
+<body>
+	<div class="banner">
+		<div class="banner-text">
+			<h1>World of Tanks Blitz</h1>
+		</div>
+		<ul class="navigation">
+  			<li><a href="#">Inicio</a></li>
+  			<li><a href="#">Acerca de</a></li>
+ 			<li><a href="#">WoTB</a></li>
+ 			<li><a href="#">Descargar</a></li>
+		</ul>
+	</div>
+
+	<div class="c1">
+		<div class="imgc1">
+			<img src="img1.jpg" class="izq" width="650" height="400">
+		</div>
+		<div class="textc1">
+			<h3>The DeathStar</h3>
+			<p>El extraordinario destructor de tanques Fv215b (183)</br> con un cañon de 183 mm con la capacidad de </br>borrarle el juego a cualquiera.</p>
+			</br>
+			</br>
+			<table>
+				<td><button class="redondo"><</button></td>
+				<td><button class="redondo">></button></td>
+			</table>
+		</div>
+	</div>	
+
+	<div class="c2">
+		<div class="c2-1">
+			<div class="c2-1"><h2>El destructor británico FV4005</h2>
+				<div class="izq">
+					<img src="img2.jpg" class="im2" width="200" height="200">
+				</div>
+				<div>
+					<h4 class="subp">Un poco de historia.</h4>
+					<p class="parrafo">Este proyecto de cazatanques fue desarrollado sobre la base del tanque Centurion Mk3 a principios de la década del 50. El vehículo fue inicialmente probado con un compartimiento de munición mecanizado. Sin embargo, el compartimiento de munición no entraba en la torreta y fue cancelado. Un prototipo fue fabricado y sometido a las pruebas de campo, pero el vehículo nunca entró en producción en serie.</p>
+					<button class="b2">Más información</button>
+				</div>
+			</div>
+			<div class="c2-1">
+				<table>
+					<tr>
+						<td>
+							<div class="c2-i"><h2>Jagdpanzer E 100</h2>
+								<div class="izq">
+									<img src="img3.jpg" width="200" height="125">
+								</div>
+								<div>
+									<h4 class="subp">El E-100 fue concebido como la base de una artillería autopropulsada, un vehículo antiaéreo y un cazatanques.</h4>
+								</div>
+							</div>
+						</td>
+
+						<td>
+							<div class="c2-i"><h2>Progetto M40 MOD. 65</h2>
+								<div class="izq">
+									<img src="img4.jpg" width="200" height="125">
+								</div>
+								<div>
+									<h4 class="subp">Un ángulo de inclinación en las placas de blindaje, una torreta fundida, un mantelete de cañón y un potente motor Mitsubishi.</h4>
+								</div>
+							</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="c2-i"><h2>WZ - 113</h2>
+								<div class="izq">
+									<img src="img5.jpg" width="200" height="125">
+								</div>
+								<div>
+									<h4 class="subp">El vehículo fue concebido como alternativa al WZ-111 y usaba partes y componentes de tanques medianos.</h4>
+								</div>
+							</div>
+						</td>
+
+						<td>
+							<div class="c2-i"><h2>Iósif Stalin - 7</h2>
+								<div class="izq">
+									<img src="img6.jpg" width="200" height="125">
+								</div>
+								<div>
+									<h4 class="subp">El desarrollo del IS-7 comenzó en la primavera de 1945. Los prototipos superaron exitosamente las pruebas de campo en 1946 y 1947.</h4>
+								</div>
+							</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="c2-i"><h2>Sobre World of Tanks Blitz</h2>
+				<div class="c2-1">
+					<h4 class="subp">Elije el nuevo juego multijugador masivo en línea absolutamente gratuito y participa en batallas de tanques con vehículos de mediados del siglo XX utilizando su dispositivo móvil.</h4>
+					<p class="parrafo">Cinco nuevos tanques pesados se unen al juego en la Actualización 8.4. Bien blindados y equipados con armas poderosas y consumibles únicos, formarán el núcleo de cualquier equipo y recibirán los golpes enemigos más duros. Muy pronto, podrás probar los nuevos vehículos en batalla. ¡Así que conozcamos mejor a estos pesos pesados polacos!</p>
+					<button class="b2">Más información</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="c2-1">
+			<table align="right">
+				<tr>
+					<td>
+						<div align="right"><h2>Buscar</h2>
+							<table class="izq">
+								<td>
+									<input type="text" name="bus" size="30" maxlength="15">
+								</td>
+								<td>
+									<button class="b3">🔍</button>
+								</td>
+							</table>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div align="right"><h2>Otros tanques</h2>
+							<table class="izq">
+								<tr>
+									<td>
+										<img src="icono1.png" class="icono" width="50" height="50">
+										<h4 class="subp">Existen diferentes tipos de tanques.
+									</td>
+									<td></h4>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<ul>
+											<li><h4 class="textr">Tank Destroyer</h4></li>
+											<li><h4>Heavy Tank</h4></li>
+											<li><h4>Medium Tank</h4></li>
+											<li><h4>Light Tank</h4></li>
+											<li><h4>Tank Artillery</h4></li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div align="right"><h2>Noticias.</h2>
+						<img src="icono2.png" class="icono" width="50" height="50">
+						<h4 class="subp">Revisa la web de WoTB para obtener más información </h4>
+						</br>
+						<p class="parrafo">"En los distintos eventos te regalan tanques."</p>
+						<p class="subp">¡Únete a los científicos del laboratorio secreto de Titán! <a href="#" class="textr">/Leer más</a></p>
+						<p class="parrafo">"Sobre la 8.3"</p>
+						<h4 class="subp">Eche un vistazo al futuro. <a href="#" class="textr">/Leer más</a></h4>	
+						<p class="parrafo">"Acerca de"</p>
+						<h4 class="subp">Polish heavies can easily deal with enemy tanks. <a href="#" class="textr">/Leer más</a></h4>		
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div align="right"><h2>Contacto.</h2>
+						<p class="subp">Visita la pagina oficial de WoT Blitz para conocer más acerca del juego</p>
+						<p class="parrafo">WoT Pc</p>
+						<p class="parrafo">55-33224455</p>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+	
+<div class="banner2">
+	
+	<div class="izq"><h2>Tips</h2>
+		<p class="parrafo">Aprende a jugar en tier bajo</p>
+		<p class="parrafo">No compres cajas</p>
+		<p class="parrafo">No compres tanques premium de tier X</p>
+	</div>
+	<div class="der"><h2>Suscripción al boletín de noticias</h2>
+		<input type="textarea" name="tx" placeholder="Recibe todas las novedades en un boletin email semanal" class="sttextarea">
+		</br>
+		<button class="b4">Suscribirse</button>
+	</div>
+	<div class="der"><h2>Siguenos en redes sociales</h2>
+		<input type="textarea" name="tx1" placeholder="Escribenos wotboficial@gmail.com" class="sttextarea">
+	</div>	
+</div>
+</body>
+</html>
